@@ -31,6 +31,13 @@ except ImportError:
     print(f"Please run: {Colors.GREEN}pip install pandas numpy scipy{Colors.ENDC}")
     sys.exit(1)
 
+# Kapsamlı istatistiksel doğrulama modülünü yükle
+try:
+    from dogrulama_testleri import AnaDogrulamaMotoru as _DogrulamaMotoru
+    _DOGRULAMA_HAZIR = True
+except ImportError:
+    _DOGRULAMA_HAZIR = False
+
 # ==============================================================================
 # SIMULE3: V.135 - OMEGA VERIFICATION ARCHIVE (PROVEN FULL VERSION)
 # STATUS: NameError Fixed. All Scientific Proof Modules Added.
@@ -1612,6 +1619,18 @@ class Simule3_Lab_V133(Simule3_Lab):
         self.kod_149.analiz()
         self.piramit_detay.analiz()
         self.giza_isik.analiz() # NEW ANALYSIS
+        
+        # --- KAPSAMLI İSTATİSTİKSEL DOĞRULAMA SÜİTİ ---
+        # (Monte Carlo, Bayes, Benford, Pearson r, M11, H0/H1)
+        print(f"\n{Colors.BOLD}{Colors.CYAN}*** KAPSAMLI DOĞRULAMA SÜİTİ (NASA/CODATA kaynaklı) ***{Colors.ENDC}")
+        if _DOGRULAMA_HAZIR:
+            try:
+                dogrulama = _DogrulamaMotoru()
+                dogrulama.calistir()
+            except Exception as e:
+                print(f"{Colors.FAIL}Doğrulama hatası: {e}{Colors.ENDC}")
+        else:
+            print(f"{Colors.WARNING}dogrulama_testleri.py bulunamadı - doğrulama atlandı{Colors.ENDC}")
         
         print(f"\n{Colors.BOLD}{Colors.GREEN}SIMULATION COMPLETED. 100% CONSISTENCY + ALL ADDITIONAL INFO.{Colors.ENDC}")
 
