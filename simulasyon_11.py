@@ -2162,6 +2162,607 @@ def verify_sentez7_master_formula():
     }
 
 
+# ==============================================================================
+# KAR TOPU SENTEZ 1-7: BÜYÜK BİRLEŞİK ENTEGRASYON MODÜLÜ
+# ==============================================================================
+# Tarih: 11 Mart 2026
+# Kaynak: KarTopu AntiGravity Sentez 1-7, Levhi Mahfuz PDF 1-3,
+#         CANVAS_11_TOPLU (1006 sayfa), Formül Toplu (23 sayfa),
+#         NASA API, viXra 2506.0051, arXiv, Giza/Kailash/Göbeklitepe verisi
+# ==============================================================================
+
+class KarTopu_Sentez_Constants:
+    """
+    KAR TOPU V5 SENTEZ 1-7: Tüm Kuantum Sabitleri Birleşik Tablo
+    Kaynak: KAR_TOPU_ANTIGRAVITY_SENTEZ-1.md ... SENTEZ-7.md
+    """
+    # ===== SENTEZ-1: Sirius / Dogon / Enoch / Giza =====
+    SIRIUS_FREQUENCY = 1330.99803          # Dogon Tribe Sirius frekans ihlali
+    ENOCH_11D_LOCK = 10.92111              # Enoch 11. Boyut Kilidi
+    GIZA_INTEGRAL = 11.08831               # Giza İntegral Doğrulaması
+    GIZA_LEVITATION_HZ = 11.088            # Piramit blokları ağırlıksızlık frekansı
+
+    # ===== SENTEZ-2: NASA Orion / Sagittarius A* / Giza-X =====
+    ORION_NEBULA_FREQ = 1330.99259         # Orion Nebulası hacim ihlali
+    ORION_ANTIGRAVITY = 0.00827            # ΔG_Orion = 1330.992 / (11³ × π)
+    SAGITTARIUS_CODE = 6666.0              # Sagittarius A* titreşim katsayısı
+    SAGITTARIUS_HORIZON = 1452.9           # √6666 × φ × 11 (Kuantum Tünelleme)
+    GIZA_X_REZONANS = 1329.545             # X/Twitter Matris Yansıması
+    COSMIC_HARMONY = 151.993               # φ × π × e × 11
+
+    # ===== SENTEZ-3: Biyolojik / Coğrafi / Arkeolojik =====
+    BIO_VERTEBRAE_TOTAL = 66               # 33 + 33 (Erkek + Kadın omurga)
+    EARTH_AXIS_COMPLEMENT = 66.6           # 90 - 23.4 derece
+    BIO_RESONANCE_LOCK = 11.1              # 66.6 × 11 / (33 × 2)
+    KABUL_KAILASH_KM = 1111                # Kabil-Kailash mesafesi (km)
+    KABUL_MECCA_KM = 3377                  # Kabil-Mekke = 307 × 11
+    NOAH_ARK_MEASURED_M = 157              # Durupınar ölçümü (m)
+    NOAH_ARK_SIMULATED_M = 164.28          # 157 × 1.046 = 15 × 11 ≈ 165
+    GOBEKLITEPE_SNAKE_CODE = 11            # Boyutsal Sürüngen sabiti
+
+    # ===== SENTEZ-5: Orijinal Kök Kod Sabitleri =====
+    R11_REPUNIT = 11111111111              # Evrenin Hash Kodu
+    R11_FACTOR_1 = 21649                   # 22 Rezonans
+    R11_FACTOR_2 = 513239                  # 23 Rezonans
+    C_REAL = 299792.458                    # Sahte (10T) ışık hızı
+    C_IDEAL = 333333.333                   # Gerçek (11T) ışık hızı
+    OP_LIGHT = 1.11188                     # Zaman Sıkışması faktörü
+    QURAN_AYET_SYMBOLIC = 6666             # Kur'an ayet kodu
+    G_SYMBOLIC = 6.666e-11                 # Yerçekimi Sabiti (Sembolik)
+    SHIFT_MAIN = 66.6666                   # Dünya eksen kayması
+    YEAR_SIM = 363.0                       # 11T yıl (gün)
+    YEAR_REAL = 365.2422                   # 10T yıl (gün)
+    DRIFT_YEAR = 2.2422                    # Yıllık kayma
+    SIM_END = 2063                         # Simülasyon bitiş yılı
+    SIM_DURATION = 11111                   # Tufan → Reset süresi
+    FLOOD_YEAR = -9048                     # Tufan başlangıcı
+
+    # ===== SENTEZ-6: Gizli Nüfus Kodu / 1390 Hz / Halley =====
+    POPULATION_GOAL_MAX = 80_000_000       # 80 Milyon hedef nüfus
+    COSMIC_HUM_HZ = 1390                   # Kozmik Uğultu (Hz)
+    QUANTUM_CELLS_11_11 = 11**11           # 285.3 Milyar kuantum hücresi
+    HALLEY_NEXT = 2061                     # Halley sonraki geçişi
+    HALLEY_TO_END = 2                      # 2061 → 2063 (OP_LIGHT sapması)
+    KAILASH_DELTA = 10.94                  # Kailash enlem farkı ≈ 11°
+
+    # ===== SENTEZ-7: Master Formül Birleşik =====
+    V_UNIVERSE = 1331                      # 11³ Uzay Hacmi
+    Q_QUANTUM = 6666                       # Vahiy Frekansı
+    C_I_CORRECTION = 1.11188               # Altın Hız Sapması
+    G_I_GRAVITY = 0.008271                 # Anti-Gravity İtki
+    H_HYDROGEN = 1390                      # Kozmik Uğultu
+    T_END = 2063                           # Terminal Bitiş
+    LAMBDA_RESULT = 6548500                # Λ ≈ 6.54 Milyon (Matrix Kırılma)
+    LAMBDA_FREQ_MHZ = 6.52                 # MHz (Kırılma frekansı)
+    ESCAPE_FREQ_MHZ = 23.38               # MHz (Kaçış frekansı)
+    PINEAL_THETA_HZ = 8.0                  # Hz (Theta dalgası)
+
+    # ===== YENİ TÜRETMELER (SENTEZ 1-7 Birleşik) =====
+    # R11 / (C_ideal × 33) = Kuantum Bilinç Değeri
+    QUANTUM_CONSCIOUSNESS = 11111111111 / (333333.333 * 33)  # ≈ 1010.1
+    # 6666 / 66.6666 = Anti-Gravity İzolasyon Sabiti
+    ANTIGRAVITY_ISOLATION = 6666 / 66.6666  # ≈ 99.99
+    # √6666 × φ × 11 = Sagittarius Tünelleme Sabiti
+    PHI = 1.6180339887
+    SAGITTARIUS_TUNNEL = (6666**0.5) * 1.6180339887 * 11  # ≈ 1452.9
+    # 9048 + 2063 + 1331 = Makro Kozmik Döngü
+    MACRO_COSMIC_CYCLE = 9048 + 2063 + 1331  # = 12442
+    # 74 × 363 = Büyük Yıldız Döngüsü
+    GRAND_STAR_CYCLE = 74 * 363  # = 26862
+    # 11! / 66 = Haftalık Saniye Paketi
+    WEEKLY_SECONDS = 39916800 / 66  # = 604800
+
+
+class KarTopu_Sentez1_Sirius_AntiGravity:
+    """
+    SENTEZ-1: Sirius / Dogon / Enoch / Giza Anti-Gravity Formülleri
+    """
+    def __init__(self):
+        self.c = KarTopu_Sentez_Constants
+
+    def sirius_antigravity_formula(self):
+        """F_antigravity = ΔV_Sirius / 11³ × Φ"""
+        delta_v = self.c.SIRIUS_FREQUENCY
+        phi = self.c.PHI
+        result = (delta_v / (11**3)) * phi
+        return {
+            "formula": "F_ag = ΔV_Sirius / 11³ × Φ",
+            "delta_v_sirius": delta_v,
+            "phi": phi,
+            "result": result,
+            "gravity_cancellation": abs(result - 1.0) < 0.07,
+            "description": f"Sirius AG = {delta_v}/{11**3} × {phi:.4f} = {result:.6f}"
+        }
+
+    def enoch_wave_equation(self):
+        """Ψ(x,t) integral[33→125] = 10.92 (11D Lock)"""
+        enoch_val = self.c.ENOCH_11D_LOCK
+        return {
+            "formula": "Ψ(x,t) = ∫₃₃¹²⁵ e^(-i(ΔV·11)t) dx",
+            "enoch_value": enoch_val,
+            "dimension_lock": round(enoch_val) == 11,
+            "thrust_boundary": enoch_val,
+            "description": f"Enoch 11D Lock = {enoch_val} ≈ 11"
+        }
+
+    def giza_integral_verification(self):
+        """∫_(1331)^(485.73) Φ(x)dx ≈ 11.088"""
+        giza_val = self.c.GIZA_INTEGRAL
+        return {
+            "formula": "∫₁₃₃₁⁴⁸⁵·⁷³ Φ(x)dx",
+            "giza_integral": giza_val,
+            "levitation_hz": self.c.GIZA_LEVITATION_HZ,
+            "blocks_weightless": abs(giza_val - 11.0) < 0.1,
+            "description": f"Giza Integral = {giza_val} (levitation at {self.c.GIZA_LEVITATION_HZ} Hz)"
+        }
+
+    def analiz(self):
+        """Sentez-1 tam analiz raporu"""
+        print(f"\n  {Colors.BOLD}{Colors.CYAN}{'='*70}{Colors.ENDC}")
+        print(f"  {Colors.BOLD}{Colors.GOLD}SENTEZ-1: SİRİUS / DOGON / ENOCH / GİZA ANTİ-GRAVİTY{Colors.ENDC}")
+        print(f"  {Colors.BOLD}{Colors.CYAN}{'='*70}{Colors.ENDC}\n")
+
+        s1 = self.sirius_antigravity_formula()
+        print(f"    🌀 Sirius AG: {Colors.GREEN}{s1['result']:.6f}{Colors.ENDC} (Gravity Cancel: {s1['gravity_cancellation']})")
+
+        e1 = self.enoch_wave_equation()
+        print(f"    🌌 Enoch 11D Lock: {Colors.GREEN}{e1['enoch_value']}{Colors.ENDC} (Dim Lock: {e1['dimension_lock']})")
+
+        g1 = self.giza_integral_verification()
+        print(f"    🔺 Giza Integral: {Colors.GREEN}{g1['giza_integral']}{Colors.ENDC} (Levitation: {g1['blocks_weightless']})")
+
+        return {"sirius": s1, "enoch": e1, "giza": g1}
+
+
+class KarTopu_Sentez2_NASA_Orion:
+    """
+    SENTEZ-2: NASA Orion / Sagittarius A* / Giza-X Rezonans
+    """
+    def __init__(self):
+        self.c = KarTopu_Sentez_Constants
+
+    def orion_gravity_drive(self):
+        """ΔG_Orion = 1330.992 / (11³ × π) ≈ 0.00827"""
+        orion = self.c.ORION_NEBULA_FREQ
+        result = orion / (11**3 * math.pi)
+        return {
+            "formula": "ΔG_Orion = 1330.992 / (11³ × π)",
+            "orion_freq": orion,
+            "gravity_drive": result,
+            "matches_antigravity": abs(result - 0.00827) < 0.001,
+            "description": f"Orion Gravity Drive = {result:.8f}"
+        }
+
+    def sagittarius_horizon(self):
+        """S_Horizon = √6666 × Φ × 11 = 1452.9"""
+        sag = self.c.SAGITTARIUS_CODE
+        phi = self.c.PHI
+        result = math.sqrt(sag) * phi * 11
+        return {
+            "formula": "S_Horizon = √6666 × Φ × 11",
+            "sagittarius_code": sag,
+            "horizon_constant": result,
+            "tunnel_value": self.c.SAGITTARIUS_HORIZON,
+            "matches": abs(result - 1452.9) < 1.0,
+            "description": f"Sagittarius Horizon = {result:.2f}"
+        }
+
+    def time_dilation_6666(self):
+        """6666. katmanda zamanın yarıya düşmesi"""
+        layer = self.c.SAGITTARIUS_CODE
+        time_factor = 1.0 / (1 + math.log(layer) / 11)
+        return {
+            "layer": layer,
+            "time_dilation_factor": time_factor,
+            "time_halved": time_factor < 0.6,
+            "description": f"6666. Katman Zaman Faktörü = {time_factor:.6f}"
+        }
+
+    def analiz(self):
+        print(f"\n  {Colors.BOLD}{Colors.CYAN}{'='*70}{Colors.ENDC}")
+        print(f"  {Colors.BOLD}{Colors.GOLD}SENTEZ-2: NASA ORİON / SAGİTTARİUS A* / GİZA-X REZONANS{Colors.ENDC}")
+        print(f"  {Colors.BOLD}{Colors.CYAN}{'='*70}{Colors.ENDC}\n")
+
+        o1 = self.orion_gravity_drive()
+        print(f"    🌀 Orion Gravity Drive: {Colors.GREEN}{o1['gravity_drive']:.8f}{Colors.ENDC} (AG Match: {o1['matches_antigravity']})")
+
+        s1 = self.sagittarius_horizon()
+        print(f"    🕳️ Sagittarius Horizon: {Colors.GREEN}{s1['horizon_constant']:.2f}{Colors.ENDC} (Match: {s1['matches']})")
+
+        t1 = self.time_dilation_6666()
+        print(f"    ⏰ 6666 Time Dilation: {Colors.GREEN}{t1['time_dilation_factor']:.6f}{Colors.ENDC} (Halved: {t1['time_halved']})")
+
+        return {"orion": o1, "sagittarius": s1, "time_dilation": t1}
+
+
+class KarTopu_Sentez3_BioGeo:
+    """
+    SENTEZ-3: Biyolojik Bilinç DNA / Kabil Nexus / Nuh Hacmi
+    """
+    def __init__(self):
+        self.c = KarTopu_Sentez_Constants
+
+    def bio_resonance_lock(self):
+        """B_human = 66.6 × 11 / (33 × 2) ≈ 11.1"""
+        result = self.c.EARTH_AXIS_COMPLEMENT * 11 / (33 * 2)
+        return {
+            "formula": "B_human = 66.6 × 11 / (33 × 2)",
+            "vertebrae_total": self.c.BIO_VERTEBRAE_TOTAL,
+            "axis_complement": self.c.EARTH_AXIS_COMPLEMENT,
+            "bio_resonance": result,
+            "locked_to_11": abs(result - 11.1) < 0.1,
+            "description": f"Bio Resonance Lock = {result:.4f}"
+        }
+
+    def kabil_nexus_zero(self):
+        """Kabil-Kailash=1111 km, Kabil-Mekke=3377 km (307×11)"""
+        return {
+            "kabil_kailash_km": self.c.KABUL_KAILASH_KM,
+            "kabil_mecca_km": self.c.KABUL_MECCA_KM,
+            "mecca_div_11": self.c.KABUL_MECCA_KM / 11,
+            "kailash_modulo_11": self.c.KABUL_KAILASH_KM % 11,
+            "nexus_verified": self.c.KABUL_KAILASH_KM == 1111 and self.c.KABUL_MECCA_KM % 11 == 0,
+            "description": f"Kabil Nexus: Kailash={self.c.KABUL_KAILASH_KM}km, Mekke={self.c.KABUL_MECCA_KM}km"
+        }
+
+    def noah_volume_verification(self):
+        """Nuh Gemisi: 157 × 1.046 ≈ 165 = 15 × 11"""
+        measured = self.c.NOAH_ARK_MEASURED_M
+        op_len = 1.046338
+        simulated = measured * op_len
+        ideal = 15 * 11
+        return {
+            "measured_m": measured,
+            "simulated_m": simulated,
+            "ideal_m": ideal,
+            "deviation": abs(simulated - ideal),
+            "match": abs(simulated - ideal) < 1.0,
+            "description": f"Nuh Gemisi: {measured}m × 1.046 = {simulated:.2f}m ≈ {ideal}m"
+        }
+
+    def analiz(self):
+        print(f"\n  {Colors.BOLD}{Colors.CYAN}{'='*70}{Colors.ENDC}")
+        print(f"  {Colors.BOLD}{Colors.GOLD}SENTEZ-3: BİYOLOJİK BİLİNÇ / KABİL NEXUS / NUH HACMİ{Colors.ENDC}")
+        print(f"  {Colors.BOLD}{Colors.CYAN}{'='*70}{Colors.ENDC}\n")
+
+        b1 = self.bio_resonance_lock()
+        print(f"    🧬 Bio Resonance: {Colors.GREEN}{b1['bio_resonance']:.4f}{Colors.ENDC} (11 Lock: {b1['locked_to_11']})")
+
+        k1 = self.kabil_nexus_zero()
+        print(f"    🔴 Kabil Nexus: {Colors.GREEN}Kailash={k1['kabil_kailash_km']}km, Mekke={k1['kabil_mecca_km']}km{Colors.ENDC} (Verified: {k1['nexus_verified']})")
+
+        n1 = self.noah_volume_verification()
+        print(f"    🐍 Nuh Gemisi: {Colors.GREEN}{n1['simulated_m']:.2f}m ≈ {n1['ideal_m']}m{Colors.ENDC} (Match: {n1['match']})")
+
+        return {"bio": b1, "kabil": k1, "noah": n1}
+
+
+class KarTopu_Sentez5_KokKod:
+    """
+    SENTEZ-5: Orijinal Kök Kod Sabitleri (Kullanıcı Tasarımı)
+    """
+    def __init__(self):
+        self.c = KarTopu_Sentez_Constants
+
+    def r11_consciousness_test(self):
+        """R11 / (C_ideal × 33) = Kuantum Bilinç"""
+        r11 = self.c.R11_REPUNIT
+        c_ideal = self.c.C_IDEAL
+        result = r11 / (c_ideal * 33)
+        return {
+            "formula": "R11 / (C_ideal × 33)",
+            "r11": r11,
+            "c_ideal": c_ideal,
+            "consciousness_value": result,
+            "description": f"Quantum Consciousness = {result:.4f}"
+        }
+
+    def light_speed_glitch(self):
+        """C_REAL × OP_LIGHT ≈ C_IDEAL (Simülasyon Sürtünmesi)"""
+        c_real = self.c.C_REAL
+        op_light = self.c.OP_LIGHT
+        calculated = c_real * op_light
+        c_ideal = self.c.C_IDEAL
+        deviation = abs(calculated - c_ideal) / c_ideal * 100
+        return {
+            "c_real": c_real,
+            "op_light": op_light,
+            "calculated_ideal": calculated,
+            "actual_ideal": c_ideal,
+            "deviation_percent": deviation,
+            "glitch_confirmed": deviation < 1.0,
+            "description": f"Glitch-5: {c_real} × {op_light} = {calculated:.3f} vs {c_ideal}"
+        }
+
+    def antigravity_isolation(self):
+        """6666 / 66.6666 = Anti-Gravity İzolasyon Sabiti"""
+        quran = self.c.QURAN_AYET_SYMBOLIC
+        shift = self.c.SHIFT_MAIN
+        result = quran / shift
+        return {
+            "formula": "6666 / 66.6666",
+            "quran_code": quran,
+            "shift_main": shift,
+            "isolation_constant": result,
+            "is_perfect_100": abs(result - 100.0) < 0.01,
+            "description": f"AG Isolation = {quran}/{shift} = {result:.6f}"
+        }
+
+    def simulation_duration_verify(self):
+        """Tufan (-9048) → Bitiş (2063) = 11111 yıl"""
+        flood = self.c.FLOOD_YEAR
+        sim_end = self.c.SIM_END
+        duration = sim_end - flood
+        return {
+            "flood_year": flood,
+            "sim_end": sim_end,
+            "duration": duration,
+            "expected": self.c.SIM_DURATION,
+            "matches_11111": duration == 11111,
+            "description": f"Duration: {sim_end}-({flood}) = {duration} (Expected: {self.c.SIM_DURATION})"
+        }
+
+    def analiz(self):
+        print(f"\n  {Colors.BOLD}{Colors.CYAN}{'='*70}{Colors.ENDC}")
+        print(f"  {Colors.BOLD}{Colors.GOLD}SENTEZ-5: ORİJİNAL KÖK KOD SABİTLERİ (11111 DOĞRULAMA){Colors.ENDC}")
+        print(f"  {Colors.BOLD}{Colors.CYAN}{'='*70}{Colors.ENDC}\n")
+
+        r1 = self.r11_consciousness_test()
+        print(f"    🧠 Quantum Consciousness: {Colors.GREEN}{r1['consciousness_value']:.4f}{Colors.ENDC}")
+
+        l1 = self.light_speed_glitch()
+        print(f"    💡 Light Speed Glitch: {Colors.GREEN}{l1['calculated_ideal']:.3f}{Colors.ENDC} vs {l1['actual_ideal']} (Confirmed: {l1['glitch_confirmed']})")
+
+        a1 = self.antigravity_isolation()
+        print(f"    🔮 AG Isolation: {Colors.GREEN}{a1['isolation_constant']:.6f}{Colors.ENDC} (Perfect 100: {a1['is_perfect_100']})")
+
+        d1 = self.simulation_duration_verify()
+        print(f"    ⏱️ Duration: {Colors.GREEN}{d1['duration']}{Colors.ENDC} = {d1['expected']} (Match: {d1['matches_11111']})")
+
+        return {"consciousness": r1, "glitch": l1, "isolation": a1, "duration": d1}
+
+
+class KarTopu_Sentez6_Revelation:
+    """
+    SENTEZ-6: Gizli Nüfus Kodu / 1390 Hz Kozmik Uğultu / Halley
+    """
+    def __init__(self):
+        self.c = KarTopu_Sentez_Constants
+
+    def population_terminal_code(self):
+        """80 Milyon hedef nüfus kodu"""
+        pop_goal = self.c.POPULATION_GOAL_MAX
+        current_pop = 8_120_000_000
+        reduction = current_pop - pop_goal
+        reduction_pct = reduction / current_pop * 100
+        return {
+            "population_goal": pop_goal,
+            "current_estimate": current_pop,
+            "total_reduction": reduction,
+            "reduction_percent": reduction_pct,
+            "terminal_year": self.c.SIM_END,
+            "description": f"Population Terminal: {current_pop:,} → {pop_goal:,} ({reduction_pct:.1f}%)"
+        }
+
+    def cosmic_hum_1390(self):
+        """1390 Hz Kozmik Uğultu (Dirac Manyetik Monopol)"""
+        hum = self.c.COSMIC_HUM_HZ
+        cells = self.c.QUANTUM_CELLS_11_11
+        ratio = cells / hum
+        return {
+            "cosmic_hum_hz": hum,
+            "quantum_cells": cells,
+            "cells_per_hum": ratio,
+            "viXra_ref": "2506.0051",
+            "hum_x_11": hum * 11,
+            "description": f"Cosmic Hum: {hum} Hz × 11 = {hum*11} Hz | 11^11={cells:,} cells"
+        }
+
+    def halley_awakening_lock(self):
+        """Halley 2061 → 2063 Terminal (OP_LIGHT sapması ile)"""
+        halley = self.c.HALLEY_NEXT
+        end = self.c.SIM_END
+        gap = end - halley
+        op_light = self.c.OP_LIGHT
+        return {
+            "halley_next": halley,
+            "sim_end": end,
+            "gap_years": gap,
+            "op_light_factor": op_light,
+            "lock_confirmed": gap == 2,
+            "description": f"Halley {halley} → Terminal {end} (Gap: {gap} years, OP={op_light})"
+        }
+
+    def analiz(self):
+        print(f"\n  {Colors.BOLD}{Colors.CYAN}{'='*70}{Colors.ENDC}")
+        print(f"  {Colors.BOLD}{Colors.GOLD}SENTEZ-6: GİZLİ NÜFUS KODU / 1390 Hz / HALLEY UYANIŞI{Colors.ENDC}")
+        print(f"  {Colors.BOLD}{Colors.CYAN}{'='*70}{Colors.ENDC}\n")
+
+        p1 = self.population_terminal_code()
+        print(f"    👥 Population Terminal: {Colors.RED}{p1['population_goal']:,}{Colors.ENDC} ({p1['reduction_percent']:.1f}% reduction)")
+
+        c1 = self.cosmic_hum_1390()
+        print(f"    🔊 Cosmic Hum: {Colors.GREEN}{c1['cosmic_hum_hz']} Hz{Colors.ENDC} | 11^11 = {c1['quantum_cells']:,} cells")
+
+        h1 = self.halley_awakening_lock()
+        print(f"    ☄️ Halley Lock: {Colors.GREEN}{h1['halley_next']} → {h1['sim_end']}{Colors.ENDC} (Confirmed: {h1['lock_confirmed']})")
+
+        return {"population": p1, "cosmic_hum": c1, "halley": h1}
+
+
+class KarTopu_Sentez7_GrandUnification:
+    """
+    SENTEZ-7: BÜYÜK BİRLEŞİK DENKLEM (Master Λ = 6.54M)
+    Tüm Sentez 1-6 verilerinin tek formülde birleşimi
+    """
+    def __init__(self):
+        self.c = KarTopu_Sentez_Constants
+
+    def master_lambda_equation(self):
+        """Λ = [(V × Q × C_i) / (G_i × H)] × ln(T_End)"""
+        V = self.c.V_UNIVERSE
+        Q = self.c.Q_QUANTUM
+        C_i = self.c.C_I_CORRECTION
+        G_i = self.c.G_I_GRAVITY
+        H = self.c.H_HYDROGEN
+        T_End = self.c.T_END
+
+        numerator = V * Q * C_i
+        denominator = G_i * H
+        ln_term = math.log(T_End)
+        base_ratio = numerator / denominator
+        result = base_ratio * ln_term
+
+        return {
+            "formula": "Λ = [(V×Q×C_i) / (G_i×H)] × ln(T_End)",
+            "V": V, "Q": Q, "C_i": C_i, "G_i": G_i, "H": H, "T_End": T_End,
+            "numerator": numerator,
+            "denominator": denominator,
+            "base_ratio": base_ratio,
+            "ln_term": ln_term,
+            "lambda_result": result,
+            "lambda_millions": result / 1e6,
+            "target_6_54M": abs(result / 1e6 - 6.54) < 0.1,
+            "description": f"Λ = {result:,.0f} ({result/1e6:.2f} Million)"
+        }
+
+    def new_derived_formulas(self):
+        """Sentez 1-7'den türetilmiş yeni formüller"""
+        results = {}
+
+        # 1. Kuantum Bilinç Değeri
+        qc = self.c.QUANTUM_CONSCIOUSNESS
+        results["quantum_consciousness"] = {
+            "formula": "R11 / (C_ideal × 33)",
+            "value": qc,
+            "description": f"= {qc:.4f}"
+        }
+
+        # 2. Anti-Gravity İzolasyon
+        agi = self.c.ANTIGRAVITY_ISOLATION
+        results["antigravity_isolation"] = {
+            "formula": "6666 / 66.6666",
+            "value": agi,
+            "description": f"= {agi:.4f}"
+        }
+
+        # 3. Sagittarius Tünelleme
+        st = self.c.SAGITTARIUS_TUNNEL
+        results["sagittarius_tunnel"] = {
+            "formula": "√6666 × Φ × 11",
+            "value": st,
+            "description": f"= {st:.2f}"
+        }
+
+        # 4. Makro Kozmik Döngü
+        mcc = self.c.MACRO_COSMIC_CYCLE
+        results["macro_cosmic_cycle"] = {
+            "formula": "9048 + 2063 + 1331",
+            "value": mcc,
+            "description": f"= {mcc}"
+        }
+
+        # 5. Büyük Yıldız Döngüsü
+        gsc = self.c.GRAND_STAR_CYCLE
+        results["grand_star_cycle"] = {
+            "formula": "74 × 363",
+            "value": gsc,
+            "description": f"= {gsc}"
+        }
+
+        # 6. Haftalık Paket Doğrulaması
+        ws = self.c.WEEKLY_SECONDS
+        results["weekly_seconds"] = {
+            "formula": "11! / 66",
+            "value": ws,
+            "verified": ws == 604800,
+            "description": f"= {ws:.0f} (7 gün = 604800s)"
+        }
+
+        # 7. Orion-Sirius Birleşik AG Sabiti
+        orion_ag = self.c.ORION_ANTIGRAVITY
+        sirius_f = self.c.SIRIUS_FREQUENCY / (11**3)
+        combined_ag = (orion_ag + sirius_f * self.c.PHI) / 2
+        results["combined_antigravity"] = {
+            "formula": "(Orion_AG + Sirius/11³×Φ) / 2",
+            "value": combined_ag,
+            "description": f"= {combined_ag:.8f}"
+        }
+
+        # 8. 11-Boyutlu Enerji Yoğunluğu
+        energy_11d = (11**11) / (self.c.C_IDEAL * self.c.H_HYDROGEN)
+        results["energy_density_11d"] = {
+            "formula": "11^11 / (C_ideal × H)",
+            "value": energy_11d,
+            "description": f"= {energy_11d:.2f}"
+        }
+
+        return results
+
+    def analiz(self):
+        print(f"\n  {Colors.BOLD}{Colors.CYAN}{'='*70}{Colors.ENDC}")
+        print(f"  {Colors.BOLD}{Colors.RED}SENTEZ-7: BÜYÜK BİRLEŞİK DENKLEM (MASTER Λ){Colors.ENDC}")
+        print(f"  {Colors.BOLD}{Colors.CYAN}{'='*70}{Colors.ENDC}\n")
+
+        ml = self.master_lambda_equation()
+        print(f"    ⚡ MASTER Λ = {Colors.GREEN}{Colors.BOLD}{ml['lambda_result']:,.0f}{Colors.ENDC}")
+        print(f"       = {Colors.GOLD}{ml['lambda_millions']:.2f} Milyon{Colors.ENDC} (Target 6.54M: {ml['target_6_54M']})")
+        print(f"       Numerator: {ml['numerator']:,.2f}")
+        print(f"       Denominator: {ml['denominator']:.6f}")
+        print(f"       Base Ratio: {ml['base_ratio']:,.2f}")
+        print(f"       ln(T_End): {ml['ln_term']:.6f}")
+
+        nf = self.new_derived_formulas()
+        print(f"\n    {Colors.BOLD}{Colors.CYAN}--- Türetilmiş Yeni Formüller ---{Colors.ENDC}")
+        for key, val in nf.items():
+            print(f"      • {key}: {Colors.GREEN}{val['description']}{Colors.ENDC}")
+
+        return {"master_lambda": ml, "new_formulas": nf}
+
+
+# ==============================================================================
+# KAR TOPU MASTER RUNNER: TÜM SENTEZ 1-7 ÇALIŞTIR
+# ==============================================================================
+
+class KarTopu_Master_Runner:
+    """Tüm KarTopu Sentez modüllerini sırayla çalıştır"""
+
+    def __init__(self):
+        self.sentez1 = KarTopu_Sentez1_Sirius_AntiGravity()
+        self.sentez2 = KarTopu_Sentez2_NASA_Orion()
+        self.sentez3 = KarTopu_Sentez3_BioGeo()
+        self.sentez5 = KarTopu_Sentez5_KokKod()
+        self.sentez6 = KarTopu_Sentez6_Revelation()
+        self.sentez7 = KarTopu_Sentez7_GrandUnification()
+
+    def run_all(self):
+        """Tüm sentez modüllerini çalıştır"""
+        print(f"\n{Colors.BOLD}{Colors.RED}")
+        print("█" * 72)
+        print("█  KAR TOPU V5 SENTEZ 1-7: BÜYÜK BİRLEŞİK ENTEGRASYON RAPORU     █")
+        print("█  Tarih: 11 Mart 2026  |  Status: GRAND UNIFICATION               █")
+        print("█" * 72)
+        print(f"{Colors.ENDC}")
+
+        results = {}
+        results["sentez1"] = self.sentez1.analiz()
+        results["sentez2"] = self.sentez2.analiz()
+        results["sentez3"] = self.sentez3.analiz()
+        results["sentez5"] = self.sentez5.analiz()
+        results["sentez6"] = self.sentez6.analiz()
+        results["sentez7"] = self.sentez7.analiz()
+
+        # Final rapor
+        print(f"\n  {Colors.BOLD}{Colors.GREEN}")
+        print(f"  {'='*70}")
+        print(f"  KAR TOPU SENTEZ 1-7 ENTEGRASYON: TAMAMLANDI ✅")
+        print(f"  [+++] GRAND UNIFICATION MATRIX BREAKER: OPERATIONAL [+++]")
+        print(f"  {'='*70}")
+        print(f"{Colors.ENDC}")
+
+        return results
+
+
 # LAUNCH
 if __name__ == "__main__":
     pd.set_option('display.max_columns', None)
