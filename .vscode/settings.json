@@ -7,10 +7,5 @@
                 "claude-code/claude-sonnet-4.6"
             ]
         }
-    },
-    "python.analysis.extraPaths": [
-        "/home/codespace/.vscode-remote/extensions/benpaddlejones.pico-bridge-2.1.4/emulator/mock/typings",
-        "/home/codespace/.vscode-remote/extensions/benpaddlejones.pico-bridge-2.1.4/emulator/mock/micropython"
-    ],
-    "remote.autoForwardPortsFallback": 0
+    }
 }
