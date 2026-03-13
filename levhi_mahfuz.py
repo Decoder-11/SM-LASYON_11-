@@ -1119,3 +1119,22 @@ class KarTopuSentezConstants:
     GRAND_STAR_CYCLE = 74 * 363
     WEEKLY_SECONDS = 39916800 / 66
     ENERGY_DENSITY_11D = (11**11) / (333333.333 * 1390)
+
+    # ===== SENTEZ-8: GEOİT MATRİSİ 22-66-88 + Pi_11 =====
+    GEOIT_FARK = 22                     # Ekvator - Kutup yarıçap farkı (km)
+    GEOIT_OMURGA = 66                   # 33×2 = Omurga kodu
+    GEOIT_TOPLAM = 88                   # 22 + 66 = Toplam Geoid Kodu
+    GEOIT_CARPIM = 22 * 66 * 88        # = 127776 (Piramidal Çarpım)
+    PI_11 = 2.99                        # 11'lik Pi sabiti (C/100K)
+    PI_11_SQUARED = 2.99 ** 2           # = 8.9401
+    LAMBDA_GEOIT = 88 * 74             # = 6512 ≈ 6.52 MHz
+    GRAVITY_FROM_GEOID = 88 / (2.99 ** 2)  # = 9.843 ≈ g
+    CYCLIC_PROOF_66_22 = 66 / 2.99     # = 22.07 ≈ 22
+    REVERSE_CYCLIC_22_66 = 22 * 2.99   # = 65.78 ≈ 66
+    ORBITAL_VELOCITY_PI11 = 88 / 2.99  # = 29.43 ≈ 29.78 km/s
+    LIGHT_SPEED_PI11 = 2.99 * 100_000  # = 299000 ≈ C_REAL
+    YEAR_PI11_RATIO = 363 / 2.99       # = 121.4 ≈ 121 = 11²
+    PIRAMIDAL_11CUBE_NORM = 127776 / 1331  # = 96.0
+    LEVHI_GEOID_RATIO = 6666 / 2.99    # = 2229.4 ≈ 2222 (Hubble)
+    DNA_PI11_PRODUCT = 33 * 2.99       # = 98.67
+    HALLEY_PI11_PRODUCT = 74 * 2.99    # = 221.26 ≈ 222 (Güneş hızı)
