@@ -1119,3 +1119,23 @@ class KarTopuSentezConstants:
     GRAND_STAR_CYCLE = 74 * 363
     WEEKLY_SECONDS = 39916800 / 66
     ENERGY_DENSITY_11D = (11**11) / (333333.333 * 1390)
+
+    # ===== SENTEZ-8: GEOİT MATRİSİ (22-66-88) + Pi_11 =====
+    # Kaynak: KAR_TOPU_ANTIGRAVITY_SENTEZ-8_GEOIT_MATRISI.md
+    # Tarih: 13 Mart 2026
+    GEOIT_FARK = 22                         # Ekvator-Kutup yarıçap farkı (km, WGS84)
+    GEOIT_OMURGA = 66                       # Omurga kodu (33×2 = insan biyolojik kilit)
+    GEOIT_TOPLAM = 88                       # Geoit Farkı + Omurga = Toplam Geoit
+    GEOIT_CARPIM = 127776                   # 22 × 66 × 88 (Piramidal Çarpım)
+    PI_11 = 2.99                            # 11'lik Pi sabiti (C_REAL / 100000)
+    LAMBDA_GEOIT = 6512                     # 88 × 74 (Halley) = Lambda analog
+
+    # ===== SENTEZ-8: TÜRETILMIŞ SABİTLER =====
+    GRAVITY_FROM_GEOID = 88 / (2.99 ** 2)   # = 9.843 ≈ g (yerçekimi)
+    CYCLIC_PROOF_22 = 66 / 2.99              # = 22.07 ≈ 22 (döngüsel kanıt)
+    CYCLIC_PROOF_66 = 22 * 2.99              # = 65.78 ≈ 66 (ters döngü)
+    ORBITAL_VELOCITY_GEOID = 88 / 2.99       # = 29.43 ≈ 29.78 km/s
+    LIGHT_SPEED_PI11 = 2.99 * 100_000        # = 299000 ≈ C_REAL
+    YEAR_11SQ_LOCK = 363 / 2.99              # = 121.4 ≈ 121 = 11²
+    DNA_PI11_LAMBDA = 33 * 2.99              # = 98.67 (Lambda üst/100K)
+    HALLEY_PI11_SOLAR = 74 * 2.99            # = 221.26 ≈ 222 (Güneş hızı)
