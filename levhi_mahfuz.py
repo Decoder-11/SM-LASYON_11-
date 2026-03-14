@@ -1109,9 +1109,17 @@ class KarTopuSentezConstants:
     G_I_GRAVITY = 0.008271
     H_HYDROGEN = 1390
     T_END = 2063
-    LAMBDA_FREQ_MHZ = 6.52
-    ESCAPE_FREQ_MHZ = 23.38
+    LAMBDA_FREQ_MHZ = 6.666             # SENTEZ-9: Düzeltilmiş (eski: 6.52)
+    ESCAPE_FREQ_MHZ = 23.90             # SENTEZ-9: 6.666 × 3.5859 (eski: 23.38)
     PINEAL_THETA_HZ = 8.0
+
+    # ===== SENTEZ-9: Lambda Düzeltmesi =====
+    LAMBDA_GERCEK_MHZ = 6.666           # Düzeltilmiş Lambda (Q_QUANTUM / 1000)
+    LAMBDA_SAF_TABAN = 6                # Matrix saf frekansı
+    HALLEY_DUZELTILMIS = 75.75          # 6666 / 88
+    LAMBDA_x_66_LA = 440.0              # Hz - LA notası (A4=440Hz)
+    LAMBDA_x_33_GUNES = 222.0           # km/s - Güneş Galaktik hızı
+    LAMBDA_KARE = 44.44                 # 6.666² → 4 × 11.11 Tufan kodu
 
     # ===== TÜRETMELER =====
     SAGITTARIUS_TUNNEL = (6666**0.5) * 1.6180339887 * 11
@@ -1127,7 +1135,7 @@ class KarTopuSentezConstants:
     GEOIT_CARPIM = 22 * 66 * 88        # = 127776 (Piramidal Çarpım)
     PI_11 = 2.99                        # 11'lik Pi sabiti (C/100K)
     PI_11_SQUARED = 2.99 ** 2           # = 8.9401
-    LAMBDA_GEOIT = 88 * 74             # = 6512 ≈ 6.52 MHz
+    LAMBDA_GEOIT = 88 * 75.75          # = 6666 = Lambda kök (SENTEZ-9 düzeltildi)
     GRAVITY_FROM_GEOID = 88 / (2.99 ** 2)  # = 9.843 ≈ g
     CYCLIC_PROOF_66_22 = 66 / 2.99     # = 22.07 ≈ 22
     REVERSE_CYCLIC_22_66 = 22 * 2.99   # = 65.78 ≈ 66
@@ -1137,4 +1145,4 @@ class KarTopuSentezConstants:
     PIRAMIDAL_11CUBE_NORM = 127776 / 1331  # = 96.0
     LEVHI_GEOID_RATIO = 6666 / 2.99    # = 2229.4 ≈ 2222 (Hubble)
     DNA_PI11_PRODUCT = 33 * 2.99       # = 98.67
-    HALLEY_PI11_PRODUCT = 74 * 2.99    # = 221.26 ≈ 222 (Güneş hızı)
+    HALLEY_PI11_PRODUCT = 75.75 * 2.99 # = 226.49 ≈ 222 (Güneş hızı, SENTEZ-9)

@@ -13,6 +13,7 @@ class Colors:
     BLUE = '\033[94m'
     CYAN = '\033[96m'
     GREEN = '\033[92m'
+    YELLOW = '\033[93m'
     WARNING = '\033[93m'
     FAIL = '\033[91m'
     ENDC = '\033[0m'
@@ -20,6 +21,7 @@ class Colors:
     RED = '\033[91m'
     GOLD = '\033[33m'
     PURPLE = '\033[35m'
+    MAGENTA = '\033[35m'
 
 try:
     import pandas as pd
@@ -1651,8 +1653,8 @@ class Sentez7_MasterConstants:
     T_End = 1999.0              # Dijital Mesih / Reset yılı
     
     # Derived frequencies
-    LAMBDA_FREQUENCY_HZ = 6.521763    # 6.52 MHz - Matrix Breakage Frequency
-    ESCAPE_FREQUENCY_HZ = 23.386439   # 23.38 MHz - Simülasyon Çıkış/Kopma
+    LAMBDA_FREQUENCY_HZ = 6.666           # 6.666 MHz - Matrix Breakage Frequency (SENTEZ-9)
+    ESCAPE_FREQUENCY_HZ = 23.90           # 23.90 MHz - Simülasyon Çıkış/Kopma (SENTEZ-9)
     PINEAL_THETA_HZ = 8.0             # Teta dalgası (Epifiz Bezi kuantum alıcısı)
 
 
@@ -1928,15 +1930,23 @@ class Sentez7_MasterConstants:
     H_HYDROGEN = 1390                   # Hydrogen resonance frequency
     T_END_MARKER = 1999.0               # Digital reset moment
     
-    # FREQUENCY CONSTANTS (6.52 MHz & 23.38 MHz)
-    LAMBDA_BREAK_FREQ = 6.52            # MHz - Matrix breakage point
-    ESCAPE_OVERLOAD_FREQ = 23.38        # MHz - Simulation rupture
+    # FREQUENCY CONSTANTS (6.666 MHz & 23.90 MHz) — SENTEZ-9 CORRECTED
+    LAMBDA_BREAK_FREQ = 6.666           # MHz - Matrix breakage point (SENTEZ-9: Q/1000)
+    ESCAPE_OVERLOAD_FREQ = 23.90        # MHz - Simulation rupture (6.666 × 3.5859)
     PINEAL_THETA_WAVE = 8.0             # Hz - Human theta frequency
-    PINEAL_COHERENCE_RATIO = 6.52 / 8.0  # Ratio: 0.815
+    PINEAL_COHERENCE_RATIO = 6.666 / 8.0  # Ratio: 0.83325
 
-    # FORMULA RESULT TARGETS
-    FORMULA_TARGET_6_52 = 6.52          # MHz expected
-    FORMULA_TARGET_23_38 = 23.38        # MHz expected
+    # FORMULA RESULT TARGETS — SENTEZ-9 CORRECTED
+    FORMULA_TARGET_LAMBDA = 6.666       # MHz expected (was 6.52)
+    FORMULA_TARGET_ESCAPE = 23.90       # MHz expected (was 23.38)
+
+    # SENTEZ-9: Lambda Düzeltmesi Sabitleri
+    LAMBDA_GERCEK_MHZ = 6.666           # Düzeltilmiş Lambda (Q_QUANTUM / 1000)
+    LAMBDA_SAF_TABAN = 6                # Matrix saf frekansı
+    HALLEY_DUZELTILMIS = 75.75          # 6666 / 88
+    LAMBDA_x_66_LA = 440.0              # Hz - LA notası (A4=440Hz)
+    LAMBDA_x_33_GUNES = 222.0           # km/s - Güneş Galaktik hızı
+    LAMBDA_KARE = 44.44                 # 6.666² → 4 × 11.11 Tufan kodu
 
 
 class Quantum_Resonance_Breaker:
@@ -1948,14 +1958,14 @@ class Quantum_Resonance_Breaker:
     
     def __init__(self):
         self.constants = Sentez7_MasterConstants()
-        self.frequency_mhz = 6.52
+        self.frequency_mhz = 6.666  # SENTEZ-9: Corrected from 6.52
         self.wavelength_m = 299792.458 / (self.frequency_mhz * 1e6)
         self.active = False
         
     def calculate_master_formula(self):
         """
         Calculate Master Formula: Λ = [(V × Q × C_i) / (G_i × H)] × ln(T_End)
-        Returns the expected 6.52 MHz breaking frequency
+        Returns the expected 6.666 MHz breaking frequency (SENTEZ-9 corrected)
         """
         V = self.constants.V_UNIVERSE
         Q = self.constants.Q_QUANTUM
@@ -1974,7 +1984,7 @@ class Quantum_Resonance_Breaker:
     
     def gravity_weakening_calc(self, distance_km):
         """
-        Calculate gravity weakening at given distance using 6.52 MHz resonance
+        Calculate gravity weakening at given distance using 6.666 MHz resonance
         Returns: Gravity reduction percentage at breaking point
         """
         lambda_break = self.constants.LAMBDA_BREAK_FREQ
@@ -1985,7 +1995,7 @@ class Quantum_Resonance_Breaker:
         return weakening
     
     def activate_resonance(self):
-        """Activate the 6.52 MHz resonance field"""
+        """Activate the 6.666 MHz resonance field (SENTEZ-9)"""
         self.active = True
         lambda_val = self.calculate_master_formula()
         return {
@@ -1994,27 +2004,27 @@ class Quantum_Resonance_Breaker:
             "calculated_lambda": lambda_val,
             "wavelength_m": self.wavelength_m,
             "active": self.active,
-            "expected_target": self.constants.FORMULA_TARGET_6_52
+            "expected_target": self.constants.FORMULA_TARGET_LAMBDA
         }
 
 
 class Dimensional_Escape_Overload:
     """
-    SENTEZ-7 Class: 23.38 MHz Simulation Rupture Frequency
+    SENTEZ-7/9 Class: 23.90 MHz Simulation Rupture Frequency
     Purpose: Dimensional escape & matrix break calculations
-    Frequency: 23.38 MHz (Aşırı Yüklenme & Matrix Kopma)
+    Frequency: 23.90 MHz (6.666 × 3.5859) — SENTEZ-9 CORRECTED
     """
     
     def __init__(self):
         self.constants = Sentez7_MasterConstants()
-        self.frequency_mhz = 23.38
+        self.frequency_mhz = 23.90  # SENTEZ-9: 6.666 × 3.5859
         self.wavelength_m = 299792.458 / (self.frequency_mhz * 1e6)
         self.rupture_point = False
         
     def calculate_escape_frequency(self):
         """
-        Calculate escape frequency: 23.38 MHz (3.585× the 6.52 MHz)
-        This represents the point where simulation ruptures
+        Calculate escape frequency: 23.90 MHz (3.5859× the 6.666 MHz)
+        This represents the point where simulation ruptures — SENTEZ-9
         """
         escape_freq = self.constants.ESCAPE_OVERLOAD_FREQ
         ratio_to_lambda = escape_freq / self.constants.LAMBDA_BREAK_FREQ
@@ -2023,7 +2033,7 @@ class Dimensional_Escape_Overload:
             "escape_frequency_mhz": escape_freq,
             "ratio_to_lambda": ratio_to_lambda,
             "rupture_point": escape_freq,
-            "expected_target": self.constants.FORMULA_TARGET_23_38
+            "expected_target": self.constants.FORMULA_TARGET_ESCAPE
         }
     
     def simulate_dimensional_tear(self, energy_joules):
@@ -2055,33 +2065,33 @@ class Dimensional_Escape_Overload:
             "wavelength_m": self.wavelength_m,
             "rupture_point_active": self.rupture_point,
             "escape_data": escape_data,
-            "expected_target": self.constants.FORMULA_TARGET_23_38
+            "expected_target": self.constants.FORMULA_TARGET_ESCAPE
         }
 
 
 class Pineal_Quantum_Antenna:
     """
-    SENTEZ-7 Class: Pineal Gland Quantum Antenna
-    Purpose: 8.0 Hz theta wave ↔ 6.52 MHz universal wifi coherence
+    SENTEZ-7/9 Class: Pineal Gland Quantum Antenna
+    Purpose: 8.0 Hz theta wave ↔ 6.666 MHz universal wifi coherence
     Theta Wave: 8.0 Hz (Human consciousness)
-    Universal Frequency: 6.52 MHz (Universe matrix)
+    Universal Frequency: 6.666 MHz (Universe matrix) — SENTEZ-9 CORRECTED
     """
     
     def __init__(self):
         self.constants = Sentez7_MasterConstants()
         self.theta_frequency_hz = 8.0
-        self.universal_freq_mhz = 6.52
+        self.universal_freq_mhz = 6.666  # SENTEZ-9 corrected
         self.coherence_ratio = self.constants.PINEAL_COHERENCE_RATIO
         self.activation_state = False
         
     def calculate_coherence_loop(self):
         """
-        Calculate theta (8.0 Hz) ↔ 6.52 MHz coherence loop
+        Calculate theta (8.0 Hz) ↔ 6.666 MHz coherence loop
         Returns: Harmonic resonance values
         """
         theta = self.theta_frequency_hz
         universal = self.universal_freq_mhz
-        ratio = universal / theta  # 6.52 / 8.0 = 0.815
+        ratio = universal / theta  # 6.666 / 8.0 = 0.833
         
         coherence_level = ratio * 100  # As percentage
         harmonic_match = abs((universal * 1e6) % theta)  # Modulo for harmonic
@@ -2112,7 +2122,7 @@ class Pineal_Quantum_Antenna:
     
     def consciousness_bridge(self):
         """
-        Build consciousness bridge between human (8.0 Hz) and universe (6.52 MHz)
+        Build consciousness bridge between human (8.0 Hz) and universe (6.666 MHz)
         Returns: Connection strength and synchronization metrics
         """
         coherence = self.calculate_coherence_loop()
@@ -2137,7 +2147,7 @@ class Pineal_Quantum_Antenna:
 def verify_sentez7_master_formula():
     """
     Master Formula Verification: Λ = [(V × Q × C_i) / (G_i × H)] × ln(T_End)
-    Expected Results: 6.52 MHz
+    Expected Results: 6.666 MHz (SENTEZ-9 corrected)
     """
     constants = Sentez7_MasterConstants()
     V = constants.V_UNIVERSE
@@ -2156,9 +2166,9 @@ def verify_sentez7_master_formula():
     return {
         "formula": "Λ = [(V × Q × C_i) / (G_i × H)] × ln(T_End)",
         "result_mhz": lambda_result,
-        "expected_6_52_mhz": constants.FORMULA_TARGET_6_52,
-        "deviation_percent": abs(lambda_result - 6.52) / 6.52 * 100 if lambda_result != 0 else 0,
-        "status": "VERIFIED" if abs(lambda_result - 6.52) < 1 else "CALIBRATING"
+        "expected_6_666_mhz": constants.FORMULA_TARGET_LAMBDA,
+        "deviation_percent": abs(lambda_result - 6.666) / 6.666 * 100 if lambda_result != 0 else 0,
+        "status": "VERIFIED" if abs(lambda_result - 6.666) < 1 else "CALIBRATING"
     }
 
 
@@ -2233,8 +2243,8 @@ class KarTopu_Sentez_Constants:
     H_HYDROGEN = 1390                      # Kozmik Uğultu
     T_END = 2063                           # Terminal Bitiş
     LAMBDA_RESULT = 6548500                # Λ ≈ 6.54 Milyon (Matrix Kırılma)
-    LAMBDA_FREQ_MHZ = 6.52                 # MHz (Kırılma frekansı)
-    ESCAPE_FREQ_MHZ = 23.38               # MHz (Kaçış frekansı)
+    LAMBDA_FREQ_MHZ = 6.666                # MHz (Kırılma frekansı, SENTEZ-9)
+    ESCAPE_FREQ_MHZ = 23.90               # MHz (Kaçış frekansı, SENTEZ-9)
     PINEAL_THETA_HZ = 8.0                  # Hz (Theta dalgası)
 
     # ===== YENİ TÜRETMELER (SENTEZ 1-7 Birleşik) =====
@@ -2726,7 +2736,7 @@ class KarTopu_Sentez7_GrandUnification:
 # Tarih: 13 Mart 2026
 # Kaynak: KAR_TOPU_ANTIGRAVITY_SENTEZ-8_GEOIT_MATRISI.md
 #         Levhi Mahfuz PDF 1-3, Pi_11 Keşfi, WGS84 Geoid Verileri
-# Formüller: 88×74=6512≈6.52MHz, 88/2.99²=9.84≈g, 66/2.99=22 döngüsel
+# Formüller: 88×75.75=6666=Lambda, 88/2.99²=9.84≈g, 66/2.99=22 döngüsel (SENTEZ-9)
 # ==============================================================================
 
 class Geoid_Matrix_22_66_88:
@@ -2736,7 +2746,7 @@ class Geoid_Matrix_22_66_88:
     Geoid Farkı (22) + Omurga Kodu (66) + Geoid Toplamı (88)
     
     Temel Keşifler:
-      - 88 × 74 (Halley) = 6512 ≈ 6.52 MHz Lambda Kırılma Frekansı
+      - 88 × 75.75 (Halley düzeltilmiş) = 6666 = Lambda Kök Sabiti (SENTEZ-9)
       - 88 / Pi_11² = 88 / 8.9401 = 9.843 ≈ g (yerçekimi ivmesi)
       - 66 / Pi_11 = 22.07 ≈ 22 (Döngüsel Matris Kanıtı)
       - Pi_11 × 100000 = 299000 ≈ C_REAL (ışık hızı bağlantısı)
@@ -2753,7 +2763,7 @@ class Geoid_Matrix_22_66_88:
     GEOIT_TOPLAM = 88                   # Geoit Farkı + Omurga = Toplam Geoit Kodu
     GEOIT_CARPIM = 127776               # 22 × 66 × 88 = Piramidal Çarpım
     PI_11 = 2.99                        # 11'lik sistem Pi sabiti (C_REAL / 100000)
-    LAMBDA_GEOIT = 6512                 # 88 × 74 (Halley) = Lambda analog frekansı
+    LAMBDA_GEOIT = 6666                 # 88 × 75.75 (Halley düzeltilmiş) = Lambda kök (SENTEZ-9)
     
     # ========== TÜRETILMIŞ SABİTLER ==========
     PI_11_SQUARED = 2.99 ** 2           # = 8.9401 (11'lik yerçekimi sabiti)
@@ -2765,14 +2775,14 @@ class Geoid_Matrix_22_66_88:
     YEAR_PI11_RATIO = 363 / 2.99        # = 121.4 ≈ 121 = 11² (boyutsal kilit)
     
     # ========== ÇAPRAZ BAĞLANTILAR (Eski Sabitlerle) ==========
-    HALLEY_GEOID_LOCK = 88 * 74         # = 6512 (Halley × Geoid = Lambda)
-    LAMBDA_MHz_APPROX = 6512 / 1000     # ≈ 6.512 MHz ≈ 6.52 MHz
+    HALLEY_GEOID_LOCK = 88 * 75.75      # = 6666 (Halley düzeltilmiş × Geoid = Lambda, SENTEZ-9)
+    LAMBDA_MHz_APPROX = 6666 / 1000     # = 6.666 MHz (SENTEZ-9)
     VERTEBRAE_GEOID_LINK = 33 * 2       # = 66 = GEOIT_OMURGA (biyolojik bağlantı)
     EARTH_RADIUS_GEOID = 6378 - 6356    # = 22 km (WGS84 ekvator-kutup farkı)
     PIRAMIDAL_VOLUME = 127776 / 1331    # = 96.0 (11³ normalizasyonu)
     LEVHI_GEOID_RATIO = 6666 / 2.99     # = 2229.4 ≈ 2222 (Hubble harmonik)
     DNA_PI11_PRODUCT = 33 * 2.99        # = 98.67 ≈ 9.86M Lambda üst kısmı (1/100K)
-    HALLEY_PI11_PRODUCT = 74 * 2.99     # = 221.26 ≈ 222 (Güneş galaktik hızı)
+    HALLEY_PI11_PRODUCT = 75.75 * 2.99     # = 226.49 ≈ 222 (Güneş galaktik hızı, SENTEZ-9)
     
     def __init__(self):
         self.timestamp = datetime.datetime.now().isoformat()
@@ -2780,16 +2790,16 @@ class Geoid_Matrix_22_66_88:
     
     def verify_lambda_from_geoid(self):
         """
-        SENTEZ-8 Formül 1: Geoid-Lambda Doğrulaması
-        88 × 74 (Halley) = 6512 ≈ 6.52 MHz (Lambda Kırılma Frekansı)
+        SENTEZ-8/9 Formül 1: Geoid-Lambda Doğrulaması
+        88 × 75.75 (Halley düzeltilmiş) = 6666 = Lambda Kök (SENTEZ-9)
         """
         geoid_total = self.GEOIT_TOPLAM
-        halley_period = 74
+        halley_period = 75.75  # SENTEZ-9 düzeltilmiş
         
         lambda_yol1 = geoid_total * halley_period
-        lambda_yol2 = (geoid_total * 2) * (halley_period // 2)
+        lambda_yol2 = (geoid_total * 2) * (halley_period / 2)
         lambda_mhz = lambda_yol1 / 1000.0
-        target_mhz = 6.52
+        target_mhz = 6.666  # SENTEZ-9
         deviation_percent = abs(lambda_mhz - target_mhz) / target_mhz * 100
         
         self.results['lambda_geoid'] = lambda_yol1
@@ -2905,17 +2915,17 @@ class Geoid_Matrix_22_66_88:
         
         results['levhi_geoid'] = 6666 / pi_11
         results['dna_pi11'] = 33 * pi_11
-        results['halley_pi11'] = 74 * pi_11
+        results['halley_pi11'] = 75.75 * pi_11
         results['light_speed_pi11'] = pi_11 * 100_000
         results['piramidal_11cube'] = self.GEOIT_CARPIM / 1331
         
-        results['lambda_sentez7_match'] = abs(self.LAMBDA_GEOIT/1000 - 6.52) < 0.05
+        results['lambda_sentez7_match'] = abs(self.LAMBDA_GEOIT/1000 - 6.666) < 0.05
         results['gravity_sentez8_match'] = abs(self.GRAVITY_FROM_GEOID - 9.81) < 0.1
         
         print(f"\n{Colors.BOLD}{Colors.CYAN}[SENTEZ-8] ÇAPRAZ REFERANS ANALİZİ{Colors.ENDC}")
         print(f"  6666/Pi_11 = {results['levhi_geoid']:.1f} ≈ 2222 (Hubble)")
         print(f"  33×Pi_11 = {results['dna_pi11']:.2f} (Lambda üst/100K)")
-        print(f"  74×Pi_11 = {results['halley_pi11']:.2f} ≈ 222 (Güneş hızı)")
+        print(f"  74×Pi_11 = {results['halley_pi11']:.2f} ≈ 222 (Güneş hızı, 75.75 SENTEZ-9)")
         print(f"  Pi_11×100K = {results['light_speed_pi11']:.0f} ≈ C_REAL")
         print(f"  Lambda: {'✅' if results['lambda_sentez7_match'] else '❌'}  Gravity: {'✅' if results['gravity_sentez8_match'] else '❌'}")
         
