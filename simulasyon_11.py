@@ -3,9 +3,8 @@ import datetime
 import time
 import sys
 import random
-from datetime 
+from datetime import timedelta, date
 import os
-import timedelta, date,
 from kar_topu_v5_v2_synthesis import Modul_KarTopu_V5_Sentez_V2
 from kar_topu_v5_v3_synthesis import Modul_KarTopu_V5_V3_Phase3
 
@@ -47,8 +46,7 @@ except ImportError:
 # STATUS: NameError Fixed. All Scientific Proof Modules Added.
 # ==============================================================================
 
-def loading_bar(desc):
-    # ===== AI / GENERAVITY SAFE CONFIG =====
+# ===== AI / GENERAVITY SAFE CONFIG =====
 GEN_LANG_CLIENT_ID = os.getenv("GEN_LANG_CLIENT_ID", "gen-lang-client-0737894558")
 GEN_LANG_API_KEY = os.getenv("GEN_LANG_API_KEY")
 
@@ -69,6 +67,8 @@ try:
     _GENERAVITY_READY = True
 except Exception:
     _GENERAVITY_READY = False
+
+def loading_bar(desc):
     print(f"\r{Colors.CYAN}{desc}...{Colors.ENDC}", end='', flush=True)
     time.sleep(0.01)
     print(f"\r{Colors.GREEN}[OK]{Colors.ENDC} {Colors.CYAN}{desc}{Colors.ENDC}")
@@ -1576,19 +1576,19 @@ class Simule3_Lab:
         self.giza_isik = Modul_Giza_Isik_Hiz_V132(self.const) # NEW
         self.ai_ready = ai_status_report()
 
- if _GENERAVITY_READY:
-    try:
-        self.generavity = GeneravityEngine(
-            client_id=GEN_LANG_CLIENT_ID,
-            api_key=GEN_LANG_API_KEY
-        )
-        print("Generavity Engine: LOADED")
-    except Exception as e:
-        self.generavity = None
-        print(f"Generavity Engine: FAILED -> {e}")
-else:
-    self.generavity = None
-    print("Generavity Engine: NOT FOUND (optional)")
+        if _GENERAVITY_READY:
+            try:
+                self.generavity = GeneravityEngine(
+                    client_id=GEN_LANG_CLIENT_ID,
+                    api_key=GEN_LANG_API_KEY
+                )
+                print("Generavity Engine: LOADED")
+            except Exception as e:
+                self.generavity = None
+                print(f"Generavity Engine: FAILED -> {e}")
+        else:
+            self.generavity = None
+            print("Generavity Engine: NOT FOUND (optional)")
 # [ERROR FIX] Missing Simule3_Lab_V133 Class Added
 class Simule3_Lab_V133(Simule3_Lab):
     def __init__(self):
@@ -1659,15 +1659,15 @@ class Simule3_Lab_V133(Simule3_Lab):
         self.piramit_detay.analiz()
         self.giza_isik.analiz() # NEW ANALYSIS
         print("\n*** AI / GENERAVITY CHECK ***")
-if getattr(self, "generavity", None):
-    try:
-        if hasattr(self.generavity, "health_check"):
-            self.generavity.health_check()
-        print("Generavity: RUNNING")
-    except Exception as e:
-        print(f"Generavity: ERROR -> {e}")
-else:
-    print("Generavity: SKIPPED (not configured)")
+        if getattr(self, "generavity", None):
+            try:
+                if hasattr(self.generavity, "health_check"):
+                    self.generavity.health_check()
+                print("Generavity: RUNNING")
+            except Exception as e:
+                print(f"Generavity: ERROR -> {e}")
+        else:
+            print("Generavity: SKIPPED (not configured)")
         # --- KAPSAMLI İSTATİSTİKSEL DOĞRULAMA SÜİTİ ---
         # (Monte Carlo, Bayes, Benford, Pearson r, M11, H0/H1)
         print(f"\n{Colors.BOLD}{Colors.CYAN}*** KAPSAMLI DOĞRULAMA SÜİTİ (NASA/CODATA kaynaklı) ***{Colors.ENDC}")
