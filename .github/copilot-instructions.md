@@ -143,3 +143,11 @@ except Exception as e:
 - **Dependencies**: pandas, numpy, scipy, flask
 - **Testing**: Run all validation scripts before commits
 - **Documentation**: Update README.md and analysis reports for significant changes
+
+## Copilot Working Agreement (Best Practices)
+
+- Make the smallest possible change that fully resolves the task.
+- Do not modify unrelated files or "fix everything" in one PR.
+- Prefer existing patterns and constants from `levhi_mahfuz.py` over introducing new styles.
+- Run relevant existing checks after changes (targeted tests first, then broader checks when needed).
+- If tests or lint fail before your change, document that clearly and avoid unrelated refactors.
