@@ -8,8 +8,10 @@ from datetime import timedelta, date
 import os
 import sqlite3
 
-# Ensure local directory is in path for imports
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+# Ensure local directory is in path for imports (Works in both script and Colab/Jupyter)
+current_dir = os.path.dirname(os.path.abspath(__file__)) if '__file__' in globals() else os.getcwd()
+if current_dir not in sys.path:
+    sys.path.append(current_dir)
 
 from kar_topu_v5_v2_synthesis import Modul_KarTopu_V5_Sentez_V2 # type: ignore
 from kar_topu_v5_v3_synthesis import Modul_KarTopu_V5_V3_Phase3 # type: ignore
