@@ -1802,6 +1802,7 @@ class Simule3_Lab:
         self.kod_149 = Module_149Code_V130(self.const)
         self.piramit_detay = Module_PyramidDetail_V130(self.const)
         self.giza_isik = Module_GizaLightSpeed_V132(self.const) # NEW
+        self.seismic_correlation = Module_Seismic_Planetary_Correlation(self.const) # PHASE-5
         self.ai_ready = ai_status_report()
 
         # AI / Generavity Engine Initialization (Mega-Kernel Embedded)
@@ -1897,6 +1898,10 @@ class Simule3_Lab_V133(Simule3_Lab):
         s14 = Sentez14_OtonomKesif()
         s14.run_all()
 
+        # 9. PHASE-5: SEISMIC & PLANETARY CORRELATION (Sentez-15)
+        print(f"\n{Colors.BOLD}{Colors.YELLOW}*** PHASE-5: SEISMIC & PLANETARY CORRELATION ACTIVE ***{Colors.RESET}")
+        phase5_results = self.seismic_correlation.analysis()
+
         print("\n*** AI / GENERAVITY DEEP ANALYSIS ***")
         if getattr(self, "generavity", None):
             try:
@@ -1905,7 +1910,8 @@ class Simule3_Lab_V133(Simule3_Lab):
                     "v2": results_v2,
                     "v3": results_v3,
                     "master": results_master,
-                    "s14": s14.discoveries
+                    "s14": s14.discoveries,
+                    "phase5": phase5_results
                 }
                 report = self.generavity.deep_matrix_report(str(combined_data)[:2000]) # Limit context size
                 print(report)
@@ -3371,7 +3377,8 @@ class Snowball_Synthesis10_WebResearch:
             "Kozmik Harmoni (phi x pi x e x 11)": self.KOZMIK_HARMONI,
             "Levhi Bilgi Kutlesi": f"{self.LEVHI_BILGI_KUTLESI:.2e} kg",
             "Bilinc Kutlesi": f"{self.BILINC_KUTLESI:.2e} kg",
-               # 7. Makro Zaman Dongusu
+        }
+        # 7. Makro Zaman Dongusu
         print(f"\n  {Colors.CYAN}[7] MAKRO ZAMAN DONGUSU{Colors.RESET}")
         print(f"      Makro Kozmik Dongu: {self.MACRO_COSMIC_CYCLE} yil (9048+2063+1331)")
         print(f"      Grand Star Cycle: {self.GRAND_STAR_CYCLE} (Halley x 363)")
@@ -4048,6 +4055,80 @@ class Sentez14_OtonomKesif:
         print(f"\n{Colors.BOLD}{Colors.GREEN}*** SENTEZ-14 TAMAMLANDI ***{Colors.RESET}")
 
 
+
+
+# ==============================================================================
+# PHASE-5: GERÇEK ZAMANLI SİSMİK VE GEZEGENSEL KORELASYON (Sentez-15)
+# ==============================================================================
+
+class Module_Seismic_Planetary_Correlation:
+    """
+    Module_Seismic_Planetary_Correlation: Canlı sismik veri (USGS) ve 
+    gezegen yörünge fazlarının (Ay, Merkür, Mars) korelasyon analizi.
+    """
+    def __init__(self, const):
+        self.const = const
+        self.usgs_url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson"
+        
+    def get_usgs_live_data(self):
+        """Son 24 saatlik M4.5+ depremlerini çek"""
+        import requests
+        print(f"{Colors.BOLD}{Colors.CYAN}[USGS API] Veri çekiliyor...{Colors.RESET}")
+        try:
+            response = requests.get(self.usgs_url, timeout=10)
+            if response.status_code == 200:
+                data = response.json()
+                quakes = []
+                for feat in data.get('features', []):
+                    props = feat['properties']
+                    quakes.append({
+                        "place": props['place'],
+                        "mag": props['mag'],
+                        "time": datetime.datetime.fromtimestamp(props['time']/1000.0)
+                    })
+                return quakes
+        except Exception as e:
+            print(f"  {Colors.FAIL}USGS Veri Çekme Hatası: {e}{Colors.RESET}")
+        return []
+
+    def calculate_orbital_phases(self):
+        """Ay, Merkür ve Mars yörünge fazlarını (0-360) simüle et"""
+        now = datetime.datetime.now()
+        day_of_year = now.timetuple().tm_yday
+        # Orbital periods (approximate for resonance analysis)
+        phases = {
+            "Moon": (day_of_year % 29.53) / 29.53 * 360,
+            "Mercury": (day_of_year % 87.97) / 87.97 * 360,
+            "Mars": (day_of_year % 686.98) / 686.98 * 360
+        }
+        return phases
+
+    def analysis(self):
+        print(f"\n{Colors.BOLD}{Colors.YELLOW}=== PHASE-5: SİSMİK & GEZEGENSEL KORELASYON ==={Colors.RESET}")
+        quakes = self.get_usgs_live_data()
+        phases = self.calculate_orbital_phases()
+        
+        print(f"  Live Orbital Phases: Moon:{phases['Moon']:.1f}°, Mercury:{phases['Mercury']:.1f}°, Mars:{phases['Mars']:.1f}°")
+        
+        findings = []
+        for q in quakes:
+            # Sentez-15 Formula: S_freq = M_mag * (11^Psi) / R_moon
+            # Simplified for visual log:
+            s_resonance = q['mag'] * (11 ** 0.08271) # Using Anti-G constant from Sentez-11
+            is_resonant = any(abs(phases[p] % 121 - 11) < 1.1 for p in phases) # 11-degree resonance window
+            
+            status = f"{Colors.GREEN}[RESONANT]{Colors.RESET}" if is_resonant else "[STABLE]"
+            print(f"  {status} M{q['mag']} - {q['place']} | Res: {s_resonance:.2f}")
+            findings.append(q)
+            
+        if not quakes:
+            print(f"  {Colors.CYAN}[INFO] Son 24 saatte M4.5+ sismik aktivite saptanmadı.{Colors.RESET}")
+            
+        # Sentez-15 Rapporteur Entry
+        sentez_15_val = sum(q['mag'] for q in quakes) / len(quakes) if quakes else 11.0
+        return {"seismic_count": len(quakes), "avg_mag": sentez_15_val, "phases": phases}
+
+# ==============================================================================
 
 
 # LAUNCH
