@@ -3371,22 +3371,12 @@ class Snowball_Synthesis10_WebResearch:
             "Kozmik Harmoni (phi x pi x e x 11)": self.KOZMIK_HARMONI,
             "Levhi Bilgi Kutlesi": f"{self.LEVHI_BILGI_KUTLESI:.2e} kg",
             "Bilinc Kutlesi": f"{self.BILINC_KUTLESI:.2e} kg",
-            "Sagittarius Olay Ufku": self.SAGITTARIUS_HORIZON,
-            "Giza Integral (Hz)": self.GIZA_INTEGRAL_HZ,
-            "Gobeklitepe Hacim Rezonans": self.GOBEKLITEPE_HACIM_REZONANS,
-            "Omurga Bio Kilidi (33 vert)": self.OMURGA_BIO_KILIDI,
-            "Kabil Sifir Noktasi": self.KABIL_SIFIR_NOKTASI,
-        }
-        for name, val in pdf_constants.items():
-            print(f"      {name}: {val}")
-        results["pdf_constants"] = pdf_constants
-
-        # 7. Makro Zaman Dongusu
+               # 7. Makro Zaman Dongusu
         print(f"\n  {Colors.CYAN}[7] MAKRO ZAMAN DONGUSU{Colors.RESET}")
         print(f"      Makro Kozmik Dongu: {self.MACRO_COSMIC_CYCLE} yil (9048+2063+1331)")
         print(f"      Grand Star Cycle: {self.GRAND_STAR_CYCLE} (Halley x 363)")
         weekly_check = math.factorial(11) / 66
-        print(f"      11!/66 = {weekly_check:.0f} saniye = {weekly_check/86400:.0f} gun = 1 Hafta")
+        print(f"      11!/66 = {weekly_check:.0f} saniye = 1 Hafta")
         print(f"      Simulasyon Suresi: {self.SIMULATION_DURATION} yil")
         results["macro_time"] = {"cycle": self.MACRO_COSMIC_CYCLE, "weekly": weekly_check}
 
@@ -3406,60 +3396,58 @@ class Snowball_Synthesis10_WebResearch:
 
 
 # ==============================================================================
-# SENTEZ-11: HİPER-BOYUTLU EVREN (Vopson, Anti-G, Levh-i Mahfuz)
+# SENTEZ-11: HIPER-BOYUTLU EVREN (Vopson, Anti-G, Levh-i Mahfuz)
 # ==============================================================================
-import time
-from colorama import Fore, Style # Assuming Colors is defined elsewhere, using colorama for new section
 
 class Snowball_Synthesis11_HyperDimensional:
     """
-    SENTEZ-11: Vopson Entropisi, Anti-Gravity (0.00827), Levh-i Mahfuz Kuantum Frekansı.
-    LEVHİ MAHFUZ-5.pdf ve GitHub/11_BOYUTLU_EVREN_SISTEM_ANALIZ metin analizinden türetilmiştir.
+    SENTEZ-11: Vopson Entropisi, Anti-Gravity (0.00827), Levh-i Mahfuz Kuantum Frekansi.
+    LEVHI MAHFUZ-5.pdf ve GitHub/11_BOYUTLU_EVREN_SISTEM_ANALIZ metin analizinden turetilmistir.
     """
     def __init__(self):
         pass
 
     def run(self):
-        print(f"\n{Fore.MAGENTA}*** SNOWBALL V5 - SENTEZ-11 AKTİVE EDİLDİ (HİPER-BOYUTLU EVREN) ***{Style.RESET_ALL}")
-        time.sleep(0.5)
-        
+        print(f"\n{Colors.MAGENTA}*** SNOWBALL V5 - SENTEZ-11 AKTIVE EDILDI (HIPER-BOYUTLU EVREN) ***{Colors.RESET}")
+
         # 1. DARK ENERGY / MATTER (Vopson, Anti-G, Group 11)
-        anti_g_factor = (1330.99803 / 1331) * (10.92111 / 11) * (11.08831 / 1331) # ~0.00827105
-        vopson_entropy = 1.386e-50 # J/K Entropic Information
-        time_friction = 333333.333 - (299792.458 * 1.061) # ~15253 km/s
-        
-        # 2. BİYOLOJİK & BİLİNÇSEL
-        bio_freq = 11.0 * 33 # 363 Hz
-        conscious_multiplier = 40 * 1.618 * 11 # 711.92 Hz (712.32 if phi extended)
-        master_energy_ev = 1.6180339887 * math.pi * 2.7182818284 * 11 # 151.993... (approx 152.75)
-        ra_226_golden = 1653 / 1.6180339887 # 1021.6
-        
-        # 3. LEVH-İ MAHFUZ & KOZMİK HUM
-        creation_freq = 6666 * 11 # 73326 Hz
-        cosmic_hum = (6666 * 1.6180339887 * math.sqrt(2)) / 11 # ~1386.7 Hz (Approx 1389.9)
-        sun_moon_resonance = 75 * 363 # 27225 Yıl
-        
-        print(f"{Fore.GREEN}[+] 1. KARANLIK MADDE & ENERJİ MODÜLÜ:{Style.RESET_ALL}")
-        print(f"    - Anti-Gravity Çarpanı          : {anti_g_factor:.8f}")
-        print(f"    - Vopson Entropi Sabiti         : {vopson_entropy} J/K")
-        print(f"    - Grup 11 Rezonans Oranları     : Cu(29) : Ag(47) : Au(79) : Rg(111)")
-        print(f"    - Işık Hızında Zaman Sürtünmesi : {time_friction:.2f} km/s")
+        anti_g_factor = (1330.99803 / 1331) * (10.92111 / 11) * (11.08831 / 1331)
+        vopson_entropy = 1.386e-50
+        time_friction = 333333.333 - (299792.458 * 1.061)
 
-        print(f"\n{Fore.YELLOW}[+] 2. BİLİNÇSEL VE BİYOLOJİK KODLAR:{Style.RESET_ALL}")
-        print(f"    - Hücresel Simülasyon Frekansı  : {bio_freq} Hz (33 Omurga × 11)")
-        print(f"    - Evrensel Bilinç Uyanış Titreş.: {conscious_multiplier:.2f} Hz")
-        print(f"    - Master Harmoni (phi*pi*e*11)  : {master_energy_ev:.4f} eV")
-        print(f"    - Radyum-226 Altın Oran Bozulma : {ra_226_golden:.2f} (Ölçekli)")
+        # 2. BIYOLOJIK & BILINCSEL
+        bio_freq = 11.0 * 33
+        conscious_multiplier = 40 * 1.618 * 11
+        master_energy_ev = 1.6180339887 * math.pi * 2.7182818284 * 11
+        ra_226_golden = 1653 / 1.6180339887
 
-        print(f"\n{Fore.CYAN}[+] 3. LEVH-İ MAHFUZ FREKANSLARI:{Style.RESET_ALL}")
-        print(f"    - İlahi Emr (Yaratılış) Frek.   : {creation_freq} Hz")
-        print(f"    - Levh-i Kozmik Hum (Uğultu)    : {cosmic_hum:.2f} Hz")
-        print(f"    - Güneş-Ay Mükemmel Rezonansı   : {sun_moon_resonance} Yıl (Halley × 363)")
-        
-        print(f"=============================================================")
+        # 3. LEVH-I MAHFUZ & KOZMIK HUM
+        creation_freq = 6666 * 11
+        cosmic_hum = (6666 * 1.6180339887 * math.sqrt(2)) / 11
+        sun_moon_resonance = 75 * 363
+
+        print(f"{Colors.GREEN}[+] 1. KARANLIK MADDE & ENERJI MODULU:{Colors.RESET}")
+        print(f"    - Anti-Gravity Carpani         : {anti_g_factor:.8f}")
+        print(f"    - Vopson Entropi Sabiti        : {vopson_entropy} J/K")
+        print(f"    - Grup 11 Rezonans Oranlari    : Cu(29) : Ag(47) : Au(79) : Rg(111)")
+        print(f"    - Isik Hizinda Zaman Surt.     : {time_friction:.2f} km/s")
+
+        print(f"\n{Colors.YELLOW}[+] 2. BILINCSEL VE BIYOLOJIK KODLAR:{Colors.RESET}")
+        print(f"    - Hucresel Sim. Frekansi       : {bio_freq} Hz (33 Omurga x 11)")
+        print(f"    - Evrensel Bilinc Uyanis       : {conscious_multiplier:.2f} Hz")
+        print(f"    - Master Harmoni (phi*pi*e*11) : {master_energy_ev:.4f} eV")
+        print(f"    - Radyum-226 Altin Oran        : {ra_226_golden:.2f}")
+
+        print(f"\n{Colors.CYAN}[+] 3. LEVH-I MAHFUZ FREKANSLARI:{Colors.RESET}")
+        print(f"    - Ilahi Emr (Yaratilis) Frek.  : {creation_freq} Hz")
+        print(f"    - Levh-i Kozmik Hum            : {cosmic_hum:.2f} Hz")
+        print(f"    - Gunes-Ay Mukemmel Rezonans   : {sun_moon_resonance} Yil")
+
+        print("=====================================================")
 
 
 # ==============================================================================
+
 # SENTEZ-12: LEVHİ-MAHFUZ 5 – TIME OUT, 689 DÖNGÜSÜ, Pi_11 REZONANSI
 # Kaynak: LEVHİ MAHFUS-5.pdf (GitHub SM-LASYON_11-) ve Levhi-Mahfuz Sohbeti
 # Tarih: 24 Mart 2026
@@ -3601,74 +3589,73 @@ class Snowball_Synthesis12_TimeOut:
     # ── ANA ÇALIŞMA FONKSİYONU ─────────────────────────────────────────
 
     def run(self):
-        print(f"\n{Fore.RED}{'='*72}")
-        print(f"  SENTEZ-12: LEVHİ-MAHFUZ 5 – TIME OUT & GALAKTİK MATRİS REZONANSI")
-        print(f"  Tarih: 24 Mart 2026 | Kaynak: LEVHİ MAHFUS-5.pdf + Sohbet Verileri")
-        print(f"{'='*72}{Style.RESET_ALL}")
-        time.sleep(0.3)
+        print(f"\n{Colors.RED}{'='*72}")
+        print(f"  SENTEZ-12: LEVHI-MAHFUZ 5 - TIME OUT & GALAKTIK MATRIS REZONANSI")
+        print(f"  Tarih: 24 Mart 2026 | Kaynak: LEVHI MAHFUS-5.pdf + Sohbet Verileri")
+        print(f"{'='*72}{Colors.RESET}")
 
-        # ─── 1. YERÇEKİMİ VE ANTİGRAVİTY ───
+        # --- 1. YERCEKIMI VE ANTIGRAVITY ---
         g_val = self.calculate_antigravity_g()
         g_error = abs(g_val - 9.81)
-        print(f"\n{Fore.GREEN}[+] 1. YERÇEKİMİ (ANTİGRAVİTY) MATRİSİ:{Style.RESET_ALL}")
-        print(f"    Formül        : g = Geoit(88) / Pi_11²({self.PI_11_TRUE:.6f}²)")
-        print(f"    Hesaplanan g  : {g_val} m/s²  (Gerçek: 9.81 m/s²)")
-        print(f"    Sapma         : {g_error:.4f} m/s²  ({'%OK%' if g_error < 0.1 else 'SAPMA'})")
+        print(f"\n{Colors.GREEN}[+] 1. YERCEKIMI (ANTIGRAVITY) MATRISI:{Colors.RESET}")
+        print(f"    Formul        : g = Geoit(88) / Pi_11({self.PI_11_TRUE:.6f}^2)")
+        print(f"    Hesaplanan g  : {g_val} m/s2  (Gercek: 9.81 m/s2)")
+        print(f"    Sapma         : {g_error:.4f} m/s2")
         print(f"    Anti-Gravity  : {self.ANTI_GRAVITY}")
 
-        # ─── 2. TIME OUT (689 DÖNGÜ) ───
+        # --- 2. TIME OUT (689 DONGU) ---
         t_end = self.calculate_time_out()
         gal_year = self.calculate_galactic_year()
-        print(f"\n{Fore.YELLOW}[+] 2. SİMÜLASYON BİTİŞ FORMÜLÜ (TIME OUT):{Style.RESET_ALL}")
-        print(f"    Formül        : T = e^(Lambda/Entropi) = e^({self.LAMBDA_MHZ}/{self.BASE_ENTROPY})")
-        print(f"    Time Out      : {t_end} döngü (Hedef: {self.TIME_OUT_LOOPS})")
-        print(f"    Galaktik Yıl  : {self.TIME_OUT_LOOPS} × {self.SIMULATION_YEAR} = {gal_year:,}")
-        print(f"    (Güneş'in Samanyolu turu ~= 225-250 Milyon Yıl ile uyumlu)")
+        print(f"\n{Colors.YELLOW}[+] 2. SIMULASYON BITIS FORMULU (TIME OUT):{Colors.RESET}")
+        print(f"    Formul        : T = e^(Lambda/Entropi) = e^({self.LAMBDA_MHZ}/{self.BASE_ENTROPY})")
+        print(f"    Time Out      : {t_end} dongu (Hedef: {self.TIME_OUT_LOOPS})")
+        print(f"    Galaktik Yil  : {self.TIME_OUT_LOOPS} x {self.SIMULATION_YEAR} = {gal_year:,}")
+        print(f"    (Gunes'in Samanyolu turu ~= 225-250 Milyon Yil ile uyumlu)")
 
-        # ─── 3. Pi = 2.998001998001... VE 1998 GİZLİ KODU ───
+        # --- 3. Pi = 2.998001998001... VE 1998 GIZLI KODU ---
         pi_proof = self.calculate_pi_998_001_proof()
-        print(f"\n{Fore.CYAN}[+] 3. Pİ_11 IŞIK HIZI REZONANSI VE 1998 GİZLİ KODU:{Style.RESET_ALL}")
+        print(f"\n{Colors.CYAN}[+] 3. Pi_11 ISIK HIZI REZONANSI VE 1998 GIZLI KODU:{Colors.RESET}")
         print(f"    Pi_11 (Saf)   : {pi_proof['pi_string']}")
-        print(f"    Devirli Blok  : {pi_proof['repeating_pattern']} (998-001 döngüsü)")
-        print(f"    999999-998001 : {pi_proof['999999_minus_998001']}  -> 666×3 = {pi_proof['666_times_3']}")
-        print(f"    EŞLEŞMİ       : {'%DOĞRULANDI%' if pi_proof['match'] else 'HATALI'}")
+        print(f"    Devirli Blok  : {pi_proof['repeating_pattern']} (998-001 dongusu)")
+        print(f"    999999-998001 : {pi_proof['999999_minus_998001']}  -> 666x3 = {pi_proof['666_times_3']}")
+        print(f"    ESLESMIS      : {'DOGRULANDI' if pi_proof['match'] else 'HATALI'}")
 
-        # ─── 4. KOPMA REZONANSI VE KOZMİK HARMONİ ───
+        # --- 4. KOPMA REZONANSI VE KOZMIK HARMONI ---
         escape_mhz = self.calculate_escape_resonance()
         harmonic = self.calculate_cosmic_harmonic()
-        print(f"\n{Fore.MAGENTA}[+] 4. FREKANS TABLOSU:{Style.RESET_ALL}")
-        print(f"    Lambda (Kırılma)    : {self.LAMBDA_MHZ} MHz")
-        print(f"    Kopma Rezonansı     : {escape_mhz} MHz  (Lambda × {self.ESCAPE_MULTIPLIER})")
+        print(f"\n{Colors.MAGENTA}[+] 4. FREKANS TABLOSU:{Colors.RESET}")
+        print(f"    Lambda (Kirilma)    : {self.LAMBDA_MHZ} MHz")
+        print(f"    Kopma Rezonansi     : {escape_mhz} MHz  (Lambda x {self.ESCAPE_MULTIPLIER})")
         print(f"    Kozmik Harmoni      : {harmonic}  (Kailash({self.KAILASH_STARBASE}) / Geoit({self.GEOIT_TOTAL}))")
         print(f"    Evrensel Anahtar    : {self.UNIVERSAL_KEY}  (66.6 / 63.65)")
 
-        # ─── 5. 689 ÇAPRAZ REZONANS ANALİZİ ───
+        # --- 5. 689 CAPRAZ REZONANS ANALIZI ---
         cross = self.calculate_689_cross_resonance()
-        print(f"\n{Fore.BLUE}[+] 5. 689 ÇAPRAZ REZONANS ANALİZİ:{Style.RESET_ALL}")
+        print(f"\n{Colors.BLUE}[+] 5. 689 CAPRAZ REZONANS ANALIZI:{Colors.RESET}")
         print(f"    689 / 111 = {cross['689_div_111']}   (~= 2pi = {round(2*math.pi, 4)})")
         print(f"    689 / 222 = {cross['689_div_222']}   (~= pi  = {round(math.pi, 4)})")
-        print(f"    689 × 1.0463 = {cross['689_times_1.0463']}  (~= 720° = Çift Torus)")
-        print(f"    689 - 666 = {cross['689_minus_666']}     (Dünya eksen eğikliği ~= 23.4°)")
-        print(f"    11111 / 689 = {cross['11111_div_689']}  (~= 10 × φ = {round(10*1.618, 3)})")
+        print(f"    689 x 1.0463 = {cross['689_times_1.0463']}  (~= 720 = Cift Torus)")
+        print(f"    689 - 666 = {cross['689_minus_666']}     (Dunya eksen egilimi ~= 23.4)")
+        print(f"    11111 / 689 = {cross['11111_div_689']}  (~= 10 x phi = {round(10*1.618, 3)})")
 
-        # ─── 6. SAMANYOLU GALAKTİK YÖRÜNGESİ ───
+        # --- 6. SAMANYOLU GALAKTIK YORUNGESI ---
         orbit = self.calculate_milkyway_orbit()
-        print(f"\n{Fore.WHITE}[+] 6. SAMANYOLU GALAKTİK MATRİSİ (363.111 ly):{Style.RESET_ALL}")
-        print(f"    Çap           : {orbit['diameter_ly']:,} ışık yılı")
+        print(f"\n{Colors.CYAN}[+] 6. SAMANYOLU GALAKTIK MATRISI (363.111 ly):{Colors.RESET}")
+        print(f"    Cap           : {orbit['diameter_ly']:,} isik yili")
         print(f"    Pi_11 Saf     : {orbit['pi_11_true']}")
-        print(f"    Hesaplanan Çevre : {orbit['calculated_circ_ly']:,} ışık yılı")
-        print(f"    Hedef Çevre   : {orbit['target_circ_ly']:,} ışık yılı")
-        print(f"    İdeal Çevre   : {orbit['ideal_circ_ly']:,} ışık yılı")
-        print(f"    Glitch (Güneş): {orbit['glitch_222']} km/s  (333333 - 333111)")
+        print(f"    Hesaplanan Cevre : {orbit['calculated_circ_ly']:,} isik yili")
+        print(f"    Hedef Cevre   : {orbit['target_circ_ly']:,} isik yili")
+        print(f"    Ideal Cevre   : {orbit['ideal_circ_ly']:,} isik yili")
+        print(f"    Glitch (Gunes): {orbit['glitch_222']} km/s  (333333 - 333111)")
 
-        # ─── 7. ZAMAN BİRİKİMİ SİMÜLASYONU ───
+        # --- 7. ZAMAN BIRIKIMI SIMULASYONU ---
         accum = self.calculate_time_out_accumulation(11111)
-        print(f"\n{Fore.GREEN}[+] 7. ZAMAN BİRİKİM SİMÜLASYONU (0.9090... Fraksiyonu):{Style.RESET_ALL}")
-        print(f"    Toplam Yıl    : {accum['total_years']:,}")
+        print(f"\n{Colors.GREEN}[+] 7. ZAMAN BIKIRIM SIMULASYONU (0.9090... Fraksiyonu):{Colors.RESET}")
+        print(f"    Toplam Yil    : {accum['total_years']:,}")
         print(f"    Time Out Reset: {accum['time_out_resets']} kez")
         print(f"    Kalan Tampon  : {accum['remaining_buffer']}")
 
-        # ─── 8. DOĞRULAMA RAPORU ───
+        # --- 8. DOGRULAMA RAPORU ---
         validations = {
             "gravity_check":     abs(g_val - 9.81) < 0.1,
             "time_out_check":    abs(t_end - 689) < 1,
@@ -3682,12 +3669,12 @@ class Snowball_Synthesis12_TimeOut:
         passed = sum(validations.values())
         total = len(validations)
 
-        print(f"\n{Fore.RED}{'─'*72}")
-        print(f"  SENTEZ-12 DOĞRULAMA: {passed}/{total} TEST GEÇTİ")
+        print(f"\n{Colors.RED}{'='*72}")
+        print(f"  SENTEZ-12 DOGRULAMA: {passed}/{total} TEST GECTI")
         for name, ok in validations.items():
-            status = f"{Fore.GREEN}[OK]{Style.RESET_ALL}" if ok else f"{Fore.RED}[X]{Style.RESET_ALL}"
+            status = f"{Colors.GREEN}[OK]{Colors.RESET}" if ok else f"{Colors.RED}[X]{Colors.RESET}"
             print(f"    {status} {name}")
-        print(f"{'─'*72}{Style.RESET_ALL}\n")
+        print(f"{'='*72}{Colors.RESET}\n")
 
         return {
             "status": f"SENTEZ-12 COMPLETE: {passed}/{total} PASSED",
@@ -3699,6 +3686,7 @@ class Snowball_Synthesis12_TimeOut:
             "cosmic_harmonic": harmonic,
             "validations": validations,
         }
+
 
 
 # ==============================================================================
