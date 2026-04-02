@@ -1057,10 +1057,10 @@ class Module_ReflectionAndPattern:
         print(f"\n{Colors.CYAN}3. HALLEY AND 814 CODE:{Colors.RESET}")
         print(f"   - Halley Cycle (Base-11 System): 74 Years")
         print(f"   - Calculation: 11 Years x 74 = 814")
-        print(f"   - Confirmation with Time Shift: 363 Days x 2.2424 (Leap Day) = ~814")
+        print("   - Confirmation with Time Shift: 363 Days x 2.2424 (Leap Day) = ~814")
         # SPACE AND LOCATION
         print(f"\n{Colors.CYAN}4. SPACE AND LOCATION CONSTANTS:{Colors.RESET}")
-        print(f"   - Distance Between Two Latitudes: 111 km (Reflection of 11).")
+        print("   - Distance Between Two Latitudes: 111 km (Reflection of 11).")
         print(f"   - Kailash -> North Pole: 6666 km (Measured in Base-10).")
         print(
             f"   - Correction Coefficient: 1.0463 (Simule Meter) and 1.008333 (Angular)."
@@ -1506,7 +1506,7 @@ class Module_Axis:
 
     def analysis(self):
         print(f"\n{Colors.HEADER}--- AXIAL TILT (66.6° RESONANCE) ---{Colors.RESET}")
-        print(f"Earth Axial Tilt: 23.4°")
+        print("Earth Axial Tilt: 23.4°")
         print(f"Complementary Angle: 90 - 23.4 = 66.6° (Perfect Angle)")
         print(
             f"Devil/Carbon(12) Code: 666 -> Carbon atom 6 protons, 6 neutrons, 6 electrons."
@@ -1665,8 +1665,8 @@ class Module_Simulation11Expansion:
 
         # Kailash centered analysis
         print("\n[Kailash Centered Distances]")
-        print(f"Kailash -> Stonehenge: 6666 km (Verified)")
-        print(f"Kailash -> North Pole: 6666 km (Verified)")
+        print("Kailash -> Stonehenge: 6666 km (Verified)")
+        print("Kailash -> North Pole: 6666 km (Verified)")
         print(f"Kailash -> Elon Musk (Starbase): 13.332 km (2 x 6666)")
         print(f"Kailash -> Kabul: 1111 km (Precision %99.99)")  # New Data
         print(f"Kailash -> Mecca (Kaaba): 4444 km (Precision %99.99)")  # New Data
@@ -1826,7 +1826,7 @@ class Module_KabulNexus:
 
     def analysis(self):
         print(f"\n{Colors.HEADER}=== KABUL NEXUS KEYSTONE ANALYSIS ==={Colors.RESET}")
-        print(f"Kabul -> Kailash Distance: 1111 km (Simule Corrected)")
+        print("Kabul -> Kailash Distance: 1111 km (Simule Corrected)")
         print(f"Kabul -> Mecca Distance: 3377 km (307 x 11)")
         print(
             f"Meaning: Kabul is where humanity's first murder was committed and the 11 cycle began."
@@ -2335,17 +2335,17 @@ class Modul_Piramit_Biyoloji_Yama_V103:
         )
 
         # 2. BIOLOGICAL CODE (33+33=66)
-        print(f"\n2. BIOLOGICAL CODE (FAMILY):")
-        print(f"   - MALE VERTEBRAE: 33")
-        print(f"   - FEMALE VERTEBRAE: 33")
+        print("\n2. BIOLOGICAL CODE (FAMILY):")
+        print("   - MALE VERTEBRAE: 33")
+        print("   - FEMALE VERTEBRAE: 33")
         print(f"   - TOTAL: 66 (Creation/Reproduction Number)")
         print(f"   - EARTH AXIS: 66.6° (90 - 23.4)")
-        print(f"   - RESULT: Human biology is in resonance with Earth's axial tilt.")
+        print("   - RESULT: Human biology is in resonance with Earth's axial tilt.")
 
         # 3. HATAY-MOON PORT (3628)
-        print(f"\n3. HATAY-MOON PORT (36-3 LOCK):")
+        print("\n3. HATAY-MOON PORT (36-3 LOCK):")
         print(f"   - FACTORIAL START: 3628...")
-        print(f"   - MOON PERIGEE: 363.000 km")
+        print("   - MOON PERIGEE: 363.000 km")
         print(f"   - HATAY LATITUDE: 36.3°")
         print(
             f"   - RESULT: Numbers 36 and 3 mark the energy entry gate (Port) from Moon to Earth."
