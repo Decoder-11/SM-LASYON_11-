@@ -3255,7 +3255,6 @@ class Dimensional_Escape_Overload_Trigger:  # Renamed to avoid conflict and clar
         self.rupture_point = False
 
     def calculate_escape_frequency(self):
-        # This method likely calls the one in Dimensional_Escape_Overload
         return self.escape_overload.calculate_escape_frequency()
 
     def trigger_overload(self):
