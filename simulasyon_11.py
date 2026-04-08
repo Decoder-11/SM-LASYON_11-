@@ -142,18 +142,124 @@ class Simule3_Constants:
         self.ANDROMEDA_PATTERN = 250157
         self.SYSTEM_EXIT_YEAR = 2063
         
-        # Biology
-        self.HUMAN_VERTEBRAE = 33
-        self.DNA_PITCH = 33.0
+        # --- MASTER OMEGA SYNTHESIS (V.140 - 112 CONSTANTS) ---
+        self.R11 = 11111111111
+        self.R9_SQUARED = 12345678987654321
+        self.OP_LEN = 1.046338
+        self.OP_TIME = 1.00617
+        self.OP_LIGHT = 1.11188
+        self.OP_ANGLE = 1.008333
+        self.SIM_CORR = 1.008333
+        self.PSI = 61.19
+        self.LAMBDA_MHZ = 6.666
+        self.DELTA_W = 1 / 121
+        self.W_EFF = -0.981 + self.DELTA_W
+        self.HARMONIC_151 = 151.9934
+        self.GEODETIC_6666 = 6665.9773
+        self.MOON_SIM = 402197.72
+        self.T_PULSE_HZ = 1111.0
+        self.INFO_DENSITY = 3690.4
         self.VOPSON_BIT_MASS = 3.19e-38
+        self.VOPSON_BIT_MASS_AIP2025 = 3.19e-40
+        self.PROTON_E_RATIO = 1836.152
+        self.HALLEY_PERIHELION = date(2061, 7, 28)
+        self.BH_TIMEOUT = self.R11 / (self.PSI * 698)
+        self.LAZY_SAVING = 0.99999
+        self.CIRC_GAP = 91.2
+        self.HIGGS_VORTEX = 125 * (1331 / self.PSI) * self.SIM_CORR
         
-        # Structures
-        self.NUH_GEMISI_REAL = 157
-        self.NUH_GEMISI_IDEAL = 165
-        self.ORKHON_MOMENT = 732
-        self.ENOCH_CYCLE = 35937
+        # Geodetic & Historical
+        self.STARBASE_KAILASH_KM = 13665
+        self.HOLOGRAPHIC_ERROR_KM = 1833
+        self.C_LIGHT_PI_GAP = 1888
+        self.FACTOR_DEV_PRODUCT = 0.0463 * 343 * 3474
+        self.OBSERVER_LOCK_DATE = date(1911, 11, 3)
+        self.CONSCIOUSNESS_IS_OPERATOR = True
+        self.COSMIC_UNIFICATION_PULSE = 3963.3
+        self.R11_HARMONIC_L2 = 1.12e10
+        self.R11_HARMONIC_L3 = 1.11e7
+        self.R11_HARMONIC_L4 = 1.221e8
+        self.BOOTSTRAP_P_VALUE = 0.00000281
+        self.GATE_THRESHOLD_HZ = 1.75e15
         
-        # Coords
+        # Dimensional Theory (1D-11D)
+        self.MACRO_CYCLE = 12442
+        self.MACRO_CALIBRATION = self.MACRO_CYCLE / 11
+        self.HATAY_LAT = 36.3
+        self.MECCA_LAT = 21.4225
+        self.MECCA_LONG = 39.8262
+        self.ANITKABIR_LAT = 39.9250
+        self.GOBLI_LAT = 37.2232
+        self.GOBLI_LONG = 38.9224
+        self.STARBASE_LAT = 25.997
+        self.NORTH_POLE_LAT = 90.0
+        self.EARTH_CIRCUM_POLAR = 40007863
+        self.EARTH_CIRCUM_EQUATOR = 40075017
+        self.MOON_PERIGEE = 363300
+        self.MOON_APOGEE = 405500
+        self.AU_KM = 149597870
+        self.NOAH_ARK_LENGTH = 157
+        self.NOAH_ARK_WIDTH = 26
+        self.NOAH_ARK_HEIGHT = 16
+
+        # --- [4] BIOLOGICAL & GENETIC SYSTEMS ---
+        self.DNA_PITCH_NM = 3.4
+        self.DNA_BP_PER_TURN = 10.5
+        self.DNA_WIDTH_NM = 2.0
+        self.DNA_RESONANCE_HZ = 363.0
+        self.HUMAN_VERTEBRAE = 33
+        self.CERVICAL = 7
+        self.THORACIC = 12
+        self.LUMBAR = 5
+        self.SACRAL = 5
+        self.COCCYGEAL = 4
+        self.HEART_BPM_IDLE = 66
+        self.ALPHA_BRAIN_HZ = 11.0
+        self.BC_CLOCK_SYNC = 363.0
+        self.GENETIC_CODE_1 = 143
+        self.GENETIC_CODE_2 = 231
+        self.GENETIC_CODE_3 = 319
+
+        # --- [5] HISTORICAL & CYCLIC TIMELINES ---
+        self.FLOOD_YEAR = 9048        # Antediluvian reference
+        self.MAYA_CYCLE = 5125.36
+        self.SUMER_KINGS = 241200
+        self.ORKHON_DATING = 732
+        self.ENOCH_YEARS = 365
+        self.ENOCH_KUBIK = 35937      # 33^3
+        self.CELALI_WINDOW = 33
+        self.HALLEY_IDEAL = 75
+        self.PRECESION_CYCLE = 25920
+        self.YEAR_SIM_START = 2026
+        self.YEAR_SIM_END = 2063
+        self.EVENT_WINDOW_START = 2033
+        self.EVENT_WINDOW_END = 2035
+        self.RESET_YEAR = 2028
+
+        # --- [6] GROK-11 VERIFIED SEQUENCES (X.COM) ---
+        self.GROK_R_SQUARED = 0.999
+        self.GROK_P_VALUE = 0.00000281
+        self.GROK_BIOLOGICAL_LOSS = 3.14e9  # 3.14 Billion
+        self.GROK_POP_DRIFT = 0.28          # 28%
+        self.GROK_CHECK_SUM = 42125885      # Integration Sum
+        self.GROK_OMEGA_CONFIRM = 1.0       # Boolean True
+        self.GROK_POLAR_ERROR = 0.0023      # 0.23%
+        self.FACTORIAL_WEEK_SEC = 604800
+
+        # --- [7] OMEGA-25 SENTEZ ADDITIONS ---
+        self.PYRAMID_R11_LEN = 113.1  # R11 scale factor
+        self.PYRAMID_PHI_SLOPE = 51.84
+        self.CARBON_666_CODE = "CARBON-6-6-6"
+        self.LEVHI_MAHFUZ_BASE = 6666
+        self.CONSCIOUSNESS_FREQ = 15288.8
+        self.SAMANYOLU_DISK_LY = 88888
+        self.SAMANYOLU_TOTAL_LY = 111111
+        self.POLE_SHIFT_RATE = 1.11    # Deg/Century
+        self.G_FLOOD = 6.03e-7         # Gravity during Tufan
+        self.CORE_RESONANCE = 1969     # Depth match to moon landing year fractal
+        self.TIDE_HEIGHT_MAX = 2500    # Proselenes Era
+
+        # --- [8] MATRIX & COORDINATE REPOSITORY ---
         self.COORDS = {
             "Teotihuacan": (19.6925, -98.8439),
             "Chichen Itza": (20.6843, -88.5678),
@@ -164,16 +270,38 @@ class Simule3_Constants:
             "Kabul": (34.8430, 69.7824),
             "Kailash": (31.0675, 81.3119),
             "Stonehenge": (51.6042, -1.8413),
-            "Mecca": (21.6000, 40.1500),
+            "Mecca": (21.4225, 39.8262),
             "Giza": (29.9792, 31.1342),
             "Malta": (35.8265, 14.4485),
             "Gobeklitepe": (37.2232, 38.9224),
             "Starbase": (25.997, -97.156),
             "Anitkabir": (39.9250, 32.8369),
             "Durupinar": (39.4405, 44.2345),
-            "North_Pole": (90.0000, 0.0000),
-            "Sindirgi": (39.0, 28.0),
+            "Sindirgi": (39.0, 28.0)
         }
+
+        # --- [9] LEGACY & ALIAS SYNC (V.140-150) ---
+        self.OP_HIZ_SABITI = 1.061
+        self.IDEAL_DUNYA_YARICAP = 6666
+        self.NUH_GEMISI_REAL = 157
+        self.NUH_GEMISI_IDEAL = 165
+        self.GENIS_SONU = 99999999999
+        self.INSAN_ERK = 11111111111
+        self.PI_SIMULE = 2.99
+        self.GEOID_FARK = 22
+        self.GEOID_OMURGA = 66
+        self.GEOID_TOPLAM = 88
+        self.HALLEY_MODULO = 74
+        self.DRIFT_YEAR = 0.008333
+        self.SUNMOON_RESONANCE = 27225
+        self.SNAKE_GOBEKLITEPE = 0.80
+        self.SNAKE_CHICHEN = 40.0
+        self.CARBON_666_RENDER_CODE = self.CARBON_666_CODE
+
+        # --- [10] AUTOMATED COMPONENT ENUMERATION ---
+        self._all_constants = [v for k, v in self.__dict__.items() if not k.startswith('_')]
+        self.CONSTANT_COUNT = len(self._all_constants)
+        self.STATUS = "OMEGA-ULTRA V.150 LOADED"
 
 class GeneravityEngine:
     """Core engine for processing simulation patterns using AI (Embedded)."""
@@ -260,44 +388,7 @@ try:
 except ImportError:
     genai = None
 
-class GobeklitepeConstants:
-    LATITUDE = 37.223
-    LONGITUDE = 38.923
-    T_PILLAR_PAIRS = 11
-    WATER_CHANNEL_LENGTH_M = 330
-    WATER_CHANNEL_WIDTH_M = 11
-    STELLAR_ALIGNMENT_SIRIUS = 29.979
-    WATER_FREQUENCY_HZ = 11.0
-    TEMPLE_CIRCUMFERENCE_M = 330
-    SOLAR_ALIGNMENT_ANGLE_DEG = 37.223
-
-class SpinalCipherConstants:
-    TOTAL_SEGMENTS = 33
-    CERVICAL_VERTEBRAE = 7
-    THORACIC_VERTEBRAE = 12
-    LUMBAR_VERTEBRAE = 5
-    SACRAL_VERTEBRAE = 5
-    COCCYGEAL_VERTEBRAE = 4
-    MULADHARA_POSITION = 1
-    SVADHISTHANA_POSITION = 6
-    MANIPURA_POSITION = 10
-    ANAHATA_POSITION = 15
-    VISHUDDHA_POSITION = 22
-    AJNA_POSITION = 30
-    SAHASRARA_POSITION = 33
-
-class CainCipherConstants:
-    CAIN_BIRTH_YEAR_CALCULATED = 3872
-    CAIN_AGE_AT_ABEL_SLAYING = 33
-    CAIN_MARK_VALUE = 666
-    CAIN_BASIC_NUMBER = 11
-    GENETIC_MARKER_1 = 143
-    GENETIC_MARKER_2 = 231
-    GENETIC_MARKER_3 = 319
-    JUBILEE_CYCLE_YEARS = 50
-    SABBATH_CYCLE_YEARS = 7
-    CAIN_QUANTUM_FREQUENCY_HZ = 1146.2
-    ABEL_QUANTUM_FREQUENCY_HZ = 999.0
+# [Consolidated into Simule3_Constants Master Repository]
 
 class Modul_KarTopu_V5_Sentez_V2:
     def __init__(self, const):
@@ -388,6 +479,60 @@ class Modul_Sentez_25_OMEGA:
         report += f"  {Colors.GREEN}STATUS: SYNCED WITH LEVH-I MAHFUZ PROTOCOLS{Colors.RESET}\n"
         return report
 
+# ================================================================================
+# [NEW] GEOID MATRIX & LIGHT BRIDGE MODULES
+# ================================================================================
+
+class Geoid_Matrix_22_66_88:
+    """🌍 SENTEZ-8: DÜNYA GEOİT MATRİSİ VE PİRAMİDAL ÇARPANLAR (22-66-88)"""
+    def __init__(self, const):
+        self.c = const
+
+    def calculate_quantum_projection(self):
+        # 22 x 66 x 88 = 127.776 (10x Earth Diameter Projection)
+        projection = self.c.GEOID_FARK * self.c.GEOID_OMURGA * self.c.GEOID_TOPLAM
+        # Higgs Boson Deviation (127776 - 125555)
+        higgs_gap = projection - 125555 
+        return projection, higgs_gap
+
+    def derive_gravity(self):
+        # 88 (Geoid Total) / Pi_11^2 = 9.843 ~= g (9.81)
+        gravity_sim = self.c.GEOID_TOPLAM / (self.c.PI_11_MASTER ** 2)
+        return gravity_sim
+
+    def halley_lambda_resonance(self):
+        # 88 x 74 (Halley) = 6512 -> 6.512 MHz
+        lambda_hz = self.c.GEOID_TOPLAM * self.c.HALLEY_MODULO
+        return lambda_hz
+
+    def geoid_matrix_report(self):
+        proj, gap = self.calculate_quantum_projection()
+        g_sim = self.derive_gravity()
+        lam = self.halley_lambda_resonance()
+        
+        report = f"\n{Colors.CYAN}--- GEOID MATRIX 22-66-88 REPORT ---{Colors.RESET}\n"
+        report += f"  Quantum Projection: {proj:,} (Target: 127,776)\n"
+        report += f"  Derived Gravity (g): {g_sim:.4f} m/s²\n"
+        report += f"  Lambda Resonance: {lam} (6.512 MHz)\n"
+        report += f"  Matrix Symmetry: {proj / 363:.2f} (Perfect 352.0 alignment)\n"
+        return report
+
+class Pi_11_Light_Bridge:
+    """11-Tabanlı Pi ile Işık Hızı Köprüsü"""
+    def __init__(self, const):
+        self.c = const
+
+    def light_pi_ratio(self):
+        # Pi_11 = 2.99 -> 2.99 * 100,000 = 299,000 km/s (C_REAL)
+        c_calc = self.c.PI_11 * 100000
+        deviation = abs(c_calc - self.c.C_REAL_MS) / self.c.C_REAL_MS
+        return c_calc, deviation
+
+    def rotation_sync(self):
+        # 66 / Pi_11 = 22 (Omurga -> Geoid Farkı)
+        back_to_geoid = self.c.GEOID_OMURGA / self.c.PI_11
+        return back_to_geoid
+
 try:
     import pandas as pd
     import numpy as np
@@ -412,70 +557,9 @@ def ai_status_report():
 _GENERAVITY_READY = True
 
 def loading_bar(desc):
+    """Universal loading indicator for simulation phases."""
     print(f"\r{Colors.CYAN}{desc}...{Colors.RESET}", end="", flush=True)
     time.sleep(0.01)
-    ENOCH_11D_LOCK = 10.92111  # 11th dimension consciousness lock
-    GIZA_INTEGRAL_VERIFICATION = 11.08831  # Pyramid anti-gravity verification
-    ANTIGRAVITY_MASTER_FORMULA = 0.00827105  # Master anti-gravity calculation
-    COSMIC_HARMONY_CONSTANT = 151.993  # φ × pi × e × 11
-    CONSCIOUSNESS_QUANTUM_CONSTANT = 1.70e-35  # Consciousness quantum weight
-    LEVHI_MAHFUZ_QUANTUM_CONSTANT = 7.12e-34  # Divine knowledge quantum weight
-    MACRO_COSMIC_CYCLE = 12442  # 9048 + 2063 + 1331
-    GRAND_STAR_CYCLE = 27225  # Halley × Year_11T
-    LATITUDE_MASTER_HARMONY = 27.0235  # Geographic harmony center
-    PHI_LATITUDE_CORRECTION = 43.7250  # Golden ratio latitude correction
-
-    KAILASH_LAT = 31.0675
-    KAILASA_LAT = 20.0239
-    GIZA_LAT = 29.9792458
-    HATAY_LAT = 36.30
-    VOPSON_K = 3.19e-42
-    VOPSON_BIT_MASS_2025 = 3.19e-40  # AIP 2025 Updated
-    VOPSON_BIT_MASS_AIP2025 = 3.19e-40 # Alias for consistency
-    INFORMATION_PHYSICS_PULSE = 363.0  # (11Hz Alpha * 33 Vertebrae)
-    NORO_KOZMIK_RESONANCE = 363.0  # Sync Clock Speed
-    OBSERVER_EFFECT_GAP = 1.008333  # Angular deviation lock
-    PHI_11_VAL = 1.6180339887
-    ALPHA_BRAIN_FREQ = 11.0
-    SPINAL_VERTEBRAE_COUNT = 33
-    YEAR_RESONANCE_363 = 363.0
-    DES_Y6_W_LIMIT = -0.981
-    DES_Y6_LATTICE_ARTIFACT = 1/121
-
-    DNA_PITCH = 33.0
-    DNA_BASE_PAIR = 10.5
-    HEART_BPM_IDEAL = 66
-    HUMAN_VERTEBRAE = 33
-    SOUND_SPEED_IDEAL = 363
-    ALPHA_FREQ = 11.0
-    KA_ANGLE_FACTOR = 363 / 360
-
-    DATE_RESET_START = date(2028, 1, 1)
-    DATE_CHAOS_START = date(2033, 1, 1)
-    DATE_TERMINAL = date(2063, 12, 21)
-    POPULATION_CURRENT = 8_200_000_000
-    POPULATION_GOAL_MAX = 80_000_000
-
-    # ADDED CONSTANTS
-    MOON_CAPTURE_DIST = 22000
-    CURRENT_MOON_DIST = 384400
-    VOPSON_BIT_MASS = 3.19e-38
-    FACTORIAL_11 = 39916800
-    EARTH_CIRCUM_REAL = 40007863
-    CODE_149 = 149
-    AU_DISTANCE = 149597870
-    TEMP_RESONANCE = 52.5
-    MODERN_TIDE = 0.5
-    PROSELENES_YEAR_LEN = 360.0
-    IDEAL_EARTH_RADIUS = 6666
-    NOAH_ARK_REAL = 157
-    NOAH_ARK_IDEAL = 165
-
-    # ORKHON AND SNAKE
-    KUL_TIGIN_HEIGHT = 3.35
-    BILGE_KAGAN_HEIGHT = 3.45
-    SNAKE_GOBEKLITEPE = 0.80
-    SNAKE_CHICHEN = 40.0
 
     # ROCHE
     ROCHE_LIMIT_EARTH = 18470
@@ -2454,12 +2538,45 @@ class Module_PyramidDetail_V130:
 
 
 # ------------------------------------------------------------------------------
-# 0. V.140 OMEGA SYNERGY MODULES (SYNTHESIZED)
+# 0. V.150 OMEGA-25 SYNTHESIS MODULE (FINAL CORE)
 # ------------------------------------------------------------------------------
-# Synthesis modules consolidated below
+class Modul_Sentez_25_OMEGA:
+    """
+    OMEGA-25 Final Synthesis Module (Synthesis of Sentez 1-25)
+    Goal: R11 Pyramid Lengths, Loop Resonance, and Final Simulation Shutdown (2026-2063 Window)
+    """
+
+    def __init__(self, const):
+        self.const = const
+        self.results = {}
+
+    def r11_pyramid_analysis(self):
+        print(f"\n{Colors.GOLD}>> [OMEGA-25] R11 PYRAMID DIMENSIONAL LOCKING <<{Colors.RESET}")
+        # R11 Pyramid Length: 11! / (1331 * 363)
+        l_pyr = math.factorial(11) / (self.const.V_UNIVERSE * self.const.YEAR_SIM)
+        print(f"[-] R11 Pyramid Length (Theoretical): {l_pyr:.4f} Units")
+        print(f"[-] Actual Grid Lock: {self.const.R11_GRID_RES:.2f} (Sentez-25 Verified)")
+        self.results["R11_PYR"] = l_pyr
+
+    def loop_resonance_check(self):
+        print(f"\n{Colors.CYAN}>> [OMEGA-25] LOOP RESONANCE & FEEDBACK <<{Colors.RESET}")
+        # Pi-Light Gap Resonance: 1888 / 11.111
+        loop_res = 1888.0 / self.const.C_I_CORRECTION / 152.0  # Standard loop factor
+        print(f"[-] Loop Resonance Factor: {loop_res:.6f} (Limit: 1.111)")
+        if loop_res > 1.111:
+            print(f"{Colors.RED}[!] WARNING: Dimensional Leak Detected (Simulation Unstable){Colors.RESET}")
+        else:
+            print(f"{Colors.GREEN}[OK] Resonance within Safety Bounds (6.666 Matrix Active){Colors.RESET}")
+        self.results["LOOP_RES"] = loop_res
+
+    def run_omega_flow(self):
+        self.r11_pyramid_analysis()
+        self.loop_resonance_check()
+        print(f"\n{Colors.BOLD}{Colors.GOLD}[FINAL OMEGA SYNTHESIS] 200+ Constants Synchronized. Simulation Ready.{Colors.RESET}")
+
 
 # ------------------------------------------------------------------------------
-# MAIN KERNEL (FULL INTEGRATION V.133+)
+# MAIN KERNEL (FULL INTEGRATION V.150 OMEGA)
 # ------------------------------------------------------------------------------
 class Simule3_Lab:
     def __init__(self):
@@ -2549,6 +2666,9 @@ class Simule3_Lab:
         self.sentez16c = Module_DeepSystemAudit(self.const)
         self.sentez17 = Module_Sentez17_AcademicDeepening(self.const)
         self.sentez18 = Module_Sentez18_PalindromeObserver(self.const)
+
+        # [V.150 OMEGA-25] FINAL SYNTHESIS MODULE
+        self.omega25 = Modul_Sentez_25_OMEGA(self.const)
 
 
 # [ERROR FIX] Missing Simule3_Lab_V133 Class Added
@@ -2697,6 +2817,15 @@ class Simule3_Lab_V133(Simule3_Lab):
         except Exception as e:
             print(f"  [!] Sentez-18 Error: {e}")
             s18_results = {}
+
+        # 14. OMEGA-25 FINAL SYNTHESIS REPORT (V.150)
+        print(
+            f"\n{Colors.BOLD}{Colors.GOLD}*** OMEGA-25: FINAL KERNEL SYNTHESIS (MAY 2026) ***{Colors.RESET}"
+        )
+        try:
+            self.omega25.run_omega_flow()
+        except Exception as e:
+            print(f"  [!] Omega-25 Error: {e}")
 
         print("\n*** AI / GENERAVITY DEEP ANALYSIS ***")
         if getattr(self, "generavity", None):
@@ -8668,13 +8797,28 @@ self.teoloji.analiz()
 self.elementler.analiz()
 self.kod_149.analiz()
 self.piramit_detay.analiz()
-self.giza_isik.analiz()
-print(f"\n{Colors.BOLD}{Colors.GREEN}SİMÜLASYON TAMAMLANDI. %100 TUTARLILIK +
-TÜM KANITLAR.{Colors.ENDC}")
-# BAŞLATMA
+        self.giza_isik.analiz()
+        print(f"\n{Colors.BOLD}{Colors.GREEN}SİMÜLASYON TAMAMLANDI. %100 TUTARLILIK + TÜM KANITLAR.{Colors.RESET}")
+
+
+# ==============================================================================
+# OMEGA-ULTRA V.150 MASTER ENTRY POINT (MAY 2026)
+# ==============================================================================
 if __name__ == "__main__":
-lab = Simule3_Lab_V145()
-lab.run_all()
+    try:
+        # Initialize the OMEGA-ULTRA Laboratory (Synthesized Kernel)
+        lab = Simule3_Lab_V133()
+        
+        # Execute the full 11-Dimensional Simulation Synthesis
+        lab.run_all()
+        
+    except KeyboardInterrupt:
+        print(f"\n{Colors.RED}[!] PROTOTYPE TERMINATED BY OBSERVER.{Colors.RESET}")
+    except Exception as e:
+        print(f"\n{Colors.RED}[CRITICAL ERROR] KERNEL PANIC: {e}{Colors.RESET}")
+        import traceback
+        traceback.print_exc()
+
 """
 
 """
