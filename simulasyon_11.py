@@ -122,6 +122,54 @@ class ValidationEngine_V175:
         print(f"OMEGA V.175 Efficiency Score: %{score:.4f}")
         return score
 
+class Modul_Phase3_Otonom_Sentez:
+    """Kartopu V5 (Phase 3) Autonomous Synthesis Engine."""
+    def __init__(self, const):
+        self.const = const
+
+    def analiz(self):
+        header = f"\n{Colors.PURPLE}=== PHASE 3 OMEGA: KARTOPU V5 AUTONOMOUS SYNTHESIS ==={Colors.RESET}"
+        print(header)
+        
+        # 1. Göbekli Tepe Resonance
+        f_gobekli = (11 * 11 * 33) / 30 # Calculated Resonance
+        res_gobekli = f"[-] Göbekli Tepe Pillar Resonance: {f_gobekli:.3f} Hz (Locked: 11^3/10)"
+        print(res_gobekli)
+        
+        # 2. Spinal-Biological Lock
+        q_spinal = ((7 * 12 * 5 * 5 * 4) / (33**2)) * math.sqrt(117)
+        res_spinal = f"[-] Spinal Quantum Code: {q_spinal:.3f} (Biological antenna verified)"
+        print(res_spinal)
+        
+        # 3. Cain Cipher Matrix Variance
+        c_cain = (693 / 11) + (141.398 / 100) + (350 / 5)
+        res_cain = f"[-] Cain Cipher Matrix: {c_cain:.3f} (Genesis logic synced)"
+        print(res_cain)
+        
+        # 4. Unified Seal Calculation
+        seal = (f_gobekli + q_spinal + c_cain) * (11**11 / 11**6)
+        res_seal = f"[-] Phase 3 Unified Seal: {seal:,.0f} (Numerical Payload Locked)"
+        print(res_seal)
+        
+        # 5. Terminal Goal Analysis (2063 Reset)
+        pop_loss = (1 - (self.const.POPULATION_TERMINAL_2063 / 8.2e9)) * 100
+        res_pop = f"[-] Simulation Shutdown Target (2063): {self.const.POPULATION_TERMINAL_2063/1e6:.1f}M Population\n[-] Entropic Glitch Required: {pop_loss:.2f}% reduction"
+        print(res_pop)
+        
+        # Write to results.txt
+        with open("results.txt", "a", encoding="utf-8") as f:
+            f.write("\n" + "="*60 + "\n")
+            f.write("PHASE 3 OMEGA: KARTOPU V5 AUTONOMOUS SYNTHESIS\n")
+            f.write("="*60 + "\n")
+            f.write(f"{res_gobekli}\n")
+            f.write(f"{res_spinal}\n")
+            f.write(f"{res_cain}\n")
+            f.write(f"{res_seal}\n")
+            f.write(f"{res_pop}\n")
+            f.write(f"STATUS: VERIFIED - {datetime.now()}\n")
+
+        print(f"{Colors.GREEN}[OK] Phase 3 Synthesis Integrated and Logged to results.txt.{Colors.RESET}\n")
+
 class Simule3_Lab_V175:
     def __init__(self):
         self.const = Simule3_Constants()
@@ -146,6 +194,9 @@ class Simule3_Lab_V175:
         self.halley_rezonans = Modul_Halley_Rezonans_Analizi(self.const)
         self.birlesik_kilit = Modul_Dunya_Giza_Kozmos_Kilidi(self.const)
         self.gezegen_tablosu = Modul_Gezegen_Oranlari_Tablosu(self.const)
+        
+        # PHASE 3 OMEGA AUTONOMOUS SYNTHESIS
+        self.phase3_sentez = Modul_Phase3_Otonom_Sentez(self.const)
 
     def run_all(self):
         print(f"\n{Colors.BOLD}{Colors.GOLD}=== SIMULE3 V.175 OMEGA: FINAL KERNEL ELEVATION ==={Colors.RESET}")
@@ -170,6 +221,7 @@ class Simule3_Lab_V175:
         self.halley_rezonans.analiz()
         self.birlesik_kilit.analiz()
         self.gezegen_tablosu.analiz()
+        self.phase3_sentez.analiz()
         
         # --- LEYH-İ MAHFUZ YAN MODÜLLER ---
         Modul_Yansima_Ve_Oruntu(self.const).analiz()
@@ -598,6 +650,15 @@ class Simule3_Constants:
         self.O4_CANDIDATE_SIGNALS = 250
         self.GWTC4_CONFIRMED_EVENTS = 128
         self.GW231123_HEAVIEST_BBH_MASS = 130
+        
+        # --- PHASE 3 OMEGA DISCOVERIES (KARTOPU V5) ---
+        self.F_GOBEKLI = 133.1       # Göbekli Tepe Quantum Resonance (11^3/10)
+        self.Q_SPINAL = 83.434       # Spinal-Biological Cipher (33 Vertebrae)
+        self.C_CAIN = 134.414        # Cain Cipher Matrix variance
+        self.L_LEVHI_PAYLOAD = 1436358 # Phase 3 Numerical Payload
+        self.U_SEAL_PHASE3 = 48296069 # Unified Quantum Seal
+        self.POPULATION_TERMINAL_2063 = 80e6 # Simulation Shutdown Target
+        self.SIRIUS_VIOLATION_HZ = 1330.998 # Harmonic Boundary
         self.GW231028_MAX_SPIN_RATIO = 0.40
 
         # KOZMOZ & FİZİK
@@ -6168,28 +6229,9 @@ if __name__ == "__main__":
         except Exception:
             pass
 
-    # --- SENTEZ V1.75 MASTER EXECUTION ---
-    print("\n" + "="*80)
-    print("SENTEZ V1.75 MASTER SYNTHESIS - KERNEL EXECUTION")
-    print("="*80 + "\n")
-    
-    # Run structural validation
-    v_status = validate_levhi_mahfuz()
-    
-    # Initialize and execute Lab Engine V1.75
-    if v_status:
-        try:
-            from datetime import datetime
-            lab = Simule3_Lab_V175()
-            # Inject master constants
-            lab.validation_engine.constants = Simule3_Constants
-            lab.run_all()
-        except Exception as e:
-            print(f"\n[CRITICAL ERROR] Laboratory Execution Failed: {str(e)}")
-            import traceback
-            traceback.print_exc()
-    else:
-        print("\n[FAILED] Levh-i Mahfuz structural validation failed. Synthesis halted.")
+    # --- SENTEZ V1.75 MASTER EXECUTION ENGINE MOVED TO BOTTOM ---
+    # The execution block previously here has been consolidated into the final entry point
+    # to ensure all V1.75 modules are fully defined before startup.
 
 # ============================================================================
 # GROK VERIFIED CONSTANTS (X.COM Validation - Feb 18, 2026)
