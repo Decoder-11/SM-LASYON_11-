@@ -529,9 +529,9 @@ class Simule3_Constants:
         self.YEAR_SIM = 363.0
         self.YEAR_REAL = 365.2422
         self.DRIFT_YEAR = 2.2422
-        self.DRIFT_ANNUAL_PRECISION = 2.2424242424242424
+        self.DRIFT_ANNUAL_PRECISION = 2.24242424
         self.HALLEY_IDEAL = 74.0
-        self.HALLEY_REZONANS = 363 * 2.2422
+        self.HALLEY_REZONANS = 363 * 2.2424
         self.HALLEY_KODU_814 = 814
         self.WATCHDOG_TIMER = 814
         self.FLOOD_YEAR = -9111
@@ -8918,21 +8918,25 @@ print(f" - 11! Faktöriyel (39,916,800) Bağlan(cid:424)sı: Dünya çevresine �
 Uyum)")
 class Modul_Halley_Rezonans_Analizi:
 def __init__(self, const): self.const = const
-def analiz(self):
-print(f"\n{Colors.HEADER}=== HALLEY 814 VE UZAY-ZAMAN REZONANSI
-==={Colors.ENDC}")
-halley_periyot = self.const.HALLEY_IDEAL
-döngü_ka(cid:424) = 11
-sonuc_814 = halley_periyot * döngü_ka(cid:424)
-# Sizin belir(cid:427)ğiniz 363 x 2.2424 formülü
-zaman_sapmasi_814 = 363 * 2.2424
-print(f" - Halley İdeal Periyodu: {halley_periyot} Yıl")
-print(f" - HESAPLANAN KOD: {halley_periyot} x {döngü_ka(cid:424)} =
-{Colors.RED}{sonuc_814}{Colors.ENDC}")
-
---- SAYFA 54 ---
-print(f" - Yıllık Gün Sapması Kodu: 363 x 2.2424 =
-{Colors.RED}{zaman_sapmasi_814:.1f}{Colors.ENDC} (814 Rezonansı)")
+    def analiz(self):
+        print(f"\n{Colors.GOLD}=== HALLEY-CELALİ 814 REZONANSI (SİMÜLASYON KİLİDİ) ==={Colors.ENDC}")
+        halley_periyot = self.const.HALLEY_IDEAL # 74
+        taban = 11
+        rezonans_814 = halley_periyot * taban
+        
+        # Celali / Simule Drift Analizi
+        drift_yillik = self.const.DRIFT_ANNUAL_PRECISION # 2.2424
+        simule_yil = self.const.YEAR_SIM # 363
+        celali_dongu = self.const.CELALI_DONGU # 33
+        
+        toplam_drift_celali = celali_dongu * drift_yillik # 33 * 2.2424 = 74
+        zaman_sapmasi_814 = simule_yil * drift_yillik # 363 * 2.2424 = 814
+        
+        print(f"1. Halley-11 Kilidi: {halley_periyot} yıl (Halley) x {taban} (Taban) = {Colors.RED}{rezonans_814}{Colors.ENDC}")
+        print(f"2. Celali Drift Kilidi: {celali_dongu} yıl x {drift_yillik} (Yıllık Kayma) = {Colors.GREEN}{toplam_drift_celali:.2f} GÜN{Colors.ENDC}")
+        print(f"   -> SONUÇ: Celali takvimindeki 33 yıllık kayma, Halley'in 74 yıllık periyoduyla (gün/yıl) rezonanstadır.")
+        print(f"3. Simule Zaman Kilidi: {simule_yil} gün x {drift_yillik} = {Colors.RED}{zaman_sapmasi_814:.2f}{Colors.ENDC} (814 Rezonansı)")
+        print(f"{Colors.BOLD}{Colors.PURPLE}ANALİZ: 'Simülasyondan kaçamıyorsun.' Tüm döngüler 814 sabitinde kendini doğrular.{Colors.ENDC}")
 class Modul_Dunya_Giza_Kozmos_Kilidi:
 def __init__(self, const): self.const = const
 def analiz(self):
