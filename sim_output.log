@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "c:\Users\soldi\.gemini\antigravity\scratch\SM-LASYON_11-\simulasyon_11.py", line 4903, in <module>
+    lab = Simule3_Lab_V133()
+  File "c:\Users\soldi\.gemini\antigravity\scratch\SM-LASYON_11-\simulasyon_11.py", line 2361, in __init__
+    super().__init__()  # Call the init method of the parent class
+    ~~~~~~~~~~~~~~~~^^
+  File "c:\Users\soldi\.gemini\antigravity\scratch\SM-LASYON_11-\simulasyon_11.py", line 2272, in __init__
+    self.seismic_correlation = Seismic_Correlation(self.const)
+                               ^^^^^^^^^^^^^^^^^^^
+NameError: name 'Seismic_Correlation' is not defined

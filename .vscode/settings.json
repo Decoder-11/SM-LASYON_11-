@@ -1,0 +1,21 @@
+{
+    "chat.mcp.serverSampling": {
+        "S-M-LASYON_11/.vscode/mcp.json: sunriseapps/imagesorcery-mcp": {
+            "allowedModels": [
+                "copilot/auto",
+                "copilotcli/claude-sonnet-4.6",
+                "claude-code/claude-sonnet-4.6"
+            ]
+        }
+    },
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./s_m_lasyon_11.egg-info",
+        "-p",
+        "*test*.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true,
+    "gemini-cli.debug.logging.enabled": true
+}

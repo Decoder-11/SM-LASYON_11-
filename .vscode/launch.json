@@ -1,0 +1,428 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Python: Attach using Process Id",
+            "type": "python",
+            "request": "attach",
+            "processId": "pickProcess"
+        },
+        {
+            "address": "TCP/IP address of process to be debugged",
+            "localRoot": "${workspaceFolder}",
+            "name": "Attach to Remote",
+            "port": 9229,
+            "remoteRoot": "Absolute path to the remote directory containing the program",
+            "request": "attach",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
+            "name": "Python: Flask",
+            "type": "python",
+            "request": "launch",
+            "module": "flask",
+            "env": {
+                "FLASK_APP": "app.py",
+                "FLASK_DEBUG": "1"
+            },
+            "args": [
+                "run",
+                "--no-debugger",
+                "--no-reload"
+            ],
+            "jinja": true
+        },
+        {
+            "type": "gdbtarget",
+            "request": "launch",
+            "name": "Name here",
+            "program": "${workspaceFolder}/${command:askProgramPath}"
+        },
+        {
+            "type": "IBMiDebug",
+            "request": "launch",
+            "subType": "sep",
+            "action": "set",
+            "name": "IBM i Debug: Set a Service Entry Point",
+            "user": "",
+            "password": "${command:AskForPassword}",
+            "host": "",
+            "port": 8005,
+            "library": "",
+            "program": "",
+            "programType": "*PGM",
+            "module": "",
+            "procedure": ""
+        },
+        {
+            "type": "IBMiDebug",
+            "request": "launch",
+            "subType": "sep",
+            "action": "set",
+            "name": "IBM i Debug: Set a Service Entry Point",
+            "user": "",
+            "password": "${command:AskForPassword}",
+            "host": "",
+            "port": 8005,
+            "library": "",
+            "program": "",
+            "programType": "*PGM",
+            "module": "",
+            "procedure": ""
+        },
+
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Module",
+            "type": "python",
+            "request": "launch",
+            "module": "enter-your-module-name"
+        },
+        {
+            "name": "Launch via NPM",
+            "request": "launch",
+            "runtimeArgs": [
+                "run-script",
+                "debug"
+            ],
+            "runtimeExecutable": "npm",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
+            ],
+            "name": "Uzantıyı Başlat",
+            "outFiles": [
+                "${workspaceFolder}/out/**/*.js"
+            ],
+            "preLaunchTask": "npm",
+            "request": "launch",
+            "type": "extensionHost"
+        },
+        {
+            "command": "npm start",
+            "name": "Run npm start",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "name": "Python: Pyramid Application",
+            "type": "python",
+            "request": "launch",
+            "module": "pyramid.scripts.pserve",
+            "args": [
+                "/development.ini"
+            ],
+            "pyramid": true,
+            "jinja": true
+        },
+        {
+            "name": "Python: Django",
+            "type": "python",
+            "request": "launch",
+            "program": "/manage.py",
+            "args": [
+                "runserver"
+            ],
+            "django": true
+        },
+        {
+            "name": "Python: Attach using Process Id",
+            "type": "python",
+            "request": "attach",
+            "processId": "pickProcess"
+        },
+        {
+            "name": "Launch currently open script with Xdebug 2 (Legacy)",
+            "type": "php",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${fileDirname}",
+            "port": 0,
+            "runtimeArgs": [
+                "-dxdebug.remote_enable=yes",
+                "-dxdebug.remote_autostart=yes"
+            ],
+            "env": {
+                "XDEBUG_CONFIG": "remote_port=${port}"
+            }
+        },
+        {
+            "type": "gdb",
+            "request": "launch",
+            "name": "Name here",
+            "program": "${workspaceFolder}/${command:askProgramPath}"
+        },
+        {
+            "name": "Attach to Edge",
+            "port": 9222,
+            "request": "attach",
+            "type": "msedge",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "args": [
+                "task"
+            ],
+            "name": "Gulp task",
+            "program": "${workspaceFolder}/node_modules/gulp/bin/gulp.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "command": "npm start",
+            "name": "Run npm start",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "name": "Launch Built-in web server",
+            "type": "php",
+            "request": "launch",
+            "runtimeArgs": [
+                "-dxdebug.mode=debug",
+                "-dxdebug.start_with_request=yes",
+                "-S",
+                "localhost:0"
+            ],
+            "program": "",
+            "cwd": "${workspaceRoot}",
+            "port": 9003,
+            "serverReadyAction": {
+                "pattern": "Development Server \\(http://localhost:([0-9]+)\\) started",
+                "uriFormat": "http://localhost:%s",
+                "action": "openExternally"
+            }
+        },
+        {
+            "type": "gdbtarget",
+            "request": "launch",
+            "name": "Name here",
+            "program": "${workspaceFolder}/${command:askProgramPath}"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "
+            "
+        },
+        args
+        args
+
+        
+
+        {
+            "name": "Python Debugger: Current File with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": "${command:pickArgs}"
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "MicroPython (Emulator)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/home/codespace/.vscode-remote/extensions/benpaddlejones.pico-bridge-2.1.4/emulator/mock/runner.py",
+            "args": [
+                "${file}"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "MICROPYTHON_MOCK": "1",
+                "MOCK_BOARD": "raspberry-pi-pico"
+            }
+        },
+        {
+            "name": "Python: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+    ]
+}

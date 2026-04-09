@@ -1,0 +1,79 @@
+{
+  "dev.server": {
+    "type": "sftp",
+    "host": "127.0.0.1",
+    "port": 22,
+    "username": "deploy",
+    "password": "",
+    "upload_on_save": true,
+    "sync_on_delete": false,
+    "sync_on_create_folder": true,
+    "watch": false,
+    "submit_git_before_upload": false,
+    "submit_git_msg": "",
+    "compress": false,
+    "remote_unpacked": false,
+    "delete_remote_compress": true,
+    "delete_local_compress": true,
+    "distPath": [],
+    "upload_to_root": false,
+    "deleteRemote": false,
+    "remotePath": "/var/www/project",
+    "excludePath": [
+      "**/.env/**",
+      "**/.git/**",
+      "**/.vscode/**",
+      "**/.idea/**",
+      "**/*.md",
+      "**/.DS_Store",
+      "**/Thumbs.db",
+      "**/node_modules/**",
+      "**/vendor/**"
+    ],
+    "downloadPath": "",
+    "downloadExcludePath": [],
+    "enable_logs": false,
+    "auto_show_output": true,
+    "default": true
+  }
+}
+
+/*
+  ПОДРОБНОЕ ОПИСАНИЕ НАСТРОЕК:
+  
+  type:                     Тип соединения (ftp, sftp, ssh). Рекомендуется sftp.
+  host:                     IP-адрес или домен сервера.
+  port:                     Порт (обычно 22 для SFTP/SSH, 21 для FTP).
+  username:                 Логин пользователя на сервере.
+  password:                 Пароль (можно оставить пустым, расширение запросит и сохранит его безопасно).
+  remotePath:               Абсолютный путь к папке проекта на сервере (например, /var/www/project).
+  
+  privateKeyPath:           Локальный путь к вашему приватному SSH-ключу (для авторизации без пароля).
+  passphrase:               Пароль (passphrase) от вашего приватного SSH-ключа, если он зашифрован.
+  
+  upload_on_save:           (true/false) Автоматическая отправка файла на сервер при нажатии Ctrl+S.
+  sync_on_delete:           (true/false) Автоматически удалять файл на сервере, если он удален локально.
+  sync_on_create_folder:    (true/false) Автоматически создавать папку на сервере, если она создана локально.
+  watch:                    (true/false) Отслеживание изменений файлов в фоне.
+  
+  submit_git_before_upload: (true/false) Делать git add . и git commit перед отправкой файлов (защита от потери кода).
+  submit_git_msg:           Текст коммита (например: "Авто-деплой").
+  build:                    Команда для сборки проекта перед отправкой (например: "npm run build").
+  
+  compress:                 (true/false) Сжимать файлы в архив перед отправкой (ускоряет деплой в 10-100 раз).
+  remote_unpacked:          (true/false) Автоматически распаковать архив на сервере (работает только для SSH).
+  delete_local_compress:    (true/false) Удалить временный архив на компьютере после деплоя.
+  delete_remote_compress:   (true/false) Удалить временный архив на сервере после распаковки.
+  
+  distPath:                 (строка или массив) Папка для загрузки. Оставьте [] для загрузки всего проекта. Если указать ["dist"], загрузятся только файлы из нее.
+  upload_to_root:           (true/false) Загружать содержимое distPath прямо в корень remotePath без создания папки dist на сервере.
+  deleteRemote:             (true/false) Удалять файлы на сервере, если вы загружаете целую папку, а на сервере есть "лишние" файлы. (Осторожно!)
+  
+  excludePath:              Массив файлов/папок для игнорирования (например: [".env", "/tests"]). Сливается с вашим .gitignore!
+  downloadPath:             Альтернативный путь для скачивания файлов (если не указан, скачивается в корень проекта).
+  downloadExcludePath:      Массив путей, которые не нужно скачивать с сервера.
+  
+  enable_logs:              (true/false) Включить запись истории действий (логов) в панель "Выходные данные" (Output). Если false, логи писаться не будут (но всплывающие ошибки и уведомления продолжат работать).
+  auto_show_output:         (true/false) Автоматически открывать панель логов при начале операций с сервером.
+  default:                  (true/false) Использовать это окружение по умолчанию.
+*/
