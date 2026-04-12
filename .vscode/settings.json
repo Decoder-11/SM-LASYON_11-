@@ -17,5 +17,6 @@
     ],
     "python.testing.pytestEnabled": false,
     "python.testing.unittestEnabled": true,
-    "gemini-cli.debug.logging.enabled": true
+    "gemini-cli.debug.logging.enabled": true,
+    "geminicodeassist.project": "ceremonial-style-hr6pj"
 }

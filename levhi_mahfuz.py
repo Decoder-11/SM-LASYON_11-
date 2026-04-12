@@ -50,8 +50,8 @@ class LevhiMahfuzConstants:
     
     # ========== TEMPORAL CONSTANTS ==========
     YEAR_IDEAL_11T = 363                          # days (11T system)
-    YEAR_REAL_10T = 365.2422                      # days (actual)
-    DRIFT_PER_YEAR = 2.2422                       # daily accumulation
+    YEAR_REAL_10T = 365.2424                      # days (actual)
+    DRIFT_PER_YEAR = 2.2424                       # daily accumulation
     
     HALLEY_PERIOD_IDEAL = 74                      # years (11T)
     HALLEY_CYCLE_EXTENDED = 814                   # = 11 × 74
@@ -1141,7 +1141,7 @@ class KarTopuSentezConstants:
     GEOIT_OMURGA = 66                   # 33×2 = Omurga kodu
     GEOIT_TOPLAM = 88                   # 22 + 66 = Toplam Geoid Kodu
     GEOIT_CARPIM = 22 * 66 * 88        # = 127776 (Piramidal Çarpım)
-    PI_11 = 998 / 333                  # 11'lik Pi sabiti (Daha hassas: 2.996996...)
+    PI_11 = 2.99                        # 11'lik Pi sabiti (Sentez-8 validated)
     PI_11_SQUARED = PI_11 ** 2
     LAMBDA_GEOIT = 88 * 75.75          # = 6666 = Lambda kök (SENTEZ-9 düzeltildi)
     GRAVITY_FROM_GEOID = 88 / PI_11_SQUARED
