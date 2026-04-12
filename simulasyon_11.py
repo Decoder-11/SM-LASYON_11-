@@ -5433,7 +5433,8 @@ class Module_Seismic_Planetary_Correlation:
             status = (
                 f"{Colors.GREEN}[RESONANT]{Colors.RESET}" if is_resonant else "[STABLE]"
             )
-            print(f"  {status} M{q['mag']} - {q['place']} | Res: {s_resonance:.2f}")
+            safe_place = q['place'].encode('ascii', 'replace').decode('ascii')
+            print(f"  {status} M{q['mag']} - {safe_place} | Res: {s_resonance:.2f}")
             findings.append(q)
 
         if not quakes:
@@ -13530,7 +13531,8 @@ class Module_Seismic_Planetary_Correlation:
             status = (
                 f"{Colors.GREEN}[RESONANT]{Colors.RESET}" if is_resonant else "[STABLE]"
             )
-            print(f"  {status} M{q['mag']} - {q['place']} | Res: {s_resonance:.2f}")
+            safe_place = q['place'].encode('ascii', 'replace').decode('ascii')
+            print(f"  {status} M{q['mag']} - {safe_place} | Res: {s_resonance:.2f}")
             findings.append(q)
 
         if not quakes:
