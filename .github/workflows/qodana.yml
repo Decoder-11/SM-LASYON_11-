@@ -10,13 +10,11 @@ jobs:
   upload-qodana-config:
     runs-on: ubuntu-latest
     
-    # Node.js 24'e geçişi zorlamak için bu ortam değişkenini ekliyoruz
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
       - name: Checkout repository
-        # Sürümü v4'ten en güncel (v5 veya v6) sürümüne yükseltin
         uses: actions/checkout@v4 
 
       - name: Run Qodana Configuration Uploader
