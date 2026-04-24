@@ -15,10 +15,6 @@ jobs:
       pull-requests: write
       checks: write
       security-events: write
-    
-    env:
-      # Node.js uyarılarını susturma emri
-      ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
 
     steps:
       - name: Checkout repository
@@ -27,12 +23,10 @@ jobs:
           fetch-depth: 0
 
       - name: Run Qodana Scan
-        # Sürümü daha stabil ve yeni bir versiyona güncelledik
         uses: jetbrains/qodana-action@v2024.1
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_CONFIGURATIONS_TOKEN }}
         with:
-          # 400 Önbellek hatasını engeller
           use-caches: false
-          # Qodana hata bulsa bile sistemi çökertmesini (Exit Code 1) engeller
-          args: --fail-threshold,99999
+          # İşte kilidi açacak olan emir: "Python müfettişini indir ve hataları görmezden gel"
+          args: --linter,jetbrains/qodana-python-community:2024.1,--fail-threshold,99999
