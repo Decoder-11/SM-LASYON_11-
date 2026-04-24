@@ -1,36 +1,32 @@
-name: Qodana Configuration Upload
+name: Qodana Code Analysis
+
 on:
   push:
-    branches: [ main, dev ]
+    branches: [ "main", "dev" ]
   pull_request:
-    branches: [ main ]
+    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
-  upload-qodana-config:
+  qodana-scan:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      checks: write
     
     env:
-      # Uyarıları susturmak için emniyet kilidi
+      # Kırmızı Node.js uyarılarını susturma emri
       ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4 
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Run Qodana Configuration Uploader
+      - name: Run Qodana Scan
+        uses: jetbrains/qodana-action@v2023.3
         env:
-          QODANA_CONFIGURATIONS_TOKEN: ${{ secrets.QODANA_CONFIGURATIONS_TOKEN }}
-        run: |
-          # Eğer dosya yoksa hata vermemesi için kontrol ekledik
-          if [ -f qodana-global-configurations.yaml ]; then
-            docker run --rm \
-              -v $(pwd):/workspace \
-              -w /workspace \
-              -e QODANA_CONFIGURATIONS_TOKEN=$QODANA_CONFIGURATIONS_TOKEN \
-              jetbrains/qodana-configuration-uploader:latest \
-              --global-configs-file qodana-global-configurations.yaml \
-              --qodana-host https://qodana.cloud
-          else
-            echo "Konfigürasyon dosyası bulunamadı, ancak operasyon devam ediyor."
-          fi
+          # Sizin Ayarlar > Secrets kısmına eklediğiniz o parolayı kullanıyoruz
+          QODANA_TOKEN: ${{ secrets.QODANA_CONFIGURATIONS_TOKEN }}
