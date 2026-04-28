@@ -2909,7 +2909,7 @@ class Sentez7_MasterConstants:
     R11_FACTOR_2 = 513239  # 23 Resonance
 
     # Master Formula constants & Aliases
-    V = 1331.0  # Universal Quantum Volume (11??)
+    V = 1331.0  # Universal Quantum Volume (11³)
     V_UNIVERSE = V
     Q = 6666.0  # Quran/Revelation Cipher
     Q_QUANTUM = Q
@@ -2922,16 +2922,16 @@ class Sentez7_MasterConstants:
     T_End = 1999.0  # Digital Messiah / Reset year
     T_END_MARKER = T_End
 
-    # Frequencies & Targets
-    LAMBDA_BREAK_FREQ = 6.666
-    LAMBDA_FREQUENCY_HZ = 6.666 * 1e6  # MHz to Hz
-    ESCAPE_OVERLOAD_FREQ = 23.90
-    ESCAPE_FREQUENCY_HZ = 23.90 * 1e6  # MHz to Hz
+    # Frequencies & Targets (SENTEZ-7 Calibrated)
+    LAMBDA_BREAK_FREQ = 6.521763
+    LAMBDA_FREQUENCY_HZ = 6.521763 * 1e6  # MHz to Hz
+    ESCAPE_OVERLOAD_FREQ = 23.386439
+    ESCAPE_FREQUENCY_HZ = 23.386439 * 1e6  # MHz to Hz
     PINEAL_THETA_HZ = 8.0
     PINEAL_THETA_WAVE = 8.0
-    PINEAL_COHERENCE_RATIO = 6.666 / 8.0
-    FORMULA_TARGET_LAMBDA = 6.666
-    FORMULA_TARGET_ESCAPE = 23.90
+    PINEAL_COHERENCE_RATIO = 6.521763 / 8.0
+    FORMULA_TARGET_LAMBDA = 6.521763
+    FORMULA_TARGET_ESCAPE = 23.386439
 
     # SYNTHESIS-9: Lambda Correction Constants
     LAMBDA_REAL_MHZ = 6.666
@@ -10979,7 +10979,7 @@ class Sentez7_MasterConstants:
     R11_FACTOR_2 = 513239  # 23 Resonance
 
     # Master Formula constants & Aliases
-    V = 1331.0  # Universal Quantum Volume (11??)
+    V = 1331.0  # Universal Quantum Volume (11³)
     V_UNIVERSE = V
     Q = 6666.0  # Quran/Revelation Cipher
     Q_QUANTUM = Q
@@ -10992,16 +10992,16 @@ class Sentez7_MasterConstants:
     T_End = 1999.0  # Digital Messiah / Reset year
     T_END_MARKER = T_End
 
-    # Frequencies & Targets
-    LAMBDA_BREAK_FREQ = 6.666
-    LAMBDA_FREQUENCY_HZ = 6.666 * 1e6  # MHz to Hz
-    ESCAPE_OVERLOAD_FREQ = 23.90
-    ESCAPE_FREQUENCY_HZ = 23.90 * 1e6  # MHz to Hz
+    # Frequencies & Targets (SENTEZ-7 Calibrated)
+    LAMBDA_BREAK_FREQ = 6.521763
+    LAMBDA_FREQUENCY_HZ = 6.521763 * 1e6  # MHz to Hz
+    ESCAPE_OVERLOAD_FREQ = 23.386439
+    ESCAPE_FREQUENCY_HZ = 23.386439 * 1e6  # MHz to Hz
     PINEAL_THETA_HZ = 8.0
     PINEAL_THETA_WAVE = 8.0
-    PINEAL_COHERENCE_RATIO = 6.666 / 8.0
-    FORMULA_TARGET_LAMBDA = 6.666
-    FORMULA_TARGET_ESCAPE = 23.90
+    PINEAL_COHERENCE_RATIO = 6.521763 / 8.0
+    FORMULA_TARGET_LAMBDA = 6.521763
+    FORMULA_TARGET_ESCAPE = 23.386439
 
     # SYNTHESIS-9: Lambda Correction Constants
     LAMBDA_REAL_MHZ = 6.666
