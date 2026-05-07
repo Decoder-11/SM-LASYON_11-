@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="autoInjectPrefixAndSuffixForSqlTag" value="true" />
+        <option name="supressSqlTagReferenceError" value="true" />
+      </ProjectProfile>
+    </option>
+  </component>
+</project>

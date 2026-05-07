@@ -1,0 +1,28 @@
+{
+    "hooks": {
+        "Notification": [
+            {
+                "matcher": "permission_prompt",
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "bash -c '[ \"$TERMINAL_EMULATOR\" != \"JetBrains-JediTerm\" ] && exit 0; INPUT=$(cat); P=$$; while [ \"$P\" != \"1\" ]; do P=$(ps -o ppid= -p \"$P\" 2>/dev/null | xargs); [ -z \"$P\" ] && exit 0; [ -f ~/.terminal-watcher/ports/\"$P\".port ] && { PORT=$(cat ~/.terminal-watcher/ports/\"$P\".port); echo \"$INPUT\" | curl -s -X POST \"http://127.0.0.1:$PORT/event?tool=claude\" -H \"Content-Type: application/json\" -d @-; exit 0; }; done'",
+                        "timeout": 5
+                    }
+                ]
+            }
+        ],
+        "Stop": [
+            {
+                "matcher": "",
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "bash -c '[ \"$TERMINAL_EMULATOR\" != \"JetBrains-JediTerm\" ] && exit 0; INPUT=$(cat); P=$$; while [ \"$P\" != \"1\" ]; do P=$(ps -o ppid= -p \"$P\" 2>/dev/null | xargs); [ -z \"$P\" ] && exit 0; [ -f ~/.terminal-watcher/ports/\"$P\".port ] && { PORT=$(cat ~/.terminal-watcher/ports/\"$P\".port); echo \"$INPUT\" | curl -s -X POST \"http://127.0.0.1:$PORT/event?tool=claude\" -H \"Content-Type: application/json\" -d @-; exit 0; }; done'",
+                        "timeout": 5
+                    }
+                ]
+            }
+        ]
+    }
+}

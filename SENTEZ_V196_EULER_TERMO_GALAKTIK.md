@@ -30,5 +30,5 @@
 - GOOGLE: OK
 
 ## Dosyalar
-- `simulation-11py.son.py`
+- `module_america_matrix.py`
 - `sentez_v196_euler_termodinamik_galaktik.py`

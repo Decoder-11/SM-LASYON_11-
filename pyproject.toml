@@ -2,4 +2,7 @@
 name = "hunter-33"
 version = "0.1.0"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "pylint>=4.0.5",
+    "pyrefly>=0.45.0",
+]

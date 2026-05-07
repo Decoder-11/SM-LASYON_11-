@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "file:///C:/Users/soldi/IdeaProjects/HUNTER-33/CANVAS%2011-TOLU%20PDF.pdf"
+      ]
+    }
+  }
+}
