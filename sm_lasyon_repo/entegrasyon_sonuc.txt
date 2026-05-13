@@ -1,0 +1,7 @@
+Entegrasyon öncesi satır: 64997
+Entegrasyon sonrası satır: 66079
+Eklenen satır: 1082
+FAZ-3 modülü bulundu: True
+__main__ blogu korundu: True
+Null byte sayisi: 0
+BOM: False
