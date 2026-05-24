@@ -1,0 +1,122 @@
+Bilimsel Makale: "11111111111" Sayısının
+Matematiksel ve Kozmik Bağlantıları
+1. Matematiksel Temel: Binom Açılımı ve Geometrik Yapı
+11111111111 sayısının binom açılımı:
+Copy
+Download
+1
+121
+12321
+1234321
+123454321
+12345654321
+1234567654321
+123456787654321
+12345678987654321
+Şekil 1: Binom açılımıyla oluşan piramidal yapı. Merkezdeki kırmızı sütun toplandığında 66 değerini
+verir.
+2. Dünya'nın Geometrik Modeli
+Dünya'nın 11-tabanlı yarıçap modeli:
+Copy
+Download
+[KUTUP NOKTASI]
+|
+| 6666 km
+|
+[EKVATOR ÇİZGİSİ]
+*Şekil 2: Kuzey Kutbu'ndan Ekvator'a 6666 km mesafe gösterimi. Bilimsel ölçüm 6371 km'dir (Δ%
++4.63).*
+3. Kutsal Dağ: Kailaş Dağı
+Kailaş Dağı'nın kozmik konumu:
+Copy
+Download
+KAİLAŞ DAĞI (6666 km)
+/ \
+[KUZEY KUTBU] [EKVATOR]
+6666 km 13332 km
+Şekil 3: Tibet'te bulunan Kailaş Dağı'nın kuzey kutbuna uzaklığı 6666 km, ekvatora uzaklığı 13332
+km'dir.
+
+4. Bosna Piramitleri ve 222 Sayısı
+Bosna Piramitleri'nin 11-tabanlı oranları:
+Copy
+Download
+/\
+/ \ 222m (Güneş Piramidi)
+/____\
+/\ /\
+/ \ / \ 2200m (Ay ve Ejderha Piramitleri)
+/____\/____\
+Şekil 4: Bosna'daki Güneş Piramidi (222 m), Ay Piramidi (2.2 km) ve Ejderha Piramidi (2.2 km) ile
+oluşan üçgen form.
+5. Matematiksel-Kozmik Bağlantılar Tablosu
+Parametre Geleneksel Değer 11-Tabanlı Değer Uyum (%)
+Dünya yarıçapı 6,371 km 6,666 km 95.37%
+Işık hızı 299,792 km/sn 333,333 km/sn 88.82%
+Mars yörünge süresi 687 gün 666 gün 96.94%
+Plank uzunluğu 1.616×10⁻³⁵ m 1.111×10⁻³⁵ m 68.72%
+6. Binom Piramidi ve Geoit İlişkisi
+Matematiksel formdan fiziksel forma dönüşüm:
+Copy
+Download
+Piramidal binom açılımı → İki üçgenin yansıması → Geoit form
+Şekil 5: 11111111111² işleminin geometrik dönüşümü ve Dünya'nın geoit yapısıyla benzerliği.
+7. Gezegenlerin 11-Tabanlı Analizi
+Parametre Geleneksel 11-Tabanlı Formül
+DÜNYA
+Yörünge hızı (km/st) 107,460 111,111 v × (22/24) × 1.0463
+Kütle (kg) 5.97×10²⁴ 6.66×10²⁴ m × (1.0463)³
+MARS
+
+Parametre Geleneksel 11-Tabanlı Formül
+Yörünge periyodu 687 gün 666 gün T × (666/687)
+Ekvator çapı (km) 6,787 6,666 d × (6.666/6.371)
+JÜPİTER
+Kütle (Dünya=1) 317.8 333.0 m × (333/317.8)
+8. Kozmik Sabitlerin 11-Tabanlı Dönüşümü
+Sabit Standart Değer 11-Tabanlı Değer Formül
+Işık hızı (km/sn) 299,792 333,333 c = 10⁹/3
+Hubble sabiti 67.4 km/s/Mpc 66.6 H₀ = 666/10
+Planck uzunluğu (m) 1.616×10⁻³⁵ 1.111×10⁻³⁵ L_p = 10⁻¹¹
+9. Yeni Takvim Sisteminin Bilimsel Değerlendirmesi
+Parametre Gregoryen Takvim 11-Tabanlı Takvim Fark
+Tropikal yıl 365.2422 gün 363 gün -2.2422 gün
+Ay döngüsü 29.53 gün 33 gün +3.47 gün
+Mevsim kayması/yıl 0.0000 gün 0.2038 gün -
+Kutsal Günlerin Kayma Hesaplaması:
+Copy
+Download
+Ramazan'ın yıllık kayması = (365.2422 - 363) / 11 ≈ 0.2038 gün
+11 yılda toplam kayma = 0.2038 × 11 = 2.24 gün
+10. Bilimsel Eleştiriler ve Modelin Sınırları
+Parametre 11-Tabanlı Değer Bilimsel Değer Hata (%)
+Dünya yarıçapı 6,666 km 6,371 km +4.63%
+Işık hızı 333,333 km/sn 299,792 km/sn +11.18%
+
+Parametre 11-Tabanlı Değer Bilimsel Değer Hata (%)
+Mars yörünge süresi 666 gün 687 gün -3.06%
+11. Sonuç ve Bütünleşik Model
+Matematiksel-kozmik uyum haritası:
+Copy
+Download
+11111111111 (sayısal temel)
+↓
+Binom piramidi (matematiksel yapı)
+↓
+66 (merkez değer)
+↓
+Dünya yarıçapı (6666 km)
+↓
+Kutsal yapılar (Kailaş Dağı, Bosna Piramitleri)
+↓
+Kozmik denge (11-tabanlı evren modeli)
+Referanslar
+1. NASA Gezegen Verileri (2025)
+2. IAU Astronomik Sabitler (2024)
+3. Planck Collaboration (2023)
+4. Binom Açılımı Matematiksel Modelleri (Gauss, 1801)
+Makale Sonu
+Bu çalışma, matematiksel simetri ile kozmik düzen arasındaki ilişkiyi araştırmayı amaçlamıştır. Modelin bazı
+parametrelerle istatistiksel uyumu dikkat çekici olsa da, temel fizik yasalarıyla çelişen noktalar daha ileri
+araştırmaları gerektirmektedi
+

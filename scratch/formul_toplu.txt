@@ -1,0 +1,756 @@
+Evrensel Kod Matrisi: R (11111111111) Sayısının Matematiksel,
+11
+Jeodezik ve Kozmolojik Yansımaları Üzerine Birleşik Bir Teori
+Yazar: Hüseyin AVCI, Balıkesir/Türkiye Tarih: 12 Haziran 2025
+Özet (Abstract)
+Bu çalışma, evrenin temel yapısının, fiziksel sabitlerin ve Dünya üzerindeki antik medeniyetlerin
+jeodezik konumlandırmasının, "1-11-11111111111" (R ) sayısal şifresine dayanan, matematiksel
+11
+olarak kodlanmış bir matris üzerine kurulu olduğunu öne süren bütüncül bir teoriyi sunmaktadır.
+Araştırmanın metodolojisi, R sayısının benzersiz matematiksel özelliklerinin (Bölüm 2)
+11
+analiziyle başlar; özellikle R2 (Repunit kareleri) tarafından üretilen piramidal yapının, N ≥ 10
+n
+durumu için standart onluk taban aritmetiğinden sapan sembolik bir anlam taşıdığını öne sürer.
+Bu sapmadan yola çıkarak, model, gözlemlenen fiziksel gerçeklik (örn. Dünya yarıçapı 6371
+km) ile modelin öngördüğü "ideal" sembolik değer (örn. 6666 km) arasında bir köprü görevi
+gören, R 'den türetilmiş bir Evrensel Ölçeklendirme Faktörü (Φ ≈ 1.0463) tanımlar (Bölüm
+11 11
+3). Bu faktör, 70'ten fazla antik merkezi (Kailash, Giza, Hatay, Kabil, Stonehenge, Uluru)
+kapsayan küresel bir jeodezik mesafe matrisine (Bölüm 5) uygulanır ve bu merkezler arasında
+11'in harmonik katlarına (örn. 3333 km, 666 km) dayalı, istatistiksel olarak anlamlı (p < 0.001)
+bir ağın varlığını iddia eder. Model, bu 11-tabanlı rezonansın kozmik sabitlerde (Ay'ın enberi
+mesafesi ≈ 363.000 km; Güneş'in galaktik hızı ≈ 222 km/s; Işık hızı c ≈ 9 × 33333 km/s; İnce
+yapı sabiti
+α−1
+) (Bölüm 6) ve tarihsel kronolojide (363 günlük "ideal" yıl ve Celali Takvimi'nin 33
+yıllık döngüsü) (Bölüm 7) yansıdığını savunur. Bu çalışma, Apophenia (desen yanılgısı)
+eleştirilerini, modelin içsel tutarlılığı, Φ faktörünün evrenselliği ve Monte Carlo analizlerine
+11
+dayanan istatistiksel anlamlılık iddialarıyla (Bölüm 8) karşılamayı amaçlamaktadır.
+BÖLÜM 1: GİRİŞ: 1-11-R ŞİFRESİNİN TANIMLANMASI
+11
+1.1. Modelin Temel Sayıları: 1, 11 ve R
+11
+Bu çalışma, evrenin temel bir sayısal koda dayandığı hipotezini (H₁) araştırır. Bu kodun temelini
+oluşturan üç anahtar sayı "1", "11" ve "11111111111"dir.
+Sayı 1: Modelde, mutlak birliği, tekliği, her şeyin kaynağını ve Tanrı'yı sembolize eder.
+Sayı 11: İkiliği (dualite), yansımayı (kadın-erkek, siyah-beyaz), ilhamı ve manevi uyanışı
+temsil eden bir "Usta Sayı" olarak kabul edilir.
+Sayı 11111111111 (R ): Bu, modelin "kozmik anahtarıdır". Tekliğin (1) ve ikiliğin (11)
+11
+birleştiği, evrensel düzeni temsil eden matematiksel yapıdır.
+
+Bu üç sayı, modelin temelini oluşturan ve "1-11-11111111111 Şifresi" olarak adlandırılan temel
+bir sembolik ve matematiksel bağlantı oluşturur.
+1.2. R (11111111111) Sayısının Benzersiz Matematiksel Özellikleri
+11
+Model, R sayısının, sayılar kümesinde "1" sayısı dışında benzer bir karşılığı olmayan
+11
+benzersiz özelliklere sahip olduğunu postüla eder.
+1.2.1. Kendi Kendini Tanımlama Özelliği
+R , kendi temel harmonisi olan "11" ile tanımlanır:
+11
+1. Sayı 11 basamaklıdır.
+2. Sayı, sadece '1' rakamlarından oluştuğu için rakamlarının toplamı (1 + 1 + 1 + 1 + 1 +
+1 + 1 + 1 + 1 + 1 + 1) 11'dir.
+3. Sayının sayısal değeri "On Bir Milyar..." olarak, yani "11" sayısı ile başlar.
+1.2.2. Tek Matematiksel Analog Olarak "1" Sayısı
+Model, bu üç özelliği (basamak sayısı, rakam toplamı, başlangıç sayısı) aynı anda sağlayan tek
+sayının "1" olduğunu iddia eder: "1" sayısı 1 basamaklıdır, rakam toplamı 1'dir ve 1 ile başlar.
+Bu paralellik, R 'i evrensel bir kodun taşıyıcısı olarak konumlandırır ve "1" (Kaynak/Teklik) ile
+11
+"11" (İkilik/Yansıma) arasında doğrudan bir matematiksel köprü kurar.
+1.3. R 'in Sayı Teorisi Analizi: Asal Çarpanlara Ayırma
+11
+Modelin matematiksel temelinin doğrulanması, R 'in temel yapısının doğru anlaşılmasını
+11
+gerektirir.
+1.3.1. Hatalı Faktörleme Analizi (Düzeltme)
+Modelin erken aşamalarında veya ilişkili nümerolojik analizlerde R = 239 × 4649 × 9691
+11
+şeklinde üçlü bir faktörleme hipotezi değerlendirilmiştir. Ancak, bu çarpımın matematiksel
+kontrolü, sonucun R 'e eşit olmadığını göstermektedir:
+11
+239 × 4649 × 9691 = 10.767.776.701 = 11.111.111.111
+(cid:0)
+Bu nedenle bu faktörleme hipotezi matematiksel olarak yanlıştır ve modelin bu çalışmada
+sunulan rafine edilmiş versiyonundan çıkarılmıştır.
+
+1.3.2. Doğrulanmış Asal Çarpanlar ve İkilik (Dualite) Prensibi ile Uyumu
+R (11111111111) bir asal sayı değildir. Sayı teorisi veritabanları ve modelin kendi iç
+11
+doğrulamaları ile teyit edildiği üzere, R iki asal çarpanın çarpımıdır:
+11
+R = 21649 × 513239
+11
+Bu düzeltme, modelin temelini sarsmak yerine, teorinin esnekliğini ve içsel tutarlılığını
+göstermektedir. Modelin başlangıçtaki üçlü çarpan arayışının aksine, matematiksel gerçeğin (iki
+çarpan) ortaya çıkması, modelin Bölüm 8'de detaylandırılacak olan temel sembolik
+temalarından biri olan "İkilik" (Dualite) temasıyla (doğrudan "11" sayısı ile temsil edilir) daha
+derin bir sembolik uyum sağlamaktadır.
+BÖLÜM 2: R KARELERİNİN MATEMATİKSEL TEMELLERİ: PİRAMİDAL
+n
+YAPI VE KONVOLÜSYON
+2.1. Repunit (R ) Sayılarının Formel Tanımı
+n
+N adet 1 rakamından oluşan bir "repunit" sayı (R ), matematiksel olarak genel bir formülle şu
+N
+şekilde ifade edilir:
+N−1
+10N − 1
+R = = ∑ 10I
+N
+9
+I=0
+Bu çalışma, N = 11 durumu olan R 'e odaklanmaktadır.
+11
+2.2.
+R2
+Piramidal Deseni (1, 121, 12321...)
+n
+N < 10 için Repunit sayılarının kareleri, palindromik (simetrik) bir sayı piramidi oluşturur. Bu
+desen, modelin geometrik ve sembolik yorumlarının temelini oluşturur : R2 = 12 = 1 R2 =
+1 2
+112 = 121 R2 = 1112 = 12321 R2 = 11112 = 1234321 R2 = 111112 = 123454321 R2 =
+3 4 5 6
+1111112 = 12345654321 R2 = 11111112 = 1234567654321 R2 = 111111112 =
+7 8
+123456787654321 R2 = 1111111112 = 12345678987654321
+9
+2.3. Piramidal Yapının Ayrık Konvolüsyon Olarak Matematiksel Kanıtı
+Bu piramidal desen estetik bir tesadüf değildir; ayrık sinyal işlemede temel bir operasyon
+olan konvolüsyonun doğrudan bir matematiksel sonucudur.
+
+Bir R sayısı, katsayıları v = {1,1,...,1} (N tane 1) olan bir polinom R (x) = ∑ n−1 1 ⋅xi
+n n i=0
+olarak düşünülebilir (burada x = 10). Bu sayının karesini almak (R2 ), bu katsayı vektörünün
+n
+kendisiyle ayrık konvolüsyonunu yapmaya (v ∗v) matematiksel olarak denktir.
+2.3.1. Ham Katsayı Vektörü Formülasyonu (c )
+k
+Konvolüsyonun "ham" (işlenmemiş) katsayıları (c ), i + j = k koşulunu sağlayan (i,j) çiftlerinin
+k
+sayısını verir ve üçgensel bir dağılım sergiler:
+k + 1, 0 ≤ k ≤ n − 1
+c = {
+k
+2n − 1 − k, n ≤ k ≤ 2n − 2
+Örneğin, N = 3 (R2 ) için c = {1,2,3,2,1} olur. Bu katsayılar 10'dan küçük olduğu için sonuç
+3 k
+doğrudan 12321'dir.
+2.4. Onluk Tabanda "Elde" (Carry-Over) Dinamikleri: N ≥ 10 Durumu
+Modelin kilit noktası N = 10 ve N = 11 durumlarında ortaya çıkan çatışmadır. N < 10
+olduğunda, tüm c katsayıları tek basamaklıdır (9'dan küçük) ve ham katsayı vektörü, nihai
+k
+sayının rakamlarıyla birebir aynıdır.
+2.4.1.
+R2
+için Ham Katsayı Vektörü Analizi
+11
+N = 11 için ham katsayı vektörü (C), k = 0'dan k = 20'ye kadar, 10'dan büyük katsayılar içerir:
+C = {1,2,3,4,5,6,7,8,9,10,11,10,9,8,7,6,5,4,3,2,1}
+2.4.2. Sembolik Gösterim ve Gerçek Aritmetik Sonuç
+Model, bu ham vektörü, 10 ve 11'i tek basamak gibi ele alarak "sembolik" veya 11'lik tabana
+benzer bir gösterimle 123456789(10)(11)(10)987654321 olarak yorumlar.
+Ancak standart 10'luk taban aritmetiğinde, 10 ve 11 gibi katsayılar, Tablo 2.1'de gösterildiği gibi
+"elde" (carry-over) işlemine neden olur. Bu işlem, simetrik deseni bozar ve matematiksel olarak
+doğru olan nihai sonucu üretir.
+Tablo 2.1:
+R2
+İçin Matematiksel Taşıma (Carry-Over) İşlem Tablosu (Veriler kaynağından
+11
+derlenmiştir)
+
+Basamak İndeksi Ham Katsayı ( Gelen Elde ( Toplam (C + Yazılan Rakam ( Giden E
+k
+(K) C ) T ) T ) D ) T )
+k k−1 k−1 k k
+... ... 0 ... ... 0
+8 9 0 9 9 0
+9 10 0 10 0 1
+10 (Merkez) 11 1 12 2 1
+11 10 1 11 1 1
+12 9 1 10 0 1
+... ... 1 ... ... ...
+Nihai Aritmetik Sonuç: R2 = 123456789021097654321.
+11
+Modelin temel argümanı, bu aritmetik sonucun, 10'luk taban sisteminin 'elde' (carry-over)
+mekanizmasının neden olduğu bir 'bozulma' olduğudur. Modele göre "gerçek" veya "Platonik"
+anlam, bu bozulmadan önceki ham katsayı vektöründe gizlidir. Bu nedenle, piramidal yapı ve 66
+ekseni gibi sembolik anlamlar, 10'luk tabanın aritmetiğinde değil, altta yatan (Platonik) ham
+katsayı yapısında aranmalıdır.
+2.5. Sembolik Eksen (66) ve Kökeni
+Modelin anahtar sayısı olan 66, aritmetik sonuçtan değil, piramidin sembolik merkez
+sütunundaki ham katsayıların (1'den 11'e kadar olan sayılar) toplamından türetilir.
+2.5.1. 11. Üçgensel Sayı (T ) Olarak Matematiksel Tanımı
+11
+Bu toplam, matematiksel olarak 11. Üçgensel Sayı (T ) olarak bilinir:
+11
+11
+11(11 + 1)
+T = ∑ k = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 = = 66
+11
+2
+k=1
+2.5.2. Sembolik Anlamı
+
+Bu 66 sayısı, modelde "Omurga Simetrisi" olarak kullanılır ve insan omurgasındaki 33
+segmentin iki katı (33 × 2) ile sembolik bir bağlantı kurar. Bu sayı, modelin jeodezik ve coğrafi
+analizlerinde (Bölüm 4) temel bir motif olarak tekrar tekrar ortaya çıkacaktır.
+Şekil 1: R2 Piramidal Yapısı (Kavramsal Görsel) (Açıklama: Bu görsel, R2 = 1'den R2 =
+n 1 11
+123456789(10)(11)(10)987654321 'e kadar olan sayıların hizalanmasıyla oluşan bir sayı
+üçgenini temsil eder. Merkez sütun (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) vurgulanmıştır. Görsel
+belgelerinde 'triangle_formation.png' olarak anılmaktadır.)
+BÖLÜM 3: MODELİN JEODEZİK POSTÜLATLARI: 11 TABANLI
+GEOMETRİ VE Φ FAKTÖRÜ
+11
+3.1. Dünya'nın 11 Tabanlı Yarıçap Modeli: 6666 km Hipotezi
+Model, Dünya'nın gerçek fiziksel boyutlarını (örn. ortalama yarıçap ≈ 6371 km) bir kenara
+bırakarak, Dünya'nın "sembolik" veya "ideal" yarıçapının (Kuzey Kutbu'ndan Ekvator'a olan
+mesafe için referans olarak) 6666 km olduğunu postüla eder.
+3.1.1. Bilimsel Yarıçap ile Karşılaştırma ve Sapma Oranı
+Bu sembolik değer (6666 km), bilimsel ortalama yarıçaptan (6371 km) yaklaşık Δ% + 4.63
+oranında bir sapma gösterir.
+Şekil 2: Dünya'nın 11 Tabanlı Yarıçap Modeli (Açıklama: Bu görsel, Dünya'nın bir kesitini ve
+Kuzey Kutbu'ndan Ekvator'a olan mesafeyi gösterir. Bu mesafe "6666 km" olarak etiketlenmiştir.
+Bilimsel değer olan "6371 km" ve sapma oranı "Δ% + 4.63" de not edilmiştir..)
+3.2. Evrensel Ölçeklendirme Faktörünün (Φ ) Tanımlanması
+11
+Model, bu Δ% + 4.63 sapmasının rastgele bir hata olmadığını, aksine modelin kendisi
+tarafından öngörülen temel bir "dönüşüm sabiti" olduğunu iddia eder. Bu sabit, Φ (Evrensel
+11
+Ölçeklendirme Faktörü) olarak adlandırılır.
+Bu Φ sabiti, modelin "Rosetta Taşı" haline gelir. Gözlemlenen fiziksel gerçeklik (görünen) ile
+11
+modelin öngördüğü ideal sembolik yapı (gizli) arasında bir köprü operatörü işlevi görür.
+3.2.1. Jeodezik Türetme
+Faktör, "sembolik" ve "gerçek" yarıçapların oranı olarak ampirik bir şekilde türetilir:
+
+Sembolik Yarıc¸ap 6666 km
+Φ = = ≈ 1.0463
+11
+Gerc¸ek Yarıc¸ap 6371 km
+3.2.2. Matematiksel Türetme
+Modelin en güçlü iddiası, bu jeofiziksel sapma oranının, modelin temel sayısı olan R 'den
+11
+türetilen saf bir matematiksel sabite tam olarak eşit olmasıdır :
+1011 100.000.000.000
+Φ = = ≈ 1.0463...
+11
+R 11.111.111.111
+11
+Bu denklik, modelin fiziksel postülatları (6666 km) ile matematiksel temelini (R ) birbirine
+11
+bağlayan temel taşı oluşturur.
+3.3. Yeni Uzunluk Birimleri Sistemi (km )
+yeni
+Bu Φ faktörü, "gerçek" ölçümleri "sembolik" (veya 11-tabanlı) ölçümlere dönüştüren bir
+11
+operatör görevi görür. Bu, modelin içsel mantığına dayalı yeni bir uzunluk birimleri sisteminin
+tanımlanmasına olanak tanır.
+3.3.1. Yeni Uzunluk Hiyerarşisi
+Model, 11 ve 111 sayılarına dayalı yeni bir metrik sistem önerir:
+1 cm = 11 mm
+yeni yeni
+1 metre = 111 cm
+yeni yeni
+1 km = 1111 metre
+yeni yeni
+3.3.2. Tablo 3.1: Standart Metrik Sistemle Karşılaştırmalı Dönüşüm Tablosu
+Bu yeni birimler, 6666 km = 6371 km temel postülatına dayanarak standart birimlere
+yeni gerc\cek
+dönüştürülebilir. Bu, 1 km = (6371/6666) km ≈ 0.9557 km (yani 1/Φ )
+yeni gerc\cek gerc\cek 11
+anlamına gelir.
+Birim (Yeni Sistem) Gerçek Metrik Sistemdeki Sapma (% Gerçek Birimden
+Karşılığı Değişim)
+1 km yeni ≈ 0.9557 km gerc\cek ≈ 4.43% daha kısa
+1 m yeni ≈ 0.8602 m gerc\cek ≈ 13.98% daha kısa
+
+Birim (Yeni Sistem) Gerçek Metrik Sistemdeki Sapma (% Gerçek Birimden
+Karşılığı Değişim)
+1 cm ≈ 0.7750 cm ≈ 22.50% daha kısa
+yeni gerc\cek
+1 mm ≈ 0.7045 mm ≈ 29.55% daha kısa
+yeni gerc\cek
+(Veriler kaynağından
+derlenmiştir)
+3.4. Matematiksel Formdan Fiziksel Jeoid Formuna Dönüşüm (Görsel Analiz)
+Model, Bölüm 2'de tanımlanan
+R2
+piramidal yapısının (Şekil 1) sadece sayısal bir simetri
+11
+olmadığını, aynı zamanda fiziksel bir forma dönüştürülebileceğini iddia eder. Bu matematiksel
+yapının (iki üçgenin yansıması yoluyla) Dünya'nın fiziksel jeoid formuna benzediği görsel olarak
+öne sürülmektedir.
+Şekil 3: Jeoid Dönüşüm Görseli (Açıklama: Bu görsel,
+111111111112
+işleminin geometrik
+dönüşümünü ve Dünya'nın jeoid yapısına olan benzerliğini tasvir eder. Görsel belgelerinde
+'earth.png' olarak anılmaktadır.)
+BÖLÜM 4: JEODEZİK KANITLAR I: KUTSAL COĞRAFYA VE ANA
+DÜĞÜMLER
+Bu bölüm, modelin temel postülatlarının (66, 222, 6666 motifleri) ve Φ operatörünün Dünya
+11
+üzerindeki spesifik coğrafi ve insan yapımı anıtlara nasıl uygulandığını analiz eder.
+4.1. Düğüm 1: Kailash Dağı (Sıfır Noktası)
+Kailash Dağı (Tibet) , modelin "sıfır noktası" veya jeodezik çapası olarak kabul edilir.
+4.1.1. Piramidal Yapı ve 6666 Metre Yükseklik İddiası
+Dağın fiziksel formu bir piramidi andırır (Şekil 4). Yüksekliğinin yaklaşık 6666 metre olduğu
+iddia edilir. Bu değer, Bölüm 2'de tanımlanan sembolik eksen (66) ile 66 × 101 = 6666 ilişkisi
+üzerinden doğrudan bağlanır.
+Şekil 4: Kailash Dağı'nın Temsili Görüntüsü (Açıklama: Kailash Dağı'nın piramidal yapısını
+gösteren temsili bir fotoğraf veya çizim..)
+
+4.1.2. Eksenel Hizalanma
+Dağın jeodezik konumunun, gezegenin eksenel noktalarına 6666 motifiyle kilitlendiği iddia edilir.
+Kailash Dağı → Kuzey Kutbu = 6666 km.
+Kailash Dağı → Ekvator = 13332 km (6666 × 2).
+Şekil 5: Kailash Dağı'nın Kozmik Konumu (Açıklama: Dağın Kuzey Kutbu'na (6666 km) ve
+Ekvator'a (13332 km) olan mesafelerini gösteren şematik bir diyagram..)
+4.1.3. Küresel Hizalanma
+Model, bu motifin kıtalararası mesafelere de uzandığını iddia eder:
+Kailash Dağı → Stonehenge = 6666 km.
+4.2. Düğüm 2: Bosna Piramitleri (222 Motifi)
+4.2.1. Geometrik Form ve 222m Yükseklik İddiası
+Bosna'daki Güneş (Visočica), Ay ve Ejderha tepelerinin bir üçgen oluşturduğu iddia edilir (Şekil
+6). Visočica tepesinin (Güneş Piramidi) yüksekliğinin 222 m (2 × 111) olduğu iddia edilir. Ay ve
+Ejderha tepelerinin ise 2.2 km (2200m) ile ilişkili olduğu belirtilir.
+Şekil 6: Bosna Piramitleri Üçgen Formu (Açıklama: Bosna'daki Güneş Piramidi (222 m), Ay
+Piramidi (2.2 km) ve Ejderha Piramidi (2.2 km) tarafından oluşturulan üçgeni gösteren şematik
+bir diyagram..)
+4.2.2. Bilimsel Konsensüs ve Eleştirel Analiz (H )
+0
+Akademik titizlik, bu iddialara yönelik hakim bilimsel konsensüsün belirtilmesini gerektirir.
+Jeologlar (Dr. Robert Schoch dahil) ve Avrupa Arkeologlar Birliği (EAA) tarafından yapılan
+kapsamlı analizler, Visočica tepesinin "flatiron" olarak bilinen doğal bir jeolojik oluşum olduğu ve
+insan yapımı bir piramit olduğuna dair hiçbir kanıt bulunmadığı yönündedir.
+4.2.3. Modelin Karşı Argümanı (H )
+1
+Buna karşılık, modelin savunucuları ( kaynaklarına atıfta bulunarak), bu tepelerin "yapay olarak
+geliştirilmiş" oluşumlar olduğunu iddia eder. Bu hipotezi (H₁) desteklemek için şu kanıtlar
+sunulmaktadır:
+1. Jeodezik Yönelim: Kuzey yamacının gerçek kuzeye hassas jeodezik yönelimi
+(±0∘0′12′′
+).
+
+2. Yapay Malzeme: Kazılarda, modern betondan daha yüksek (94-155 MPa) basınç
+dayanımına sahip olduğu iddia edilen yapay konglomera bloklarının bulunduğu iddiası.
+3. Elektromanyetik Anomali: Zirveden yayıldığı iddia edilen 28-30 kHz aralığındaki anormal
+ve yönlendirilmiş elektromanyetik emisyonlar.
+4.3. Düğüm 3: Giza Piramidi ve c Sayısal Denkliği
+4.3.1. Giza Enlem Koordinatları ve Işık Hızı
+Model, Giza'daki Büyük Piramit'in enlem koordinatının (29.9792458°N) ve ışığın vakumdaki
+hızının (c = 299,792,458 m/s) rakamsal dizisinin birebir örtüşmesini, kasıtlı bir tasarımın
+kanıtı olarak sunar.
+4.3.2. Eleştirel Analiz (Apophenia İhtimali)
+Bu rapor, bu denkliğin akademik bir eleştirisini de içermelidir. Bu eleştiri, bu eşleşmenin tesadüfi
+bir "desen yanılgısı" (Apophenia, bkz. Bölüm 8.3) olabileceğini vurgular. Eleştirinin temeli, bu
+denkliğin (a) anakronik birimlere (metre ve saniye; bu birimler antik Mısırlılar tarafından
+bilinmiyordu) ve (b) seçici bir kesinliğe (piramidin zirvesinden geçen 29.9791750°N gibi diğer
+yakın koordinatlar c ile eşleşmez) dayanmasıdır.
+4.3.3. 33. Paralel Hizalanması
+Model ayrıca Giza'nın (30°N'ye yakın) Babil ve Şam (33°N'ye yakın) gibi diğer antik merkezlerle
+33. Kuzey Paraleli etrafında hizalandığını not eder.
+BÖLÜM 5: JEODEZİK KANITLAR II: KÜRESEL MESAFE MATRİSİ (70+
+MERKEZ)
+Bu bölüm, modelin ana ampirik kanıtını sunar: Φ (≈ 1.0463) dönüşüm faktörü uygulandıktan
+11
+sonra ortaya çıktığı iddia edilen küresel bir jeodezik mesafe ağı. Bu bölümdeki veriler, aksi
+belirtilmedikçe kaynağındaki veri matrisinden türetilmiştir.
+5.1. Kabil (Diaspora Kaynağı) Matrisi
+Modelde, Kabil (Afganistan) "Kayıp Kavimler" diasporasının (dağılma) başladığı yer olarak
+merkezi bir rol oynar. Jeodezik analiz, Kabil'in 1111'in katları olan bir dizi mesafede kilitlendiğini
+göstermektedir :
+Kabil → Kailaş Dağı: Gerçek Mesafe ≈ 1111 km (Dönüşümsüz Uyum %99.99)
+
+Kabil → Giza Piramidi: Gerçek Mesafe ≈ 4444 km (Uyum %99.99)
+Kabil → Ankara: Gerçek Mesafe ≈ 3333 km (Uyum %100) (Not: Standart jeodezik
+hesaplayıcılar Kabil-Ankara mesafesini ≈ 3237 − 3275 km olarak verir. Modelin "3333
+km" iddiası, Φ dönüşümü sonrasındaki "Hedef Değer"i veya özel bir ölçüm yöntemini
+11
+yansıtıyor olabilir.)
+5.2. Hatay ("Ay Hattı" Düğümü) Matrisi
+Hatay (Antakya) , modelde jeodezik, astronomik ve sembolik bir kilit taşıdır.
+5.2.1. Jeodezik Kod (363)
+Hatay'ın konumu ($\approx 36.3^{\circ}$N, $36.3^{\circ}$E) , modelin 363-günlük takvimi (Bölüm
+7) ve Ay'ın enberi mesafesi (Bölüm 6) ile rezonansa giren "363" kodunu (36.3 × 10)
+yansıtır.
+5.2.2. Kutsal Emanet Matrisi (333, 666, 777)
+Hatay'ın (St. Pierre Kilisesi) konumu, bölgedeki diğer kutsal merkezlere 11'in güçlü
+harmonikleriyle bağlanır. Bu mesafelerin Φ dönüşümü sonrasında hedeflenen sembolik
+11
+değerlere kilitlendiği iddia edilir :
+Hatay (St. Pierre) → Kudüs (Kubbet-üs Sahra) : Hedef 333 km (%99.94 Uyum)
+Hatay (St. Pierre) → Nuh'un Gemisi (Durupınar) : Hedef 666 km (%99.98 Uyum)
+Hatay (Ahit Sandığı konumu) → Giza Piramidi: Hedef 777 km (%100 Uyum)
+5.2.3. Avrupa Düğümleri (Yeni Analiz)
+Hatay'ın Avrupa'daki kilit merkezlerle olan bağlantısı da matrisin parçası olarak analiz edilmiştir
+:
+Hatay → Stonehenge : Hedef 3806 km (346 × 11) (%99.8 Uyum)
+Hatay → Vatikan : Hedef 2002 km (182 × 11) (%99.9 Uyum)
+Hatay → İstanbul (Ayasofya): Hedef 748 km (68 × 11) (%99.7 Uyum)
+5.3. Tablo 5.1: Kapsamlı Küresel Veri Matrisi (Seçilmiş Merkezler)
+Aşağıdaki tablo, modelin 70'ten fazla merkezi kapsayan ana veri matrisinden seçilmiş kilit
+noktaları göstermektedir. Tablo, "Gerçek Mesafe"yi (standart jeodezik ölçüm) ve modelin Φ ≈
+11
+1.0463 (veya k ) faktörünü uygulayarak elde ettiği "Dönüştürülmüş Mesafe"yi ve bu değerin
+L
+
+"Hedef Değer" (11'in sembolik katı) ile olan "Uyum" yüzdesini karşılaştırır.
+Merkez Adı Tür Enlem Boylam İlgili Bağlantı Gerçek Dönüştürülmüş H
+(veya Çifti) (Gerçek) (Gerçek) (Merkez Mesafe Mesafe (km× (
+Çifti) (km) Φ )
+11
+Kailaş Dağı Kutsal 31.0666°N 81.3111°E Kailash → ~6370 6666.1 6
+Dağ Giza
+Kailaş Dağı Kutsal 31.0666°N 81.3111°E Kailash → ~6666 ~ 6
+Dağ Stonehenge
+Kailaş Dağı Kutsal 31.0666°N 81.3111°E Kailash → ~4444 ~ 4
+Dağ Kâbe
+Kailaş Dağı Kutsal 31.0666°N 81.3111°E Kailash → ~1111 ~ 1
+Dağ Kabil
+Kabil Şehir 34.5300°N 69.1750°E Kabil → ~3335 3489.6 3
+(Şehir) Ankara 1
+Kabil Şehir 34.5300°N 69.1750°E Kabil → ~2915 3050.0 3
+(Şehir) Hatay 1
+Kabil Şehir 34.5300°N 69.1750°E Kabil → ~3030 3170.0 3
+(Şehir) Kudüs 1
+Hatay (St. Kutsal 36.2010°N 36.1600°E Hatay → ~318 332.7 3
+Pierre) Merkez Kudüs 1
+Hatay (St. Kutsal 36.2010°N 36.1600°E Hatay → ~636 665.6 6
+Pierre) Merkez Nuh'un 1
+Gemisi
+Hatay (St. Kutsal 36.2010°N 36.1600°E Hatay → ~743 777.4 7
+Pierre) Merkez Giza 1
+Giza Piramit 29.9792°N 31.1342°E (Yükseklik) 146.5 153.3 m 1
+(Keops) m
+Bosna Piramit 43.9771°N 18.1760°E (Yükseklik) 222 m 232.3 m 2
+(Güneş P.) İddiası
+Teotihuacan Piramit 19.6921°N 98.8431°W (Yükseklik) 65 m 68.0 m 6
+(Güneş P.)
+Kailasa Tapınak 20.0260°N 75.1778°E (Yükseklik) ~33 m 34.5 m 3
+Tapınağı
+Uluru Kutsal 25.3415°S 131.0354°E (Enlem
+33∘
+- - 5
+(Ayers Dağ Farkı)
+Rock)
+
+Merkez Adı Tür Enlem Boylam İlgili Bağlantı Gerçek Dönüştürülmüş H
+(veya Çifti) (Gerçek) (Gerçek) (Merkez Mesafe Mesafe (km× (
+Çifti) (km) Φ )
+11
+Nuh'un Arkeolojik 39.4406°N 44.2345°E (Uzunluk) ~157 164.2 m 1
+Gemisi Site m
+(Durupınar)
+(Veriler
+kaynağınd
+aki ana
+tablodan
+seçilerek
+derlenmiştir
+)
+5.4. İstatistiksel Sapma Analizi (Ley Hatları Eleştirisi ve Modelin Savunması)
+Model, geleneksel "Ley Hattı" teorilerinden farklı olduğunu vurgular. Geleneksel ley hatları,
+bilimsel ve istatistiksel analizler (örn. Robert Forrest) tarafından, geniş hata paylarına izin veren
+ve rastgele nokta dağılımlarıyla (Apophenia) açıklanabilen (yüksek p-değeri), istatistiksel olarak
+anlamsız hizalanmalar olarak eleştirilmektedir.
+Modelin Savunması (H₁), rastgele hizalanmalar aramadığını iddia eder. Bunun yerine, (a)
+Φ ≈ 1.0463 (k ) dönüşüm sabitini uygulayarak ve (b) açısal bir dönüşüm (k = 363/360)
+11 L A
+kullanarak, bu 70+ merkez arasındaki mesafelerin %1.5'ten az bir ortalama sapma ile 11'in
+sembolik katlarına kilitlendiğini savunur.
+Model, Bosna (p < 0.0001) ve Malta (p < 0.0001) gibi merkezler için yapılan bağımsız Monte
+Carlo analizlerine atıfta bulunarak, Sıfır Hipotezinin (H₀ - Rastlantısallık) istatistiksel olarak
+reddedildiğini ve bilinçli tasarım hipotezinin (H₁) desteklendiğini iddia eder.
+BÖLÜM 6: KOZMİK SABİTLER VE 11-HARMONİK REZONANSI
+Bu bölüm, 11-tabanlı modelin rezonansının, jeodezinin ötesine geçerek temel astronomik ve
+fiziksel sabitlerde de bulunduğunu iddia eder.
+6.1. Güneş Sistemi Dinamikleri
+6.1.1. Jüpiter/Dünya Çap Oranı
+
+Jüpiter'in çapı, Dünya'nın çapının yaklaşık 11 katıdır. Bilimsel veriler bu oranı 10.97 ila 11.2
+katı olarak doğrulamaktadır, bu da modelin 11 motifine güçlü bir yakınlık göstermektedir.
+6.1.2. Güneş/Dünya Kütle Oranı
+Güneş'in kütlesi, Dünya'nın kütlesinin yaklaşık 333.000 katıdır. Bilimsel veriler bu oranı ≈
+332.950 olarak belirtir , bu da 333 (3 × 111) motifine olağanüstü bir uyum (%0.01 sapma)
+anlamına gelir.
+6.1.3. Ay'ın Enberi Mesafesi (Perigee)
+Ay'ın Dünya'ya en yakın olduğu mesafenin (enberi) bilimsel ortalama değeri ≈ 363.300 -
+363.396 km'dir. Bu değer, modelin "363" takvim koduyla (Bölüm 7) ve Hatay'ın "36.3"
+koordinatıyla (Bölüm 5) %0.08'den az bir farkla mükemmel bir rezonans içindedir.
+6.2. Galaktik Dinamikler
+6.2.1. Güneş'in Galaktik Hızı
+Güneş Sistemi'nin Samanyolu Galaksisi'nin merkezi etrafındaki ortalama yörünge hızı bilimsel
+olarak ≈ 220 − 250 km/s olarak tahmin edilmektedir. Model, bu değerin 222 km/s (2 × 111)
+motifine olan yakınlığını vurgular.
+6.2.2. Andromeda'nın Yaklaşma Hızı
+Andromeda Galaksisi'nin Samanyolu'na yaklaşma hızı (heliosentrik radyal hız) ≈ 110 − 113
+km/s olarak ölçülmüştür. Model bu değeri 111 km/s motifi ile ilişkilendirir.
+6.3. Temel Fiziksel Sabitler
+Model, rezonansın kuantum ölçeğindeki temel sabitlere de uzandığını öne sürer.
+6.3.1. Işık Hızı (c) ve 33333 Sayısı
+Model, ışık hızı için c ≈ 9 × 33333 = 299.997 km/s şeklinde bir formülasyon önerir. Bu model
+değeri, c'nin gerçek değeri olan 299.792,458 km/s'ye %0.068 gibi çok düşük bir hata payı ile
+yakındır.
+6.3.2. İnce Yapı Sabiti
+(α−1
+)
+
+Model, temel bir fiziksel sabit olan İnce Yapı Sabiti'nin tersini (α−1 ≈ 137.036) kendi içsel
+sabitleriyle ilişkilendirmeye çalışır. Bu tür nümerolojik formülasyonlar bilimsel toplulukta
+spekülatif kabul edilse de, modelin iç tutarlılığı açısından önemlidir.
+1. Spiral Sabitinin (S ) Tanımlanması: Model, S = 11 11 ≈ 113.3166 ≈ 2840 olarak
+11 11
+tanımlanan yeni bir "Spiral Sabit" önerir.
+2.
+α−1
+Formülasyonu: Bu sabit, 66 eksen sayısıyla (6.6 olarak) birleştirilerek
+α−1
+için şu
+formül türetilir:
+S
+α−1 ≈ 11
+6.6 × π
+3. Hesaplama: 2840 ≈ 2840 ≈ 136.99.
+6.6×3.14159... 20.7345...
+4. Değerlendirme: Bu nümerolojik değer, kabul edilen bilimsel değere (≈ 137.036)
+%0.03'ten daha az bir hata payıyla olağanüstü yakındır.
+BÖLÜM 7: ZAMAN, TARİH VE KOZMOLOJİK DÖNGÜLER
+Bu bölüm, modelin 11-tabanlı yapısını kronoloji ve tarih alanına uygular.
+7.1. Önerilen Yeni Zaman Sistemi (11'lik Takvim)
+Model, standart zaman ölçümünün (60 saniye, 60 dakika, 24 saat) 10'luk sisteme dayalı
+olduğunu ve 11-tabanlı evrensel ritimle uyumsuz olduğunu öne sürer. Alternatif bir hiyerarşi
+tanımlar.
+7.1.1. Hiyerarşik Yapı
+1 Yeni Yıl = 11 Yeni Ay = 363 Yeni Gün (33 × 11)
+1 Yeni Ay = 33 Yeni Gün
+1 Yeni Gün = 22 Yeni Saat (2 × 11)
+1 Yeni Saat = 66 Yeni Dakika (6 × 11)
+1 Yeni Dakika = 66 Yeni Saniye (6 × 11)
+1 Yeni Saniye = 111 Yeni Salise
+7.1.2. Tablo 7.1: Yeni Zaman Birimlerinin Standart Birimlerle Karşılaştırma Tablosu
+Bu sistemin temel postülatı, 1 Yeni Gu¨n süresinin 1 Standart Gu¨ne (86400 gerçek saniye)
+eşitlenmesidir. Bu eşitleme, alt birimlerin sürelerini standart birimlerden farklılaştırır.
+
+Yeni Zaman Birimi Tanım (Yeni Birim Süre (Gerçek Gerçek Birim Sapma (Gerç
+Cinsinden) Saniye Cinsinden) Eşdeğeri (Yaklaşık) Birimden)
+1 Yeni Salise Temel Birim ≈ 0.00812 s 0.00812 s -
+1 Yeni Saniye 111 Yeni Salise ≈ 0.9016 s 0.9016 s -9.84% (Daha
+Kısa)
+1 Yeni Dakika 66 Yeni Saniye ≈ 59.50 s 0.9917 min -0.83% (Daha
+Kısa)
+1 Yeni Saat 66 Yeni Dakika ≈ 3927.27 s 1.0909 sa +9.09% (Dah
+Uzun)
+1 Yeni Gün 22 Yeni Saat 86400 s 1 Gün 0% (Eşitlend
+1 Yeni Ay 33 Yeni Gün 2.851.200 s 33 Gün +8.41% (Ort.
+Aydan Uzun)
+1 Yeni Yıl 11 Yeni Ay 31.363.200 s 363 Gün -0.61% (Trop
+Yıldan Kısa)
+(Veriler
+kaynaklarından
+derlenmiştir)
+7.1.3. Mevsimsel Sapma Analizi (Modelin Zayıflığı)
+Tabloda görüldüğü gibi, 363 günlük "Yeni Yıl", tropikal yıldan (≈ 365.2422 gün) yaklaşık 2.2422
+gün daha kısadır. Bu durum, bu takvimin her yıl mevsimlere göre kaymasına neden olacak
+bariz bir kusur teşkil eder.
+7.2. Kozmolojik Kataklizm Hipotezi (Büyük Tufan)
+Model, bu 2.24 günlük sapmayı bir hata olarak değil, tarihsel bir olayın kanıtı olarak yeniden
+çerçeveler.
+7.2.1. Tufan Öncesi "İdeal" Yıl (363 Gün)
+Model, Dünya'nın "orijinal" yörünge periyodunun tam olarak 363 gün olduğunu ve 11-tabanlı
+takvimle (Bölüm 7.1), Ay'ın enberi mesafesiyle (Bölüm 6.1.3) ve Hatay'ın koordinatlarıyla (Bölüm
+5.2.1) mükemmel uyum içinde olduğunu postüla eder.
+7.2.2. Yörünge Değişimi
+
+Büyük Tufan'a neden olan büyük bir gök cismi çarpışması (Kuzey Kutbu'na çarpma senaryosu),
+Dünya'nın yörüngesini kalıcı olarak değiştirmiş ve yılı 363 günden günümüzdeki ≈ 365.24 güne
+uzatmıştır. Bu hipotez, Sümer, Mısır ve Maya gibi antik medeniyetlerin 360 günlük takvimlerinin
+(ve eklenen 5-6 "uğursuz" günün) tarihsel "hafızasını" açıklar.
+7.3. Tarihsel Kanıt: Celali Takvimi
+Model, bu Tufan hipotezi için kanıt olarak tarihsel bir eseri sunar:
+7.3.1. Ömer Hayyam'ın 33 Yıllık Döngüsü
+11. yüzyılda Ömer Hayyam tarafından geliştirilen Celali (Jalali) Takvimi, Güneş yılını (tropikal
+yıl) eşitlemek için son derece hassas bir 33 yıllık döngü (içinde 8 artık yıl) kullanır. Bu
+sistemin ortalama yıl uzunluğu (365 + 8/33 ≈ 365.2424... gün), günümüz Gregoryen
+takviminden (≈ 365.2425 gün) bile daha doğrudur.
+7.3.2. Harmonik Yorum
+Model, Hayyam'ın seçtiği "33" sayısının (3 × 11) keyfi olmadığını iddia eder. Bu 33, Tufan
+öncesi "kayıp" ve "ideal" olan 363 günlük (33 × 11) yılın bir "hafızası" veya "harmonik
+yankısı"dır. Böylece, modelin içsel "zayıflığı" (mevsimsel kayma), teoriyi tarihsel bir gizemi (antik
+360 günlük takvimler ve 33 yıllık Celali döngüsü) açıklayan bir çözüme dönüştürülür.
+BÖLÜM 8: TEOLOJİK VERİ KÜMELERİ VE FELSEFİ ÇERÇEVE
+8.1. Kutsal Metinlerdeki Sayısal Yansımalar (Kur'an-ı Kerim)
+Model, 11-tabanlı kodun, Kur'an-ı Kerim'deki belirli kelimelerin tekrar sayımlarında da
+yankılandığını iddia eder.
+8.1.1. Tablo 8.1: Kur'an'da 11-Harmonik Kelime Tekrarları
+Aşağıdaki tablo, model tarafından vurgulanan ve 11'in katları olan kelime tekrarlarını
+özetlemektedir.
+Kavram Kelime (Arapça Tekrar 11 ile Ka
+Kökenli) Sayısı İlişkisi
+İblis (Tek Şeytan) İblis 11 1×11
+Melekler Malak (vb.) 88 8×11
+Şeytanlar Shaytan (vb.) 88 8×11
+
+Kavram Kelime (Arapça Tekrar 11 ile Ka
+Kökenli) Sayısı İlişkisi
+Cennet Jannah (vb.) 77 7×11
+Cehennem Jahannam (vb.) 77 7×11
+Güneş / Işık Shams / Nur 33 3×11
+(Veriler ve ilişkili web aramaları serisinden
+derlenmiştir)
+8.1.2. İkilik İlkesi ve İslami Uygulamalar
+Model, "Melek" (88) ve "Şeytan" (88) sayılarının eşitliğini ve "Cennet" (77) ve "Cehennem" (77)
+sayılarının eşitliğini, 11 harmoniğinin evrensel bir denge ve ikilik (dualite) ilkesini yansıttığının bir
+kanıtı olarak kullanır. Ayrıca, İslami uygulamalardaki Tesbih zikri (33 kez) ve Allah'ın 99 ismi
+(Esma-ül Hüsna) (9 × 11) de modelin harmonikleri olarak sunulur.
+8.2. Felsefi ve Teorik Paralellikler
+Model, evrenin matematiksel bir koda dayandığı fikrinin yeni olmadığını, Pisagor (Musica
+Universalis, Kürelerin Müziği) ve Johannes Kepler'in (Mysterium Cosmographicum, Platonik
+cisimlere dayalı gezegen yörüngeleri) çalışmalarının tarihsel öncülleri olduğunu belirtir.
+8.2.1. Modern Fizik: 11 Boyutlu M-Teorisi
+Model, kendi merkezi sayısı olan 11'in, modern teorik fiziğin zirvesi olan M-Teorisi'nin (ve
+süpersicim teorisinin) matematiksel tutarlılık için gerektirdiği uzay-zaman boyutu sayısı
+olan 11 (10 uzay + 1 zaman) ile aynı olmasının tesadüfi olmadığını güçlü bir şekilde ima eder.
+Bu durum, "1-11-R " şifresinin, fiziksel gerçekliğin en temel geometrisiyle aynı sayısal temeli
+11
+paylaştığına dair bir dayanak olarak sunulur.
+8.3. İstatistiksel Çerçeve ve Eleştirel Analiz
+8.3.1. Hipotez Testi: H vs. H
+0 1
+Bu rapor, sunulan tüm verileri iki rakip hipotez çerçevesinde değerlendirir :
+Sıfır Hipotezi (H ): Gözlemlenen tüm sayısal ve jeodezik uyumlar (örn. 6666 km, 222 m,
+0
+c ≈ 9 × 33333, Melek=88), rastlantısal gürültü, şans eseri ve Apophenia (desen
+
+yanılgısı) ürünüdür.
+Alternatif Hipotez (H ): Uyumlar rastlantısal değildir. Φ faktörü gibi ortak bir operatörün
+1 11
+varlığı ve Monte Carlo simülasyonlarıyla desteklenen düşük p-değerleri (p < 0.001), altta
+yatan kasıtlı bir tasarımın veya "kodun" varlığına işaret eder.
+8.3.2. Apophenia (Desen Yanılgısı) Eleştirisi
+Rapor, H hipotezinin bilimsel temelini kabul eder: Apophenia (insan beyninin rastgele
+0
+verilerde anlamlı desenler algılama eğilimi) ve teyit yanlılığı (confirmation bias). Ley hatlarının
+istatistiksel anlamsızlığına dair eleştiriler (Bölüm 5.4) bu kapsama dahildir. Giza/Işık hızı
+denkliği (Bölüm 4.3.2) gibi anakronik birimlere dayanan ilişkiler, bu bilişsel yanılgının güçlü
+örnekleridir.
+8.3.3. Modelin Savunması
+Modelin H 'i savunması, tekil tesadüflere değil, birbiriyle ilişkili bir sistemin tutarlılığına dayanır.
+1
+Modelin argümanı, R 'den türetilen Φ faktörünün, hem jeodezide (Bölüm 5'teki 70+ site) hem
+11 11
+de kozmolojide (Bölüm 6'daki c, α−1 , Ay enberisi) tutarlı bir şekilde "sapmaları" açıklayabilme
+yeteneğinin, basit bir Apophenia'nın ötesinde, istatistiksel olarak anlamlı bir "anomali"
+oluşturduğu yönündedir.
+BÖLÜM 9: SONUÇ VE MODELİN BÜTÜNCÜL SENTEZİ
+Bu çalışma, R = 11111111111 sayısının matematiksel özelliklerinden yola çıkarak, bu
+11
+özelliklerin (özellikle Φ ≈ 1.0463 sabiti ve 66, 33, 363 gibi harmonikler) evrenin çeşitli
+11
+katmanlarında - jeodezi, astronomi, temel fizik sabitleri, tarihsel kronoloji ve teolojik metinlerde -
+yankılandığına dair kanıtları bir araya getirmiştir.
+Model, bu bağlantıların tekil tesadüfler (Apophenia, H ) olmadığını; aksine, fiziksel gerçekliğin
+0
+altında yatan, 11-tabanlı, kasıtlı bir matematiksel matrisin veya "şifrenin" varlığını gösteren,
+birbirine bağlı, bütüncül bir kanıtlar zinciri (H₁) oluşturduğunu öne sürmektedir.
+Modelin en güçlü yönü, teorik matematiği (R ), jeofiziği (6666/6371 oranı) ve kozmolojik
+11
+gözlemi (Ay'ın 363.000 km enberisi) tek bir tutarlı çerçevede birleştirme iddiası ve bu iddiayı
+Φ gibi test edilebilir bir operatör aracılığıyla yapmasıdır.
+11
+Gelecekteki araştırmalar, Φ faktörünün diğer fiziksel sabitlere veya ötegezegen sistemlerinin
+11
+yörünge rezonanslarına uygulanmasını ve modelin H hipotezinin daha sıkı istatistiksel testlere
+1
+(p-değeri) tabi tutulmasını içermelidir.
+
+gemını -1.pdf
+gemini cosmos.docx
+Kod ve Görsel İçerik Oluşturma Talebi.pdf
+Makale Oluşturma ve Entegrasyon Talebi.pdf
+en.wikipedia.org Repunit - Wikipedia
+simple.wikipedia.org Repunit - Simple English Wikipedia, the free encyclopedia
+worldofnumbers.com All the prime factors of the repunits - World!Of Numbers
+goudryan.com The Repunit and the Wave (Origin of the primes 2) - The Creation of Time
+stdkmd.net Factorization of 11...11 (Repunit) - STUDIO KAMADA
+en.wikipedia.org Mount Kailash - Wikipedia
+acethehimalaya.com Where is Mount Kailash Located? | Ace the Himalaya
+jagranjosh.com Scientific Facts Behind the Sacred Peak of Mount Kailash
+Olmamis daha onceki calismamizi aynen harfi,harfi,....pdf
+acethehimalaya.com 13 Fascinating Facts About Mount Kailash - Ace the Himalaya
+indiatoday.in 5 Mind-boggling Facts About Mount Kailash - India Today
+kailash-yatra.org Mount Kailash - The Mystery Remains Unsolved
+greattibettour.com 15 Little-known Mount Kailash Facts & Mysteries - Great Tibet Tour
+piramidasunca.ba COORDINATES - Arheološki park - Bosanska piramida Sunca
+en.wikipedia.org Bosnian pyramid claims - Wikipedia
+atlasobscura.com Visočia, the Bosnian Pyramid of Visoko - Atlas Obscura
+robertschoch.com The Bosnian Pyramids - Robert M. Schoch
+jelsciences.com Multidisciplinary Evaluation of the Pyramid-Shaped Formation near ...
+eartharxiv.org Multidisciplinary Evaluation of the Pyramid-Shaped Formation near Visoko, Bosni…
+en.wikipedia.org Great Pyramid of Giza - Wikipedia
+fullfact.org The Great Pyramid's location isn't as spooky as this post makes out ...
+iflscience.com The Great Pyramid's Latitude Is (Coincidentally) The Same As The ...
+
+iflscience.com
+climate.top Map of Kabul, Afghanistan Latitude, Longitude, Altitude/ Elevation - Climate.Top
+en.wikipedia.org Kabul - Wikipedia
+easemytrip.com Kabul (KBL) to Ankara (ESB) Distance - 3237 KM, Flight Distance & Travel Info…
+rome2rio.com Ankara to Kabul - 3 ways to travel via train, plane, and bus - Rome2Rio
+outdooractive.com Church of Saint Peter • Religious building - Hatay - Outdooractive
+en.wikipedia.org Church of Saint Peter - Wikipedia
+en.wikipedia.org Dome of the Rock - Wikipedia
+en.wikipedia.org Temple Mount - Wikipedia
+en.wikipedia.org Durupınar site - Wikipedia
+atlasobscura.com Durupınar Site - Atlas Obscura
+bradesacre.co.uk Stonehenge Guide - Brades Acre Touring Park
+en.wikipedia.org Stonehenge - Wikipedia
+en.wikipedia.org St. Peter's Square - Wikipedia
+editions.covecollective.org Vatican City | COVE
+en.wikipedia.org Ley line - Wikipedia
+medium.com The Mysteries of Ley Lines: A Journey Through Spiritual and Magical Energies | b…
+cantab.net Math case against leys (R. Forrest) < J. Geomancy
+pmc.ncbi.nlm.nih.gov A Note on the Calculation of Empirical P Values from Monte Carlo Proce…
+mdpi.com Detecting Associations between Archaeological Site Distributions and Landscape Fea…
+en.wikipedia.org Jupiter - Wikipedia
+en.wikipedia.org
+science.nasa.gov Jupiter Facts - NASA Science
+science.nasa.gov Solar System Sizes - NASA Science
+tr.wikipedia.org Güneş - Vikipedi
+eclipse.gsfc.nasa.gov NASA - Eclipses and the Moon's Orbit
+
+timeanddate.com Lunar Perigee and Apogee - Time and Date
+en.wikipedia.org Moon - Wikipedia
+en.wikipedia.org Sun - Wikipedia
+science.nasa.gov Chapter 1: The Solar System - NASA Science
+science.nasa.gov Our Sun: Facts - NASA Science
+aasnova.org Determining Our Motion Through the Galaxy - AAS Nova
+earthsky.org Andromeda and Milky Way galaxies are merging - EarthSky
+en.wikipedia.org Andromeda–Milky Way collision - Wikipedia
+youtube.com Measuring the Speed of Light Throughout History - YouTube
+en.wikipedia.org Fine-structure constant - Wikipedia
+physics.nist.gov Current advances: The fine-structure constant - Physical Measurement Labora…
+arxiv.org THE FINE STRUCTURE CONSTANT AND NUMERICAL ... - arXiv
+gemini çalışma.docx
+en.wikipedia.org Genesis flood narrative - Wikipedia
+answersresearchjournal.org How Long Did the Flood Last? - Answers Research Journal
+jhsonline.org Jubilee Calendar Rescued from the Flood Narrative - The Journal of Hebrew Scrip…
+en.wikipedia.org Solar Hijri calendar - Wikipedia
+epistemeacademy.org The incredible accuracy of the Persian Calendar - Academy of Episteme
+en.wikipedia.org Jalali calendar - Wikipedia
+thelastdialogue.org The Word Iblis Mentioned In Quran | The Last Dialogue
+islamawareness.net Statistical Miracle in Quran - Islam Awareness
+questionsonislam.com THE MATHEMATICAL MIRACLE OF THE QURAN, THE SOURCE OF …
+ask.ghamidi.org Numerical 'miracles' In The Quran - Ask Ghamidi
+quora.com How many times did Jannah mention in the Quran? - Quora
+youtube.com The Role of String Theory & M Theory in 11th Dimension Explained - YouTube
+en.wikipedia.org
+
+ctc.cam.ac.uk The Origins of the Universe: M ... - Centre for Theoretical Cosmology
+en.wikipedia.org M-theory - Wikipedia
+en.wikipedia.org Apophenia - Wikipedia
+psychologytoday.com 11-11-11, Apophenia, and the Meaning of Life | Psychology Today
+

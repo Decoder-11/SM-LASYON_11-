@@ -1,0 +1,37 @@
+3.3. Özel Tablo: Diğer Merkezlerin Kodları (Malta, Stonehenge, Göbekli Tepe)
+Bu tablo, antik yapilar.docx dosyasında [kaynak: 2211-4420] ve sohbet geçmişinde [kaynak:
+1423, 3230] vurgulanan diğer kilit yapıların kodlarını özetler.
+Merkez Kodlama Analiz ve Sonuç
+Türü (Kaynaklar)
+Malta Açısal Bağımsız akademik
+Tapınakları Hizalanma araştırma,
+tapınakların
+birbirlerine göre
+konumlarının 11.11°
+(Δφ) ve 33.33°
+(Δλ) aralıklarla
+(R²=0.91, p < 0.0001)
+tasarlandığını
+doğrulamıştır
+[kaynak: 1186].
+Stonehenge Boyut / Çap: 33
+Mesafe metre (3x11)
+[kaynak: 1016,
+1390]. Mesafe: Kailaş
+Dağı'na 6666
+km [kaynak: 3951].
+Hatay'a 3630
+km (330x11) [kaynak:
+1423, 3230].
+Göbekli Mimari / Sütun sayılarında (11
+Tepe Açı ve katları) [kaynak:
+508, 1394] ve
+sütunlar arası
+hizalanmalarda
+(11°/22° açı hipotezi)
+[kaynak: 508, 1394]
+11 kodunun
+kullanıldığına dair
+güçlü hipotezler
+mevcuttur.
+
