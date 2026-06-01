@@ -62559,11 +62559,12 @@ target_file = __file__ if '__file__' in globals() else 'SIMULASYON_11_FINAL.py'
 
 if not os.path.exists(target_file):
     print(f"File not found: {target_file}")
-    pass
-
-with open(target_file, 'r', encoding='utf-8') as f:
-    text = f.read()
-    lines = text.splitlines()
+    text = ""
+    lines = []
+else:
+    with open(target_file, 'r', encoding='utf-8') as f:
+        text = f.read()
+        lines = text.splitlines()
 
 # Extract content between triple quotes on single lines
 pattern = re.compile(r'"""(.*?)"""')
