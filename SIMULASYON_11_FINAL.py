@@ -61920,15 +61920,38 @@ def sistem_tetikle():
         MINER_DURUM["anlik_islem"] = "Sistem Duraklatıldı. Beklemede."
     return jsonify({"status": "ok"})
 
-if __name__ == "__main__":
+def start_dashboard():
+    import threading
+    import time
+    import logging
+    
     db_init()
     
     # Arka plan işçisini başlat
     mining_thread = threading.Thread(target=arkaplan_madencisi, daemon=True)
     mining_thread.start()
     
+    # Colab werkzeug hatalarını engellemek için uyarıları kapat
+    log = logging.getLogger('werkzeug')
+    log.setLevel(logging.ERROR)
+    
     print("LEVH-İ MAHFUZ DASHBOARD BAŞLATILDI - http://127.0.0.1:1111")
-    app.run(host='0.0.0.0', port=1111, debug=False)
+    
+    # Flask sunucusunu ayrı bir daemon thread'de başlat
+    flask_thread = threading.Thread(
+        target=lambda: app.run(host='0.0.0.0', port=1111, debug=False, use_reloader=False),
+        daemon=True
+    )
+    flask_thread.start()
+    
+    # Ana thread'i sadece beklemede tut
+    # (Böylece CTRL+C yapıldığında werkzeug değişkenleri yığın belleğinde olmaz ve Colab çökmez)
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        print("\n[!] Sinyal alındı. Sunucu kapatılıyor...")
+        return
 
 
 
@@ -69819,11 +69842,11 @@ class Sentez19_NewDiscoveries:
         }
         passed = sum(results.values())
         total = len(results)
-        print(f"\n{\"=\"*66}")
+        print("\n" + "="*66)
         print(f"  [+] SENTEZ-19: {passed}/{total} ({passed/total*100:.1f}%) DOGRULANDI")
         for k,v in results.items():
-            print(f"    [{\"V\" if v else \"X\"}] {k}")
-        print(f"{\"=\"*66}\n")
+            print(f"    [{'V' if v else 'X'}] {k}")
+        print("="*66 + "\n")
         return results, passed/total*100
 
 
