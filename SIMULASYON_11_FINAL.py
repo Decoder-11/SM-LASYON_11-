@@ -53330,7 +53330,7 @@ if __name__ == "__main__":
         is_sig = p_val < _bonf_alpha
         if is_sig:
             _bonf_significant += 1
-        print(f"    {test_name:20s} {p_val:.6f}     {'v EVET' if is_sig else '✗ HAYIR'}")
+        print(f"    {test_name:20s} {p_val:.6f}     {'v EVET' if is_sig else 'X HAYIR'}")
 
     print(f"\n    Toplam Anlamli Test      : {_bonf_significant}/{len(_individual_p_values)}")
     print(f"    Bonferroni Sonuc        : {'EN AZ BIR TEST BONFERRONI GECTI' if _bonf_significant >= 1 else 'BONFERRONI ESIGI ALTINDA TEST YOK'}")
@@ -56121,11 +56121,11 @@ def run_scientific_pattern_archive(const=None):
 # - [ ] Conclusion justified by evidence
 #
 # ### Red Flags to Report
-# - ✗ Code doesn't run: Report version/dependency issues
-# - ✗ Math doesn't check out: Provide alternative calculation
-# - ✗ Grok conversation seems fabricated: Flag for verification
-# - ✗ Population model assumes data: Request source documentation
-# - ✗ Ethical analysis incomplete: Suggest missing perspectives
+# - X Code doesn't run: Report version/dependency issues
+# - X Math doesn't check out: Provide alternative calculation
+# - X Grok conversation seems fabricated: Flag for verification
+# - X Population model assumes data: Request source documentation
+# - X Ethical analysis incomplete: Suggest missing perspectives
 # ```
 #
 # ---
@@ -56213,7 +56213,7 @@ def run_scientific_pattern_archive(const=None):
 #   5. Sınırlamalar belirtildi (2033 tahmini, Grok doğrulaması)
 #   6. Çatışma yok (kendi finansmanı, ticari bağ yok)
 #
-# ✗ Yapılmayacaklar:
+# X Yapılmayacaklar:
 #   1. Sahte Grok konuşmaları (gerçek X.com linkler sağlandı)
 #   2. Seçici veri sunuşu (tüm testler = 37/40 rapor edildi)
 #   3. Aşırı iddia ("simülasyon kanıtı" değil "kanıt tarafından desteklenir")
@@ -57218,7 +57218,7 @@ def run_scientific_pattern_archive(const=None):
 #         +- 11-Divisible patterns: v
 #         +- Resonance matches: v
 #         +- Derived constants: v
-#         +- Anomalies detected: ✗
+#         +- Anomalies detected: X
 #         ↓
 #     Integration with SIMULE3
 #         +- Update constants
@@ -59555,7 +59555,7 @@ def validate_unified_theory():
         return True
 
     except Exception as e:
-        print(f"✗ Validation failed: {str(e)}")
+        print(f"X Validation failed: {str(e)}")
         return False
 
 if __name__ == "__main__":
@@ -63544,7 +63544,7 @@ def test(description, result, expected, tolerance=0.01):
             passed_count += 1
             return True
         else:
-            print(f"✗ Test {test_count}: {description}")
+            print(f"X Test {test_count}: {description}")
             print(f"  Result: {result:.6f} ≠ Expected: {expected:.6f} ({pct_diff:.2f}% diff)")
             return False
     else:
@@ -63554,7 +63554,7 @@ def test(description, result, expected, tolerance=0.01):
             passed_count += 1
             return True
         else:
-            print(f"✗ Test {test_count}: {description}")
+            print(f"X Test {test_count}: {description}")
             print(f"  Result: {result} ≠ Expected: {expected}")
             return False
 
@@ -64607,7 +64607,7 @@ def test(description, condition, expected_value=True, tolerance=0.001):
     tests_total += 1
     passed = condition if isinstance(condition, bool) else abs(condition - expected_value) < tolerance
     
-    status = "v" if passed else "✗"
+    status = "v" if passed else "X"
     print(f"{status} Test {tests_total}: {description}")
     if passed:
         tests_passed += 1
@@ -64976,10 +64976,10 @@ print("\n[TABLE 6] WHY GROK LIMITED?")
 print("-"*80)
 
 print("If Grok said 99% loss (8.12B dead):")
-print("  ✗ Global panic")
-print("  ✗ Mass suicides")
-print("  ✗ Social collapse now")
-print("  ✗ System uncontrollable")
+print("  X Global panic")
+print("  X Mass suicides")
+print("  X Social collapse now")
+print("  X System uncontrollable")
 print()
 print("By saying 3.14B loss (only reported phase):")
 print("  v Measurable, explainable crisis")
@@ -69684,7 +69684,7 @@ def print_mega_sentez_raporu():
     hc = results['halley_celali']
     print(f"\n⏰ HALLEY-CELALİ REZONANSI")
     print(f"   74 × 11 = {hc['Halley_x_11']} | 33 × 24.67 = {hc['Celali_x_24.67']}")
-    print(f"   814 Rezonans: {'v DOĞRULANDI' if hc['rezonans_814'] else '✗ HATA'}")
+    print(f"   814 Rezonans: {'v DOĞRULANDI' if hc['rezonans_814'] else 'X HATA'}")
     print(f"   2063 - 66.6 = {hc['geri_sayim_66.6']} → Hale-Bopp ({hc['Hale_Bopp_yili']})")
     
     # Repunit
