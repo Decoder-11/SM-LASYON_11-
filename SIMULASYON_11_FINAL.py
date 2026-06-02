@@ -59660,9 +59660,50 @@ class GeneravityEngine:
         try:
             if not getattr(self, "model", None):
                 return self._generate_local_reflection(patterns, persona)
+
+            # CHUNKING & BATCHING ALGORITHM (GEMINI 429 ERROR PREVENTION)
+            import time
+            import json
+
+            # If the pattern is a dict/json, convert it to a string
+            if isinstance(patterns, dict):
+                patterns_str = json.dumps(patterns, indent=2)
+            else:
+                patterns_str = str(patterns)
+
+            # Check if payload is too large (>15000 chars)
+            max_chunk_size = 15000
+            if len(patterns_str) > max_chunk_size:
+                print(f"[AI-BATCH] Büyük veri tespiti ({len(patterns_str)} karakter). Parçalanıyor...")
+                chunks = [patterns_str[i:i+max_chunk_size] for i in range(0, len(patterns_str), max_chunk_size)]
+                full_response = ""
+                
+                for idx, chunk in enumerate(chunks):
+                    print(f"[AI-BATCH] Gönderiliyor: Parça {idx+1}/{len(chunks)}...")
+                    chunk_prompt = prompt.replace(str(patterns), f"[PARÇA {idx+1}/{len(chunks)}]:\n{chunk}")
+                    
+                    # Exponential backoff for API rate limits
+                    max_retries = 3
+                    for attempt in range(max_retries):
+                        try:
+                            response = self.model.generate_content(chunk_prompt)
+                            full_response += response.text + "\n\n"
+                            time.sleep(5)  # Add 5 seconds delay between successful chunks
+                            break
+                        except Exception as e:
+                            if "429" in str(e) or "quota" in str(e).lower():
+                                wait_time = (attempt + 1) * 10
+                                print(f"[AI-BATCH] API limiti aşıldı. {wait_time} saniye bekleniyor... (Deneme {attempt+1}/{max_retries})")
+                                time.sleep(wait_time)
+                            else:
+                                raise e # Re-raise if not a rate limit error
+                return full_response
+            
+            # Normal send if not too large
             response = self.model.generate_content(prompt)
             return response.text
-        except Exception:
+        except Exception as e:
+            print(f"[AI-ERROR] Hata detayı: {e}")
             return self._generate_local_reflection(patterns, persona)
 
     def _generate_local_reflection(self, patterns, persona):
