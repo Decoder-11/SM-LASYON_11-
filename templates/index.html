@@ -136,24 +136,6 @@
                 window.location.reload();
             });
         }
-        function generateReport() {
-            let btn = document.getElementById('raporBtn');
-            btn.innerHTML = '⏳ Rapor Hazırlanıyor... Lütfen Bekleyin';
-            btn.style.background = '#aa5500';
-            
-            fetch('/rapor_sun', { method: 'POST' })
-            .then(r => r.json())
-            .then(data => {
-                if(data.dosya_yolu) {
-                    btn.innerHTML = '✅ RAPOR HAZIR! (Tıkla ve İndir)';
-                    btn.style.background = '#00aa00';
-                    btn.onclick = () => { window.location.href = '/dosya_ac?yol=' + encodeURIComponent(data.dosya_yolu); };
-                }
-            }).catch(e => {
-                btn.innerHTML = '❌ Hata Oluştu';
-                console.error(e);
-            });
-        }
         setTimeout(() => { window.location.reload(); }, 30000);
     </script>
 </head>
@@ -169,45 +151,81 @@
     <div class="container">
         
         <!-- YENİ KONTROL PANELİ (ÜSTTE) -->
-        <div class="box" style="flex: 100%;">
-            <h2>⚙️ SİSTEM BEYNİ & MOTOR KONTROLLERİ</h2>
-            <div class="controls">
-                <button class="start" onclick="sendCommand('BASLAT')">▶ SİSTEMİ BAŞLAT</button>
-                <button class="stop" onclick="sendCommand('DURDUR')">⏹ SİSTEMİ DURDUR</button>
-                <button id="checkupBtn" onclick="systemCheckUp()" style="background: #222; border-color: #00ffcc; color: #00ffcc;">🩺 SİSTEM CHECK-UP (TARAMA)</button>
+        <div class="box" style="flex: 100%; border: 2px solid #00ff00; box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);">
+            <h2 style="color: #00ff00; text-shadow: 0 0 10px #00ff00;">⚙️ SİSTEM BEYNİ & MOTOR KONTROLLERİ & RAPORLAMA</h2>
+            
+            <div style="display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap;">
+                <button class="start" onclick="sendCommand('BASLAT')" style="flex: 1; padding: 15px; font-size: 1.1em; background: #004400; border: 1px solid #00ff00; color: #00ff00;">▶ SİSTEMİ BAŞLAT</button>
+                <button class="stop" onclick="sendCommand('DURDUR')" style="flex: 1; padding: 15px; font-size: 1.1em; background: #440000; border: 1px solid #ff0000; color: #ff0000;">⏹ SİSTEMİ DURDUR</button>
+                <button onclick="systemCheckUp()" style="flex: 1; padding: 15px; font-size: 1.1em; background: #002244; border: 1px solid #00aaff; color: #00aaff; font-weight: bold; cursor: pointer;">🩺 OTONOM SİSTEM DERİN CHECK-UP</button>
             </div>
-            <p>Durum: <strong style="color: {{ '#00ff00' if miner_calisiyor else '#ff0000' }}">{{ "AKTİF (Örümcek Ağı Büyüyor)" if miner_calisiyor else "DURDURULDU" }}</strong></p>
+            
+            <h3 style="color: #ffaa00; margin-top: 20px;">📄 Otonom Rapor Sentezleyici</h3>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <button onclick="raporSun()" style="flex: 1; padding: 12px; background: #332200; border: 1px solid #ffaa00; color: #ffaa00; font-weight: bold;">📜 LEVH-İ MAHFUZ SÜREKLİ RAPORU OLUŞTUR</button>
+                <button onclick="window.open('/dosya_ac?yol=' + encodeURIComponent('C:/Users/soldi/IdeaProjects/simülation-11/MEGA_SENTEZ_50_KESIF_RAPORU.md'))" style="flex: 1; padding: 12px; background: #330033; border: 1px solid #ff00ff; color: #ff00ff; font-weight: bold;">📖 50 MEGA KEŞİF RAPORUNU AÇ</button>
+                <button onclick="window.open('/dosya_ac?yol=' + encodeURIComponent('C:/Users/soldi/IdeaProjects/simülation-11/SISTEM_SENTEZ_RAPORU.md'))" style="flex: 1; padding: 12px; background: #003333; border: 1px solid #00ffff; color: #00ffff; font-weight: bold;">📘 SİSTEM SENTEZ RAPORU (CANLI)</button>
+            </div>
+            
+            <p style="margin-top: 15px;">Durum: <strong style="color: {{ '#00ff00' if miner_calisiyor else '#ff0000' }}">{{ "AKTİF (Örümcek Ağı Büyüyor)" if miner_calisiyor else "DURDURULDU" }}</strong></p>
+            
+            <div id="diagnosticPanel" style="display: none; background: #111; color: #00ffcc; padding: 15px; margin-top: 15px; border: 1px solid #00ffcc; font-family: monospace;">
+                <h3 style="margin-top: 0;">🩺 OTONOM SİSTEM DERİN CHECK-UP...</h3>
+                <div id="checkup-results"></div>
+            </div>
+            
+            <script>
+                function systemCheckUp() {
+                    let panel = document.getElementById('diagnosticPanel');
+                    let resDiv = document.getElementById('checkup-results');
+                    panel.style.display = 'block';
+                    resDiv.innerHTML = "Lütfen bekleyin, sistemin hayati fonksiyonları ve kuantum matrisi test ediliyor...";
+                    
+                    fetch('/check_up')
+                        .then(r => r.json())
+                        .then(data => {
+                            let html = `<strong style="color: ${data.status === 'KUSURSUZ (TÜM SİSTEMLER AKTİF)' ? '#00ff00' : '#ffaa00'}">GENEL DURUM: ${data.status}</strong><br><br>`;
+                            data.detaylar.forEach(d => {
+                                let color = d.includes("🔴") ? "#ff4444" : (d.includes("🟡") ? "#ffcc00" : "#00ff00");
+                                html += `<span style="color: ${color}">${d}</span><br>`;
+                            });
+                            resDiv.innerHTML = html;
+                        }).catch(e => {
+                            resDiv.innerHTML = "<span style='color:red;'>Check-Up Sunucusuna Ulaşılamadı!</span>";
+                        });
+                }
+                
+                function raporSun() {
+                    fetch('/rapor_sun', { method: 'POST' })
+                        .then(r => r.json())
+                        .then(data => {
+                            if(data.status === "ok") {
+                                alert("Rapor Başarıyla Oluşturuldu: " + data.dosya_yolu);
+                                window.open('/dosya_ac?yol=' + encodeURIComponent(data.dosya_yolu));
+                            } else {
+                                alert("Rapor Çıkartılırken Hata Oluştu!");
+                            }
+                        }).catch(e => {
+                            alert("Sunucu Bağlantı Hatası: " + e);
+                        });
+                }
+            </script>
         </div>
 
+        <!-- 3 AYRI MODÜL: DOSYA, URL, TALİMAT -->
         <div class="box">
-            <h2 style="font-size: 28px; font-weight: bold; color: #00ffcc; text-shadow: 0 0 10px #00ffcc;">📁 SİSTEM KÜTÜPHANESİ - DOSYA EKLEME MODÜLÜ</h2>
+            <h2>📁 Dosya Ekleme Modülü</h2>
             <p>Resim, md, py, jpg, pdf vb.</p>
-            <div style="display: flex; gap: 10px; margin-bottom: 5px;">
-                <input type="text" id="new_file" placeholder="Seçmek için Gözat'a tıklayın veya manuel girin..." style="flex: 1; margin: 0;">
-                <button type="button" onclick="gozatDosya()" style="margin: 0; background: #005577; border-color: #00aaff;">Gözat (PC'den Seç)</button>
-            </div>
-            <button onclick="addSource('DOSYA', 'new_file')" style="width: 100%;">Dosyayı Sisteme Ekle</button>
-            <div style="margin-top: 10px; padding: 10px; background: rgba(0,0,0,0.5); border: 1px solid #444;">
-                <strong>📊 Kütüphane İstatistikleri:</strong> Toplam {{ stats.toplam }} dosya<br>
-                <span style="color:#aaa; font-size:0.9em;">(PDF: {{ stats.pdf }} | Py: {{ stats.py }} | Markdown: {{ stats.md }} | Görsel: {{ stats.jpg_png }} | Diğer: {{ stats.diger }})</span>
-            </div>
+            <input type="text" id="new_file" placeholder="C:\Yol\dosya.pdf">
+            <button onclick="addSource('DOSYA', 'new_file')">Dosya Ekle</button>
             <table>
                 <tr><th>Eklenen Dosyalar</th></tr>
                 {% for k in kaynaklar %}
                     {% if k[2] == 'DOSYA' %}
-                        <tr><td class="oruntu-baglanti">[{{ k[1] }}] {{ k[3] }}</td></tr>
+                        <tr><td class="oruntu-baglanti">{{ k[3] }}</td></tr>
                     {% endif %}
                 {% endfor %}
             </table>
-            <script>
-                function gozatDosya() {
-                    fetch('/gozat_dosya').then(r => r.json()).then(data => {
-                        if(data.yol) {
-                            document.getElementById('new_file').value = data.yol;
-                        }
-                    }).catch(e => console.error("Gözat hatası:", e));
-                }
-            </script>
         </div>
 
         <div class="box">
@@ -219,64 +237,109 @@
                 <tr><th>Eklenen Linkler</th></tr>
                 {% for k in kaynaklar %}
                     {% if k[2] == 'LINK' %}
-                        <tr><td class="formul-sabit">[{{ k[1] }}] {{ k[3] }}</td></tr>
+                        <tr><td class="formul-sabit">{{ k[3] }}</td></tr>
                     {% endif %}
                 {% endfor %}
             </table>
         </div>
 
-        <div class="box">
-            <h2>🧠 Beyin / Motor Talimat Modülü</h2>
-            <p>Sisteme özel talimatlar ve görevler verin.</p>
-            <input type="text" id="new_command" placeholder="Bütün logları tarayıp özet çıkar...">
-            <button onclick="addSource('TALIMAT', 'new_command')">Talimat Ver</button>
-            <table>
-                <tr><th>Verilen Talimatlar</th></tr>
-                {% for k in kaynaklar %}
-                    {% if k[2] == 'TALIMAT' %}
-                        <tr><td class="buyuk-kesif">[{{ k[1] }}] {{ k[3] }}</td></tr>
-                    {% endif %}
-                {% endfor %}
-            </table>
-        </div>
-        
-        <!-- YENİ: LEVHİ-MAHFUZ SABİTİ TABLOSU -->
-        <div class="box" style="flex: 2; border: 2px solid #ffcc00; box-shadow: 0 0 20px rgba(255, 204, 0, 0.4);">
-            <h2 style="color: #ffcc00; text-shadow: 0 0 10px #ffcc00;">✨ LEVHİ-MAHFUZ SABİTİ (Kadim Eşleşmeler)</h2>
-            <p style="color: #ddd; font-size: 0.9em;">1-11 Repunit matematiği, fiziksel, biyolojik ve astronomik oran eşleşmeleri.</p>
-            <table>
-                <tr><th>Tarih</th><th>Sabit Tipi</th><th>Hesaplanan Değer</th><th>Formül / Detay</th></tr>
-                {% for k in kesifler %}
-                    {% if k[4] == 'LEVHI_MAHFUZ_SABITI' %}
-                    <tr style="color: #ffea88; font-weight: bold; text-shadow: 0 0 5px #ffea88;">
-                        <td>{{ k[1] }}</td>
-                        <td>{{ k[4] }}</td>
-                        <td>{{ k[3] }}</td>
-                        <td><span style="color:#aaa; font-size:0.85em;">[{{ k[2] }}]</span> {{ k[5] }}</td>
-                    </tr>
-                    {% endif %}
-                {% endfor %}
-            </table>
+        <div class="box" style="flex: 100%; border: 2px solid #cc66ff; box-shadow: 0 0 20px rgba(204, 102, 255, 0.4);">
+            <h2 style="color: #cc66ff; text-shadow: 0 0 10px #cc66ff;">🧠 OTONOM BEYİN (Yapay Zeka Sentezi & Kod Üretimi)</h2>
+            <p style="color: #ddd; text-align: center;">Sistem bu paneli kullanarak geçmişte öğrendiği (Kar Topu) bilgilerden yeni Python algoritmaları sentezler ve henüz keşfedilmemiş bu kodları ana matrise eklemenizi önerir.</p>
+            
+            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 300px; background: rgba(0,0,0,0.6); padding: 15px; border: 1px solid #444;">
+                    <h3 style="color: #00ffcc; margin-top: 0;">🐍 YENİ PYTHON ALGORİTMASI ÜRET (GEMINI API)</h3>
+                    <input type="text" id="ai_prompt" placeholder="Örn: 11 boyutlu yerçekimi sapmasını hesaplayan yeni bir fonksiyon sentezle..." style="width: 100%; padding: 10px; background: #111; color: #00ffcc; border: 1px solid #00ffcc; margin-bottom: 10px;">
+                    <button onclick="otonomKodUret()" id="btnKodUret" style="width: 100%; background: #004400; border: 1px solid #00ff00; color: #00ff00; padding: 12px; font-weight: bold; font-size: 1.1em;">⚙️ OTONOM PYTHON KODU SENTEZLE</button>
+                    
+                    <div style="margin-top: 15px;">
+                        <textarea id="ai_code_output" rows="8" style="width: 100%; background: #000; color: #00ff00; border: 1px solid #333; padding: 10px; font-family: monospace;" readonly placeholder="Üretilen Python kodu burada görünecek..."></textarea>
+                    </div>
+                </div>
+                
+                <div style="flex: 1; min-width: 300px; background: rgba(0,0,0,0.6); padding: 15px; border: 1px solid #444;">
+                    <h3 style="color: #ffaa00; margin-top: 0;">💡 YAPAY ZEKA MODÜL ÖNERİSİ AL</h3>
+                    <button onclick="modulOnerisiAl()" id="btnOneri" style="width: 100%; background: #442200; border: 1px solid #ffaa00; color: #ffaa00; padding: 12px; font-weight: bold; font-size: 1.1em;">🔮 SİSTEME YENİ MODÜL ÖNERİSİ GETİR</button>
+                    
+                    <div style="margin-top: 15px;">
+                        <div id="oneri_ciktisi" style="background: #111; color: #ffaa00; border: 1px solid #553300; padding: 10px; min-height: 100px;">Öneriler bekleniyor...</div>
+                    </div>
+                </div>
+            </div>
+            
+            <script>
+                function otonomKodUret() {
+                    let btn = document.getElementById('btnKodUret');
+                    let output = document.getElementById('ai_code_output');
+                    let prompt = document.getElementById('ai_prompt').value;
+                    
+                    btn.innerHTML = '⏳ YENİ BOYUT KAPILARI AÇILIYOR (SENTEZLENİYOR)...';
+                    btn.style.background = '#aa5500';
+                    output.value = "Gemini API'ye bağlanılıyor...\nKozmik veriler işleniyor...\nLütfen bekleyin...";
+                    
+                    let formData = new FormData();
+                    formData.append('talimat', prompt);
+                    
+                    fetch('/otonom_kod_uret', { method: 'POST', body: formData })
+                    .then(r => r.json())
+                    .then(data => {
+                        if(data.status === "BASARILI") {
+                            output.value = data.kod;
+                            btn.innerHTML = '✅ BAŞARILI (KOD ÜRETİLDİ)';
+                            btn.style.background = '#004400';
+                        } else {
+                            output.value = "HATA: " + data.mesaj;
+                            btn.innerHTML = '❌ SENTEZ BAŞARISIZ';
+                            btn.style.background = '#440000';
+                        }
+                    }).catch(e => {
+                        output.value = "Bağlantı Hatası: " + e;
+                        btn.innerHTML = '⚙️ OTONOM PYTHON KODU SENTEZLE';
+                        btn.style.background = '#004400';
+                    });
+                }
+                
+                function modulOnerisiAl() {
+                    let btn = document.getElementById('btnOneri');
+                    let output = document.getElementById('oneri_ciktisi');
+                    
+                    btn.innerHTML = '⏳ BİLGİ EVRENİ TARANIYOR...';
+                    
+                    fetch('/modul_onerisi_al', { method: 'POST' })
+                    .then(r => r.json())
+                    .then(data => {
+                        if(data.status === "BASARILI") {
+                            output.innerHTML = "<strong>✨ YENİ ÖNERİ:</strong><br><br>" + data.oneri.replace(/\n/g, '<br>');
+                            btn.innerHTML = '🔮 SİSTEME YENİ MODÜL ÖNERİSİ GETİR';
+                        } else {
+                            output.innerHTML = "<span style='color:red;'>HATA: " + data.mesaj + "</span>";
+                            btn.innerHTML = '🔮 SİSTEME YENİ MODÜL ÖNERİSİ GETİR';
+                        }
+                    }).catch(e => {
+                        output.innerHTML = "Bağlantı Hatası: " + e;
+                        btn.innerHTML = '🔮 SİSTEME YENİ MODÜL ÖNERİSİ GETİR';
+                    });
+                }
+            </script>
         </div>
 
         <!-- ESKİ MODÜLLER (KESİFLER VE KAR TOPU) -->
         <div class="box" style="flex: 2;">
             <h2>🔭 Son Dev Keşifler ve Formüller</h2>
             <table>
-                <tr><th>Tarih</th><th>Sınıf</th><th>Değer</th><th>Açıklama (Kaynak)</th></tr>
+                <tr><th>Sınıf</th><th>Değer</th><th>Açıklama (Kaynak)</th></tr>
                 {% for k in kesifler %}
                 {% set color_class = 'oruntu-baglanti' %}
-                {% set kat_str = k[4]|string %}
-                {% if 'ALERT' in kat_str or 'BÜYÜK' in kat_str or 'HACİM' in kat_str or '11. BOYUT' in kat_str %}
+                {% if 'ALERT' in k[4] or 'BÜYÜK' in k[4] or 'HACİM' in k[4] or '11. BOYUT' in k[4] %}
                     {% set color_class = 'buyuk-kesif' %}
-                {% elif 'FORMÜL' in kat_str or 'SABİT' in kat_str or 'REZONANS' in kat_str %}
+                {% elif 'FORMÜL' in k[4] or 'SABİT' in k[4] or 'REZONANS' in k[4] %}
                     {% set color_class = 'formul-sabit' %}
                 {% endif %}
                 <tr class="{{ color_class }}">
-                    <td>{{ k[1] }}</td>
                     <td>{{ k[4] }}</td>
                     <td>{{ k[3] }}</td>
-                    <td><span style="color:#aaa; font-size:0.85em;">[{{ k[2] }}]</span> {{ k[5] }}</td>
+                    <td>{{ k[5] }}</td>
                 </tr>
                 {% endfor %}
             </table>
@@ -294,12 +357,6 @@
                 </tr>
                 {% endfor %}
             </table>
-        </div>
-
-        <div class="box" style="flex: 100%; text-align: center; border: 2px solid #00ffcc; padding: 20px;">
-            <h2 style="color: #00ffcc; margin-bottom: 15px;">📊 ÖZEL BÜYÜK RAPOR OLUŞTURUCU</h2>
-            <p style="color: #ddd;">Tüm kategorilerdeki (Din, Bilim, Kuantum, Fizik, Biyoloji) bulguları detaylı MD dosyası halinde dışa aktar.</p>
-            <button id="raporBtn" onclick="generateReport()" style="padding: 15px 30px; font-size: 1.2em; background: #005577; border: 2px solid #00ffcc; border-radius: 8px;">📑 DETAYLI RAPORU ŞİMDİ SUN</button>
         </div>
 
     </div>

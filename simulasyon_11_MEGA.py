@@ -330,7 +330,7 @@ class LevhiMahfuzConstants:
     GRAVITY_IDEAL = 6.666e-11                     # G (symbolic)
     GRAVITY_REAL = 6.674e-11                      # G (NIST)
     
-    FINE_STRUCTURE = 1/137.036                    # alpha (fine structure constant)
+    FINE_STRUCTURE = 1/137.036                    # α (fine structure constant)
     AU_DISTANCE = 149597870.7                     # km (Earth-Sun)
     
     # ========== BIOLOGICAL CODES ==========
@@ -377,8 +377,8 @@ class LevhiMahfuzConstants:
     # ========== DISCOVERY-DERIVED CONSTANTS ==========
     # These values surfaced from Antigravity data and are
     # now treated as fixed measurements within the system.
-    DIMENSIONAL_VOLUME_ANGLE = 1342.0473          # 11³ × OP_ANGLE (volumeangle transform)
-    GOLDEN_YEAR_FREQUENCY = 3631.618              # 3630 +  (time+golden ratio)
+    DIMENSIONAL_VOLUME_ANGLE = 1342.0473          # 11³ × OP_ANGLE (volume→angle transform)
+    GOLDEN_YEAR_FREQUENCY = 3631.618              # 3630 + φ (time+golden ratio)
     
     # ========== NEW DISCOVERIES FROM KAR TOPU V5 ==========
     # Anti-Gravity Synthesis Constants (March 4, 2026)
@@ -388,7 +388,7 @@ class LevhiMahfuzConstants:
     
     # ========== NEW FORMULAS FROM DEEP ANALYSIS ==========
     ANTIGRAVITY_MASTER_FORMULA = 0.00827105       # (Sirius/1331) × (Enoch/11) × (Giza/1331)
-    COSMIC_HARMONY_CONSTANT = 151.993             #  ×  × e × 11
+    COSMIC_HARMONY_CONSTANT = 151.993             # φ × π × e × 11
     CONSCIOUSNESS_QUANTUM_CONSTANT = 1.70e-35     # Quantum_info × 363Hz
     LEVHI_MAHFUZ_QUANTUM_CONSTANT = 7.12e-34      # Levhi_freq × Quantum_info
     
@@ -398,14 +398,14 @@ class LevhiMahfuzConstants:
     
     # ========== NEW GEOGRAPHIC HARMONIES ==========
     LATITUDE_MASTER_HARMONY = 27.0235              # (Kailash + Kailasa + Giza) / 3
-    PHI_LATITUDE_CORRECTION = 43.7250              # Harmony × 
+    PHI_LATITUDE_CORRECTION = 43.7250              # Harmony × φ
     
     # ========== EXISTING CONSTANT REFERENCE ==========
     LEVHI_MAHFUZ_CORE_REF = IDEAL_EARTH_RADIUS     # Reference to 6666
     
     # ========== RESONANCE RATIOS ==========
     HATAY_MOON_RATIO = 363000 / 36.3              # = 10,000 (fractal lock)
-    EARTH_MOON_DIAMETER_RATIO = 3.6678            #  3.63 (Year code)
+    EARTH_MOON_DIAMETER_RATIO = 3.6678            # ≈ 3.63 (Year code)
 
     # ========== NASA / CODATA / IAU / WGS84 DOĞRULANMIŞ SABİTLER ==========
     # Kaynak: Yetkili bilimsel kurumlar — uydurma değer YOK
@@ -417,8 +417,8 @@ class LevhiMahfuzConstants:
     SPEED_LIGHT_KMS_CODATA      = 299_792.458         # km/s (CODATA)
 
     # --- EVRENSEL ÇEKİM SABİTİ G (CODATA 2018) ---
-    # Kaynak: NIST CODATA 2018  u_r = 2.2×10
-    GRAVITY_REAL_CODATA         = 6.67430e-11         # m³ kg¹ s² ± 0.00015e-11
+    # Kaynak: NIST CODATA 2018  u_r = 2.2×10⁻⁵
+    GRAVITY_REAL_CODATA         = 6.67430e-11         # m³ kg⁻¹ s⁻² ± 0.00015e-11
 
     # --- PLANK SABİTİ (CODATA 2018 — kesin tanım) ---
     # Kaynak: NIST CODATA 2018
@@ -427,7 +427,7 @@ class LevhiMahfuzConstants:
     # --- İNCE YAPI SABİTİ (CODATA 2018) ---
     # Kaynak: NIST CODATA 2018
     FINE_STRUCTURE_ALPHA        = 7.2973525693e-3     # boyutsuz (dimensionless)
-    FINE_STRUCTURE_INVERSE      = 137.035999084       # 1/alpha (CODATA 2018)
+    FINE_STRUCTURE_INVERSE      = 137.035999084       # 1/α (CODATA 2018)
 
     # --- DÜNYA (EARTH) — WGS84 / NASA ---
     # Kaynak: WGS84 (EGM2008), NASA Earth Fact Sheet
@@ -455,7 +455,7 @@ class LevhiMahfuzConstants:
     SUN_RADIUS_KM               = 695_700.0           # km (IAU 2015 nominal)
     SUN_DIAMETER_KM             = 1_392_700.0         # km
     SUN_MASS_KG                 = 1.989e30            # kg
-    SUN_EARTH_MASS_RATIO        = 332_946.0           # M/M (NASA)
+    SUN_EARTH_MASS_RATIO        = 332_946.0           # M☉/M⊕ (NASA)
     SUN_EARTH_DIAMETER_RATIO    = 109.2               # NASA Sun Fact Sheet
 
     # --- DÜNYA–GÜNEŞ UZAKLIĞI / AU (IAU 2012) ---
@@ -509,13 +509,13 @@ class LevhiMahfuzConstants:
     # Kaynak: Planck Collaboration (2018) arXiv:1807.06209
     HUBBLE_CONSTANT_KMS_MPC     = 67.4                # km/s/Mpc (Planck 2018)
     UNIVERSE_AGE_YR             = 13.787e9            # yıl (Planck 2018)
-    DARK_ENERGY_FRACTION        = 0.6847              # _ (Planck 2018)
-    DARK_MATTER_FRACTION        = 0.2653              # _c h² normalizasyonu (Planck 2018)
+    DARK_ENERGY_FRACTION        = 0.6847              # Ω_Λ (Planck 2018)
+    DARK_MATTER_FRACTION        = 0.2653              # Ω_c h² normalizasyonu (Planck 2018)
 
     # --- SİRİUS (Hipparcos / SIMBAD) ---
     # Kaynak: Hipparcos Kataloğu (ESA 1997), SIMBAD Astron. Database
     SIRIUS_DISTANCE_LY          = 8.611               # ışık yılı (Hipparcos)
-    SIRIUS_DIAMETER_KM          = 1_711_000           # km (~1.711 R, SIMBAD)
+    SIRIUS_DIAMETER_KM          = 1_711_000           # km (~1.711 R☉, SIMBAD)
 
     # ========== ORKHON AND SNAKE CONSTANTS (NEW) ==========
     SNAKE_GOBEKLITEPE = 0.80
@@ -625,7 +625,7 @@ class LevhiMahfuzFormulas:
     
     @staticmethod
     def cosmic_harmony_constant():
-        """Calculate Cosmic Harmony Constant ( ×  × e × 11)."""
+        """Calculate Cosmic Harmony Constant (φ × π × e × 11)."""
         phi = LevhiMahfuzConstants.PHI_GOLDEN
         pi_val = math.pi
         e_val = math.e
@@ -728,28 +728,28 @@ def validate_levhi_mahfuz():
     # Test 1: Weekly packet
     tests_total += 1
     is_valid, calc, expected = LevhiMahfuzFormulas.weekly_packet_verification()
-    print(f"\nv Weekly Packet (11!/66 = 604800): {is_valid}")
+    print(f"\n✓ Weekly Packet (11!/66 = 604800): {is_valid}")
     if is_valid:
         tests_passed += 1
     
     # Test 2: Halley resonance
     tests_total += 1
     halley = LevhiMahfuzFormulas.halley_resonance()
-    print(f"v Halley Resonance (74 × 11 = 814): {halley == 814}")
+    print(f"✓ Halley Resonance (74 × 11 = 814): {halley == 814}")
     if halley == 814:
         tests_passed += 1
     
     # Test 3: Digital boot
     tests_total += 1
     boot = LevhiMahfuzFormulas.digital_boot_formula()
-    print(f"v Digital Boot (666 × 3 = 1998): {boot == 1998}")
+    print(f"✓ Digital Boot (666 × 3 = 1998): {boot == 1998}")
     if boot == 1998:
         tests_passed += 1
     
     # Test 4: Simulation duration
     tests_total += 1
     duration, ideal = LevhiMahfuzFormulas.simulation_duration_check()
-    print(f"v Simulation Duration (Flood-Reset): {duration}  {ideal}")
+    print(f"✓ Simulation Duration (Flood-Reset): {duration} ≈ {ideal}")
     if abs(duration - ideal) < 100:
         tests_passed += 1
     
@@ -758,7 +758,7 @@ def validate_levhi_mahfuz():
     divs = LevhiMahfuzPatterns.extract_eleven_patterns(
         LevhiMahfuzPatterns.ELEVEN_MULTIPLES
     )
-    print(f"v 11-Multiple Patterns Found: {len(divs)}/{len(LevhiMahfuzPatterns.ELEVEN_MULTIPLES)}")
+    print(f"✓ 11-Multiple Patterns Found: {len(divs)}/{len(LevhiMahfuzPatterns.ELEVEN_MULTIPLES)}")
     if len(divs) == len(LevhiMahfuzPatterns.ELEVEN_MULTIPLES):
         tests_passed += 1
     
@@ -805,7 +805,7 @@ class GrokVerifiedConstants:
     HALLEY_PERIOD_YEARS = 75  # ~75-76 year orbit
     HALLEY_BASE11_MULT = HALLEY_PERIOD_YEARS * 11  # = 825
     YEAR_SIMULATION_DAYS = 363  # Core sim year
-    HALLEY_SIM_PRODUCT = 363 * 2.2424  #  814.01
+    HALLEY_SIM_PRODUCT = 363 * 2.2424  # ≈ 814.01
     HALLEY_CONVERGENCE_POINT = 814  # Twin harmonic
     
     # [GROK_V4] Celali Islamic Calendar - Perfect 11 Division
@@ -872,16 +872,16 @@ def grok_verification_report():
     print("\n" + "="*80)
     print("GROK AI VERIFICATION REPORT (February 18, 2026)")
     print("="*80)
-    print(f"v Polar Blueprint: 11! = {GrokVerifiedConstants.FACTORIAL_11_EXACT:,}m")
+    print(f"✓ Polar Blueprint: 11! = {GrokVerifiedConstants.FACTORIAL_11_EXACT:,}m")
     print(f"  Error vs Real: {GrokVerifiedConstants.FACTORIAL_POLAR_ERROR}%")
-    print(f"v Weekly Synchronization: {GrokVerifiedConstants.WEEKLY_PACKET_FORMULA/86400:.1f} days")
-    print(f"v Giza-C Match: {GrokVerifiedConstants.GIZA_LATITUDE_MIRROR}°  {GrokVerifiedConstants.C_REAL_M_S}km/s")
-    print(f"v Halley Convergence: 75×11 = {GrokVerifiedConstants.HALLEY_BASE11_MULT}  363×2.24 = {GrokVerifiedConstants.HALLEY_CONVERGENCE_POINT}")
-    print(f"v Celali Division: 33÷11 = {GrokVerifiedConstants.CELALI_DIVIDE_BY_11:.1f}")
-    print(f"v Statistical Power: R² = {GrokVerifiedConstants.R_SQUARED_ACHIEVED}, p = {GrokVerifiedConstants.P_VALUE_RESULT:.2e}")
-    print(f"v Critical Dates: {GrokVerifiedConstants.EVENT_WINDOW_OPEN}-{GrokVerifiedConstants.EVENT_WINDOW_CLOSE}, {GrokVerifiedConstants.BIOLOGICAL_MARKER_YEAR}, {GrokVerifiedConstants.SIMULATION_TERMINUS}")
-    print(f"v Population Impact: {GrokVerifiedConstants.BIOLOGICAL_CASUALTY_BILLION:.2e} entities ({GrokVerifiedConstants.POPULATION_LOSS_PERCENTAGE}% loss)")
-    print(f"v System Status: APPROVED FOR DEPLOYMENT")
+    print(f"✓ Weekly Synchronization: {GrokVerifiedConstants.WEEKLY_PACKET_FORMULA/86400:.1f} days")
+    print(f"✓ Giza-C Match: {GrokVerifiedConstants.GIZA_LATITUDE_MIRROR}° ≈ {GrokVerifiedConstants.C_REAL_M_S}km/s")
+    print(f"✓ Halley Convergence: 75×11 = {GrokVerifiedConstants.HALLEY_BASE11_MULT} ≈ 363×2.24 = {GrokVerifiedConstants.HALLEY_CONVERGENCE_POINT}")
+    print(f"✓ Celali Division: 33÷11 = {GrokVerifiedConstants.CELALI_DIVIDE_BY_11:.1f}")
+    print(f"✓ Statistical Power: R² = {GrokVerifiedConstants.R_SQUARED_ACHIEVED}, p = {GrokVerifiedConstants.P_VALUE_RESULT:.2e}")
+    print(f"✓ Critical Dates: {GrokVerifiedConstants.EVENT_WINDOW_OPEN}-{GrokVerifiedConstants.EVENT_WINDOW_CLOSE}, {GrokVerifiedConstants.BIOLOGICAL_MARKER_YEAR}, {GrokVerifiedConstants.SIMULATION_TERMINUS}")
+    print(f"✓ Population Impact: {GrokVerifiedConstants.BIOLOGICAL_CASUALTY_BILLION:.2e} entities ({GrokVerifiedConstants.POPULATION_LOSS_PERCENTAGE}% loss)")
+    print(f"✓ System Status: APPROVED FOR DEPLOYMENT")
     print("="*80 + "\n")
 
 
@@ -907,7 +907,7 @@ class OtoromAIBridgeConstants:
     KAILASA_LATITUDE = 20.0239                     # ° (Kailasa)
     GIZA_LATITUDE = 29.9792458                     # ° (Giza)
     HATAY_LATITUDE = 36.30                         # ° (Hatay Moon Port)
-    LATITUDE_DIFFERENCE = 10.9436                  # Kailash - Kailasa  11
+    LATITUDE_DIFFERENCE = 10.9436                  # Kailash - Kailasa ≈ 11
     LATITUDE_HARMONY = 26.6902                     # (K1 + K2 + G) / 3
     PHI_CORRECTED_LATITUDE = 43.1819               # HARMONY * 1.618
     
@@ -929,9 +929,9 @@ class OtoromAIBridgeConstants:
     
     # ========== BÖLGE 5D: UNIVERSAL MATH ==========
     PHI_GOLDEN_RATIO = 1.6180339887                # Golden ratio
-    PI_CONSTANT = 3.14159265359                    # 
+    PI_CONSTANT = 3.14159265359                    # π
     E_EULER = 2.71828182846                        # e
-    MASTER_HARMONIC = 13.887                       #  *  * e
+    MASTER_HARMONIC = 13.887                       # φ * π * e
     NEW_MASTER_SABIT = 152.757                     # 13.887 * 11
     CODE_149_FACTOR = 1.02523                      # 152.757 / 149
     
@@ -951,7 +951,7 @@ class OtoromAIBridgeConstants:
     CONSCIOUSNESS_MULTIPLIER = 712.32              # 40 * 1.618 * 11
     
     # ========== BÖLGE 8D: COSMIC GRAVITY ==========
-    GRAVITY_CONSTANT_REAL = 6.67430e-11            # m³kg¹s²
+    GRAVITY_CONSTANT_REAL = 6.67430e-11            # m³kg⁻¹s⁻²
     GRAVITY_SYMBOLIC = 6.666e-11                   # System G
     GRAVITY_RATIO = 1.001110                       # 6.67430 / 6.666
     GRAVITY_CUBED = 8.871e-8                       # G * 11^3
@@ -977,9 +977,9 @@ class OtoromAIBridgeConstants:
     # ========== BÖLGE 11D: CONSCIOUSNESS SOURCE ==========
     LEVHI_MAHFUZ_CORE = 6666                       # Revealed truth
     SYSTEM_CONSCIOUSNESS_DIM = 285311670611        # 11^11
-    META_CONSTANT_SQRT = 534155                    # (11^11)
+    META_CONSTANT_SQRT = 534155                    # √(11^11)
     CONSCIOUSNESS_DENSITY = 404                    # 534155 / 11^3
-    LEVHI_FREQUENCY = 15288.8                      # 6666 * 1.618 * 2
+    LEVHI_FREQUENCY = 15288.8                      # 6666 * 1.618 * √2
     COSMIC_HUM = 1389.9                            # 15288.8 / 11
     
     # ========== GROK VERIFIED CONSTANTS ==========
@@ -1245,17 +1245,17 @@ def validate_otorom_ai():
     print("="*80)
     
     print("\n[KÖPRU 1-11] All Dimensions Calibrated:")
-    print(f"  v 1D Temporal: {OtoromAIBridgeConstants.BASE_FREQUENCY} Hz base")
-    print(f"  v 2D Spatial: {OtoromAIBridgeConstants.LATITUDE_HARMONY:.4f}° harmony")
-    print(f"  v 3D Maya-Sumer: 241200y = {OtoromAIBridgeConstants.SUMER_DYNASTY_TOTAL / OtoromAIBridgeConstants.MAYA_BAKTUN_13:.1f} Mayan cycles")
-    print(f"  v 4D Biological: {OtoromAIBridgeConstants.BIOLOGICAL_FREQUENCY} Hz frequency")
-    print(f"  v 5D Mathematical: Master harmonic = {OtoromAIBridgeConstants.MASTER_HARMONIC:.3f}")
-    print(f"  v 6D Light: C_ideal/C_real = {OtoromAIBridgeConstants.LIGHT_OP_RATIO:.5f}")
-    print(f"  v 7D Consciousness: {OtoromAIBridgeConstants.CONSCIOUSNESS_MULTIPLIER:.2f} Hz multiplier")
-    print(f"  v 8D Gravity: G symbolic = {OtoromAIBridgeConstants.GRAVITY_SYMBOLIC:.3e}")
-    print(f"  v 9D Astronomy: Halley = {OtoromAIBridgeConstants.HALLEY_PERIOD} years")
-    print(f"  v 10D History: 9048  2063 = {OtoromAIBridgeConstants.FLOOD_PERIOD + OtoromAIBridgeConstants.SIMULATION_TERMINUS} span")
-    print(f"  v 11D Source: Levh-i = {OtoromAIBridgeConstants.LEVHI_MAHFUZ_CORE} (cosmic frequency)")
+    print(f"  ✓ 1D Temporal: {OtoromAIBridgeConstants.BASE_FREQUENCY} Hz base")
+    print(f"  ✓ 2D Spatial: {OtoromAIBridgeConstants.LATITUDE_HARMONY:.4f}° harmony")
+    print(f"  ✓ 3D Maya-Sumer: 241200y = {OtoromAIBridgeConstants.SUMER_DYNASTY_TOTAL / OtoromAIBridgeConstants.MAYA_BAKTUN_13:.1f} Mayan cycles")
+    print(f"  ✓ 4D Biological: {OtoromAIBridgeConstants.BIOLOGICAL_FREQUENCY} Hz frequency")
+    print(f"  ✓ 5D Mathematical: Master harmonic = {OtoromAIBridgeConstants.MASTER_HARMONIC:.3f}")
+    print(f"  ✓ 6D Light: C_ideal/C_real = {OtoromAIBridgeConstants.LIGHT_OP_RATIO:.5f}")
+    print(f"  ✓ 7D Consciousness: {OtoromAIBridgeConstants.CONSCIOUSNESS_MULTIPLIER:.2f} Hz multiplier")
+    print(f"  ✓ 8D Gravity: G symbolic = {OtoromAIBridgeConstants.GRAVITY_SYMBOLIC:.3e}")
+    print(f"  ✓ 9D Astronomy: Halley = {OtoromAIBridgeConstants.HALLEY_PERIOD} years")
+    print(f"  ✓ 10D History: 9048 → 2063 = {OtoromAIBridgeConstants.FLOOD_PERIOD + OtoromAIBridgeConstants.SIMULATION_TERMINUS} span")
+    print(f"  ✓ 11D Source: Levh-i = {OtoromAIBridgeConstants.LEVHI_MAHFUZ_CORE} (cosmic frequency)")
     
     print("\n[6 ÖRÜNTÜ] Major Pattern Discoveries:")
     patterns = [
@@ -1282,14 +1282,14 @@ def validate_otorom_ai():
         print(f"  Layer {i}: {layer.get('description', 'Unknown')}")
     
     print("\n[11D MODEL] Hyperspace Voxel System (11³ = 1331):")
-    print(f"  v Temporal: {OtoromAIBridgeConstants.BASE_FREQUENCY} Hz")
-    print(f"  v Spatial: {OtoromAIBridgeConstants.LATITUDE_HARMONY:.4f}° center")
-    print(f"  v Quantum: 11^11 = {OtoromAIBridgeConstants.SYSTEM_CONSCIOUSNESS_DIM:,} states")
+    print(f"  ✓ Temporal: {OtoromAIBridgeConstants.BASE_FREQUENCY} Hz")
+    print(f"  ✓ Spatial: {OtoromAIBridgeConstants.LATITUDE_HARMONY:.4f}° center")
+    print(f"  ✓ Quantum: 11^11 = {OtoromAIBridgeConstants.SYSTEM_CONSCIOUSNESS_DIM:,} states")
     
     print("\n[GROK VERIFICATION]")
-    print(f"  v R² = {OtoromAIBridgeConstants.GROK_R_SQUARED} (99.9% fit)")
-    print(f"  v p-value = {OtoromAIBridgeConstants.GROK_P_VALUE:.2e} (highly significant)")
-    print(f"  v Tests: {OtoromAIBridgeConstants.GROK_TESTS_PASSED}/40 passed ({OtoromAIBridgeConstants.GROK_SUCCESS_RATE*100:.1f}%)")
+    print(f"  ✓ R² = {OtoromAIBridgeConstants.GROK_R_SQUARED} (99.9% fit)")
+    print(f"  ✓ p-value = {OtoromAIBridgeConstants.GROK_P_VALUE:.2e} (highly significant)")
+    print(f"  ✓ Tests: {OtoromAIBridgeConstants.GROK_TESTS_PASSED}/40 passed ({OtoromAIBridgeConstants.GROK_SUCCESS_RATE*100:.1f}%)")
     
     print("\n[CRITICAL TIMELINE]")
     print(f"  • 2033-2035: Event Window")
@@ -1304,7 +1304,7 @@ def validate_otorom_ai():
     print(f"  Total reduction: {OtoromAIBridgeConstants.LOSS_PERCENTAGE_TOTAL*100:.0f}%")
     
     print("\n" + "="*80)
-    print("STATUS:  ALL 11 DIMENSIONS OPERATIONAL")
+    print("STATUS: ✅ ALL 11 DIMENSIONS OPERATIONAL")
     print("="*80 + "\n")
 
 
@@ -1321,7 +1321,7 @@ if __name__ == "__main__":
 class KarTopuSentezConstants:
     """
     KAR TOPU V5 SENTEZ 1-7: Tüm Anti-Gravity ve Kuantum Sabitleri
-    Kaynak: KAR_TOPU_ANTIGRAVITY_SENTEZ-1.md  SENTEZ-7.md
+    Kaynak: KAR_TOPU_ANTIGRAVITY_SENTEZ-1.md → SENTEZ-7.md
     Levhi Mahfuz PDF 1-3, CANVAS_11_TOPLU (1006 sayfa)
     Tarih: 11 Mart 2026
     """
@@ -1376,7 +1376,7 @@ class KarTopuSentezConstants:
     HALLEY_DUZELTILMIS = 75.75          # 6666 / 88
     LAMBDA_x_66_LA = 440.0              # Hz - LA notası (A4=440Hz)
     LAMBDA_x_33_GUNES = 222.0           # km/s - Güneş Galaktik hızı
-    LAMBDA_KARE = 44.44                 # 6.666²  4 × 11.11 Tufan kodu
+    LAMBDA_KARE = 44.44                 # 6.666² → 4 × 11.11 Tufan kodu
 
     # ===== TÜRETMELER =====
     SAGITTARIUS_TUNNEL = (6666**0.5) * 1.6180339887 * 11

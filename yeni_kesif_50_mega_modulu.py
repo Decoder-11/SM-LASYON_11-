@@ -411,6 +411,30 @@ class MegaSentez50:
             'Hale_Bopp_yili': HALE_BOPP_SIGNAL,
         }
     
+    # --- SENTEZ 18 (Kozmik Rezonans ve Vopson Kanıtları) ---
+    def sentez_18_kozmik_rezonans(self):
+        """
+        Sentez 18: Giza Işık Hızı Kilitlenmesi, R11 Çarpanları, Vopson ve Hubble Tension sentezi.
+        """
+        return {
+            'isik_hizi_giza': {
+                'Giza_Enlemi': 29.9792458,
+                'Fiziki_Isik_Hizi': 299792.458,
+                'Ideal_Isik_Hizi': 333333.333,
+                'Aciklama': 'Zaman sürtünmesi nedeniyle ideal ışık hızı Giza enlemine kilitlenmiştir.'
+            },
+            'R11_kripto': {
+                'R11': 11111111111,
+                'Asal_Carpan_1': 21649, # 2+1+6+4+9 = 22
+                'Asal_Carpan_2': 513239, # 5+1+3+2+3+9 = 23
+                'Biyoloji_Donanim': '22=DNA/Hücre (Yazılım), 23=Eksen Eğikliği (Donanım)'
+            },
+            'Hubble_Tension': {
+                'Sapma_Orani': 5.5, # 11/2
+                'Aciklama': 'Karanlık enerji, bilgi doluluğu yüzünden oluşan render hızı düşüşüdür.'
+            }
+        }
+
     # --- ANA SENTEZ FONKSİYONU ---
     
     def run_full_synthesis(self):
@@ -462,6 +486,9 @@ class MegaSentez50:
         
         # 12. Halley-Celali
         results['halley_celali'] = self.halley_celali_rezonans()
+        
+        # 13. SENTEZ-18 (YENI)
+        results['sentez_18'] = self.sentez_18_kozmik_rezonans()
         
         return results
 
@@ -551,6 +578,14 @@ def print_mega_sentez_raporu():
     print(f"   R11^(1/11) = {r11['n_inci_kok']} (OP_LEN = {OP_LEN})")
     print(f"   R9² = {r9['R_n_kare']} (Palindrom: {r9['palindrom']})")
     print(f"   R11² Palindrom: {r11['palindrom']} ← Base-10 SINIRI!")
+    
+    # Sentez 18
+    if 'sentez_18' in results:
+        s18 = results['sentez_18']
+        print(f"\n🔮 SENTEZ-18 (KOZMİK REZONANS VE VOPSON)")
+        print(f"   Giza Kilitlenmesi: 333333 km/s → {s18['isik_hizi_giza']['Fiziki_Isik_Hizi']} ({s18['isik_hizi_giza']['Giza_Enlemi']} Enlemi)")
+        print(f"   R11 Kriptosu: 21649 (Kök:22) ve 513239 (Kök:23) - {s18['R11_kripto']['Biyoloji_Donanim']}")
+        print(f"   Hubble Tension Sapması: {s18['Hubble_Tension']['Sapma_Orani']} (11/2) - {s18['Hubble_Tension']['Aciklama']}")
     
     print("\n" + "=" * 100)
     print("✅ 50+ KEŞİF SENTEZ TAMAMLANDI — TÜM DOĞRULAMALAR BAŞARILI")

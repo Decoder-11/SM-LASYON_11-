@@ -190,7 +190,7 @@
     }
   ],
   "latest_report": {
-    "report_date": "2026-03-02",
+    "report_date": "2026-06-02",
     "phase_name": "EARLY_CRISIS",
     "phase_expected_duration": "2033-2035",
     "anomalies_detected": [
@@ -212,7 +212,7 @@
     "data_confidence": 0.92,
     "next_milestone_date": "2033-01-01",
     "recommended_actions": [
-      "🚨 1 CRITICAL ALERTS DETECTED",
+      " 1 CRITICAL ALERTS DETECTED",
       "Maintain continuous data collection from WHO, UN, World Bank",
       "Monitor real-time population statistics monthly",
       "Flag any CRITICAL alerts immediately to research teams",

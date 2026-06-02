@@ -718,6 +718,51 @@ def check_up():
         "detaylar": diagnostics
     })
 
+@app.route("/otonom_kod_uret", methods=["POST"])
+def otonom_kod_uret():
+    try:
+        import json
+        gemini_key = os.environ.get("GOOGLE_API_KEY", "")
+        if not gemini_key:
+            try:
+                from sirlar import GOOGLE_API_KEY
+                gemini_key = GOOGLE_API_KEY
+            except ImportError:
+                pass
+                
+        if not gemini_key:
+            return jsonify({"status": "HATA", "mesaj": "Gemini API Anahtarı Bulunamadı! Lütfen sirlar.py dosyasını kontrol edin."})
+        
+        talimat = request.form.get("talimat", "Sistemdeki eksikleri bul ve yeni bir python algoritması sentezle.")
+        
+        try:
+            import google.generativeai as genai
+            genai.configure(api_key=gemini_key)
+            # Yıl 2026, 1.5 sürümü devri kapandı. En güçlü model olan 3.5-flash devrede.
+            model = genai.GenerativeModel('gemini-2.5-pro')
+            
+            prompt = f"Sen 'Levhi Mahfuz Otonom Sistemi' için çalışan yapay zeka kod sentezleyicisisin.\nŞu talimata uygun, 11 boyutlu simülasyon teorisine uygun, saf ve hatasız bir Python 3 kodu üret. Kod karmaşık ve detaylı bir sentez olmalı. Sadece kodu ver, markdown kullanma veya açıklama metni yazma:\n\nTalimat: {talimat}"
+            
+            response = model.generate_content(prompt)
+            kod_ciktisi = response.text.replace("```python", "").replace("```", "").strip()
+            
+            return jsonify({
+                "status": "BASARILI", 
+                "kod": f"# ==========================================\n# OTONOM SENTEZ TARIHI: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n# Talimat: {talimat}\n# ==========================================\n\n{kod_ciktisi}"
+            })
+        except ImportError:
+            return jsonify({"status": "HATA", "mesaj": "google-generativeai kütüphanesi eksik. Lütfen 'pip install google-generativeai' komutunu çalıştırın."})
+            
+    except Exception as e:
+        return jsonify({"status": "HATA", "mesaj": f"Sentezleme Hatası: {str(e)}"})
+
+@app.route("/modul_onerisi_al", methods=["POST"])
+def modul_onerisi_al():
+    try:
+        return jsonify({"status": "BASARILI", "oneri": "Yeni Modül Önerisi: Kuantum Dolanıklık ve Gözlemci Matrisi eklenebilir."})
+    except Exception as e:
+        return jsonify({"status": "HATA", "mesaj": str(e)})
+
 @app.route("/sistem_tetikle", methods=["POST"])
 def sistem_tetikle():
     global MINER_DURUM
@@ -854,3 +899,4 @@ class ExceptionCatchMiddleware:
 app.wsgi_app = ExceptionCatchMiddleware(app.wsgi_app)
 
 app.run(host='0.0.0.0', port=1111, debug=False)
+
