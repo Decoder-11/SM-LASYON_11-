@@ -215,6 +215,32 @@ class GeneravityEngine:
 
 
 
+
+class Hacim_Helezon_Ve_Giza_Matrisi:
+    # --- DÜNYA ÇAPI VE DENİZ/KÜRE HACMİ KİLİTLENMESİ (1.332 / 1.333...) ---
+    
+    # 1. Dünya'nın Sim-Çapı (6666 x 2)
+    DUNYA_CAP_SIM = 13332       # Sim-Km (Dünya'nın varoluş hacim katsayısı)
+    
+    # 2. Fiziksel Okyanus Hacmi vs Küre Hacmi
+    OKYANUS_HACMI = 1.332       # Milyar km^3 (10'luk Sistem Ölçümü)
+    KURE_HACIM_KATSAYISI = 1.333333333 # Evrensel saf küre hacim katsayısı (4/3)
+    
+    # 3. 0.999 Esma Sınırı (Kusursuz Kilitlenme)
+    ESMA_KILIDI = OKYANUS_HACMI / KURE_HACIM_KATSAYISI  # Tam olarak 0.999 çıkar
+    
+    # 4. Giza 400 Kodu ve Zaman Motoru
+    GIZA_400_KODU = 400 / 11    # Güneş/Ay oranı 11'lik sisteme bölündüğünde
+    # 400 / 11 = 36.3636... -> (363 Zaman Motoruna Çıkar)
+    
+    # 5. Işık Hızı Helezonu (Pi_11 Rezonansı)
+    # Işık uzayda düz bir çizgi çizmez, 2.998 oranında (Pi_11) bir helezon (spiral) çizer.
+    ISIK_HELEZON_KARESI = (998.001) ** 2  # Zamanın kilitlendiği ana tekabül eden helezon noktası
+    
+    # 6. Molar Hacim ve Zaman Yırtılması
+    YIRTILMA_FARK_KATSAYISI = 2.2424 # (Saf uzay yırtılması katsayısı)
+    MOLAR_HACIM_10X = YIRTILMA_FARK_KATSAYISI * 10 # 22.424 Litre (1 Mol gazın hacmine mükemmel kilitlenme)
+
 class Sentez_26_45_Frekans_Matrisi:
     # --- BİYOLOJİK ANTEN VE ŞİFA FREKANSLARI (SENTEZ-26 & SENTEZ-45) ---
     
