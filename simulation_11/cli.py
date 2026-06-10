@@ -8,6 +8,12 @@ import sys
 import traceback
 from typing import Callable
 
+from simulation_11.discovery.registry import (
+    DEFAULT_DISCOVERY,
+    DISCOVERY_CHOICES,
+    run_discoveries,
+)
+
 ORCHESTRATOR_CHOICES = ("all", "v133", "v175", "auto")
 DEFAULT_ORCHESTRATOR = "all"
 
@@ -54,6 +60,13 @@ def _run_v175() -> None:
 def _run_auto(interval_minutes: int = 11) -> None:
     _, _, Simulation_AutoPilot = _import_orchestrators()
     Simulation_AutoPilot(interval_minutes=interval_minutes)
+
+
+def _run_discovery_plugins(selection: str) -> None:
+    """Run optional discovery synthesis plugins (PR 7)."""
+    if selection == "none":
+        return
+    run_discoveries(selection)
 
 
 def _legacy_dual_run() -> int:
@@ -116,6 +129,13 @@ def _build_parser() -> argparse.ArgumentParser:
         metavar="MINUTES",
         help="Autopilot interval when --orchestrator auto or --auto (default: 11)",
     )
+    parser.add_argument(
+        "--discoveries",
+        choices=DISCOVERY_CHOICES,
+        default=DEFAULT_DISCOVERY,
+        dest="discoveries",
+        help="Discovery synthesis plugins to run after orchestrator (default: none)",
+    )
     return parser
 
 
@@ -141,6 +161,7 @@ def main(argv: list[str] | None = None) -> int:
         else:
             runner = _resolve_runner(args.orchestrator)
             runner()
+        _run_discovery_plugins(args.discoveries)
     except KeyboardInterrupt:
         print("\nSimulation interrupted by user.")
         return 130

@@ -1,0 +1,1 @@
+"""Discovery synthesis plugins (PR 7)."""
