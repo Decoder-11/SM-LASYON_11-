@@ -1,0 +1,1 @@
+"""Pytest configuration — bootstrap stub (PR 1)."""
