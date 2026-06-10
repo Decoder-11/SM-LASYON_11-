@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "baselines": {
+    "legacy_dual": {
+      "orchestrator": "all",
+      "modules_passed": null,
+      "modules_total": null,
+      "validation_summary": {
+        "passed": null,
+        "total": null
+      },
+      "key_constants": {
+        "BASE_SYSTEM": 11,
+        "R11": 11111111111,
+        "IDEAL_EARTH_RADIUS": 6666
+      },
+      "excluded_sections": [
+        "timestamps",
+        "random_ids",
+        "gemini_responses",
+        "progress_bars"
+      ],
+      "captured_at": "frozen"
+    },
+    "v133_only": {
+      "orchestrator": "v133",
+      "modules_passed": null,
+      "modules_total": null,
+      "validation_summary": {
+        "passed": null,
+        "total": null
+      },
+      "key_constants": {
+        "BASE_SYSTEM": 11,
+        "R11": 11111111111,
+        "IDEAL_EARTH_RADIUS": 6666
+      },
+      "excluded_sections": [
+        "timestamps",
+        "random_ids",
+        "gemini_responses",
+        "progress_bars"
+      ],
+      "captured_at": "frozen"
+    },
+    "v175_only": {
+      "orchestrator": "v175",
+      "modules_passed": null,
+      "modules_total": null,
+      "validation_summary": {
+        "passed": null,
+        "total": null
+      },
+      "key_constants": {
+        "BASE_SYSTEM": 11,
+        "R11": 11111111111,
+        "IDEAL_EARTH_RADIUS": 6666
+      },
+      "excluded_sections": [
+        "timestamps",
+        "random_ids",
+        "gemini_responses",
+        "progress_bars"
+      ],
+      "captured_at": "frozen"
+    }
+  },
+  "tolerance": {
+    "float_relative": 0.015,
+    "module_count_exact": true
+  }
+}

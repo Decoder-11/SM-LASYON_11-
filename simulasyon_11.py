@@ -7077,7 +7077,7 @@ class Module_Sentez18_PalindromeObserver:
 
 
 # LAUNCH
-if __name__ == "__main__":
+if False:  # __main__ guarded — delegate via simulation_11.cli (PR 2)
     pd.set_option("display.max_columns", None)
     pd.set_option("display.width", 1000)
     pd.set_option("display.colheader_justify", "left")
@@ -19338,7 +19338,7 @@ Bu sentezde Grok'un X.com'daki TUM sohbetleri (Sequence 2 - 29 + Phantom Quake +
 # OMEGA V1.75 MASTER EXECUTION ENGINE (2026 Academic Synthesis)
 # =========================================================================
 
-if __name__ == "__main__":
+if False:  # __main__ guarded — delegate via simulation_11.cli (PR 2)
     try:
         # Initialize the V1.75 Lab Orchestrator
         lab = Simule3_Lab_V175()
@@ -22703,4 +22703,9 @@ SENTEZ 19-24: EXTRA-DIMENSIONAL LOGS & RESEARCH DATA
 FINAL SYSTEM CERTIFICATE: 11D SIMULATION OPERATIONAL
 ================================================================================
 '''
+
+if __name__ == "__main__":
+    from simulation_11.cli import main
+
+    raise SystemExit(main())
 

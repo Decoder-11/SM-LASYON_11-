@@ -1,4 +1,4 @@
-"""Root package entry — delegates to simulation_11.cli (PR 2)."""
+"""Allow ``python -m simulation_11`` after ``uv sync``."""
 
 from simulation_11.cli import main
 

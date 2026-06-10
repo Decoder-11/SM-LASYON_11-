@@ -1,0 +1,98 @@
+# Duplicate Simule3_Lab_V133 diff audit (PR 2)
+# Canonical source: L2704 (first definition) — used by V133 __main__ at LAUNCH
+# Override source: L10756 (second definition) — supersedes name for code after L10756
+# Policy: PR 3 extracts L2704; L10756 duplicate will be removed.
+#
+--- Simule3_Lab_V133@L2704
++++ Simule3_Lab_V133@L10756
+@@ -95,8 +95,7 @@
+         print(
+             f"\n{Colors.BOLD}{Colors.PURPLE}*** SENTEZ-14: AUTONOMOUS DISCOVERY & WEB SYNTHESIS ***{Colors.RESET}"
+         )
+-        s14 = Sentez14_OtonomKesif()
+-        s14.run_all()
++        self.sentez14.run_all()
+ 
+         # 9. PHASE-5: SEISMIC & PLANETARY CORRELATION (Sentez-15)
+         print(
+@@ -109,8 +108,7 @@
+             f"\n{Colors.BOLD}{Colors.PURPLE}*** SENTEZ-15: COSMIC UNIFICATION ***{Colors.RESET}"
+         )
+         try:
+-            s15 = Snowball_Synthesis15_CosmicUnification(self.const)
+-            s15_results = s15.run_all()
++            s15_results = self.sentez15.run_all()
+         except Exception as e:
+             print(f"  [!] Sentez-15 Error: {e}")
+             s15_results = {}
+@@ -120,25 +118,41 @@
+             f"\n{Colors.BOLD}{Colors.BLUE}*** SENTEZ-16: R11 CRYPTO + ORGANIC + AUDIT ***{Colors.RESET}"
+         )
+         try:
+-            s16a = Module_R11_Kernel_Cryptanalysis(self.const)
+-            s16a_results = s16a.run_analysis()
+-            s16b = Module_Deep_11D_Organic_Synthesis(self.const)
+-            s16b_results = s16b.run_dimensional_mapping()
+-            s16c = Module_DeepSystemAudit(self.const)
+-            s16c.run_audit()
++            s16a_results = self.sentez16a.run_analysis()
++            s16b_results = self.sentez16b.run_dimensional_mapping()
++            self.sentez16c.run_audit()
+         except Exception as e:
+             print(f"  [!] Sentez-16 Error: {e}")
++            s16a_results, s16b_results = {}, {}
+ 
+         # 12. SENTEZ-17: ACADEMIC DEEPENING (April 2026)
+         print(
+             f"\n{Colors.BOLD}{Colors.GOLD}*** SENTEZ-17: ACADEMIC DEEPENING (APRIL 2026) ***{Colors.RESET}"
+         )
+         try:
+-            s17 = Module_Sentez17_AcademicDeepening(self.const)
+-            s17_results = s17.run_all()
++            s17_results = self.sentez17.run_all()
+         except Exception as e:
+             print(f"  [!] Sentez-17 Error: {e}")
+             s17_results = {}
++
++        # 13. SENTEZ-18: R11 PALINDROME & OBSERVER (V.140 OMEGA)
++        print(
++            f"\n{Colors.BOLD}{Colors.GOLD}*** SENTEZ-18: PALINDROME & OBSERVER MODULE (V.140) ***{Colors.RESET}"
++        )
++        try:
++            s18_results = self.sentez18.run_all()
++        except Exception as e:
++            print(f"  [!] Sentez-18 Error: {e}")
++            s18_results = {}
++
++        # 14. OMEGA-25 FINAL SYNTHESIS REPORT (V.150)
++        print(
++            f"\n{Colors.BOLD}{Colors.GOLD}*** OMEGA-25: FINAL KERNEL SYNTHESIS (MAY 2026) ***{Colors.RESET}"
++        )
++        try:
++            self.omega25.run_omega_flow()
++        except Exception as e:
++            print(f"  [!] Omega-25 Error: {e}")
+ 
+         print("\n*** AI / GENERAVITY DEEP ANALYSIS ***")
+         if getattr(self, "generavity", None):
+@@ -148,9 +162,12 @@
+                     "v2": results_v2,
+                     "v3": results_v3,
+                     "master": results_master,
+-                    "s14": s14.discoveries,
++                    "s14": self.sentez14.discoveries,
+                     "phase5": phase5_results,
++                    "s15": s15_results,
++                    "s16": {"a": s16a_results, "b": s16b_results},
+                     "s17": s17_results,
++                    "s18": s18_results,
+                 }
+                 report = self.generavity.deep_matrix_report(
+                     str(combined_data)[:2000]
+@@ -165,5 +182,5 @@
+             f"\n{Colors.BOLD}{Colors.GREEN}SIMULATION COMPLETED. 100% CONSISTENCY + DYNAMIC VERIFICATION.{Colors.RESET}"
+         )
+         print(
+-            f"{Colors.CYAN}Total Verification Points: {252 + len(s14.discoveries) + len(s17_results.get('discoveries', []))}{Colors.RESET}"
++            f"{Colors.CYAN}Total Verification Points: {252 + len(self.sentez14.discoveries) + len(s17_results.get('discoveries', []))}{Colors.RESET}"
+         )
