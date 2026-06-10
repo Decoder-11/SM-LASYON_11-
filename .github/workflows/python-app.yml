@@ -42,7 +42,7 @@ jobs:
       - name: Lint with ruff (bootstrap)
         run: uv run ruff check simulation_11 tests
 
-      - name: Test with pytest
+      - name: Test with pytest (unit + integration, not slow)
         run: uv run pytest tests/ -m "not slow" --tb=short
 
   legacy-lint:
