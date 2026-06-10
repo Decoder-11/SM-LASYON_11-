@@ -103,19 +103,28 @@ def _build_parser() -> argparse.ArgumentParser:
             "11-Dimensional Universe Simulation System. "
             "Default --orchestrator all runs V133 then V175 (v2.0.x legacy dual-run)."
         ),
+        allow_abbrev=False,
     )
     parser.add_argument(
         "--orchestrator",
         choices=ORCHESTRATOR_CHOICES,
         default=DEFAULT_ORCHESTRATOR,
+        dest="orchestrator",
         help="Orchestrator selection (default: all = V133 then V175)",
+    )
+    parser.add_argument(
+        "--auto",
+        action="store_const",
+        const="auto",
+        dest="orchestrator",
+        help="Run autopilot scheduler (legacy flag; same as --orchestrator auto)",
     )
     parser.add_argument(
         "--auto-interval",
         type=int,
         default=11,
         metavar="MINUTES",
-        help="Autopilot interval when --orchestrator auto (default: 11)",
+        help="Autopilot interval when --orchestrator auto or --auto (default: 11)",
     )
     return parser
 

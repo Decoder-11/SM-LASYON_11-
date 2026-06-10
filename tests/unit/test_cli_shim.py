@@ -24,6 +24,12 @@ def test_default_orchestrator_is_all():
     assert args.orchestrator == "all"
 
 
+def test_default_auto_interval_is_11():
+    parser = cli._build_parser()
+    args = parser.parse_args([])
+    assert args.auto_interval == 11
+
+
 def test_orchestrator_choices():
     parser = cli._build_parser()
     for choice in ("all", "v133", "v175", "auto"):
@@ -60,6 +66,13 @@ def test_orchestrator_v175_only(mock_pd, mock_v175):
 def test_orchestrator_auto(mock_pd, mock_auto):
     assert cli.main(["--orchestrator", "auto", "--auto-interval", "5"]) == 0
     mock_auto.assert_called_once_with(interval_minutes=5)
+
+
+@patch.object(cli, "_run_auto")
+@patch.object(cli, "_configure_pandas")
+def test_legacy_auto_flag_routes_to_run_auto(mock_pd, mock_auto):
+    assert cli.main(["--auto"]) == 0
+    mock_auto.assert_called_once_with(interval_minutes=11)
 
 
 @patch.object(cli, "_legacy_dual_run", return_value=0)

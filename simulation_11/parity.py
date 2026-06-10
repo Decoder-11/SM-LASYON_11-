@@ -9,7 +9,6 @@ import random
 import sys
 import tempfile
 from contextlib import contextmanager
-from datetime import datetime
 from pathlib import Path
 from typing import Any
 from unittest.mock import patch
@@ -61,13 +60,12 @@ def parity_mocks():
     db_fd, db_path = tempfile.mkstemp(suffix=".db", prefix="simulation_parity_")
     os.close(db_fd)
 
-    frozen_now = datetime(2026, 6, 10, 12, 0, 0)
     env_patch = patch.dict(os.environ, {"SIMULATION_DB_PATH": db_path}, clear=False)
     random_patch = patch.object(random, "random", return_value=0.5)
 
     try:
         with env_patch, random_patch:
-            yield {"db_path": db_path, "frozen_now": frozen_now.isoformat()}
+            yield {"db_path": db_path}
     finally:
         try:
             os.unlink(db_path)
