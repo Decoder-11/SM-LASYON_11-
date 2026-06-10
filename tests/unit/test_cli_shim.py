@@ -93,11 +93,15 @@ def test_legacy_dual_run_sequence(mock_pd, mock_v175, mock_v133):
     mock_v175.assert_called_once()
 
 
-@patch.object(cli, "_import_orchestrators")
-def test_import_orchestrators_lazy(mock_import):
-    mock_import.return_value = (MagicMock(), MagicMock(), MagicMock())
-    v133, v175, autopilot = cli._import_orchestrators()
-    mock_import.assert_called_once()
-    assert v133 is not None
-    assert v175 is not None
-    assert autopilot is not None
+def test_help_does_not_call_import_orchestrators(monkeypatch):
+    """--help must stay lazy and not touch orchestrator/monolith imports."""
+    called: list[bool] = []
+
+    def _tracked_import():
+        called.append(True)
+        return (MagicMock(), MagicMock(), MagicMock())
+
+    monkeypatch.setattr(cli, "_import_orchestrators", _tracked_import)
+    with pytest.raises(SystemExit):
+        cli.main(["--help"])
+    assert called == []

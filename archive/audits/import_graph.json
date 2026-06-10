@@ -784,15 +784,15 @@
     },
     {
       "bases": [],
-      "end_line": 2615,
-      "line": 2576,
+      "end_line": 2614,
+      "line": 2575,
       "methods": [],
       "name": "Sentez7_MasterConstants"
     },
     {
       "bases": [],
-      "end_line": 2725,
-      "line": 2618,
+      "end_line": 2724,
+      "line": 2617,
       "methods": [
         "__init__",
         "calculate_lambda_frequency",
@@ -803,8 +803,8 @@
     },
     {
       "bases": [],
-      "end_line": 2809,
-      "line": 2728,
+      "end_line": 2808,
+      "line": 2727,
       "methods": [
         "__init__",
         "calculate_escape_frequency",
@@ -814,8 +814,8 @@
     },
     {
       "bases": [],
-      "end_line": 2905,
-      "line": 2812,
+      "end_line": 2904,
+      "line": 2811,
       "methods": [
         "__init__",
         "calculate_coherence_frequency",
@@ -825,8 +825,8 @@
     },
     {
       "bases": [],
-      "end_line": 2945,
-      "line": 2915,
+      "end_line": 2944,
+      "line": 2914,
       "methods": [
         "__init__",
         "calculate_escape_frequency",
@@ -836,8 +836,8 @@
     },
     {
       "bases": [],
-      "end_line": 3016,
-      "line": 2948,
+      "end_line": 3015,
+      "line": 2947,
       "methods": [
         "__init__",
         "calculate_coherence_loop",
@@ -848,15 +848,15 @@
     },
     {
       "bases": [],
-      "end_line": 3144,
-      "line": 3064,
+      "end_line": 3143,
+      "line": 3063,
       "methods": [],
       "name": "Snowball_Synthesis_Constants"
     },
     {
       "bases": [],
-      "end_line": 3214,
-      "line": 3147,
+      "end_line": 3213,
+      "line": 3146,
       "methods": [
         "__init__",
         "sirius_antigravity_formula",
@@ -868,8 +868,8 @@
     },
     {
       "bases": [],
-      "end_line": 3284,
-      "line": 3217,
+      "end_line": 3283,
+      "line": 3216,
       "methods": [
         "__init__",
         "orion_gravity_drive",
@@ -881,8 +881,8 @@
     },
     {
       "bases": [],
-      "end_line": 3356,
-      "line": 3287,
+      "end_line": 3355,
+      "line": 3286,
       "methods": [
         "__init__",
         "bio_resonance_lock",
@@ -894,8 +894,8 @@
     },
     {
       "bases": [],
-      "end_line": 3452,
-      "line": 3359,
+      "end_line": 3451,
+      "line": 3358,
       "methods": [
         "__init__",
         "r11_consciousness_test",
@@ -908,8 +908,8 @@
     },
     {
       "bases": [],
-      "end_line": 3529,
-      "line": 3455,
+      "end_line": 3528,
+      "line": 3454,
       "methods": [
         "__init__",
         "population_terminal_code",
@@ -921,8 +921,8 @@
     },
     {
       "bases": [],
-      "end_line": 3675,
-      "line": 3532,
+      "end_line": 3674,
+      "line": 3531,
       "methods": [
         "__init__",
         "master_lambda_equation",
@@ -933,8 +933,8 @@
     },
     {
       "bases": [],
-      "end_line": 3940,
-      "line": 3688,
+      "end_line": 3939,
+      "line": 3687,
       "methods": [
         "__init__",
         "verify_lambda_from_geoid",
@@ -947,8 +947,8 @@
     },
     {
       "bases": [],
-      "end_line": 4038,
-      "line": 3964,
+      "end_line": 4037,
+      "line": 3963,
       "methods": [
         "analysis"
       ],
@@ -956,8 +956,8 @@
     },
     {
       "bases": [],
-      "end_line": 4227,
-      "line": 4046,
+      "end_line": 4226,
+      "line": 4045,
       "methods": [
         "analysis"
       ],
@@ -965,8 +965,8 @@
     },
     {
       "bases": [],
-      "end_line": 4284,
-      "line": 4235,
+      "end_line": 4283,
+      "line": 4234,
       "methods": [
         "__init__",
         "run"
@@ -975,8 +975,8 @@
     },
     {
       "bases": [],
-      "end_line": 4565,
-      "line": 4295,
+      "end_line": 4564,
+      "line": 4294,
       "methods": [
         "__init__",
         "calculate_antigravity_g",
@@ -994,8 +994,8 @@
     },
     {
       "bases": [],
-      "end_line": 4676,
-      "line": 4573,
+      "end_line": 4675,
+      "line": 4572,
       "methods": [
         "__init__",
         "run_all",
@@ -1005,8 +1005,8 @@
     },
     {
       "bases": [],
-      "end_line": 4730,
-      "line": 4679,
+      "end_line": 4729,
+      "line": 4678,
       "methods": [
         "__init__",
         "run_synthesis",
@@ -1016,8 +1016,8 @@
     },
     {
       "bases": [],
-      "end_line": 4774,
-      "line": 4739,
+      "end_line": 4773,
+      "line": 4738,
       "methods": [
         "__init__",
         "analysis"
@@ -1026,8 +1026,8 @@
     },
     {
       "bases": [],
-      "end_line": 4814,
-      "line": 4777,
+      "end_line": 4813,
+      "line": 4776,
       "methods": [
         "__init__",
         "analysis"
@@ -1036,8 +1036,8 @@
     },
     {
       "bases": [],
-      "end_line": 5026,
-      "line": 4829,
+      "end_line": 5025,
+      "line": 4828,
       "methods": [
         "__init__",
         "run_all",
@@ -1054,8 +1054,8 @@
     },
     {
       "bases": [],
-      "end_line": 5124,
-      "line": 5034,
+      "end_line": 5123,
+      "line": 5033,
       "methods": [
         "__init__",
         "get_usgs_live_data",
@@ -1066,15 +1066,15 @@
     },
     {
       "bases": [],
-      "end_line": 5179,
-      "line": 5143,
+      "end_line": 5178,
+      "line": 5142,
       "methods": [],
       "name": "Sentez15_Constants"
     },
     {
       "bases": [],
-      "end_line": 5429,
-      "line": 5182,
+      "end_line": 5428,
+      "line": 5181,
       "methods": [
         "__init__",
         "run_all",
@@ -1091,8 +1091,8 @@
     },
     {
       "bases": [],
-      "end_line": 5491,
-      "line": 5443,
+      "end_line": 5490,
+      "line": 5442,
       "methods": [
         "__init__",
         "run_analysis"
@@ -1101,8 +1101,8 @@
     },
     {
       "bases": [],
-      "end_line": 5557,
-      "line": 5494,
+      "end_line": 5556,
+      "line": 5493,
       "methods": [
         "__init__",
         "run_dimensional_mapping"
@@ -1111,8 +1111,8 @@
     },
     {
       "bases": [],
-      "end_line": 5638,
-      "line": 5560,
+      "end_line": 5637,
+      "line": 5559,
       "methods": [
         "__init__",
         "run_audit",
@@ -1124,15 +1124,15 @@
     },
     {
       "bases": [],
-      "end_line": 5727,
-      "line": 5654,
+      "end_line": 5726,
+      "line": 5653,
       "methods": [],
       "name": "Sentez17_Constants"
     },
     {
       "bases": [],
-      "end_line": 5946,
-      "line": 5730,
+      "end_line": 5945,
+      "line": 5729,
       "methods": [
         "__init__",
         "run_all",
@@ -1148,15 +1148,15 @@
     },
     {
       "bases": [],
-      "end_line": 6213,
-      "line": 5954,
+      "end_line": 6212,
+      "line": 5953,
       "methods": [],
       "name": "Sentez18_Constants"
     },
     {
       "bases": [],
-      "end_line": 6749,
-      "line": 6217,
+      "end_line": 6748,
+      "line": 6216,
       "methods": [
         "__init__",
         "run_all",
@@ -1185,8 +1185,8 @@
     },
     {
       "bases": [],
-      "end_line": 7005,
-      "line": 7000,
+      "end_line": 7004,
+      "line": 6999,
       "methods": [
         "__init__",
         "analiz"
@@ -1195,15 +1195,15 @@
     },
     {
       "bases": [],
-      "end_line": 7028,
-      "line": 7013,
+      "end_line": 7026,
+      "line": 7011,
       "methods": [],
       "name": "Colors"
     },
     {
       "bases": [],
-      "end_line": 7087,
-      "line": 7069,
+      "end_line": 7085,
+      "line": 7067,
       "methods": [
         "haversine",
         "calculate_bearing"
@@ -1212,8 +1212,8 @@
     },
     {
       "bases": [],
-      "end_line": 7096,
-      "line": 7089,
+      "end_line": 7094,
+      "line": 7087,
       "methods": [
         "__init__",
         "analiz"
@@ -1222,8 +1222,8 @@
     },
     {
       "bases": [],
-      "end_line": 7106,
-      "line": 7098,
+      "end_line": 7104,
+      "line": 7096,
       "methods": [
         "__init__",
         "analiz"
@@ -1232,8 +1232,8 @@
     },
     {
       "bases": [],
-      "end_line": 7113,
-      "line": 7108,
+      "end_line": 7111,
+      "line": 7106,
       "methods": [
         "__init__",
         "analiz"
@@ -1242,8 +1242,8 @@
     },
     {
       "bases": [],
-      "end_line": 7137,
-      "line": 7115,
+      "end_line": 7135,
+      "line": 7113,
       "methods": [
         "__init__",
         "generate_3d_manifold"
@@ -1252,8 +1252,8 @@
     },
     {
       "bases": [],
-      "end_line": 7158,
-      "line": 7139,
+      "end_line": 7156,
+      "line": 7137,
       "methods": [
         "__init__",
         "autonomous_scan",
@@ -1263,8 +1263,8 @@
     },
     {
       "bases": [],
-      "end_line": 7206,
-      "line": 7160,
+      "end_line": 7204,
+      "line": 7158,
       "methods": [
         "__init__",
         "analiz"
@@ -1273,8 +1273,8 @@
     },
     {
       "bases": [],
-      "end_line": 7283,
-      "line": 7208,
+      "end_line": 7281,
+      "line": 7206,
       "methods": [
         "__init__",
         "run_all"
@@ -1283,8 +1283,8 @@
     },
     {
       "bases": [],
-      "end_line": 7338,
-      "line": 7290,
+      "end_line": 7336,
+      "line": 7288,
       "methods": [
         "__init__",
         "pearson_korrelasyon",
@@ -1297,8 +1297,8 @@
     },
     {
       "bases": [],
-      "end_line": 7352,
-      "line": 7340,
+      "end_line": 7350,
+      "line": 7338,
       "methods": [
         "__init__",
         "analiz"
@@ -1307,8 +1307,8 @@
     },
     {
       "bases": [],
-      "end_line": 7363,
-      "line": 7354,
+      "end_line": 7361,
+      "line": 7352,
       "methods": [
         "__init__",
         "analiz"
@@ -1317,8 +1317,8 @@
     },
     {
       "bases": [],
-      "end_line": 7387,
-      "line": 7365,
+      "end_line": 7385,
+      "line": 7363,
       "methods": [
         "__init__",
         "veri_cek",
@@ -1328,8 +1328,8 @@
     },
     {
       "bases": [],
-      "end_line": 7405,
-      "line": 7389,
+      "end_line": 7403,
+      "line": 7387,
       "methods": [
         "__init__",
         "analiz_et"
@@ -1338,8 +1338,8 @@
     },
     {
       "bases": [],
-      "end_line": 7418,
-      "line": 7407,
+      "end_line": 7416,
+      "line": 7405,
       "methods": [
         "__init__",
         "analiz"
@@ -1348,8 +1348,8 @@
     },
     {
       "bases": [],
-      "end_line": 7432,
-      "line": 7420,
+      "end_line": 7430,
+      "line": 7418,
       "methods": [
         "__init__",
         "analiz"
@@ -1358,8 +1358,8 @@
     },
     {
       "bases": [],
-      "end_line": 7446,
-      "line": 7434,
+      "end_line": 7444,
+      "line": 7432,
       "methods": [
         "__init__",
         "analiz"
@@ -1368,8 +1368,8 @@
     },
     {
       "bases": [],
-      "end_line": 7457,
-      "line": 7448,
+      "end_line": 7455,
+      "line": 7446,
       "methods": [
         "__init__",
         "analiz"
@@ -1378,8 +1378,8 @@
     },
     {
       "bases": [],
-      "end_line": 7467,
-      "line": 7459,
+      "end_line": 7465,
+      "line": 7457,
       "methods": [
         "__init__",
         "analiz"
@@ -1388,8 +1388,8 @@
     },
     {
       "bases": [],
-      "end_line": 7478,
-      "line": 7469,
+      "end_line": 7476,
+      "line": 7467,
       "methods": [
         "__init__",
         "analiz"
@@ -1398,8 +1398,8 @@
     },
     {
       "bases": [],
-      "end_line": 7487,
-      "line": 7481,
+      "end_line": 7485,
+      "line": 7479,
       "methods": [
         "__init__",
         "analiz"
@@ -1408,8 +1408,8 @@
     },
     {
       "bases": [],
-      "end_line": 7494,
-      "line": 7489,
+      "end_line": 7492,
+      "line": 7487,
       "methods": [
         "__init__",
         "analiz"
@@ -1418,8 +1418,8 @@
     },
     {
       "bases": [],
-      "end_line": 7522,
-      "line": 7498,
+      "end_line": 7520,
+      "line": 7496,
       "methods": [
         "__init__",
         "analiz"
@@ -1428,8 +1428,8 @@
     },
     {
       "bases": [],
-      "end_line": 7539,
-      "line": 7524,
+      "end_line": 7537,
+      "line": 7522,
       "methods": [
         "__init__",
         "analiz"
@@ -1438,8 +1438,8 @@
     },
     {
       "bases": [],
-      "end_line": 7554,
-      "line": 7541,
+      "end_line": 7552,
+      "line": 7539,
       "methods": [
         "__init__",
         "to_base11",
@@ -1449,8 +1449,8 @@
     },
     {
       "bases": [],
-      "end_line": 7569,
-      "line": 7556,
+      "end_line": 7567,
+      "line": 7554,
       "methods": [
         "__init__",
         "analiz"
@@ -1459,8 +1459,8 @@
     },
     {
       "bases": [],
-      "end_line": 7579,
-      "line": 7571,
+      "end_line": 7577,
+      "line": 7569,
       "methods": [
         "__init__",
         "analiz"
@@ -1469,8 +1469,8 @@
     },
     {
       "bases": [],
-      "end_line": 7774,
-      "line": 7595,
+      "end_line": 7772,
+      "line": 7593,
       "methods": [
         "__init__"
       ],
@@ -1478,8 +1478,8 @@
     },
     {
       "bases": [],
-      "end_line": 7823,
-      "line": 7777,
+      "end_line": 7821,
+      "line": 7775,
       "methods": [
         "__init__",
         "analyze_patterns",
@@ -1490,8 +1490,8 @@
     },
     {
       "bases": [],
-      "end_line": 7846,
-      "line": 7826,
+      "end_line": 7844,
+      "line": 7824,
       "methods": [
         "__init__",
         "autonomous_scan",
@@ -1501,8 +1501,8 @@
     },
     {
       "bases": [],
-      "end_line": 7872,
-      "line": 7862,
+      "end_line": 7870,
+      "line": 7860,
       "methods": [
         "__init__",
         "tolerance",
@@ -1512,8 +1512,8 @@
     },
     {
       "bases": [],
-      "end_line": 7886,
-      "line": 7874,
+      "end_line": 7884,
+      "line": 7872,
       "methods": [
         "__init__",
         "analysis"
@@ -1522,8 +1522,8 @@
     },
     {
       "bases": [],
-      "end_line": 7911,
-      "line": 7888,
+      "end_line": 7909,
+      "line": 7886,
       "methods": [
         "__init__",
         "analyze_neuro_sync",
@@ -1534,8 +1534,8 @@
     },
     {
       "bases": [],
-      "end_line": 7949,
-      "line": 7914,
+      "end_line": 7947,
+      "line": 7912,
       "methods": [
         "__init__",
         "analyze_omega_sync",
@@ -1545,8 +1545,8 @@
     },
     {
       "bases": [],
-      "end_line": 7987,
-      "line": 7955,
+      "end_line": 7985,
+      "line": 7953,
       "methods": [
         "__init__",
         "calculate_quantum_projection",
@@ -1558,8 +1558,8 @@
     },
     {
       "bases": [],
-      "end_line": 8003,
-      "line": 7989,
+      "end_line": 8001,
+      "line": 7987,
       "methods": [
         "__init__",
         "light_pi_ratio",
@@ -1569,8 +1569,8 @@
     },
     {
       "bases": [],
-      "end_line": 8323,
-      "line": 8300,
+      "end_line": 8321,
+      "line": 8298,
       "methods": [
         "haversine",
         "calculate_bearing"
@@ -1579,8 +1579,8 @@
     },
     {
       "bases": [],
-      "end_line": 8340,
-      "line": 8331,
+      "end_line": 8338,
+      "line": 8329,
       "methods": [
         "__init__",
         "meter"
@@ -1589,8 +1589,8 @@
     },
     {
       "bases": [],
-      "end_line": 8348,
-      "line": 8343,
+      "end_line": 8346,
+      "line": 8341,
       "methods": [
         "__init__",
         "adjust"
@@ -1599,8 +1599,8 @@
     },
     {
       "bases": [],
-      "end_line": 8364,
-      "line": 8351,
+      "end_line": 8362,
+      "line": 8349,
       "methods": [
         "__init__",
         "hatay_analysis"
@@ -1609,8 +1609,8 @@
     },
     {
       "bases": [],
-      "end_line": 8387,
-      "line": 8367,
+      "end_line": 8385,
+      "line": 8365,
       "methods": [
         "__init__",
         "ruler"
@@ -1619,8 +1619,8 @@
     },
     {
       "bases": [],
-      "end_line": 8400,
-      "line": 8390,
+      "end_line": 8398,
+      "line": 8388,
       "methods": [
         "__init__",
         "cycle"
@@ -1629,8 +1629,8 @@
     },
     {
       "bases": [],
-      "end_line": 8420,
-      "line": 8403,
+      "end_line": 8418,
+      "line": 8401,
       "methods": [
         "__init__",
         "reflection"
@@ -1639,8 +1639,8 @@
     },
     {
       "bases": [],
-      "end_line": 8432,
-      "line": 8423,
+      "end_line": 8430,
+      "line": 8421,
       "methods": [
         "__init__",
         "analysis"
@@ -1649,8 +1649,8 @@
     },
     {
       "bases": [],
-      "end_line": 8442,
-      "line": 8435,
+      "end_line": 8440,
+      "line": 8433,
       "methods": [
         "__init__",
         "tufan_analysis"
@@ -1659,8 +1659,8 @@
     },
     {
       "bases": [],
-      "end_line": 8454,
-      "line": 8445,
+      "end_line": 8452,
+      "line": 8443,
       "methods": [
         "__init__",
         "product",
@@ -1670,8 +1670,8 @@
     },
     {
       "bases": [],
-      "end_line": 8496,
-      "line": 8457,
+      "end_line": 8494,
+      "line": 8455,
       "methods": [
         "__init__",
         "table"
@@ -1680,8 +1680,8 @@
     },
     {
       "bases": [],
-      "end_line": 8533,
-      "line": 8499,
+      "end_line": 8531,
+      "line": 8497,
       "methods": [
         "__init__",
         "table"
@@ -1690,8 +1690,8 @@
     },
     {
       "bases": [],
-      "end_line": 8543,
-      "line": 8536,
+      "end_line": 8541,
+      "line": 8534,
       "methods": [
         "__init__",
         "constants"
@@ -1700,8 +1700,8 @@
     },
     {
       "bases": [],
-      "end_line": 8667,
-      "line": 8546,
+      "end_line": 8665,
+      "line": 8544,
       "methods": [
         "__init__",
         "matrix"
@@ -1710,8 +1710,8 @@
     },
     {
       "bases": [],
-      "end_line": 8682,
-      "line": 8670,
+      "end_line": 8680,
+      "line": 8668,
       "methods": [
         "__init__",
         "analysis"
@@ -1720,8 +1720,8 @@
     },
     {
       "bases": [],
-      "end_line": 8696,
-      "line": 8685,
+      "end_line": 8694,
+      "line": 8683,
       "methods": [
         "__init__",
         "analysis"
@@ -1730,8 +1730,8 @@
     },
     {
       "bases": [],
-      "end_line": 8747,
-      "line": 8700,
+      "end_line": 8745,
+      "line": 8698,
       "methods": [
         "__init__",
         "analysis"
@@ -1740,8 +1740,8 @@
     },
     {
       "bases": [],
-      "end_line": 8810,
-      "line": 8750,
+      "end_line": 8808,
+      "line": 8748,
       "methods": [
         "__init__",
         "grok_21_angular_resonance",
@@ -1754,8 +1754,8 @@
     },
     {
       "bases": [],
-      "end_line": 8857,
-      "line": 8813,
+      "end_line": 8855,
+      "line": 8811,
       "methods": [
         "__init__",
         "calculate_universe_info_mass",
@@ -1766,8 +1766,8 @@
     },
     {
       "bases": [],
-      "end_line": 8885,
-      "line": 8861,
+      "end_line": 8883,
+      "line": 8859,
       "methods": [
         "__init__",
         "analysis"
@@ -1776,8 +1776,8 @@
     },
     {
       "bases": [],
-      "end_line": 8952,
-      "line": 8888,
+      "end_line": 8950,
+      "line": 8886,
       "methods": [
         "__init__",
         "analysis"
@@ -1786,8 +1786,8 @@
     },
     {
       "bases": [],
-      "end_line": 8974,
-      "line": 8956,
+      "end_line": 8972,
+      "line": 8954,
       "methods": [
         "__init__",
         "to_base11",
@@ -1797,8 +1797,8 @@
     },
     {
       "bases": [],
-      "end_line": 9003,
-      "line": 8978,
+      "end_line": 9001,
+      "line": 8976,
       "methods": [
         "__init__",
         "analysis"
@@ -1807,8 +1807,8 @@
     },
     {
       "bases": [],
-      "end_line": 9071,
-      "line": 9006,
+      "end_line": 9069,
+      "line": 9004,
       "methods": [
         "__init__",
         "calculate",
@@ -1818,8 +1818,8 @@
     },
     {
       "bases": [],
-      "end_line": 9113,
-      "line": 9074,
+      "end_line": 9111,
+      "line": 9072,
       "methods": [
         "__init__",
         "decimal_year",
@@ -1829,8 +1829,8 @@
     },
     {
       "bases": [],
-      "end_line": 9125,
-      "line": 9116,
+      "end_line": 9123,
+      "line": 9114,
       "methods": [
         "__init__",
         "analysis"
@@ -1839,8 +1839,8 @@
     },
     {
       "bases": [],
-      "end_line": 9136,
-      "line": 9128,
+      "end_line": 9134,
+      "line": 9126,
       "methods": [
         "__init__",
         "analysis"
@@ -1849,8 +1849,8 @@
     },
     {
       "bases": [],
-      "end_line": 9160,
-      "line": 9139,
+      "end_line": 9158,
+      "line": 9137,
       "methods": [
         "__init__",
         "analysis"
@@ -1859,8 +1859,8 @@
     },
     {
       "bases": [],
-      "end_line": 9169,
-      "line": 9163,
+      "end_line": 9167,
+      "line": 9161,
       "methods": [
         "__init__",
         "analysis"
@@ -1869,8 +1869,8 @@
     },
     {
       "bases": [],
-      "end_line": 9178,
-      "line": 9172,
+      "end_line": 9176,
+      "line": 9170,
       "methods": [
         "__init__",
         "analysis"
@@ -1879,8 +1879,8 @@
     },
     {
       "bases": [],
-      "end_line": 9202,
-      "line": 9181,
+      "end_line": 9200,
+      "line": 9179,
       "methods": [
         "__init__",
         "calculate_shift_date",
@@ -1890,8 +1890,8 @@
     },
     {
       "bases": [],
-      "end_line": 9213,
-      "line": 9205,
+      "end_line": 9211,
+      "line": 9203,
       "methods": [
         "__init__",
         "calculate"
@@ -1900,8 +1900,8 @@
     },
     {
       "bases": [],
-      "end_line": 9222,
-      "line": 9216,
+      "end_line": 9220,
+      "line": 9214,
       "methods": [
         "__init__",
         "analysis"
@@ -1910,8 +1910,8 @@
     },
     {
       "bases": [],
-      "end_line": 9231,
-      "line": 9225,
+      "end_line": 9229,
+      "line": 9223,
       "methods": [
         "__init__",
         "analysis"
@@ -1920,8 +1920,8 @@
     },
     {
       "bases": [],
-      "end_line": 9240,
-      "line": 9234,
+      "end_line": 9238,
+      "line": 9232,
       "methods": [
         "__init__",
         "print_manifesto"
@@ -1930,8 +1930,8 @@
     },
     {
       "bases": [],
-      "end_line": 9269,
-      "line": 9243,
+      "end_line": 9267,
+      "line": 9241,
       "methods": [
         "__init__",
         "simulate"
@@ -1940,8 +1940,8 @@
     },
     {
       "bases": [],
-      "end_line": 9278,
-      "line": 9272,
+      "end_line": 9276,
+      "line": 9270,
       "methods": [
         "__init__",
         "analysis"
@@ -1950,8 +1950,8 @@
     },
     {
       "bases": [],
-      "end_line": 9326,
-      "line": 9281,
+      "end_line": 9324,
+      "line": 9279,
       "methods": [
         "__init__",
         "run_family"
@@ -1960,8 +1960,8 @@
     },
     {
       "bases": [],
-      "end_line": 9340,
-      "line": 9330,
+      "end_line": 9338,
+      "line": 9328,
       "methods": [
         "__init__",
         "analysis"
@@ -1970,8 +1970,8 @@
     },
     {
       "bases": [],
-      "end_line": 9354,
-      "line": 9344,
+      "end_line": 9352,
+      "line": 9342,
       "methods": [
         "__init__",
         "analysis"
@@ -1980,8 +1980,8 @@
     },
     {
       "bases": [],
-      "end_line": 9411,
-      "line": 9357,
+      "end_line": 9409,
+      "line": 9355,
       "methods": [
         "__init__",
         "run_expansion",
@@ -1994,8 +1994,8 @@
     },
     {
       "bases": [],
-      "end_line": 9427,
-      "line": 9415,
+      "end_line": 9425,
+      "line": 9413,
       "methods": [
         "__init__",
         "analysis"
@@ -2004,8 +2004,8 @@
     },
     {
       "bases": [],
-      "end_line": 9503,
-      "line": 9430,
+      "end_line": 9501,
+      "line": 9428,
       "methods": [
         "__init__",
         "run_full_simulation",
@@ -2015,8 +2015,8 @@
     },
     {
       "bases": [],
-      "end_line": 9517,
-      "line": 9507,
+      "end_line": 9515,
+      "line": 9505,
       "methods": [
         "__init__",
         "analysis"
@@ -2025,8 +2025,8 @@
     },
     {
       "bases": [],
-      "end_line": 9536,
-      "line": 9521,
+      "end_line": 9534,
+      "line": 9519,
       "methods": [
         "__init__",
         "analysis"
@@ -2035,8 +2035,8 @@
     },
     {
       "bases": [],
-      "end_line": 9550,
-      "line": 9540,
+      "end_line": 9548,
+      "line": 9538,
       "methods": [
         "__init__",
         "analysis"
@@ -2045,8 +2045,8 @@
     },
     {
       "bases": [],
-      "end_line": 9569,
-      "line": 9553,
+      "end_line": 9567,
+      "line": 9551,
       "methods": [
         "__init__",
         "calculate_dates",
@@ -2058,8 +2058,8 @@
     },
     {
       "bases": [],
-      "end_line": 9579,
-      "line": 9572,
+      "end_line": 9577,
+      "line": 9570,
       "methods": [
         "__init__",
         "analysis"
@@ -2068,8 +2068,8 @@
     },
     {
       "bases": [],
-      "end_line": 9754,
-      "line": 9584,
+      "end_line": 9752,
+      "line": 9582,
       "methods": [
         "__init__",
         "add_data",
@@ -2085,8 +2085,8 @@
     },
     {
       "bases": [],
-      "end_line": 9766,
-      "line": 9757,
+      "end_line": 9764,
+      "line": 9755,
       "methods": [
         "__init__",
         "analysis"
@@ -2095,8 +2095,8 @@
     },
     {
       "bases": [],
-      "end_line": 9781,
-      "line": 9769,
+      "end_line": 9779,
+      "line": 9767,
       "methods": [
         "__init__",
         "analysis"
@@ -2105,8 +2105,8 @@
     },
     {
       "bases": [],
-      "end_line": 9792,
-      "line": 9784,
+      "end_line": 9790,
+      "line": 9782,
       "methods": [
         "__init__",
         "analysis"
@@ -2115,8 +2115,8 @@
     },
     {
       "bases": [],
-      "end_line": 9802,
-      "line": 9795,
+      "end_line": 9800,
+      "line": 9793,
       "methods": [
         "__init__",
         "analysis"
@@ -2125,8 +2125,8 @@
     },
     {
       "bases": [],
-      "end_line": 9811,
-      "line": 9805,
+      "end_line": 9809,
+      "line": 9803,
       "methods": [
         "__init__",
         "analysis"
@@ -2135,8 +2135,8 @@
     },
     {
       "bases": [],
-      "end_line": 9822,
-      "line": 9814,
+      "end_line": 9820,
+      "line": 9812,
       "methods": [
         "__init__",
         "analyze"
@@ -2145,8 +2145,8 @@
     },
     {
       "bases": [],
-      "end_line": 9874,
-      "line": 9825,
+      "end_line": 9872,
+      "line": 9823,
       "methods": [
         "__init__",
         "analysis"
@@ -2155,8 +2155,8 @@
     },
     {
       "bases": [],
-      "end_line": 9899,
-      "line": 9877,
+      "end_line": 9897,
+      "line": 9875,
       "methods": [
         "__init__",
         "analysis"
@@ -2165,8 +2165,8 @@
     },
     {
       "bases": [],
-      "end_line": 9922,
-      "line": 9902,
+      "end_line": 9920,
+      "line": 9900,
       "methods": [
         "__init__",
         "analysis"
@@ -2175,8 +2175,8 @@
     },
     {
       "bases": [],
-      "end_line": 9940,
-      "line": 9925,
+      "end_line": 9938,
+      "line": 9923,
       "methods": [
         "__init__",
         "analysis"
@@ -2185,8 +2185,8 @@
     },
     {
       "bases": [],
-      "end_line": 9957,
-      "line": 9943,
+      "end_line": 9955,
+      "line": 9941,
       "methods": [
         "__init__",
         "analysis"
@@ -2195,8 +2195,8 @@
     },
     {
       "bases": [],
-      "end_line": 9972,
-      "line": 9960,
+      "end_line": 9970,
+      "line": 9958,
       "methods": [
         "__init__",
         "analysis"
@@ -2205,8 +2205,8 @@
     },
     {
       "bases": [],
-      "end_line": 9985,
-      "line": 9975,
+      "end_line": 9983,
+      "line": 9973,
       "methods": [
         "__init__",
         "analysis"
@@ -2215,8 +2215,8 @@
     },
     {
       "bases": [],
-      "end_line": 10003,
-      "line": 9988,
+      "end_line": 10001,
+      "line": 9986,
       "methods": [
         "__init__",
         "analysis"
@@ -2225,8 +2225,8 @@
     },
     {
       "bases": [],
-      "end_line": 10041,
-      "line": 10009,
+      "end_line": 10039,
+      "line": 10007,
       "methods": [
         "__init__",
         "r11_pyramid_analysis",
@@ -2237,8 +2237,8 @@
     },
     {
       "bases": [],
-      "end_line": 10136,
-      "line": 10046,
+      "end_line": 10134,
+      "line": 10044,
       "methods": [
         "__init__"
       ],
@@ -2246,15 +2246,15 @@
     },
     {
       "bases": [],
-      "end_line": 10185,
-      "line": 10146,
+      "end_line": 10183,
+      "line": 10144,
       "methods": [],
       "name": "Sentez7_MasterConstants"
     },
     {
       "bases": [],
-      "end_line": 10295,
-      "line": 10188,
+      "end_line": 10293,
+      "line": 10186,
       "methods": [
         "__init__",
         "calculate_lambda_frequency",
@@ -2265,8 +2265,8 @@
     },
     {
       "bases": [],
-      "end_line": 10379,
-      "line": 10298,
+      "end_line": 10377,
+      "line": 10296,
       "methods": [
         "__init__",
         "calculate_escape_frequency",
@@ -2276,8 +2276,8 @@
     },
     {
       "bases": [],
-      "end_line": 10475,
-      "line": 10382,
+      "end_line": 10473,
+      "line": 10380,
       "methods": [
         "__init__",
         "calculate_coherence_frequency",
@@ -2287,8 +2287,8 @@
     },
     {
       "bases": [],
-      "end_line": 10507,
-      "line": 10478,
+      "end_line": 10505,
+      "line": 10476,
       "methods": [
         "__init__",
         "calculate_escape_frequency",
@@ -2298,15 +2298,15 @@
     },
     {
       "bases": [],
-      "end_line": 10641,
-      "line": 10561,
+      "end_line": 10639,
+      "line": 10559,
       "methods": [],
       "name": "Snowball_Synthesis_Constants"
     },
     {
       "bases": [],
-      "end_line": 10711,
-      "line": 10644,
+      "end_line": 10709,
+      "line": 10642,
       "methods": [
         "__init__",
         "sirius_antigravity_formula",
@@ -2318,8 +2318,8 @@
     },
     {
       "bases": [],
-      "end_line": 10781,
-      "line": 10714,
+      "end_line": 10779,
+      "line": 10712,
       "methods": [
         "__init__",
         "orion_gravity_drive",
@@ -2331,8 +2331,8 @@
     },
     {
       "bases": [],
-      "end_line": 10853,
-      "line": 10784,
+      "end_line": 10851,
+      "line": 10782,
       "methods": [
         "__init__",
         "bio_resonance_lock",
@@ -2344,8 +2344,8 @@
     },
     {
       "bases": [],
-      "end_line": 10949,
-      "line": 10856,
+      "end_line": 10947,
+      "line": 10854,
       "methods": [
         "__init__",
         "r11_consciousness_test",
@@ -2358,8 +2358,8 @@
     },
     {
       "bases": [],
-      "end_line": 11026,
-      "line": 10952,
+      "end_line": 11024,
+      "line": 10950,
       "methods": [
         "__init__",
         "population_terminal_code",
@@ -2371,8 +2371,8 @@
     },
     {
       "bases": [],
-      "end_line": 11172,
-      "line": 11029,
+      "end_line": 11170,
+      "line": 11027,
       "methods": [
         "__init__",
         "master_lambda_equation",
@@ -2383,8 +2383,8 @@
     },
     {
       "bases": [],
-      "end_line": 11437,
-      "line": 11185,
+      "end_line": 11435,
+      "line": 11183,
       "methods": [
         "__init__",
         "verify_lambda_from_geoid",
@@ -2397,8 +2397,8 @@
     },
     {
       "bases": [],
-      "end_line": 11535,
-      "line": 11461,
+      "end_line": 11533,
+      "line": 11459,
       "methods": [
         "analysis"
       ],
@@ -2406,8 +2406,8 @@
     },
     {
       "bases": [],
-      "end_line": 11724,
-      "line": 11543,
+      "end_line": 11722,
+      "line": 11541,
       "methods": [
         "analysis"
       ],
@@ -2415,8 +2415,8 @@
     },
     {
       "bases": [],
-      "end_line": 11781,
-      "line": 11732,
+      "end_line": 11779,
+      "line": 11730,
       "methods": [
         "__init__",
         "run"
@@ -2425,8 +2425,8 @@
     },
     {
       "bases": [],
-      "end_line": 12062,
-      "line": 11792,
+      "end_line": 12060,
+      "line": 11790,
       "methods": [
         "__init__",
         "calculate_antigravity_g",
@@ -2444,8 +2444,8 @@
     },
     {
       "bases": [],
-      "end_line": 12173,
-      "line": 12070,
+      "end_line": 12171,
+      "line": 12068,
       "methods": [
         "__init__",
         "run_all",
@@ -2455,8 +2455,8 @@
     },
     {
       "bases": [],
-      "end_line": 12227,
-      "line": 12176,
+      "end_line": 12225,
+      "line": 12174,
       "methods": [
         "__init__",
         "run_synthesis",
@@ -2466,8 +2466,8 @@
     },
     {
       "bases": [],
-      "end_line": 12271,
-      "line": 12236,
+      "end_line": 12269,
+      "line": 12234,
       "methods": [
         "__init__",
         "analysis"
@@ -2476,8 +2476,8 @@
     },
     {
       "bases": [],
-      "end_line": 12311,
-      "line": 12274,
+      "end_line": 12309,
+      "line": 12272,
       "methods": [
         "__init__",
         "analysis"
@@ -2486,8 +2486,8 @@
     },
     {
       "bases": [],
-      "end_line": 12322,
-      "line": 12317,
+      "end_line": 12320,
+      "line": 12315,
       "methods": [
         "__init__",
         "analysis"
@@ -2496,8 +2496,8 @@
     },
     {
       "bases": [],
-      "end_line": 12330,
-      "line": 12325,
+      "end_line": 12328,
+      "line": 12323,
       "methods": [
         "__init__",
         "analysis"
@@ -2506,8 +2506,8 @@
     },
     {
       "bases": [],
-      "end_line": 12338,
-      "line": 12333,
+      "end_line": 12336,
+      "line": 12331,
       "methods": [
         "__init__",
         "analysis"
@@ -2516,8 +2516,8 @@
     },
     {
       "bases": [],
-      "end_line": 12346,
-      "line": 12341,
+      "end_line": 12344,
+      "line": 12339,
       "methods": [
         "__init__",
         "analysis"
@@ -2526,8 +2526,8 @@
     },
     {
       "bases": [],
-      "end_line": 12354,
-      "line": 12349,
+      "end_line": 12352,
+      "line": 12347,
       "methods": [
         "__init__",
         "analysis"
@@ -2536,8 +2536,8 @@
     },
     {
       "bases": [],
-      "end_line": 12362,
-      "line": 12357,
+      "end_line": 12360,
+      "line": 12355,
       "methods": [
         "__init__",
         "analysis"
@@ -2546,8 +2546,8 @@
     },
     {
       "bases": [],
-      "end_line": 12370,
-      "line": 12365,
+      "end_line": 12368,
+      "line": 12363,
       "methods": [
         "__init__",
         "analysis"
@@ -2556,8 +2556,8 @@
     },
     {
       "bases": [],
-      "end_line": 12390,
-      "line": 12373,
+      "end_line": 12388,
+      "line": 12371,
       "methods": [
         "__init__",
         "analysis"
@@ -2566,8 +2566,8 @@
     },
     {
       "bases": [],
-      "end_line": 12415,
-      "line": 12392,
+      "end_line": 12413,
+      "line": 12390,
       "methods": [
         "__init__",
         "analysis"
@@ -2576,8 +2576,8 @@
     },
     {
       "bases": [],
-      "end_line": 12422,
-      "line": 12417,
+      "end_line": 12420,
+      "line": 12415,
       "methods": [
         "__init__",
         "yansima"
@@ -2586,8 +2586,8 @@
     },
     {
       "bases": [],
-      "end_line": 12625,
-      "line": 12429,
+      "end_line": 12623,
+      "line": 12427,
       "methods": [
         "__init__",
         "run_all",
@@ -2604,8 +2604,8 @@
     },
     {
       "bases": [],
-      "end_line": 12722,
-      "line": 12633,
+      "end_line": 12720,
+      "line": 12631,
       "methods": [
         "__init__",
         "get_usgs_live_data",
@@ -2616,15 +2616,15 @@
     },
     {
       "bases": [],
-      "end_line": 12777,
-      "line": 12741,
+      "end_line": 12775,
+      "line": 12739,
       "methods": [],
       "name": "Sentez15_Constants"
     },
     {
       "bases": [],
-      "end_line": 13027,
-      "line": 12780,
+      "end_line": 13025,
+      "line": 12778,
       "methods": [
         "__init__",
         "run_all",
@@ -2641,8 +2641,8 @@
     },
     {
       "bases": [],
-      "end_line": 13089,
-      "line": 13041,
+      "end_line": 13087,
+      "line": 13039,
       "methods": [
         "__init__",
         "run_analysis"
@@ -2651,8 +2651,8 @@
     },
     {
       "bases": [],
-      "end_line": 13155,
-      "line": 13092,
+      "end_line": 13153,
+      "line": 13090,
       "methods": [
         "__init__",
         "run_dimensional_mapping"
@@ -2661,8 +2661,8 @@
     },
     {
       "bases": [],
-      "end_line": 13234,
-      "line": 13158,
+      "end_line": 13232,
+      "line": 13156,
       "methods": [
         "__init__",
         "run_audit",
@@ -2674,15 +2674,15 @@
     },
     {
       "bases": [],
-      "end_line": 13323,
-      "line": 13250,
+      "end_line": 13321,
+      "line": 13248,
       "methods": [],
       "name": "Sentez17_Constants"
     },
     {
       "bases": [],
-      "end_line": 13542,
-      "line": 13326,
+      "end_line": 13540,
+      "line": 13324,
       "methods": [
         "__init__",
         "run_all",
@@ -2698,15 +2698,15 @@
     },
     {
       "bases": [],
-      "end_line": 13809,
-      "line": 13550,
+      "end_line": 13807,
+      "line": 13548,
       "methods": [],
       "name": "Sentez18_Constants"
     },
     {
       "bases": [],
-      "end_line": 14345,
-      "line": 13813,
+      "end_line": 14343,
+      "line": 13811,
       "methods": [
         "__init__",
         "run_all",
@@ -2735,15 +2735,15 @@
     },
     {
       "bases": [],
-      "end_line": 14693,
-      "line": 14447,
+      "end_line": 14691,
+      "line": 14445,
       "methods": [],
       "name": "LevhiMahfuzConstants"
     },
     {
       "bases": [],
-      "end_line": 14839,
-      "line": 14696,
+      "end_line": 14837,
+      "line": 14694,
       "methods": [
         "base10_to_base11_correction",
         "time_dilation_correction",
@@ -2767,8 +2767,8 @@
     },
     {
       "bases": [],
-      "end_line": 14882,
-      "line": 14842,
+      "end_line": 14880,
+      "line": 14840,
       "methods": [
         "check_divisibility_by_11",
         "extract_eleven_patterns"
@@ -2777,22 +2777,22 @@
     },
     {
       "bases": [],
-      "end_line": 15043,
-      "line": 14959,
+      "end_line": 15041,
+      "line": 14957,
       "methods": [],
       "name": "GrokVerifiedConstants"
     },
     {
       "bases": [],
-      "end_line": 15181,
-      "line": 15066,
+      "end_line": 15179,
+      "line": 15064,
       "methods": [],
       "name": "OtoromAIBridgeConstants"
     },
     {
       "bases": [],
-      "end_line": 15280,
-      "line": 15184,
+      "end_line": 15278,
+      "line": 15182,
       "methods": [
         "flood_celali_harmony",
         "halley_humanity_connection",
@@ -2805,8 +2805,8 @@
     },
     {
       "bases": [],
-      "end_line": 15360,
-      "line": 15283,
+      "end_line": 15358,
+      "line": 15281,
       "methods": [
         "layer_1_divine_order",
         "layer_2_historical_bound",
@@ -2817,8 +2817,8 @@
     },
     {
       "bases": [],
-      "end_line": 15416,
-      "line": 15363,
+      "end_line": 15414,
+      "line": 15361,
       "methods": [
         "temporal_level",
         "spatial_level",
@@ -2828,43 +2828,43 @@
     },
     {
       "bases": [],
-      "end_line": 15583,
-      "line": 15499,
+      "end_line": 15581,
+      "line": 15497,
       "methods": [],
       "name": "KarTopuSentezConstants"
     },
     {
       "bases": [],
-      "end_line": 15646,
-      "line": 15612,
+      "end_line": 15644,
+      "line": 15610,
       "methods": [],
       "name": "GobeklitepeConstants"
     },
     {
       "bases": [],
-      "end_line": 15690,
-      "line": 15649,
+      "end_line": 15688,
+      "line": 15647,
       "methods": [],
       "name": "SpinalCipherConstants"
     },
     {
       "bases": [],
-      "end_line": 15731,
-      "line": 15693,
+      "end_line": 15729,
+      "line": 15691,
       "methods": [],
       "name": "CainCipherConstants"
     },
     {
       "bases": [],
-      "end_line": 15758,
-      "line": 15734,
+      "end_line": 15756,
+      "line": 15732,
       "methods": [],
       "name": "KarTopu_V3_Phase3_Constants"
     },
     {
       "bases": [],
-      "end_line": 15974,
-      "line": 15761,
+      "end_line": 15972,
+      "line": 15759,
       "methods": [
         "__init__",
         "header",
@@ -2879,8 +2879,8 @@
     },
     {
       "bases": [],
-      "end_line": 16136,
-      "line": 16041,
+      "end_line": 16134,
+      "line": 16039,
       "methods": [
         "__init__",
         "validate_exact_match",
@@ -2892,8 +2892,8 @@
     },
     {
       "bases": [],
-      "end_line": 16230,
-      "line": 16162,
+      "end_line": 16228,
+      "line": 16160,
       "methods": [],
       "name": "GrokSequences"
     }
@@ -3112,150 +3112,150 @@
       "name": "SpinalCipherConstants"
     },
     {
-      "alias": null,
-      "kind": "from",
-      "line": 2567,
-      "module": "simulation_11.orchestrator.v133",
-      "name": "Simule3_Lab_V133"
-    },
-    {
-      "alias": null,
-      "kind": "from",
-      "line": 2567,
-      "module": "simulation_11.orchestrator.v133",
-      "name": "Simulation_AutoPilot"
-    },
-    {
       "alias": "datetime_class",
       "kind": "from",
-      "line": 6832,
+      "line": 6831,
       "module": "datetime",
       "name": "datetime"
     },
     {
       "alias": null,
       "kind": "from",
-      "line": 6832,
+      "line": 6831,
       "module": "datetime",
       "name": "timedelta"
     },
     {
       "alias": null,
       "kind": "from",
-      "line": 6832,
+      "line": 6831,
       "module": "datetime",
       "name": "date"
     },
     {
       "kind": "import",
-      "line": 6833,
+      "line": 6832,
       "module": "google.generativeai",
       "name": "genai"
     },
     {
       "kind": "import",
-      "line": 6834,
+      "line": 6833,
       "module": "inspect",
       "name": "inspect"
     },
     {
       "kind": "import",
-      "line": 6835,
+      "line": 6834,
       "module": "json",
       "name": "json"
     },
     {
       "kind": "import",
-      "line": 6836,
+      "line": 6835,
       "module": "math",
       "name": "math"
     },
     {
       "kind": "import",
-      "line": 6837,
+      "line": 6836,
       "module": "numpy",
       "name": "np"
     },
     {
       "kind": "import",
-      "line": 6838,
+      "line": 6837,
       "module": "os",
       "name": "os"
     },
     {
       "kind": "import",
-      "line": 6839,
+      "line": 6838,
       "module": "pandas",
       "name": "pd"
     },
     {
       "kind": "import",
-      "line": 6840,
+      "line": 6839,
       "module": "random",
       "name": "random"
     },
     {
       "kind": "import",
-      "line": 6841,
+      "line": 6840,
       "module": "requests",
       "name": "requests"
     },
     {
       "kind": "import",
-      "line": 6842,
+      "line": 6841,
       "module": "scipy.stats",
       "name": "stats"
     },
     {
       "kind": "import",
-      "line": 6843,
+      "line": 6842,
       "module": "sqlite3",
       "name": "sqlite3"
     },
     {
       "kind": "import",
-      "line": 6844,
+      "line": 6843,
       "module": "sys",
       "name": "sys"
     },
     {
       "kind": "import",
-      "line": 6845,
+      "line": 6844,
       "module": "time",
       "name": "time"
     },
     {
       "kind": "import",
-      "line": 6846,
+      "line": 6845,
       "module": "traceback",
       "name": "traceback"
     },
     {
       "kind": "import",
-      "line": 6847,
+      "line": 6846,
       "module": "warnings",
       "name": "warnings"
     },
     {
-      "alias": null,
-      "kind": "from",
-      "line": 7008,
-      "module": "simulation_11.orchestrator.v175",
-      "name": "Simule3_Lab_V175"
-    },
-    {
       "alias": "Constants",
       "kind": "from",
-      "line": 15993,
+      "line": 15991,
       "module": "levhi_mahfuz",
       "name": "LevhiMahfuzConstants"
     },
     {
       "alias": "Formulas",
       "kind": "from",
-      "line": 15993,
+      "line": 15991,
       "module": "levhi_mahfuz",
       "name": "LevhiMahfuzFormulas"
+    },
+    {
+      "alias": null,
+      "kind": "from",
+      "line": 21870,
+      "module": "simulation_11.orchestrator.v133",
+      "name": "Simule3_Lab_V133"
+    },
+    {
+      "alias": null,
+      "kind": "from",
+      "line": 21870,
+      "module": "simulation_11.orchestrator.v133",
+      "name": "Simulation_AutoPilot"
+    },
+    {
+      "alias": null,
+      "kind": "from",
+      "line": 21871,
+      "module": "simulation_11.orchestrator.v175",
+      "name": "Simule3_Lab_V175"
     },
     {
       "kind": "import",
@@ -3283,49 +3283,49 @@
     },
     {
       "kind": "import",
-      "line": 6759,
+      "line": 6758,
       "module": "sys",
       "name": "sys"
     },
     {
       "alias": "LMC",
       "kind": "from",
-      "line": 15603,
+      "line": 15601,
       "module": "levhi_mahfuz",
       "name": "LevhiMahfuzConstants"
     },
     {
       "alias": null,
       "kind": "from",
-      "line": 21872,
+      "line": 21874,
       "module": "simulation_11.cli",
       "name": "main"
     },
     {
       "kind": "import",
-      "line": 4991,
+      "line": 4990,
       "module": "requests",
       "name": "requests"
     },
     {
       "kind": "import",
-      "line": 5048,
+      "line": 5047,
       "module": "requests",
       "name": "requests"
     },
     {
       "kind": "import",
-      "line": 5583,
+      "line": 5582,
       "module": "requests",
       "name": "req"
     },
     {
       "kind": "import",
-      "line": 5584,
+      "line": 5583,
       "module": "json",
       "name": "json"
     }
   ],
-  "line_count": 21876,
+  "line_count": 21878,
   "source": "C:\\Users\\soldi\\IdeaProjects\\simulation-11-wt-pr3\\simulasyon_11.py"
 }

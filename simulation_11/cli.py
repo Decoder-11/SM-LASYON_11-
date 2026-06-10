@@ -14,6 +14,9 @@ DEFAULT_ORCHESTRATOR = "all"
 
 def _import_orchestrators():
     """Lazy-import orchestrators from simulation_11 package (PR 3)."""
+    from simulation_11._optional_deps import ensure_optional_deps
+
+    ensure_optional_deps()
     from simulation_11.orchestrator.v133 import Simule3_Lab_V133, Simulation_AutoPilot
     from simulation_11.orchestrator.v175 import Simule3_Lab_V175
 
@@ -22,23 +25,9 @@ def _import_orchestrators():
 
 def _ensure_requests_mock() -> None:
     """Handle missing or broken requests gracefully (V175 legacy behavior)."""
-    if "requests" not in sys.modules:
-        class MockResponse:
-            def __init__(self):
-                self.status_code = 200
-                self.text = "{}"
+    from simulation_11._optional_deps import ensure_requests_mock
 
-            def json(self):
-                return {}
-
-        class MockRequests:
-            def get(self, *args, **kwargs):
-                return MockResponse()
-
-            def post(self, *args, **kwargs):
-                return MockResponse()
-
-        sys.modules["requests"] = MockRequests()
+    ensure_requests_mock()
 
 
 def _configure_pandas() -> None:

@@ -1,23 +1,31 @@
-"""Simule3_Lab_V133 orchestrator — canonical L2704 (PR 3)."""
+"""Simule3_Lab_V133 orchestrator — canonical L2704 (PR 3).
+
+Kernel policy (see archive/audits/duplicate_v133_diff.txt):
+  - Base class: Simule3_Lab_V103 (first Simule3_Lab@L2469), NOT Simule3_Lab_V150_Omega.
+  - run_all body: L2704 canonical flow with local Sentez14/15/16/17 instances.
+  - L10756 duplicate (self.sentez14, Sentez-18, Omega-25) intentionally dropped;
+    those blocks belong to V150 and are deferred to a future extraction PR.
+"""
 
 from __future__ import annotations
 
 import time
 
-from simulation_11._monolith_bridge import (
-    Colors,
-    Module_Deep_11D_Organic_Synthesis,
-    Module_DeepSystemAudit,
-    Module_R11_Kernel_Cryptanalysis,
-    Module_Sentez17_AcademicDeepening,
-    Sentez14_OtonomKesif,
-    Sentez7_MasterConstants,
-    Simule3_Constants,
-    Simule3_Lab,
-    Snowball_MasterRunner,
-    Snowball_Synthesis15_CosmicUnification,
-    ValidationEngine,
-)
+from simulation_11._monolith_bridge import get as _mono_get
+
+Colors = _mono_get("Colors")
+Module_Deep_11D_Organic_Synthesis = _mono_get("Module_Deep_11D_Organic_Synthesis")
+Module_DeepSystemAudit = _mono_get("Module_DeepSystemAudit")
+Module_R11_Kernel_Cryptanalysis = _mono_get("Module_R11_Kernel_Cryptanalysis")
+Module_Sentez17_AcademicDeepening = _mono_get("Module_Sentez17_AcademicDeepening")
+Sentez14_OtonomKesif = _mono_get("Sentez14_OtonomKesif")
+Sentez7_MasterConstants = _mono_get("Sentez7_MasterConstants")
+Simule3_Constants = _mono_get("Simule3_Constants")
+Simule3_Lab = _mono_get("Simule3_Lab")
+Snowball_MasterRunner = _mono_get("Snowball_MasterRunner")
+Snowball_Synthesis15_CosmicUnification = _mono_get("Snowball_Synthesis15_CosmicUnification")
+ValidationEngine = _mono_get("ValidationEngine")
+
 
 class Simule3_Lab_V133(Simule3_Lab):
     def __init__(self):

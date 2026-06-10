@@ -6829,7 +6829,10 @@ ENCRYPTION: 11-DIMENSIONAL SPINAL CIPHER
 
 # -*- coding: utf-8 -*-
 from datetime import datetime as datetime_class, timedelta, date
-import google.generativeai as genai
+try:
+    import google.generativeai as genai
+except ImportError:
+    genai = None
 import inspect
 import json
 import math
@@ -7204,7 +7207,7 @@ class Modul_Phase3_Otonom_Sentez:
         print(f"{Colors.GREEN}[OK] Phase 3 Synthesis Integrated and Logged to results.txt.{Colors.RESET}\n")
 
 class Simule3_Lab_V175_Legacy:
-    """Legacy V175 orchestrator (minimal modules). Superseded by full Simule3_Lab_V175 above."""
+    """Legacy V175 orchestrator (minimal modules). Superseded by simulation_11.orchestrator.v175."""
     def __init__(self):
         self.const = Simule3_Constants()
         self.inspect = inspect
@@ -21866,9 +21869,21 @@ FINAL SYSTEM CERTIFICATE: 11D SIMULATION OPERATIONAL
 ================================================================================
 '''
 
-# [PR 3] Re-export extracted orchestrators after monolith is fully defined.
-from simulation_11.orchestrator.v133 import Simule3_Lab_V133, Simulation_AutoPilot
-from simulation_11.orchestrator.v175 import Simule3_Lab_V175
+# [PR 3] Lazy re-export extracted orchestrators (avoids circular import with bridge).
+_EXTRACTED_EXPORTS = frozenset({"Simule3_Lab_V133", "Simulation_AutoPilot", "Simule3_Lab_V175"})
+
+
+def __getattr__(name: str):
+    if name not in _EXTRACTED_EXPORTS:
+        raise AttributeError(f"module 'simulasyon_11' has no attribute {name!r}")
+    if name == "Simule3_Lab_V175":
+        from simulation_11.orchestrator.v175 import Simule3_Lab_V175
+
+        return Simule3_Lab_V175
+    from simulation_11.orchestrator.v133 import Simule3_Lab_V133, Simulation_AutoPilot
+
+    return Simule3_Lab_V133 if name == "Simule3_Lab_V133" else Simulation_AutoPilot
+
 
 if __name__ == "__main__":
     from simulation_11.cli import main
