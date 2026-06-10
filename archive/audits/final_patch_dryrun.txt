@@ -1,0 +1,640 @@
+# FINAL lineage patch dry-run audit (PR 4)
+# Generated: 2026-06-10T05:40:29.686315
+# Patch: proposed_OptionC_cleanup.patch (Option C: 64,729 -> ~10k transform)
+# Normalized patch header: SIMULASYON_11_FINAL.py (saved in archive/audits/)
+# Root SIMULASYON_11_FINAL.py line count: 70195
+# Policy: Skip Option C apply on root if already ~9k lines (threshold: 9000-10000)
+# Decision: Root is NOT ~9k — dry-run only; relocate as-is to archive/synthesis/final_reference.py
+
+=== root SIMULASYON_11_FINAL.py ===
+Source: C:\Users\soldi\IdeaProjects\simulation-11-wt-pr4\SIMULASYON_11_FINAL.py
+Lines: 70195
+Exit code: 1
+(Stripping trailing CRs from patch; use --binary to disable.)
+checking file SIMULASYON_11_FINAL.py
+Hunk #295 FAILED at 10334.
+1 out of 296 hunks FAILED
+RESULT: PATCH WOULD FAIL (expected for trimmed variants)
+
+=== STASHED_SIMULASYON_11_FINAL.py ===
+Source: C:\Users\soldi\IdeaProjects\simulation-11-wt-pr4\STASHED_SIMULASYON_11_FINAL.py
+Lines: 0
+Exit code: 1
+(Stripping trailing CRs from patch; use --binary to disable.)
+checking file SIMULASYON_11_FINAL.py
+Hunk #1 FAILED at 1.
+Hunk #2 FAILED at 60102.
+Hunk #3 FAILED at 60134.
+Hunk #4 FAILED at 60231.
+Hunk #5 FAILED at 60259.
+Hunk #6 FAILED at 60269.
+Hunk #7 FAILED at 60285.
+Hunk #8 FAILED at 60302.
+Hunk #9 FAILED at 60323.
+Hunk #10 FAILED at 60331.
+Hunk #11 FAILED at 60339.
+Hunk #12 FAILED at 60429.
+Hunk #13 FAILED at 60450.
+Hunk #14 FAILED at 60575.
+Hunk #15 FAILED at 60587.
+Hunk #16 FAILED at 60594.
+Hunk #17 FAILED at 60603.
+Hunk #18 FAILED at 60629.
+Hunk #19 FAILED at 60648.
+Hunk #20 FAILED at 60655.
+Hunk #21 FAILED at 60669.
+Hunk #22 FAILED at 60677.
+Hunk #23 FAILED at 60685.
+Hunk #24 FAILED at 60699.
+Hunk #25 FAILED at 60714.
+Hunk #26 FAILED at 60726.
+Hunk #27 FAILED at 60742.
+Hunk #28 FAILED at 60748.
+Hunk #29 FAILED at 60787.
+Hunk #30 FAILED at 60800.
+Hunk #31 FAILED at 60853.
+Hunk #32 FAILED at 60865.
+Hunk #33 FAILED at 60918.
+Hunk #34 FAILED at 60954.
+Hunk #35 FAILED at 60967.
+Hunk #36 FAILED at 60979.
+Hunk #37 FAILED at 61009.
+Hunk #38 FAILED at 61018.
+Hunk #39 FAILED at 61053.
+Hunk #40 FAILED at 61062.
+Hunk #41 FAILED at 61085.
+Hunk #42 FAILED at 61092.
+Hunk #43 FAILED at 61100.
+Hunk #44 FAILED at 61114.
+Hunk #45 FAILED at 61120.
+Hunk #46 FAILED at 61129.
+Hunk #47 FAILED at 61171.
+Hunk #48 FAILED at 61182.
+Hunk #49 FAILED at 61214.
+Hunk #50 FAILED at 61229.
+Hunk #51 FAILED at 61242.
+Hunk #52 FAILED at 61258.
+Hunk #53 FAILED at 61266.
+Hunk #54 FAILED at 61274.
+Hunk #55 FAILED at 61300.
+Hunk #56 FAILED at 61308.
+Hunk #57 FAILED at 61317.
+Hunk #58 FAILED at 61325.
+Hunk #59 FAILED at 61349.
+Hunk #60 FAILED at 61362.
+Hunk #61 FAILED at 61368.
+Hunk #62 FAILED at 61374.
+Hunk #63 FAILED at 61407.
+Hunk #64 FAILED at 61417.
+Hunk #65 FAILED at 61429.
+Hunk #66 FAILED at 61460.
+Hunk #67 FAILED at 61467.
+Hunk #68 FAILED at 61476.
+Hunk #69 FAILED at 61489.
+Hunk #70 FAILED at 61497.
+Hunk #71 FAILED at 61580.
+Hunk #72 FAILED at 61593.
+Hunk #73 FAILED at 61606.
+Hunk #74 FAILED at 61616.
+Hunk #75 FAILED at 61624.
+Hunk #76 FAILED at 61638.
+Hunk #77 FAILED at 61650.
+Hunk #78 FAILED at 61659.
+Hunk #79 FAILED at 61679.
+Hunk #80 FAILED at 61702.
+Hunk #81 FAILED at 61715.
+Hunk #82 FAILED at 61729.
+Hunk #83 FAILED at 61765.
+Hunk #84 FAILED at 61773.
+Hunk #85 FAILED at 61795.
+Hunk #86 FAILED at 61805.
+Hunk #87 FAILED at 61811.
+Hunk #88 FAILED at 61831.
+Hunk #89 FAILED at 61861.
+Hunk #90 FAILED at 61890.
+Hunk #91 FAILED at 61905.
+Hunk #92 FAILED at 61946.
+Hunk #93 FAILED at 61958.
+Hunk #94 FAILED at 62003.
+Hunk #95 FAILED at 62019.
+Hunk #96 FAILED at 62034.
+Hunk #97 FAILED at 62040.
+Hunk #98 FAILED at 62064.
+Hunk #99 FAILED at 62090.
+Hunk #100 FAILED at 62102.
+Hunk #101 FAILED at 62120.
+Hunk #102 FAILED at 62426.
+Hunk #103 FAILED at 62436.
+Hunk #104 FAILED at 62498.
+Hunk #105 FAILED at 62548.
+Hunk #106 FAILED at 62558.
+Hunk #107 FAILED at 62582.
+Hunk #108 FAILED at 62608.
+Hunk #109 FAILED at 62619.
+Hunk #110 FAILED at 62625.
+Hunk #111 FAILED at 62637.
+Hunk #112 FAILED at 62741.
+Hunk #113 FAILED at 62796.
+Hunk #114 FAILED at 62846.
+Hunk #115 FAILED at 62870.
+Hunk #116 FAILED at 62894.
+Hunk #117 FAILED at 62982.
+Hunk #118 FAILED at 62998.
+Hunk #119 FAILED at 63006.
+Hunk #120 FAILED at 63016.
+Hunk #121 FAILED at 63029.
+Hunk #122 FAILED at 63043.
+Hunk #123 FAILED at 63053.
+Hunk #124 FAILED at 63195.
+Hunk #125 FAILED at 63215.
+Hunk #126 FAILED at 63229.
+Hunk #127 FAILED at 63424.
+Hunk #128 FAILED at 63436.
+Hunk #129 FAILED at 63469.
+Hunk #130 FAILED at 63499.
+Hunk #131 FAILED at 63527.
+Hunk #132 FAILED at 63536.
+Hunk #133 FAILED at 63550.
+Hunk #134 FAILED at 63569.
+Hunk #135 FAILED at 63598.
+Hunk #136 FAILED at 63607.
+Hunk #137 FAILED at 63614.
+Hunk #138 FAILED at 63635.
+Hunk #139 FAILED at 63677.
+Hunk #140 FAILED at 63692.
+Hunk #141 FAILED at 63707.
+Hunk #142 FAILED at 63714.
+Hunk #143 FAILED at 63756.
+Hunk #144 FAILED at 63771.
+Hunk #145 FAILED at 63778.
+Hunk #146 FAILED at 63819.
+Hunk #147 FAILED at 63834.
+Hunk #148 FAILED at 63907.
+Hunk #149 FAILED at 63934.
+Hunk #150 FAILED at 63955.
+Hunk #151 FAILED at 63962.
+Hunk #152 FAILED at 63990.
+Hunk #153 FAILED at 64027.
+Hunk #154 FAILED at 64036.
+Hunk #155 FAILED at 64049.
+Hunk #156 FAILED at 64087.
+Hunk #157 FAILED at 64125.
+Hunk #158 FAILED at 64141.
+Hunk #159 FAILED at 64161.
+Hunk #160 FAILED at 64178.
+Hunk #161 FAILED at 64201.
+Hunk #162 FAILED at 64253.
+Hunk #163 FAILED at 64279.
+Hunk #164 FAILED at 64294.
+Hunk #165 FAILED at 64308.
+Hunk #166 FAILED at 64314.
+Hunk #167 FAILED at 64331.
+Hunk #168 FAILED at 64340.
+Hunk #169 FAILED at 64373.
+Hunk #170 FAILED at 64387.
+Hunk #171 FAILED at 64419.
+Hunk #172 FAILED at 64428.
+Hunk #173 FAILED at 64438.
+Hunk #174 FAILED at 64448.
+Hunk #175 FAILED at 64460.
+Hunk #176 FAILED at 64470.
+Hunk #177 FAILED at 64495.
+Hunk #178 FAILED at 64524.
+Hunk #179 FAILED at 64543.
+Hunk #180 FAILED at 64552.
+Hunk #181 FAILED at 64559.
+Hunk #182 FAILED at 64586.
+Hunk #183 FAILED at 64616.
+Hunk #184 FAILED at 64635.
+Hunk #185 FAILED at 64642.
+Hunk #186 FAILED at 64663.
+Hunk #187 FAILED at 64670.
+Hunk #188 FAILED at 64769.
+Hunk #189 FAILED at 64776.
+Hunk #190 FAILED at 64788.
+Hunk #191 FAILED at 64802.
+Hunk #192 FAILED at 64852.
+Hunk #193 FAILED at 64882.
+Hunk #194 FAILED at 65017.
+Hunk #195 FAILED at 65141.
+Hunk #196 FAILED at 65153.
+Hunk #197 FAILED at 65180.
+Hunk #198 FAILED at 65198.
+Hunk #199 FAILED at 65214.
+Hunk #200 FAILED at 65222.
+Hunk #201 FAILED at 65237.
+Hunk #202 FAILED at 65249.
+Hunk #203 FAILED at 65262.
+Hunk #204 FAILED at 65289.
+Hunk #205 FAILED at 65300.
+Hunk #206 FAILED at 65327.
+Hunk #207 FAILED at 65339.
+Hunk #208 FAILED at 65376.
+Hunk #209 FAILED at 65389.
+Hunk #210 FAILED at 65395.
+Hunk #211 FAILED at 65408.
+Hunk #212 FAILED at 65423.
+Hunk #213 FAILED at 65443.
+Hunk #214 FAILED at 65622.
+Hunk #215 FAILED at 65644.
+Hunk #216 FAILED at 65678.
+Hunk #217 FAILED at 65694.
+Hunk #218 FAILED at 65704.
+Hunk #219 FAILED at 65716.
+Hunk #220 FAILED at 65725.
+Hunk #221 FAILED at 65735.
+Hunk #222 FAILED at 65744.
+Hunk #223 FAILED at 65754.
+Hunk #224 FAILED at 65764.
+Hunk #225 FAILED at 65774.
+Hunk #226 FAILED at 65784.
+Hunk #227 FAILED at 65795.
+Hunk #228 FAILED at 66029.
+Hunk #229 FAILED at 66039.
+Hunk #230 FAILED at 66472.
+Hunk #231 FAILED at 66486.
+Hunk #232 FAILED at 66811.
+Hunk #233 FAILED at 66901.
+Hunk #234 FAILED at 66910.
+Hunk #235 FAILED at 66928.
+Hunk #236 FAILED at 66964.
+Hunk #237 FAILED at 66982.
+Hunk #238 FAILED at 66991.
+Hunk #239 FAILED at 67000.
+Hunk #240 FAILED at 67009.
+Hunk #241 FAILED at 67090.
+Hunk #242 FAILED at 67108.
+Hunk #243 FAILED at 67135.
+Hunk #244 FAILED at 67162.
+Hunk #245 FAILED at 68670.
+Hunk #246 FAILED at 68689.
+Hunk #247 FAILED at 68700.
+Hunk #248 FAILED at 68712.
+Hunk #249 FAILED at 68745.
+Hunk #250 FAILED at 68751.
+Hunk #251 FAILED at 68796.
+Hunk #252 FAILED at 68827.
+Hunk #253 FAILED at 68983.
+Hunk #254 FAILED at 69017.
+Hunk #255 FAILED at 69041.
+Hunk #256 FAILED at 69064.
+Hunk #257 FAILED at 69081.
+Hunk #258 FAILED at 69122.
+Hunk #259 FAILED at 69130.
+Hunk #260 FAILED at 69150.
+Hunk #261 FAILED at 69175.
+Hunk #262 FAILED at 69189.
+Hunk #263 FAILED at 69198.
+Hunk #264 FAILED at 69225.
+Hunk #265 FAILED at 69234.
+Hunk #266 FAILED at 69246.
+Hunk #267 FAILED at 69260.
+Hunk #268 FAILED at 69269.
+Hunk #269 FAILED at 69291.
+Hunk #270 FAILED at 69359.
+Hunk #271 FAILED at 69406.
+Hunk #272 FAILED at 69437.
+Hunk #273 FAILED at 69471.
+Hunk #274 FAILED at 69491.
+Hunk #275 FAILED at 69508.
+Hunk #276 FAILED at 69514.
+Hunk #277 FAILED at 69525.
+Hunk #278 FAILED at 69545.
+Hunk #279 FAILED at 69567.
+Hunk #280 FAILED at 69588.
+Hunk #281 FAILED at 69612.
+Hunk #282 FAILED at 69624.
+Hunk #283 FAILED at 69644.
+Hunk #284 FAILED at 69667.
+Hunk #285 FAILED at 69686.
+Hunk #286 FAILED at 69702.
+Hunk #287 FAILED at 69730.
+Hunk #288 FAILED at 69739.
+Hunk #289 FAILED at 69748.
+Hunk #290 FAILED at 69758.
+Hunk #291 FAILED at 69829.
+Hunk #292 FAILED at 69852.
+Hunk #293 FAILED at 70127.
+Hunk #294 FAILED at 70154.
+Hunk #295 FAILED at 70166.
+Hunk #296 FAILED at 70194.
+296 out of 296 hunks FAILED
+RESULT: PATCH WOULD FAIL (expected for trimmed variants)
+
+=== backup_files/SIMULASYON_11_FINAL.py ===
+Source: C:\Users\soldi\AppData\Local\Temp\pr4_backup_extract\backup_files\SIMULASYON_11_FINAL.py
+Lines: 68309
+Exit code: 1
+(Stripping trailing CRs from patch; use --binary to disable.)
+checking file SIMULASYON_11_FINAL.py
+Hunk #1 FAILED at 1.
+Hunk #2 succeeded at 59861 (offset -241 lines).
+Hunk #3 succeeded at 59893 (offset -241 lines).
+Hunk #4 succeeded at 59990 (offset -241 lines).
+Hunk #5 succeeded at 60018 (offset -241 lines).
+Hunk #6 succeeded at 60028 (offset -241 lines).
+Hunk #7 succeeded at 60044 (offset -241 lines).
+Hunk #8 succeeded at 60061 (offset -241 lines).
+Hunk #9 succeeded at 60082 (offset -241 lines).
+Hunk #10 succeeded at 60090 (offset -241 lines).
+Hunk #11 succeeded at 60098 (offset -241 lines).
+Hunk #12 succeeded at 60188 (offset -241 lines).
+Hunk #13 succeeded at 60209 (offset -241 lines).
+Hunk #14 succeeded at 60334 (offset -241 lines).
+Hunk #15 succeeded at 60346 (offset -241 lines).
+Hunk #16 succeeded at 60353 (offset -241 lines).
+Hunk #17 succeeded at 60362 (offset -241 lines).
+Hunk #18 succeeded at 60388 (offset -241 lines).
+Hunk #19 succeeded at 60407 (offset -241 lines).
+Hunk #20 succeeded at 60414 (offset -241 lines).
+Hunk #21 succeeded at 60428 (offset -241 lines).
+Hunk #22 succeeded at 60436 (offset -241 lines).
+Hunk #23 succeeded at 60444 (offset -241 lines).
+Hunk #24 succeeded at 60458 (offset -241 lines).
+Hunk #25 succeeded at 60473 (offset -241 lines).
+Hunk #26 succeeded at 60485 (offset -241 lines).
+Hunk #27 succeeded at 60501 (offset -241 lines).
+Hunk #28 succeeded at 60507 (offset -241 lines).
+Hunk #29 succeeded at 60546 (offset -241 lines).
+Hunk #30 succeeded at 60559 (offset -241 lines).
+Hunk #31 succeeded at 60612 (offset -241 lines).
+Hunk #32 succeeded at 60624 (offset -241 lines).
+Hunk #33 succeeded at 60677 (offset -241 lines).
+Hunk #34 succeeded at 60713 (offset -241 lines).
+Hunk #35 succeeded at 60726 (offset -241 lines).
+Hunk #36 succeeded at 60738 (offset -241 lines).
+Hunk #37 succeeded at 60768 (offset -241 lines).
+Hunk #38 succeeded at 60777 (offset -241 lines).
+Hunk #39 succeeded at 60812 (offset -241 lines).
+Hunk #40 succeeded at 60821 (offset -241 lines).
+Hunk #41 succeeded at 60844 (offset -241 lines).
+Hunk #42 succeeded at 60851 (offset -241 lines).
+Hunk #43 succeeded at 60859 (offset -241 lines).
+Hunk #44 succeeded at 60873 (offset -241 lines).
+Hunk #45 succeeded at 60879 (offset -241 lines).
+Hunk #46 succeeded at 60888 (offset -241 lines).
+Hunk #47 succeeded at 60930 (offset -241 lines).
+Hunk #48 succeeded at 60941 (offset -241 lines).
+Hunk #49 succeeded at 60973 (offset -241 lines).
+Hunk #50 succeeded at 60988 (offset -241 lines).
+Hunk #51 succeeded at 61001 (offset -241 lines).
+Hunk #52 succeeded at 61017 (offset -241 lines).
+Hunk #53 succeeded at 61025 (offset -241 lines).
+Hunk #54 succeeded at 61033 (offset -241 lines).
+Hunk #55 succeeded at 61059 (offset -241 lines).
+Hunk #56 succeeded at 61067 (offset -241 lines).
+Hunk #57 succeeded at 61076 (offset -241 lines).
+Hunk #58 succeeded at 61084 (offset -241 lines).
+Hunk #59 succeeded at 61108 (offset -241 lines).
+Hunk #60 succeeded at 61121 (offset -241 lines).
+Hunk #61 succeeded at 61127 (offset -241 lines).
+Hunk #62 succeeded at 61133 (offset -241 lines).
+Hunk #63 succeeded at 61166 (offset -241 lines).
+Hunk #64 succeeded at 61176 (offset -241 lines).
+Hunk #65 succeeded at 61188 (offset -241 lines).
+Hunk #66 succeeded at 61219 (offset -241 lines).
+Hunk #67 succeeded at 61226 (offset -241 lines).
+Hunk #68 succeeded at 61235 (offset -241 lines).
+Hunk #69 succeeded at 61248 (offset -241 lines).
+Hunk #70 succeeded at 61256 with fuzz 1 (offset -241 lines).
+Hunk #71 succeeded at 61339 (offset -241 lines).
+Hunk #72 succeeded at 61352 (offset -241 lines).
+Hunk #73 succeeded at 61365 (offset -241 lines).
+Hunk #74 FAILED at 61616.
+Hunk #75 FAILED at 61624.
+Hunk #76 FAILED at 61638.
+Hunk #77 FAILED at 61650.
+Hunk #78 FAILED at 61659.
+Hunk #79 FAILED at 61679.
+Hunk #80 succeeded at 61442 (offset -260 lines).
+Hunk #81 succeeded at 61455 (offset -260 lines).
+Hunk #82 FAILED at 61729.
+Hunk #83 FAILED at 61765.
+Hunk #84 FAILED at 61773.
+Hunk #85 succeeded at 61519 with fuzz 2 (offset -276 lines).
+Hunk #86 succeeded at 61529 (offset -276 lines).
+Hunk #87 FAILED at 61811.
+Hunk #88 FAILED at 61831.
+Hunk #89 succeeded at 61584 (offset -277 lines).
+Hunk #90 FAILED at 61890.
+Hunk #91 FAILED at 61905.
+Hunk #92 succeeded at 61652 (offset -294 lines).
+Hunk #93 succeeded at 61664 (offset -294 lines).
+Hunk #94 succeeded at 61709 (offset -294 lines).
+Hunk #95 succeeded at 61725 (offset -294 lines).
+Hunk #96 succeeded at 61740 (offset -294 lines).
+Hunk #97 succeeded at 61746 (offset -294 lines).
+Hunk #98 succeeded at 61770 (offset -294 lines).
+Hunk #99 succeeded at 61796 (offset -294 lines).
+Hunk #100 FAILED at 62102.
+Hunk #101 FAILED at 62120.
+Hunk #102 succeeded at 62109 (offset -317 lines).
+Hunk #103 succeeded at 62119 (offset -317 lines).
+Hunk #104 succeeded at 62181 (offset -317 lines).
+Hunk #105 succeeded at 62231 (offset -317 lines).
+Hunk #106 succeeded at 62241 (offset -317 lines).
+Hunk #107 succeeded at 62265 (offset -317 lines).
+Hunk #108 succeeded at 62291 (offset -317 lines).
+Hunk #109 succeeded at 62302 (offset -317 lines).
+Hunk #110 succeeded at 62308 (offset -317 lines).
+Hunk #111 succeeded at 62320 (offset -317 lines).
+Hunk #112 succeeded at 62423 with fuzz 1 (offset -318 lines).
+Hunk #113 succeeded at 62533 (offset -318 lines).
+Hunk #114 succeeded at 62583 (offset -318 lines).
+Hunk #115 FAILED at 62925.
+Hunk #116 FAILED at 62949.
+Hunk #117 succeeded at 62719 (offset -318 lines).
+Hunk #118 succeeded at 62735 (offset -318 lines).
+Hunk #119 succeeded at 62743 (offset -318 lines).
+Hunk #120 succeeded at 62753 (offset -318 lines).
+Hunk #121 succeeded at 62766 (offset -318 lines).
+Hunk #122 succeeded at 62780 (offset -318 lines).
+Hunk #123 succeeded at 62790 (offset -318 lines).
+Hunk #124 FAILED at 63250.
+Hunk #125 FAILED at 63270.
+Hunk #126 FAILED at 63284.
+Hunk #127 succeeded at 63024 (offset -455 lines).
+Hunk #128 succeeded at 63036 (offset -455 lines).
+Hunk #129 succeeded at 63069 (offset -455 lines).
+Hunk #130 succeeded at 63099 (offset -455 lines).
+Hunk #131 succeeded at 63127 (offset -455 lines).
+Hunk #132 succeeded at 63136 (offset -455 lines).
+Hunk #133 succeeded at 63150 (offset -455 lines).
+Hunk #134 FAILED at 63624.
+Hunk #135 succeeded at 63198 (offset -455 lines).
+Hunk #136 succeeded at 63207 (offset -455 lines).
+Hunk #137 succeeded at 63214 (offset -455 lines).
+Hunk #138 FAILED at 63690.
+Hunk #139 FAILED at 63732.
+Hunk #140 FAILED at 63747.
+Hunk #141 FAILED at 63762.
+Hunk #142 FAILED at 63769.
+Hunk #143 FAILED at 63811.
+Hunk #144 FAILED at 63826.
+Hunk #145 FAILED at 63833.
+Hunk #146 FAILED at 63874.
+Hunk #147 FAILED at 63889.
+Hunk #148 FAILED at 63962.
+Hunk #149 succeeded at 63526 (offset -463 lines).
+Hunk #150 succeeded at 63547 (offset -463 lines).
+Hunk #151 succeeded at 63554 (offset -463 lines).
+Hunk #152 FAILED at 64045.
+Hunk #153 succeeded at 63619 (offset -463 lines).
+Hunk #154 succeeded at 63628 with fuzz 1 (offset -463 lines).
+Hunk #155 FAILED at 64104.
+Hunk #156 succeeded at 63679 with fuzz 2 (offset -463 lines).
+Hunk #157 succeeded at 63717 (offset -463 lines).
+Hunk #158 succeeded at 63733 (offset -463 lines).
+Hunk #159 succeeded at 63753 (offset -463 lines).
+Hunk #160 FAILED at 64233.
+Hunk #161 succeeded at 63793 (offset -463 lines).
+Hunk #162 succeeded at 63845 (offset -463 lines).
+Hunk #163 succeeded at 63871 (offset -463 lines).
+Hunk #164 succeeded at 63886 with fuzz 1 (offset -463 lines).
+Hunk #165 succeeded at 63898 with fuzz 1 (offset -465 lines).
+Hunk #166 succeeded at 63904 (offset -465 lines).
+Hunk #167 succeeded at 63921 (offset -465 lines).
+Hunk #168 succeeded at 63930 (offset -465 lines).
+Hunk #169 succeeded at 63963 (offset -465 lines).
+Hunk #170 succeeded at 63977 (offset -465 lines).
+Hunk #171 succeeded at 64009 (offset -465 lines).
+Hunk #172 succeeded at 64018 (offset -465 lines).
+Hunk #173 succeeded at 64028 (offset -465 lines).
+Hunk #174 succeeded at 64038 (offset -465 lines).
+Hunk #175 succeeded at 64050 (offset -465 lines).
+Hunk #176 succeeded at 64060 (offset -465 lines).
+Hunk #177 succeeded at 64085 (offset -465 lines).
+Hunk #178 succeeded at 64114 (offset -465 lines).
+Hunk #179 succeeded at 64133 (offset -465 lines).
+Hunk #180 succeeded at 64142 (offset -465 lines).
+Hunk #181 succeeded at 64149 (offset -465 lines).
+Hunk #182 succeeded at 64176 (offset -465 lines).
+Hunk #183 succeeded at 64206 (offset -465 lines).
+Hunk #184 succeeded at 64225 (offset -465 lines).
+Hunk #185 succeeded at 64232 (offset -465 lines).
+Hunk #186 succeeded at 64253 (offset -465 lines).
+Hunk #187 succeeded at 64260 (offset -465 lines).
+Hunk #188 succeeded at 64359 (offset -465 lines).
+Hunk #189 succeeded at 64366 with fuzz 2 (offset -465 lines).
+Hunk #190 succeeded at 64378 (offset -465 lines).
+Hunk #191 succeeded at 64392 (offset -465 lines).
+Hunk #192 succeeded at 64442 (offset -465 lines).
+Hunk #193 succeeded at 64472 with fuzz 2 (offset -465 lines).
+Hunk #194 succeeded at 64606 (offset -466 lines).
+Hunk #195 FAILED at 65196.
+Hunk #196 succeeded at 64742 (offset -466 lines).
+Hunk #197 FAILED at 65235.
+Hunk #198 succeeded at 64787 (offset -466 lines).
+Hunk #199 succeeded at 64803 (offset -466 lines).
+Hunk #200 succeeded at 64811 (offset -466 lines).
+Hunk #201 succeeded at 64826 (offset -466 lines).
+Hunk #202 succeeded at 64838 with fuzz 1 (offset -466 lines).
+Hunk #203 succeeded at 64851 (offset -466 lines).
+Hunk #204 succeeded at 64878 with fuzz 1 (offset -466 lines).
+Hunk #205 succeeded at 64889 (offset -466 lines).
+Hunk #206 succeeded at 64916 (offset -466 lines).
+Hunk #207 succeeded at 64928 (offset -466 lines).
+Hunk #208 succeeded at 64965 with fuzz 1 (offset -466 lines).
+Hunk #209 succeeded at 64978 (offset -466 lines).
+Hunk #210 succeeded at 64984 (offset -466 lines).
+Hunk #211 succeeded at 64997 (offset -466 lines).
+Hunk #212 succeeded at 65012 (offset -466 lines).
+Hunk #213 succeeded at 65032 (offset -466 lines).
+Hunk #214 succeeded at 65208 (offset -469 lines).
+Hunk #215 succeeded at 65230 (offset -469 lines).
+Hunk #216 succeeded at 65264 (offset -469 lines).
+Hunk #217 FAILED at 65749.
+Hunk #218 succeeded at 65290 (offset -469 lines).
+Hunk #219 FAILED at 65771.
+Hunk #220 succeeded at 65311 (offset -469 lines).
+Hunk #221 succeeded at 65321 (offset -469 lines).
+Hunk #222 succeeded at 65330 (offset -469 lines).
+Hunk #223 FAILED at 65809.
+Hunk #224 succeeded at 65350 (offset -469 lines).
+Hunk #225 FAILED at 65829.
+Hunk #226 succeeded at 65370 (offset -469 lines).
+Hunk #227 FAILED at 65850.
+Hunk #228 succeeded at 65615 (offset -469 lines).
+Hunk #229 succeeded at 65625 (offset -469 lines).
+Hunk #230 succeeded at 66058 (offset -469 lines).
+Hunk #231 succeeded at 66072 (offset -469 lines).
+Hunk #232 succeeded at 66397 (offset -469 lines).
+Hunk #233 succeeded at 66487 (offset -469 lines).
+Hunk #234 succeeded at 66496 (offset -469 lines).
+Hunk #235 succeeded at 66514 (offset -469 lines).
+Hunk #236 succeeded at 66550 (offset -469 lines).
+Hunk #237 succeeded at 66568 (offset -469 lines).
+Hunk #238 succeeded at 66577 (offset -469 lines).
+Hunk #239 succeeded at 66586 (offset -469 lines).
+Hunk #240 succeeded at 66595 (offset -469 lines).
+Hunk #241 succeeded at 66676 (offset -469 lines).
+Hunk #242 succeeded at 66694 (offset -469 lines).
+Hunk #243 succeeded at 66721 (offset -469 lines).
+Hunk #244 succeeded at 66748 (offset -469 lines).
+Hunk #245 succeeded at 68256 (offset -469 lines).
+Hunk #246 succeeded at 68275 (offset -469 lines).
+Hunk #247 succeeded at 68286 (offset -469 lines).
+Hunk #248 succeeded at 68298 (offset -469 lines).
+Hunk #249 FAILED at 68800.
+Hunk #250 FAILED at 68806.
+Hunk #251 FAILED at 68851.
+Hunk #252 succeeded at 68361 with fuzz 1 (offset -521 lines).
+Hunk #253 FAILED at 69038.
+Hunk #254 FAILED at 69072.
+Hunk #255 FAILED at 69096.
+Hunk #256 FAILED at 69119.
+Hunk #257 FAILED at 69136.
+Hunk #258 FAILED at 69177.
+Hunk #259 FAILED at 69185.
+Hunk #260 FAILED at 69205.
+Hunk #261 FAILED at 69230.
+Hunk #262 FAILED at 69244.
+Hunk #263 FAILED at 69253.
+Hunk #264 FAILED at 69280.
+Hunk #265 FAILED at 69289.
+Hunk #266 FAILED at 69301.
+Hunk #267 FAILED at 69315.
+Hunk #268 FAILED at 69324.
+Hunk #269 FAILED at 69346.
+Hunk #270 FAILED at 69414.
+Hunk #271 FAILED at 69461.
+Hunk #272 FAILED at 69492.
+Hunk #273 FAILED at 69526.
+Hunk #274 FAILED at 69546.
+Hunk #275 FAILED at 69563.
+Hunk #276 FAILED at 69569.
+Hunk #277 FAILED at 69580.
+Hunk #278 FAILED at 69600.
+Hunk #279 FAILED at 69622.
+Hunk #280 FAILED at 69643.
+Hunk #281 FAILED at 69667.
+Hunk #282 FAILED at 69679.
+Hunk #283 FAILED at 69699.
+Hunk #284 FAILED at 69722.
+Hunk #285 FAILED at 69741.
+Hunk #286 FAILED at 69757.
+Hunk #287 FAILED at 69785.
+Hunk #288 FAILED at 69794.
+Hunk #289 FAILED at 69803.
+Hunk #290 FAILED at 69813.
+Hunk #291 FAILED at 69884.
+Hunk #292 FAILED at 69907.
+Hunk #293 FAILED at 70182.
+Hunk #294 FAILED at 70209.
+Hunk #295 FAILED at 70221.
+Hunk #296 FAILED at 70249.
+90 out of 296 hunks FAILED
+RESULT: PATCH WOULD FAIL (expected for trimmed variants)
+
+=== SIMULASYON_11_FINAL_refactored.py (main workspace) ===
+Source: C:\Users\soldi\IdeaProjects\simülation-11\SIMULASYON_11_FINAL_refactored.py
+Lines: 10388
+Exit code: 1
+(Stripping trailing CRs from patch; use --binary to disable.)
+checking file SIMULASYON_11_FINAL.py
+Reversed (or previously applied) patch detected!  Assume -R? [n] 
+Apply anyway? [n] 
+Skipping patch.
+296 out of 296 hunks ignored
+RESULT: PATCH WOULD FAIL (expected for trimmed variants)
+
