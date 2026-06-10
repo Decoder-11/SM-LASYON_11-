@@ -1,0 +1,3331 @@
+{
+  "class_edges": [],
+  "classes": [
+    {
+      "bases": [],
+      "end_line": 44,
+      "line": 30,
+      "methods": [],
+      "name": "Colors"
+    },
+    {
+      "bases": [],
+      "end_line": 475,
+      "line": 101,
+      "methods": [],
+      "name": "Simule3_Constants"
+    },
+    {
+      "bases": [],
+      "end_line": 501,
+      "line": 478,
+      "methods": [
+        "haversine",
+        "calculate_bearing"
+      ],
+      "name": "GeoUtils"
+    },
+    {
+      "bases": [],
+      "end_line": 518,
+      "line": 509,
+      "methods": [
+        "__init__",
+        "meter"
+      ],
+      "name": "Module_Micro"
+    },
+    {
+      "bases": [],
+      "end_line": 526,
+      "line": 521,
+      "methods": [
+        "__init__",
+        "adjust"
+      ],
+      "name": "Module_Angular"
+    },
+    {
+      "bases": [],
+      "end_line": 542,
+      "line": 529,
+      "methods": [
+        "__init__",
+        "hatay_analysis"
+      ],
+      "name": "Module_LatLong"
+    },
+    {
+      "bases": [],
+      "end_line": 565,
+      "line": 545,
+      "methods": [
+        "__init__",
+        "ruler"
+      ],
+      "name": "Module_Cosmos"
+    },
+    {
+      "bases": [],
+      "end_line": 578,
+      "line": 568,
+      "methods": [
+        "__init__",
+        "cycle"
+      ],
+      "name": "Module_Halley"
+    },
+    {
+      "bases": [],
+      "end_line": 598,
+      "line": 581,
+      "methods": [
+        "__init__",
+        "reflection"
+      ],
+      "name": "Module_Calendar"
+    },
+    {
+      "bases": [],
+      "end_line": 610,
+      "line": 601,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_R11_Prime"
+    },
+    {
+      "bases": [],
+      "end_line": 620,
+      "line": 613,
+      "methods": [
+        "__init__",
+        "tufan_analysis"
+      ],
+      "name": "Module_MoonArrival"
+    },
+    {
+      "bases": [],
+      "end_line": 632,
+      "line": 623,
+      "methods": [
+        "__init__",
+        "product",
+        "expansion_limit"
+      ],
+      "name": "Module_LightExpansion"
+    },
+    {
+      "bases": [],
+      "end_line": 674,
+      "line": 635,
+      "methods": [
+        "__init__",
+        "table"
+      ],
+      "name": "Module_AncientGeodesic"
+    },
+    {
+      "bases": [],
+      "end_line": 711,
+      "line": 677,
+      "methods": [
+        "__init__",
+        "table"
+      ],
+      "name": "Module_Religions"
+    },
+    {
+      "bases": [],
+      "end_line": 721,
+      "line": 714,
+      "methods": [
+        "__init__",
+        "constants"
+      ],
+      "name": "Module_Physics"
+    },
+    {
+      "bases": [],
+      "end_line": 845,
+      "line": 724,
+      "methods": [
+        "__init__",
+        "matrix"
+      ],
+      "name": "Module_GrandMatrix"
+    },
+    {
+      "bases": [],
+      "end_line": 860,
+      "line": 848,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_GizaMeasurement"
+    },
+    {
+      "bases": [],
+      "end_line": 874,
+      "line": 863,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_TimeCycles"
+    },
+    {
+      "bases": [],
+      "end_line": 925,
+      "line": 878,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_ReflectionAndPattern"
+    },
+    {
+      "bases": [],
+      "end_line": 969,
+      "line": 929,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_RealWorldVerification"
+    },
+    {
+      "bases": [],
+      "end_line": 991,
+      "line": 973,
+      "methods": [
+        "__init__",
+        "to_base11",
+        "analysis"
+      ],
+      "name": "Module_Base11Conversion"
+    },
+    {
+      "bases": [],
+      "end_line": 1020,
+      "line": 995,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_Test11System"
+    },
+    {
+      "bases": [],
+      "end_line": 1088,
+      "line": 1023,
+      "methods": [
+        "__init__",
+        "calculate",
+        "run_fine"
+      ],
+      "name": "Module_FineTunedFamily"
+    },
+    {
+      "bases": [],
+      "end_line": 1130,
+      "line": 1091,
+      "methods": [
+        "__init__",
+        "decimal_year",
+        "analysis"
+      ],
+      "name": "Module_FineTunedFamily_V2"
+    },
+    {
+      "bases": [],
+      "end_line": 1142,
+      "line": 1133,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_KailashKailasa"
+    },
+    {
+      "bases": [],
+      "end_line": 1153,
+      "line": 1145,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_Singularity"
+    },
+    {
+      "bases": [],
+      "end_line": 1177,
+      "line": 1156,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_AmericaMatrix"
+    },
+    {
+      "bases": [],
+      "end_line": 1186,
+      "line": 1180,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_BiologicalCode"
+    },
+    {
+      "bases": [],
+      "end_line": 1195,
+      "line": 1189,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_GlitchVopson"
+    },
+    {
+      "bases": [],
+      "end_line": 1219,
+      "line": 1198,
+      "methods": [
+        "__init__",
+        "calculate_shift_date",
+        "scan"
+      ],
+      "name": "Module_LevhMahfuzScan"
+    },
+    {
+      "bases": [],
+      "end_line": 1230,
+      "line": 1222,
+      "methods": [
+        "__init__",
+        "calculate"
+      ],
+      "name": "Module_SigmaChronology"
+    },
+    {
+      "bases": [],
+      "end_line": 1239,
+      "line": 1233,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_IdentityDecryption"
+    },
+    {
+      "bases": [],
+      "end_line": 1248,
+      "line": 1242,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_HalleyBallistics"
+    },
+    {
+      "bases": [],
+      "end_line": 1257,
+      "line": 1251,
+      "methods": [
+        "__init__",
+        "print_manifesto"
+      ],
+      "name": "Module_Manifesto"
+    },
+    {
+      "bases": [],
+      "end_line": 1286,
+      "line": 1260,
+      "methods": [
+        "__init__",
+        "simulate"
+      ],
+      "name": "Module_MonteCarloSim"
+    },
+    {
+      "bases": [],
+      "end_line": 1295,
+      "line": 1289,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_AcousticFrequency"
+    },
+    {
+      "bases": [],
+      "end_line": 1343,
+      "line": 1298,
+      "methods": [
+        "__init__",
+        "run_family"
+      ],
+      "name": "Module_FamilyMatrixOld"
+    },
+    {
+      "bases": [],
+      "end_line": 1357,
+      "line": 1347,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_Tide"
+    },
+    {
+      "bases": [],
+      "end_line": 1371,
+      "line": 1361,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_Axis"
+    },
+    {
+      "bases": [],
+      "end_line": 1495,
+      "line": 1374,
+      "methods": [
+        "__init__",
+        "matrix"
+      ],
+      "name": "Module_GrandMatrix"
+    },
+    {
+      "bases": [],
+      "end_line": 1552,
+      "line": 1498,
+      "methods": [
+        "__init__",
+        "run_expansion",
+        "proselenian_analysis",
+        "extended_geodesic",
+        "cosmic_catastrophe",
+        "musk_x_analysis"
+      ],
+      "name": "Module_Simulation11Expansion"
+    },
+    {
+      "bases": [],
+      "end_line": 1568,
+      "line": 1556,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_NoahsArkDetail"
+    },
+    {
+      "bases": [],
+      "end_line": 1644,
+      "line": 1571,
+      "methods": [
+        "__init__",
+        "run_full_simulation",
+        "geodesic_matrix_check"
+      ],
+      "name": "Simulation3_MasterEngine"
+    },
+    {
+      "bases": [],
+      "end_line": 1658,
+      "line": 1648,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_CelaliFlood"
+    },
+    {
+      "bases": [],
+      "end_line": 1677,
+      "line": 1662,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_OrkhonSnake"
+    },
+    {
+      "bases": [],
+      "end_line": 1691,
+      "line": 1681,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_KabulNexus"
+    },
+    {
+      "bases": [],
+      "end_line": 1710,
+      "line": 1694,
+      "methods": [
+        "__init__",
+        "calculate_dates",
+        "fine_structure_pyramid",
+        "malta_stonehenge_update",
+        "repunit_sigma"
+      ],
+      "name": "Module_GrandRevelation"
+    },
+    {
+      "bases": [],
+      "end_line": 1718,
+      "line": 1713,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_Reflection"
+    },
+    {
+      "bases": [],
+      "end_line": 1726,
+      "line": 1721,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_RealWorld"
+    },
+    {
+      "bases": [],
+      "end_line": 1734,
+      "line": 1729,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_Base11"
+    },
+    {
+      "bases": [],
+      "end_line": 1742,
+      "line": 1737,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_Test11"
+    },
+    {
+      "bases": [],
+      "end_line": 1752,
+      "line": 1745,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_PyramidBio"
+    },
+    {
+      "bases": [],
+      "end_line": 1927,
+      "line": 1757,
+      "methods": [
+        "__init__",
+        "add_data",
+        "pearson_correlation",
+        "hypothesis_test_h0_h1",
+        "bayes_theorem_analysis",
+        "bonferroni_correction",
+        "calculate_m11_value",
+        "r11_uniqueness_test",
+        "monte_carlo_grand_search"
+      ],
+      "name": "Module_FinalScientificProof"
+    },
+    {
+      "bases": [],
+      "end_line": 2105,
+      "line": 1930,
+      "methods": [
+        "__init__",
+        "pearson_correlation",
+        "bayes_analysis",
+        "benford_test",
+        "chi_squared_test",
+        "monte_carlo_resonance",
+        "calculate_m11_score",
+        "autonomous_scan",
+        "run",
+        "run_full_proof"
+      ],
+      "name": "ValidationEngine"
+    },
+    {
+      "bases": [],
+      "end_line": 2113,
+      "line": 2108,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_Vopson"
+    },
+    {
+      "bases": [],
+      "end_line": 2121,
+      "line": 2116,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_FloodCalculation"
+    },
+    {
+      "bases": [],
+      "end_line": 2129,
+      "line": 2124,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_JesusShift"
+    },
+    {
+      "bases": [],
+      "end_line": 2137,
+      "line": 2132,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_HalleyCalendar"
+    },
+    {
+      "bases": [],
+      "end_line": 2145,
+      "line": 2140,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_666Boot"
+    },
+    {
+      "bases": [],
+      "end_line": 2153,
+      "line": 2148,
+      "methods": [
+        "__init__",
+        "yansima"
+      ],
+      "name": "Module_CalendarV103"
+    },
+    {
+      "bases": [],
+      "end_line": 2166,
+      "line": 2157,
+      "methods": [
+        "__init__",
+        "analyze"
+      ],
+      "name": "Module_LevhMahfuzPyramid_V103"
+    },
+    {
+      "bases": [],
+      "end_line": 2210,
+      "line": 2170,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Modul_Piramit_Biyoloji_Yama_V103"
+    },
+    {
+      "bases": [],
+      "end_line": 2223,
+      "line": 2214,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_VopsonInfodynamics"
+    },
+    {
+      "bases": [],
+      "end_line": 2239,
+      "line": 2227,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_FloodCalculations"
+    },
+    {
+      "bases": [],
+      "end_line": 2251,
+      "line": 2243,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_JesusBirthShift"
+    },
+    {
+      "bases": [],
+      "end_line": 2262,
+      "line": 2255,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_HalleyCalendarConnection"
+    },
+    {
+      "bases": [],
+      "end_line": 2272,
+      "line": 2266,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_666x3Boot"
+    },
+    {
+      "bases": [],
+      "end_line": 2329,
+      "line": 2280,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_GizaLightSpeed_V132"
+    },
+    {
+      "bases": [],
+      "end_line": 2359,
+      "line": 2337,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_RocheTidalWave_V130"
+    },
+    {
+      "bases": [],
+      "end_line": 2382,
+      "line": 2362,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_TimePackets_V130"
+    },
+    {
+      "bases": [],
+      "end_line": 2400,
+      "line": 2385,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_ChronosCalendar_V130"
+    },
+    {
+      "bases": [],
+      "end_line": 2417,
+      "line": 2403,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_TheologicalReset_V130"
+    },
+    {
+      "bases": [],
+      "end_line": 2432,
+      "line": 2420,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_DarkElements_V130"
+    },
+    {
+      "bases": [],
+      "end_line": 2445,
+      "line": 2435,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_149Code_V130"
+    },
+    {
+      "bases": [],
+      "end_line": 2463,
+      "line": 2448,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_PyramidDetail_V130"
+    },
+    {
+      "bases": [],
+      "end_line": 2559,
+      "line": 2469,
+      "methods": [
+        "__init__"
+      ],
+      "name": "Simule3_Lab"
+    },
+    {
+      "bases": [],
+      "end_line": 2615,
+      "line": 2576,
+      "methods": [],
+      "name": "Sentez7_MasterConstants"
+    },
+    {
+      "bases": [],
+      "end_line": 2725,
+      "line": 2618,
+      "methods": [
+        "__init__",
+        "calculate_lambda_frequency",
+        "calculate_master_formula",
+        "analyze_breakage_mechanics"
+      ],
+      "name": "Quantum_Resonance_Breaker"
+    },
+    {
+      "bases": [],
+      "end_line": 2809,
+      "line": 2728,
+      "methods": [
+        "__init__",
+        "calculate_escape_frequency",
+        "analyze_escape_mechanics"
+      ],
+      "name": "Dimensional_Escape_Overload"
+    },
+    {
+      "bases": [],
+      "end_line": 2905,
+      "line": 2812,
+      "methods": [
+        "__init__",
+        "calculate_coherence_frequency",
+        "analyze_pineal_resonance"
+      ],
+      "name": "Pineal_Quantum_Antenna"
+    },
+    {
+      "bases": [],
+      "end_line": 2945,
+      "line": 2915,
+      "methods": [
+        "__init__",
+        "calculate_escape_frequency",
+        "trigger_overload"
+      ],
+      "name": "Dimensional_Escape_Overload_Trigger"
+    },
+    {
+      "bases": [],
+      "end_line": 3016,
+      "line": 2948,
+      "methods": [
+        "__init__",
+        "calculate_coherence_loop",
+        "activate_antenna",
+        "consciousness_bridge"
+      ],
+      "name": "Pineal_Quantum_Antenna"
+    },
+    {
+      "bases": [],
+      "end_line": 3144,
+      "line": 3064,
+      "methods": [],
+      "name": "Snowball_Synthesis_Constants"
+    },
+    {
+      "bases": [],
+      "end_line": 3214,
+      "line": 3147,
+      "methods": [
+        "__init__",
+        "sirius_antigravity_formula",
+        "enoch_wave_equation",
+        "giza_integral_verification",
+        "analysis"
+      ],
+      "name": "Snowball_Synthesis1_Sirius_AntiGravity"
+    },
+    {
+      "bases": [],
+      "end_line": 3284,
+      "line": 3217,
+      "methods": [
+        "__init__",
+        "orion_gravity_drive",
+        "sagittarius_horizon",
+        "time_dilation_6666",
+        "analysis"
+      ],
+      "name": "Snowball_Synthesis2_NASA_Orion"
+    },
+    {
+      "bases": [],
+      "end_line": 3356,
+      "line": 3287,
+      "methods": [
+        "__init__",
+        "bio_resonance_lock",
+        "kabil_nexus_zero",
+        "noah_volume_verification",
+        "analysis"
+      ],
+      "name": "Snowball_Synthesis3_BioGeo"
+    },
+    {
+      "bases": [],
+      "end_line": 3452,
+      "line": 3359,
+      "methods": [
+        "__init__",
+        "r11_consciousness_test",
+        "light_speed_glitch",
+        "antigravity_isolation",
+        "simulation_duration_verify",
+        "analysis"
+      ],
+      "name": "Snowball_Synthesis5_KokKod"
+    },
+    {
+      "bases": [],
+      "end_line": 3529,
+      "line": 3455,
+      "methods": [
+        "__init__",
+        "population_terminal_code",
+        "cosmic_hum_1390",
+        "halley_awakening_lock",
+        "analysis"
+      ],
+      "name": "Snowball_Synthesis6_Revelation"
+    },
+    {
+      "bases": [],
+      "end_line": 3675,
+      "line": 3532,
+      "methods": [
+        "__init__",
+        "master_lambda_equation",
+        "new_derived_formulas",
+        "analysis"
+      ],
+      "name": "Snowball_Synthesis7_GrandUnification"
+    },
+    {
+      "bases": [],
+      "end_line": 3940,
+      "line": 3688,
+      "methods": [
+        "__init__",
+        "verify_lambda_from_geoid",
+        "gravity_from_geoid",
+        "cyclic_matrix_test",
+        "cross_reference_analysis",
+        "analysis"
+      ],
+      "name": "Geoid_Matrix_22_66_88"
+    },
+    {
+      "bases": [],
+      "end_line": 4038,
+      "line": 3964,
+      "methods": [
+        "analysis"
+      ],
+      "name": "Snowball_Synthesis9_Lambda6666"
+    },
+    {
+      "bases": [],
+      "end_line": 4227,
+      "line": 4046,
+      "methods": [
+        "analysis"
+      ],
+      "name": "Snowball_Synthesis10_WebResearch"
+    },
+    {
+      "bases": [],
+      "end_line": 4284,
+      "line": 4235,
+      "methods": [
+        "__init__",
+        "run"
+      ],
+      "name": "Snowball_Synthesis11_HyperDimensional"
+    },
+    {
+      "bases": [],
+      "end_line": 4565,
+      "line": 4295,
+      "methods": [
+        "__init__",
+        "calculate_antigravity_g",
+        "calculate_time_out",
+        "calculate_galactic_year",
+        "calculate_escape_resonance",
+        "calculate_cosmic_harmonic",
+        "calculate_pi_998_001_proof",
+        "calculate_time_out_accumulation",
+        "calculate_689_cross_resonance",
+        "calculate_milkyway_orbit",
+        "run"
+      ],
+      "name": "Snowball_Synthesis12_TimeOut"
+    },
+    {
+      "bases": [],
+      "end_line": 4676,
+      "line": 4573,
+      "methods": [
+        "__init__",
+        "run_all",
+        "live_audit"
+      ],
+      "name": "Snowball_MasterRunner"
+    },
+    {
+      "bases": [],
+      "end_line": 4730,
+      "line": 4679,
+      "methods": [
+        "__init__",
+        "run_synthesis",
+        "get_db_findings"
+      ],
+      "name": "Snowball_Synthesis13_Phase3_1"
+    },
+    {
+      "bases": [],
+      "end_line": 4774,
+      "line": 4739,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_Sentez13_5_Math_Quantum"
+    },
+    {
+      "bases": [],
+      "end_line": 4814,
+      "line": 4777,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_Geographic_Advanced"
+    },
+    {
+      "bases": [],
+      "end_line": 5026,
+      "line": 4829,
+      "methods": [
+        "__init__",
+        "run_all",
+        "_formula_sweatman_lunisolar",
+        "_formula_sirius_lightspeed_lock",
+        "_formula_m_theory_bridge",
+        "_formula_kartopu_phase3_integration",
+        "_formula_golden_spiral_geodesic",
+        "_formula_vopson_information_mass",
+        "_live_multi_api_audit",
+        "_discovery_summary"
+      ],
+      "name": "Sentez14_OtonomKesif"
+    },
+    {
+      "bases": [],
+      "end_line": 5124,
+      "line": 5034,
+      "methods": [
+        "__init__",
+        "get_usgs_live_data",
+        "calculate_orbital_phases",
+        "analysis"
+      ],
+      "name": "Module_Seismic_Planetary_Correlation"
+    },
+    {
+      "bases": [],
+      "end_line": 5179,
+      "line": 5143,
+      "methods": [],
+      "name": "Sentez15_Constants"
+    },
+    {
+      "bases": [],
+      "end_line": 5429,
+      "line": 5182,
+      "methods": [
+        "__init__",
+        "run_all",
+        "_formula_de_sitter_vacuum",
+        "_formula_cosmic_info_density",
+        "_formula_holographic_11d",
+        "_formula_hubble_tension_fix",
+        "_formula_gobeklitepe_radium_sync",
+        "_formula_prime_11_spiral",
+        "_discovery_summary",
+        "_validation_report"
+      ],
+      "name": "Sentez15_CosmicUnification"
+    },
+    {
+      "bases": [],
+      "end_line": 5491,
+      "line": 5443,
+      "methods": [
+        "__init__",
+        "run_analysis"
+      ],
+      "name": "Module_R11_Kernel_Cryptanalysis"
+    },
+    {
+      "bases": [],
+      "end_line": 5557,
+      "line": 5494,
+      "methods": [
+        "__init__",
+        "run_dimensional_mapping"
+      ],
+      "name": "Module_Deep_11D_Organic_Synthesis"
+    },
+    {
+      "bases": [],
+      "end_line": 5638,
+      "line": 5560,
+      "methods": [
+        "__init__",
+        "run_audit",
+        "_check_api_health",
+        "_check_db_health",
+        "_check_cycle_precision"
+      ],
+      "name": "Module_DeepSystemAudit"
+    },
+    {
+      "bases": [],
+      "end_line": 5727,
+      "line": 5654,
+      "methods": [],
+      "name": "Sentez17_Constants"
+    },
+    {
+      "bases": [],
+      "end_line": 5946,
+      "line": 5730,
+      "methods": [
+        "__init__",
+        "run_all",
+        "_test_des_y6_dark_energy",
+        "_test_sweatman_lunisolar_11",
+        "_test_vopson_gravity_computation",
+        "_test_hubble_tension_11_base",
+        "_test_m_theory_11d_validation",
+        "_discovery_summary",
+        "_validation_report"
+      ],
+      "name": "Module_Sentez17_AcademicDeepening"
+    },
+    {
+      "bases": [],
+      "end_line": 6213,
+      "line": 5954,
+      "methods": [],
+      "name": "Sentez18_Constants"
+    },
+    {
+      "bases": [],
+      "end_line": 6749,
+      "line": 6217,
+      "methods": [
+        "__init__",
+        "run_all",
+        "_test_palindrome_pyramid",
+        "_test_vopson_gravity_info",
+        "_test_des_y6_11_resonance",
+        "_test_higgs_vortex",
+        "_test_fine_structure_glitch",
+        "_test_black_hole_zip",
+        "_test_lazy_rendering",
+        "_test_phantom_quake",
+        "_test_entropy_defrag",
+        "_test_proton_electron_harmony",
+        "_test_info_density_3690",
+        "_test_dark_matter_11_base",
+        "_test_factorial_week",
+        "_test_master_formula",
+        "_test_pi11_light_bridge",
+        "_test_orbital_axis_echoes",
+        "_test_light_pi_gap",
+        "_test_starbase_bootstrap",
+        "_discovery_summary",
+        "_validation_report"
+      ],
+      "name": "Module_Sentez18_PalindromeObserver"
+    },
+    {
+      "bases": [],
+      "end_line": 7005,
+      "line": 7000,
+      "methods": [
+        "__init__",
+        "analiz"
+      ],
+      "name": "Modul_Phase3_Otonom_Sentez"
+    },
+    {
+      "bases": [],
+      "end_line": 7028,
+      "line": 7013,
+      "methods": [],
+      "name": "Colors"
+    },
+    {
+      "bases": [],
+      "end_line": 7087,
+      "line": 7069,
+      "methods": [
+        "haversine",
+        "calculate_bearing"
+      ],
+      "name": "GeoUtils"
+    },
+    {
+      "bases": [],
+      "end_line": 7096,
+      "line": 7089,
+      "methods": [
+        "__init__",
+        "analiz"
+      ],
+      "name": "Modul_Vopson_Infodynamics"
+    },
+    {
+      "bases": [],
+      "end_line": 7106,
+      "line": 7098,
+      "methods": [
+        "__init__",
+        "analiz"
+      ],
+      "name": "Modul_Hubble_Tension_Solver"
+    },
+    {
+      "bases": [],
+      "end_line": 7113,
+      "line": 7108,
+      "methods": [
+        "__init__",
+        "analiz"
+      ],
+      "name": "Modul_Sentez_V2_OMEGA"
+    },
+    {
+      "bases": [],
+      "end_line": 7137,
+      "line": 7115,
+      "methods": [
+        "__init__",
+        "generate_3d_manifold"
+      ],
+      "name": "Modul_Omega_Visualization"
+    },
+    {
+      "bases": [],
+      "end_line": 7158,
+      "line": 7139,
+      "methods": [
+        "__init__",
+        "autonomous_scan",
+        "run_scan"
+      ],
+      "name": "ValidationEngine_V175"
+    },
+    {
+      "bases": [],
+      "end_line": 7206,
+      "line": 7160,
+      "methods": [
+        "__init__",
+        "analiz"
+      ],
+      "name": "Modul_Phase3_Otonom_Sentez"
+    },
+    {
+      "bases": [],
+      "end_line": 7283,
+      "line": 7208,
+      "methods": [
+        "__init__",
+        "run_all"
+      ],
+      "name": "Simule3_Lab_V175_Legacy"
+    },
+    {
+      "bases": [],
+      "end_line": 7338,
+      "line": 7290,
+      "methods": [
+        "__init__",
+        "pearson_korrelasyon",
+        "hipotez_testi_h0_h1",
+        "bayes_teoremi_analizi",
+        "m11_degeri_hesapla",
+        "run_full_proof"
+      ],
+      "name": "Modul_Nihai_Bilimsel_Kanit"
+    },
+    {
+      "bases": [],
+      "end_line": 7352,
+      "line": 7340,
+      "methods": [
+        "__init__",
+        "analiz"
+      ],
+      "name": "Modul_Benford_Kanunu"
+    },
+    {
+      "bases": [],
+      "end_line": 7363,
+      "line": 7354,
+      "methods": [
+        "__init__",
+        "analiz"
+      ],
+      "name": "Modul_Bayes_Teoremi"
+    },
+    {
+      "bases": [],
+      "end_line": 7387,
+      "line": 7365,
+      "methods": [
+        "__init__",
+        "veri_cek",
+        "nasa_verilerini_analiz_et"
+      ],
+      "name": "Modul_NASA_API"
+    },
+    {
+      "bases": [],
+      "end_line": 7405,
+      "line": 7389,
+      "methods": [
+        "__init__",
+        "analiz_et"
+      ],
+      "name": "Modul_Antigravity_Brain"
+    },
+    {
+      "bases": [],
+      "end_line": 7418,
+      "line": 7407,
+      "methods": [
+        "__init__",
+        "analiz"
+      ],
+      "name": "Modul_Zaman_Glitch_Analizi"
+    },
+    {
+      "bases": [],
+      "end_line": 7432,
+      "line": 7420,
+      "methods": [
+        "__init__",
+        "analiz"
+      ],
+      "name": "Modul_Samanyolu_Analizi"
+    },
+    {
+      "bases": [],
+      "end_line": 7446,
+      "line": 7434,
+      "methods": [
+        "__init__",
+        "analiz"
+      ],
+      "name": "Modul_Gunes_Tutulmasi_400"
+    },
+    {
+      "bases": [],
+      "end_line": 7457,
+      "line": 7448,
+      "methods": [
+        "__init__",
+        "analiz"
+      ],
+      "name": "Modul_Halley_Rezonans_Analizi"
+    },
+    {
+      "bases": [],
+      "end_line": 7467,
+      "line": 7459,
+      "methods": [
+        "__init__",
+        "analiz"
+      ],
+      "name": "Modul_Dunya_Giza_Kozmos_Kilidi"
+    },
+    {
+      "bases": [],
+      "end_line": 7478,
+      "line": 7469,
+      "methods": [
+        "__init__",
+        "analiz"
+      ],
+      "name": "Modul_Gezegen_Oranlari_Tablosu"
+    },
+    {
+      "bases": [],
+      "end_line": 7487,
+      "line": 7481,
+      "methods": [
+        "__init__",
+        "analiz"
+      ],
+      "name": "Modul_NonAlgorithmic_Synthesis"
+    },
+    {
+      "bases": [],
+      "end_line": 7494,
+      "line": 7489,
+      "methods": [
+        "__init__",
+        "analiz"
+      ],
+      "name": "Modul_LIGO_O4_Synthesis"
+    },
+    {
+      "bases": [],
+      "end_line": 7522,
+      "line": 7498,
+      "methods": [
+        "__init__",
+        "analiz"
+      ],
+      "name": "Modul_Yansima_Ve_Oruntu"
+    },
+    {
+      "bases": [],
+      "end_line": 7539,
+      "line": 7524,
+      "methods": [
+        "__init__",
+        "analiz"
+      ],
+      "name": "Modul_Gercek_Dunya_Dogrulama"
+    },
+    {
+      "bases": [],
+      "end_line": 7554,
+      "line": 7541,
+      "methods": [
+        "__init__",
+        "to_base11",
+        "analiz"
+      ],
+      "name": "Modul_Base11_Conversion"
+    },
+    {
+      "bases": [],
+      "end_line": 7569,
+      "line": 7556,
+      "methods": [
+        "__init__",
+        "analiz"
+      ],
+      "name": "Modul_Amerika_Matrisi"
+    },
+    {
+      "bases": [],
+      "end_line": 7579,
+      "line": 7571,
+      "methods": [
+        "__init__",
+        "analiz"
+      ],
+      "name": "Modul_Family_Matrix_Master"
+    },
+    {
+      "bases": [],
+      "end_line": 7774,
+      "line": 7595,
+      "methods": [
+        "__init__"
+      ],
+      "name": "Simule3_Constants"
+    },
+    {
+      "bases": [],
+      "end_line": 7823,
+      "line": 7777,
+      "methods": [
+        "__init__",
+        "analyze_patterns",
+        "_generate_local_reflection",
+        "deep_matrix_report"
+      ],
+      "name": "GeneravityEngine"
+    },
+    {
+      "bases": [],
+      "end_line": 7846,
+      "line": 7826,
+      "methods": [
+        "__init__",
+        "autonomous_scan",
+        "run"
+      ],
+      "name": "ValidationEngine"
+    },
+    {
+      "bases": [],
+      "end_line": 7872,
+      "line": 7862,
+      "methods": [
+        "__init__",
+        "tolerance",
+        "analysis"
+      ],
+      "name": "Modul_KarTopu_V5_Sentez_V2"
+    },
+    {
+      "bases": [],
+      "end_line": 7886,
+      "line": 7874,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Modul_KarTopu_V5_V3_Phase3"
+    },
+    {
+      "bases": [],
+      "end_line": 7911,
+      "line": 7888,
+      "methods": [
+        "__init__",
+        "analyze_neuro_sync",
+        "evaluate_information_physics",
+        "generate_sentez_report"
+      ],
+      "name": "Modul_Sentez_25_NoroKozmik"
+    },
+    {
+      "bases": [],
+      "end_line": 7949,
+      "line": 7914,
+      "methods": [
+        "__init__",
+        "analyze_omega_sync",
+        "get_terminal_report"
+      ],
+      "name": "Modul_Sentez_25_OMEGA"
+    },
+    {
+      "bases": [],
+      "end_line": 7987,
+      "line": 7955,
+      "methods": [
+        "__init__",
+        "calculate_quantum_projection",
+        "derive_gravity",
+        "halley_lambda_resonance",
+        "geoid_matrix_report"
+      ],
+      "name": "Geoid_Matrix_22_66_88"
+    },
+    {
+      "bases": [],
+      "end_line": 8003,
+      "line": 7989,
+      "methods": [
+        "__init__",
+        "light_pi_ratio",
+        "rotation_sync"
+      ],
+      "name": "Pi_11_Light_Bridge"
+    },
+    {
+      "bases": [],
+      "end_line": 8323,
+      "line": 8300,
+      "methods": [
+        "haversine",
+        "calculate_bearing"
+      ],
+      "name": "GeoUtils"
+    },
+    {
+      "bases": [],
+      "end_line": 8340,
+      "line": 8331,
+      "methods": [
+        "__init__",
+        "meter"
+      ],
+      "name": "Module_Micro"
+    },
+    {
+      "bases": [],
+      "end_line": 8348,
+      "line": 8343,
+      "methods": [
+        "__init__",
+        "adjust"
+      ],
+      "name": "Module_Angular"
+    },
+    {
+      "bases": [],
+      "end_line": 8364,
+      "line": 8351,
+      "methods": [
+        "__init__",
+        "hatay_analysis"
+      ],
+      "name": "Module_LatLong"
+    },
+    {
+      "bases": [],
+      "end_line": 8387,
+      "line": 8367,
+      "methods": [
+        "__init__",
+        "ruler"
+      ],
+      "name": "Module_Cosmos"
+    },
+    {
+      "bases": [],
+      "end_line": 8400,
+      "line": 8390,
+      "methods": [
+        "__init__",
+        "cycle"
+      ],
+      "name": "Module_Halley"
+    },
+    {
+      "bases": [],
+      "end_line": 8420,
+      "line": 8403,
+      "methods": [
+        "__init__",
+        "reflection"
+      ],
+      "name": "Module_Calendar"
+    },
+    {
+      "bases": [],
+      "end_line": 8432,
+      "line": 8423,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_R11_Prime"
+    },
+    {
+      "bases": [],
+      "end_line": 8442,
+      "line": 8435,
+      "methods": [
+        "__init__",
+        "tufan_analysis"
+      ],
+      "name": "Module_MoonArrival"
+    },
+    {
+      "bases": [],
+      "end_line": 8454,
+      "line": 8445,
+      "methods": [
+        "__init__",
+        "product",
+        "expansion_limit"
+      ],
+      "name": "Module_LightExpansion"
+    },
+    {
+      "bases": [],
+      "end_line": 8496,
+      "line": 8457,
+      "methods": [
+        "__init__",
+        "table"
+      ],
+      "name": "Module_AncientGeodesic"
+    },
+    {
+      "bases": [],
+      "end_line": 8533,
+      "line": 8499,
+      "methods": [
+        "__init__",
+        "table"
+      ],
+      "name": "Module_Religions"
+    },
+    {
+      "bases": [],
+      "end_line": 8543,
+      "line": 8536,
+      "methods": [
+        "__init__",
+        "constants"
+      ],
+      "name": "Module_Physics"
+    },
+    {
+      "bases": [],
+      "end_line": 8667,
+      "line": 8546,
+      "methods": [
+        "__init__",
+        "matrix"
+      ],
+      "name": "Module_GrandMatrix"
+    },
+    {
+      "bases": [],
+      "end_line": 8682,
+      "line": 8670,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_GizaMeasurement"
+    },
+    {
+      "bases": [],
+      "end_line": 8696,
+      "line": 8685,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_TimeCycles"
+    },
+    {
+      "bases": [],
+      "end_line": 8747,
+      "line": 8700,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_ReflectionAndPattern"
+    },
+    {
+      "bases": [],
+      "end_line": 8810,
+      "line": 8750,
+      "methods": [
+        "__init__",
+        "grok_21_angular_resonance",
+        "grok_22_volume_projection",
+        "grok_23_time_out_loop",
+        "phantom_quake_signature",
+        "run_omega_synthesis_25"
+      ],
+      "name": "Sentez22_Omega_Core"
+    },
+    {
+      "bases": [],
+      "end_line": 8857,
+      "line": 8813,
+      "methods": [
+        "__init__",
+        "calculate_universe_info_mass",
+        "simulate_info_pulse",
+        "verification_receipt"
+      ],
+      "name": "Vopson_Infodynamics"
+    },
+    {
+      "bases": [],
+      "end_line": 8885,
+      "line": 8861,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_RealWorldVerification"
+    },
+    {
+      "bases": [],
+      "end_line": 8952,
+      "line": 8888,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_Sentez_24_NoroKozmik"
+    },
+    {
+      "bases": [],
+      "end_line": 8974,
+      "line": 8956,
+      "methods": [
+        "__init__",
+        "to_base11",
+        "analysis"
+      ],
+      "name": "Module_Base11Conversion"
+    },
+    {
+      "bases": [],
+      "end_line": 9003,
+      "line": 8978,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_Test11System"
+    },
+    {
+      "bases": [],
+      "end_line": 9071,
+      "line": 9006,
+      "methods": [
+        "__init__",
+        "calculate",
+        "run_fine"
+      ],
+      "name": "Module_FineTunedFamily"
+    },
+    {
+      "bases": [],
+      "end_line": 9113,
+      "line": 9074,
+      "methods": [
+        "__init__",
+        "decimal_year",
+        "analysis"
+      ],
+      "name": "Module_FineTunedFamily_V2"
+    },
+    {
+      "bases": [],
+      "end_line": 9125,
+      "line": 9116,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_KailashKailasa"
+    },
+    {
+      "bases": [],
+      "end_line": 9136,
+      "line": 9128,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_Singularity"
+    },
+    {
+      "bases": [],
+      "end_line": 9160,
+      "line": 9139,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_AmericaMatrix"
+    },
+    {
+      "bases": [],
+      "end_line": 9169,
+      "line": 9163,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_BiologicalCode"
+    },
+    {
+      "bases": [],
+      "end_line": 9178,
+      "line": 9172,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_GlitchVopson"
+    },
+    {
+      "bases": [],
+      "end_line": 9202,
+      "line": 9181,
+      "methods": [
+        "__init__",
+        "calculate_shift_date",
+        "scan"
+      ],
+      "name": "Module_LevhMahfuzScan"
+    },
+    {
+      "bases": [],
+      "end_line": 9213,
+      "line": 9205,
+      "methods": [
+        "__init__",
+        "calculate"
+      ],
+      "name": "Module_SigmaChronology"
+    },
+    {
+      "bases": [],
+      "end_line": 9222,
+      "line": 9216,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_IdentityDecryption"
+    },
+    {
+      "bases": [],
+      "end_line": 9231,
+      "line": 9225,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_HalleyBallistics"
+    },
+    {
+      "bases": [],
+      "end_line": 9240,
+      "line": 9234,
+      "methods": [
+        "__init__",
+        "print_manifesto"
+      ],
+      "name": "Module_Manifesto"
+    },
+    {
+      "bases": [],
+      "end_line": 9269,
+      "line": 9243,
+      "methods": [
+        "__init__",
+        "simulate"
+      ],
+      "name": "Module_MonteCarloSim"
+    },
+    {
+      "bases": [],
+      "end_line": 9278,
+      "line": 9272,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_AcousticFrequency"
+    },
+    {
+      "bases": [],
+      "end_line": 9326,
+      "line": 9281,
+      "methods": [
+        "__init__",
+        "run_family"
+      ],
+      "name": "Module_FamilyMatrixOld"
+    },
+    {
+      "bases": [],
+      "end_line": 9340,
+      "line": 9330,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_Tide"
+    },
+    {
+      "bases": [],
+      "end_line": 9354,
+      "line": 9344,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_Axis"
+    },
+    {
+      "bases": [],
+      "end_line": 9411,
+      "line": 9357,
+      "methods": [
+        "__init__",
+        "run_expansion",
+        "proselenian_analysis",
+        "extended_geodesic",
+        "cosmic_catastrophe",
+        "musk_x_analysis"
+      ],
+      "name": "Module_Simulation11Expansion"
+    },
+    {
+      "bases": [],
+      "end_line": 9427,
+      "line": 9415,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_NoahsArkDetail"
+    },
+    {
+      "bases": [],
+      "end_line": 9503,
+      "line": 9430,
+      "methods": [
+        "__init__",
+        "run_full_simulation",
+        "geodesic_matrix_check"
+      ],
+      "name": "Simulation3_MasterEngine"
+    },
+    {
+      "bases": [],
+      "end_line": 9517,
+      "line": 9507,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_CelaliFlood"
+    },
+    {
+      "bases": [],
+      "end_line": 9536,
+      "line": 9521,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_OrkhonSnake"
+    },
+    {
+      "bases": [],
+      "end_line": 9550,
+      "line": 9540,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_KabulNexus"
+    },
+    {
+      "bases": [],
+      "end_line": 9569,
+      "line": 9553,
+      "methods": [
+        "__init__",
+        "calculate_dates",
+        "fine_structure_pyramid",
+        "malta_stonehenge_update",
+        "repunit_sigma"
+      ],
+      "name": "Module_GrandRevelation"
+    },
+    {
+      "bases": [],
+      "end_line": 9579,
+      "line": 9572,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_PyramidBio"
+    },
+    {
+      "bases": [],
+      "end_line": 9754,
+      "line": 9584,
+      "methods": [
+        "__init__",
+        "add_data",
+        "pearson_correlation",
+        "hypothesis_test_h0_h1",
+        "bayes_theorem_analysis",
+        "bonferroni_correction",
+        "calculate_m11_value",
+        "r11_uniqueness_test",
+        "monte_carlo_grand_search"
+      ],
+      "name": "Module_FinalScientificProof"
+    },
+    {
+      "bases": [],
+      "end_line": 9766,
+      "line": 9757,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_VopsonInfodynamics"
+    },
+    {
+      "bases": [],
+      "end_line": 9781,
+      "line": 9769,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_FloodCalculations"
+    },
+    {
+      "bases": [],
+      "end_line": 9792,
+      "line": 9784,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_JesusBirthShift"
+    },
+    {
+      "bases": [],
+      "end_line": 9802,
+      "line": 9795,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_HalleyCalendarConnection"
+    },
+    {
+      "bases": [],
+      "end_line": 9811,
+      "line": 9805,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_666x3Boot"
+    },
+    {
+      "bases": [],
+      "end_line": 9822,
+      "line": 9814,
+      "methods": [
+        "__init__",
+        "analyze"
+      ],
+      "name": "Module_LevhMahfuzPyramid_V103"
+    },
+    {
+      "bases": [],
+      "end_line": 9874,
+      "line": 9825,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_GizaLightSpeed_V132"
+    },
+    {
+      "bases": [],
+      "end_line": 9899,
+      "line": 9877,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_RocheTidalWave_V130"
+    },
+    {
+      "bases": [],
+      "end_line": 9922,
+      "line": 9902,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_TimePackets_V130"
+    },
+    {
+      "bases": [],
+      "end_line": 9940,
+      "line": 9925,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_ChronosCalendar_V130"
+    },
+    {
+      "bases": [],
+      "end_line": 9957,
+      "line": 9943,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_TheologicalReset_V130"
+    },
+    {
+      "bases": [],
+      "end_line": 9972,
+      "line": 9960,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_DarkElements_V130"
+    },
+    {
+      "bases": [],
+      "end_line": 9985,
+      "line": 9975,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_149Code_V130"
+    },
+    {
+      "bases": [],
+      "end_line": 10003,
+      "line": 9988,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_PyramidDetail_V130"
+    },
+    {
+      "bases": [],
+      "end_line": 10041,
+      "line": 10009,
+      "methods": [
+        "__init__",
+        "r11_pyramid_analysis",
+        "loop_resonance_check",
+        "run_omega_flow"
+      ],
+      "name": "Modul_Sentez_25_OMEGA"
+    },
+    {
+      "bases": [],
+      "end_line": 10136,
+      "line": 10046,
+      "methods": [
+        "__init__"
+      ],
+      "name": "Simule3_Lab_V150_Omega"
+    },
+    {
+      "bases": [],
+      "end_line": 10185,
+      "line": 10146,
+      "methods": [],
+      "name": "Sentez7_MasterConstants"
+    },
+    {
+      "bases": [],
+      "end_line": 10295,
+      "line": 10188,
+      "methods": [
+        "__init__",
+        "calculate_lambda_frequency",
+        "calculate_master_formula",
+        "analyze_breakage_mechanics"
+      ],
+      "name": "Quantum_Resonance_Breaker"
+    },
+    {
+      "bases": [],
+      "end_line": 10379,
+      "line": 10298,
+      "methods": [
+        "__init__",
+        "calculate_escape_frequency",
+        "analyze_escape_mechanics"
+      ],
+      "name": "Dimensional_Escape_Overload"
+    },
+    {
+      "bases": [],
+      "end_line": 10475,
+      "line": 10382,
+      "methods": [
+        "__init__",
+        "calculate_coherence_frequency",
+        "analyze_pineal_resonance"
+      ],
+      "name": "Pineal_Quantum_Antenna"
+    },
+    {
+      "bases": [],
+      "end_line": 10507,
+      "line": 10478,
+      "methods": [
+        "__init__",
+        "calculate_escape_frequency",
+        "trigger_overload"
+      ],
+      "name": "Dimensional_Escape_Overload_Trigger"
+    },
+    {
+      "bases": [],
+      "end_line": 10641,
+      "line": 10561,
+      "methods": [],
+      "name": "Snowball_Synthesis_Constants"
+    },
+    {
+      "bases": [],
+      "end_line": 10711,
+      "line": 10644,
+      "methods": [
+        "__init__",
+        "sirius_antigravity_formula",
+        "enoch_wave_equation",
+        "giza_integral_verification",
+        "analysis"
+      ],
+      "name": "Snowball_Synthesis1_Sirius_AntiGravity"
+    },
+    {
+      "bases": [],
+      "end_line": 10781,
+      "line": 10714,
+      "methods": [
+        "__init__",
+        "orion_gravity_drive",
+        "sagittarius_horizon",
+        "time_dilation_6666",
+        "analysis"
+      ],
+      "name": "Snowball_Synthesis2_NASA_Orion"
+    },
+    {
+      "bases": [],
+      "end_line": 10853,
+      "line": 10784,
+      "methods": [
+        "__init__",
+        "bio_resonance_lock",
+        "kabil_nexus_zero",
+        "noah_volume_verification",
+        "analysis"
+      ],
+      "name": "Snowball_Synthesis3_BioGeo"
+    },
+    {
+      "bases": [],
+      "end_line": 10949,
+      "line": 10856,
+      "methods": [
+        "__init__",
+        "r11_consciousness_test",
+        "light_speed_glitch",
+        "antigravity_isolation",
+        "simulation_duration_verify",
+        "analysis"
+      ],
+      "name": "Snowball_Synthesis5_KokKod"
+    },
+    {
+      "bases": [],
+      "end_line": 11026,
+      "line": 10952,
+      "methods": [
+        "__init__",
+        "population_terminal_code",
+        "cosmic_hum_1390",
+        "halley_awakening_lock",
+        "analysis"
+      ],
+      "name": "Snowball_Synthesis6_Revelation"
+    },
+    {
+      "bases": [],
+      "end_line": 11172,
+      "line": 11029,
+      "methods": [
+        "__init__",
+        "master_lambda_equation",
+        "new_derived_formulas",
+        "analysis"
+      ],
+      "name": "Snowball_Synthesis7_GrandUnification"
+    },
+    {
+      "bases": [],
+      "end_line": 11437,
+      "line": 11185,
+      "methods": [
+        "__init__",
+        "verify_lambda_from_geoid",
+        "gravity_from_geoid",
+        "cyclic_matrix_test",
+        "cross_reference_analysis",
+        "analysis"
+      ],
+      "name": "Geoid_Matrix_22_66_88"
+    },
+    {
+      "bases": [],
+      "end_line": 11535,
+      "line": 11461,
+      "methods": [
+        "analysis"
+      ],
+      "name": "Snowball_Synthesis9_Lambda6666"
+    },
+    {
+      "bases": [],
+      "end_line": 11724,
+      "line": 11543,
+      "methods": [
+        "analysis"
+      ],
+      "name": "Snowball_Synthesis10_WebResearch"
+    },
+    {
+      "bases": [],
+      "end_line": 11781,
+      "line": 11732,
+      "methods": [
+        "__init__",
+        "run"
+      ],
+      "name": "Snowball_Synthesis11_HyperDimensional"
+    },
+    {
+      "bases": [],
+      "end_line": 12062,
+      "line": 11792,
+      "methods": [
+        "__init__",
+        "calculate_antigravity_g",
+        "calculate_time_out",
+        "calculate_galactic_year",
+        "calculate_escape_resonance",
+        "calculate_cosmic_harmonic",
+        "calculate_pi_998_001_proof",
+        "calculate_time_out_accumulation",
+        "calculate_689_cross_resonance",
+        "calculate_milkyway_orbit",
+        "run"
+      ],
+      "name": "Snowball_Synthesis12_TimeOut"
+    },
+    {
+      "bases": [],
+      "end_line": 12173,
+      "line": 12070,
+      "methods": [
+        "__init__",
+        "run_all",
+        "live_audit"
+      ],
+      "name": "Snowball_MasterRunner"
+    },
+    {
+      "bases": [],
+      "end_line": 12227,
+      "line": 12176,
+      "methods": [
+        "__init__",
+        "run_synthesis",
+        "get_db_findings"
+      ],
+      "name": "Snowball_Synthesis13_Phase3_1"
+    },
+    {
+      "bases": [],
+      "end_line": 12271,
+      "line": 12236,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_Sentez13_5_Math_Quantum"
+    },
+    {
+      "bases": [],
+      "end_line": 12311,
+      "line": 12274,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_Geographic_Advanced"
+    },
+    {
+      "bases": [],
+      "end_line": 12322,
+      "line": 12317,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_Reflection"
+    },
+    {
+      "bases": [],
+      "end_line": 12330,
+      "line": 12325,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_RealWorld"
+    },
+    {
+      "bases": [],
+      "end_line": 12338,
+      "line": 12333,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_Base11"
+    },
+    {
+      "bases": [],
+      "end_line": 12346,
+      "line": 12341,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_Test11"
+    },
+    {
+      "bases": [],
+      "end_line": 12354,
+      "line": 12349,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_Vopson"
+    },
+    {
+      "bases": [],
+      "end_line": 12362,
+      "line": 12357,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_FloodCalculation"
+    },
+    {
+      "bases": [],
+      "end_line": 12370,
+      "line": 12365,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_JesusShift"
+    },
+    {
+      "bases": [],
+      "end_line": 12390,
+      "line": 12373,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_HalleyResonance"
+    },
+    {
+      "bases": [],
+      "end_line": 12415,
+      "line": 12392,
+      "methods": [
+        "__init__",
+        "analysis"
+      ],
+      "name": "Module_GeoidMatrix"
+    },
+    {
+      "bases": [],
+      "end_line": 12422,
+      "line": 12417,
+      "methods": [
+        "__init__",
+        "yansima"
+      ],
+      "name": "Module_CalendarV103"
+    },
+    {
+      "bases": [],
+      "end_line": 12625,
+      "line": 12429,
+      "methods": [
+        "__init__",
+        "run_all",
+        "_formula_sweatman_lunisolar",
+        "_formula_sirius_lightspeed_lock",
+        "_formula_m_theory_bridge",
+        "_formula_kartopu_phase3_integration",
+        "_formula_golden_spiral_geodesic",
+        "_formula_vopson_information_mass",
+        "_live_multi_api_audit",
+        "_discovery_summary"
+      ],
+      "name": "Sentez14_OtonomKesif"
+    },
+    {
+      "bases": [],
+      "end_line": 12722,
+      "line": 12633,
+      "methods": [
+        "__init__",
+        "get_usgs_live_data",
+        "calculate_orbital_phases",
+        "analysis"
+      ],
+      "name": "Module_Seismic_Planetary_Correlation"
+    },
+    {
+      "bases": [],
+      "end_line": 12777,
+      "line": 12741,
+      "methods": [],
+      "name": "Sentez15_Constants"
+    },
+    {
+      "bases": [],
+      "end_line": 13027,
+      "line": 12780,
+      "methods": [
+        "__init__",
+        "run_all",
+        "_formula_de_sitter_vacuum",
+        "_formula_cosmic_info_density",
+        "_formula_holographic_11d",
+        "_formula_hubble_tension_fix",
+        "_formula_gobeklitepe_radium_sync",
+        "_formula_prime_11_spiral",
+        "_discovery_summary",
+        "_validation_report"
+      ],
+      "name": "Sentez15_CosmicUnification"
+    },
+    {
+      "bases": [],
+      "end_line": 13089,
+      "line": 13041,
+      "methods": [
+        "__init__",
+        "run_analysis"
+      ],
+      "name": "Module_R11_Kernel_Cryptanalysis"
+    },
+    {
+      "bases": [],
+      "end_line": 13155,
+      "line": 13092,
+      "methods": [
+        "__init__",
+        "run_dimensional_mapping"
+      ],
+      "name": "Module_Deep_11D_Organic_Synthesis"
+    },
+    {
+      "bases": [],
+      "end_line": 13234,
+      "line": 13158,
+      "methods": [
+        "__init__",
+        "run_audit",
+        "_check_api_health",
+        "_check_db_health",
+        "_check_cycle_precision"
+      ],
+      "name": "Module_DeepSystemAudit"
+    },
+    {
+      "bases": [],
+      "end_line": 13323,
+      "line": 13250,
+      "methods": [],
+      "name": "Sentez17_Constants"
+    },
+    {
+      "bases": [],
+      "end_line": 13542,
+      "line": 13326,
+      "methods": [
+        "__init__",
+        "run_all",
+        "_test_des_y6_dark_energy",
+        "_test_sweatman_lunisolar_11",
+        "_test_vopson_gravity_computation",
+        "_test_hubble_tension_11_base",
+        "_test_m_theory_11d_validation",
+        "_discovery_summary",
+        "_validation_report"
+      ],
+      "name": "Module_Sentez17_AcademicDeepening"
+    },
+    {
+      "bases": [],
+      "end_line": 13809,
+      "line": 13550,
+      "methods": [],
+      "name": "Sentez18_Constants"
+    },
+    {
+      "bases": [],
+      "end_line": 14345,
+      "line": 13813,
+      "methods": [
+        "__init__",
+        "run_all",
+        "_test_palindrome_pyramid",
+        "_test_vopson_gravity_info",
+        "_test_des_y6_11_resonance",
+        "_test_higgs_vortex",
+        "_test_fine_structure_glitch",
+        "_test_black_hole_zip",
+        "_test_lazy_rendering",
+        "_test_phantom_quake",
+        "_test_entropy_defrag",
+        "_test_proton_electron_harmony",
+        "_test_info_density_3690",
+        "_test_dark_matter_11_base",
+        "_test_factorial_week",
+        "_test_master_formula",
+        "_test_pi11_light_bridge",
+        "_test_orbital_axis_echoes",
+        "_test_light_pi_gap",
+        "_test_starbase_bootstrap",
+        "_discovery_summary",
+        "_validation_report"
+      ],
+      "name": "Module_Sentez18_PalindromeObserver"
+    },
+    {
+      "bases": [],
+      "end_line": 14693,
+      "line": 14447,
+      "methods": [],
+      "name": "LevhiMahfuzConstants"
+    },
+    {
+      "bases": [],
+      "end_line": 14839,
+      "line": 14696,
+      "methods": [
+        "base10_to_base11_correction",
+        "time_dilation_correction",
+        "light_speed_correction",
+        "angular_correction",
+        "information_mass",
+        "weekly_packet_verification",
+        "halley_resonance",
+        "celali_leap_correction",
+        "simulation_duration_check",
+        "digital_boot_formula",
+        "earth_radius_discrepancy",
+        "verify_new_discoveries",
+        "antigravity_master_formula",
+        "cosmic_harmony_constant",
+        "consciousness_quantum_constant",
+        "levhi_mahfuz_quantum_constant",
+        "giza_light_speed_overlap"
+      ],
+      "name": "LevhiMahfuzFormulas"
+    },
+    {
+      "bases": [],
+      "end_line": 14882,
+      "line": 14842,
+      "methods": [
+        "check_divisibility_by_11",
+        "extract_eleven_patterns"
+      ],
+      "name": "LevhiMahfuzPatterns"
+    },
+    {
+      "bases": [],
+      "end_line": 15043,
+      "line": 14959,
+      "methods": [],
+      "name": "GrokVerifiedConstants"
+    },
+    {
+      "bases": [],
+      "end_line": 15181,
+      "line": 15066,
+      "methods": [],
+      "name": "OtoromAIBridgeConstants"
+    },
+    {
+      "bases": [],
+      "end_line": 15280,
+      "line": 15184,
+      "methods": [
+        "flood_celali_harmony",
+        "halley_humanity_connection",
+        "latitude_time_multiplication",
+        "maya_sumer_orkhon_trinity",
+        "dna_universal_scale",
+        "light_civilization_paradox"
+      ],
+      "name": "OtoromAIPatterns"
+    },
+    {
+      "bases": [],
+      "end_line": 15360,
+      "line": 15283,
+      "methods": [
+        "layer_1_divine_order",
+        "layer_2_historical_bound",
+        "layer_3_future_knowledge",
+        "layer_4_termination_period"
+      ],
+      "name": "LevhiMahfuzCode"
+    },
+    {
+      "bases": [],
+      "end_line": 15416,
+      "line": 15363,
+      "methods": [
+        "temporal_level",
+        "spatial_level",
+        "quantum_level"
+      ],
+      "name": "ElevenDimensionalModel"
+    },
+    {
+      "bases": [],
+      "end_line": 15583,
+      "line": 15499,
+      "methods": [],
+      "name": "KarTopuSentezConstants"
+    },
+    {
+      "bases": [],
+      "end_line": 15646,
+      "line": 15612,
+      "methods": [],
+      "name": "GobeklitepeConstants"
+    },
+    {
+      "bases": [],
+      "end_line": 15690,
+      "line": 15649,
+      "methods": [],
+      "name": "SpinalCipherConstants"
+    },
+    {
+      "bases": [],
+      "end_line": 15731,
+      "line": 15693,
+      "methods": [],
+      "name": "CainCipherConstants"
+    },
+    {
+      "bases": [],
+      "end_line": 15758,
+      "line": 15734,
+      "methods": [],
+      "name": "KarTopu_V3_Phase3_Constants"
+    },
+    {
+      "bases": [],
+      "end_line": 15974,
+      "line": 15761,
+      "methods": [
+        "__init__",
+        "header",
+        "formula_gobekli_tepe_harmonic",
+        "formula_spinal_cipher_quantum",
+        "formula_cain_cipher_matrix",
+        "formula_levhi_mahfuz_codes",
+        "formula_phase3_unified_seal",
+        "analysis"
+      ],
+      "name": "Modul_KarTopu_V5_V3_Phase3"
+    },
+    {
+      "bases": [],
+      "end_line": 16136,
+      "line": 16041,
+      "methods": [
+        "__init__",
+        "validate_exact_match",
+        "validate_formula",
+        "process_all",
+        "generate_certificate"
+      ],
+      "name": "AntigravityValidator"
+    },
+    {
+      "bases": [],
+      "end_line": 16230,
+      "line": 16162,
+      "methods": [],
+      "name": "GrokSequences"
+    }
+  ],
+  "duplicate_class_names": [
+    "Colors",
+    "Dimensional_Escape_Overload",
+    "Dimensional_Escape_Overload_Trigger",
+    "GeoUtils",
+    "Geoid_Matrix_22_66_88",
+    "Modul_KarTopu_V5_V3_Phase3",
+    "Modul_Phase3_Otonom_Sentez",
+    "Modul_Sentez_25_OMEGA",
+    "Module_149Code_V130",
+    "Module_666x3Boot",
+    "Module_AcousticFrequency",
+    "Module_AmericaMatrix",
+    "Module_AncientGeodesic",
+    "Module_Angular",
+    "Module_Axis",
+    "Module_Base11",
+    "Module_Base11Conversion",
+    "Module_BiologicalCode",
+    "Module_Calendar",
+    "Module_CalendarV103",
+    "Module_CelaliFlood",
+    "Module_ChronosCalendar_V130",
+    "Module_Cosmos",
+    "Module_DarkElements_V130",
+    "Module_DeepSystemAudit",
+    "Module_Deep_11D_Organic_Synthesis",
+    "Module_FamilyMatrixOld",
+    "Module_FinalScientificProof",
+    "Module_FineTunedFamily",
+    "Module_FineTunedFamily_V2",
+    "Module_FloodCalculation",
+    "Module_FloodCalculations",
+    "Module_Geographic_Advanced",
+    "Module_GizaLightSpeed_V132",
+    "Module_GizaMeasurement",
+    "Module_GlitchVopson",
+    "Module_GrandMatrix",
+    "Module_GrandRevelation",
+    "Module_Halley",
+    "Module_HalleyBallistics",
+    "Module_HalleyCalendarConnection",
+    "Module_IdentityDecryption",
+    "Module_JesusBirthShift",
+    "Module_JesusShift",
+    "Module_KabulNexus",
+    "Module_KailashKailasa",
+    "Module_LatLong",
+    "Module_LevhMahfuzPyramid_V103",
+    "Module_LevhMahfuzScan",
+    "Module_LightExpansion",
+    "Module_Manifesto",
+    "Module_Micro",
+    "Module_MonteCarloSim",
+    "Module_MoonArrival",
+    "Module_NoahsArkDetail",
+    "Module_OrkhonSnake",
+    "Module_Physics",
+    "Module_PyramidBio",
+    "Module_PyramidDetail_V130",
+    "Module_R11_Kernel_Cryptanalysis",
+    "Module_R11_Prime",
+    "Module_RealWorld",
+    "Module_RealWorldVerification",
+    "Module_Reflection",
+    "Module_ReflectionAndPattern",
+    "Module_Religions",
+    "Module_RocheTidalWave_V130",
+    "Module_Seismic_Planetary_Correlation",
+    "Module_Sentez13_5_Math_Quantum",
+    "Module_Sentez17_AcademicDeepening",
+    "Module_Sentez18_PalindromeObserver",
+    "Module_SigmaChronology",
+    "Module_Simulation11Expansion",
+    "Module_Singularity",
+    "Module_Test11",
+    "Module_Test11System",
+    "Module_TheologicalReset_V130",
+    "Module_Tide",
+    "Module_TimeCycles",
+    "Module_TimePackets_V130",
+    "Module_Vopson",
+    "Module_VopsonInfodynamics",
+    "Pineal_Quantum_Antenna",
+    "Quantum_Resonance_Breaker",
+    "Sentez14_OtonomKesif",
+    "Sentez15_Constants",
+    "Sentez15_CosmicUnification",
+    "Sentez17_Constants",
+    "Sentez18_Constants",
+    "Sentez7_MasterConstants",
+    "Simulation3_MasterEngine",
+    "Simule3_Constants",
+    "Snowball_MasterRunner",
+    "Snowball_Synthesis10_WebResearch",
+    "Snowball_Synthesis11_HyperDimensional",
+    "Snowball_Synthesis12_TimeOut",
+    "Snowball_Synthesis13_Phase3_1",
+    "Snowball_Synthesis1_Sirius_AntiGravity",
+    "Snowball_Synthesis2_NASA_Orion",
+    "Snowball_Synthesis3_BioGeo",
+    "Snowball_Synthesis5_KokKod",
+    "Snowball_Synthesis6_Revelation",
+    "Snowball_Synthesis7_GrandUnification",
+    "Snowball_Synthesis9_Lambda6666",
+    "Snowball_Synthesis_Constants",
+    "ValidationEngine"
+  ],
+  "imports": [
+    {
+      "kind": "import",
+      "line": 1,
+      "module": "math",
+      "name": "math"
+    },
+    {
+      "kind": "import",
+      "line": 2,
+      "module": "datetime",
+      "name": "datetime"
+    },
+    {
+      "kind": "import",
+      "line": 3,
+      "module": "time",
+      "name": "time"
+    },
+    {
+      "kind": "import",
+      "line": 4,
+      "module": "sys",
+      "name": "sys"
+    },
+    {
+      "kind": "import",
+      "line": 5,
+      "module": "random",
+      "name": "random"
+    },
+    {
+      "kind": "import",
+      "line": 6,
+      "module": "os",
+      "name": "os"
+    },
+    {
+      "kind": "import",
+      "line": 7,
+      "module": "sqlite3",
+      "name": "sqlite3"
+    },
+    {
+      "kind": "import",
+      "line": 8,
+      "module": "inspect",
+      "name": "inspect"
+    },
+    {
+      "alias": null,
+      "kind": "from",
+      "line": 13,
+      "module": "datetime",
+      "name": "timedelta"
+    },
+    {
+      "alias": null,
+      "kind": "from",
+      "line": 13,
+      "module": "datetime",
+      "name": "date"
+    },
+    {
+      "alias": null,
+      "kind": "from",
+      "line": 18,
+      "module": "simulation_11.modules.embedded",
+      "name": "CainCipherConstants"
+    },
+    {
+      "alias": null,
+      "kind": "from",
+      "line": 18,
+      "module": "simulation_11.modules.embedded",
+      "name": "GeneravityEngine"
+    },
+    {
+      "alias": null,
+      "kind": "from",
+      "line": 18,
+      "module": "simulation_11.modules.embedded",
+      "name": "GobeklitepeConstants"
+    },
+    {
+      "alias": null,
+      "kind": "from",
+      "line": 18,
+      "module": "simulation_11.modules.embedded",
+      "name": "Modul_KarTopu_V5_Sentez_V2"
+    },
+    {
+      "alias": null,
+      "kind": "from",
+      "line": 18,
+      "module": "simulation_11.modules.embedded",
+      "name": "Modul_KarTopu_V5_V3_Phase3"
+    },
+    {
+      "alias": null,
+      "kind": "from",
+      "line": 18,
+      "module": "simulation_11.modules.embedded",
+      "name": "SpinalCipherConstants"
+    },
+    {
+      "alias": null,
+      "kind": "from",
+      "line": 2567,
+      "module": "simulation_11.orchestrator.v133",
+      "name": "Simule3_Lab_V133"
+    },
+    {
+      "alias": null,
+      "kind": "from",
+      "line": 2567,
+      "module": "simulation_11.orchestrator.v133",
+      "name": "Simulation_AutoPilot"
+    },
+    {
+      "alias": "datetime_class",
+      "kind": "from",
+      "line": 6832,
+      "module": "datetime",
+      "name": "datetime"
+    },
+    {
+      "alias": null,
+      "kind": "from",
+      "line": 6832,
+      "module": "datetime",
+      "name": "timedelta"
+    },
+    {
+      "alias": null,
+      "kind": "from",
+      "line": 6832,
+      "module": "datetime",
+      "name": "date"
+    },
+    {
+      "kind": "import",
+      "line": 6833,
+      "module": "google.generativeai",
+      "name": "genai"
+    },
+    {
+      "kind": "import",
+      "line": 6834,
+      "module": "inspect",
+      "name": "inspect"
+    },
+    {
+      "kind": "import",
+      "line": 6835,
+      "module": "json",
+      "name": "json"
+    },
+    {
+      "kind": "import",
+      "line": 6836,
+      "module": "math",
+      "name": "math"
+    },
+    {
+      "kind": "import",
+      "line": 6837,
+      "module": "numpy",
+      "name": "np"
+    },
+    {
+      "kind": "import",
+      "line": 6838,
+      "module": "os",
+      "name": "os"
+    },
+    {
+      "kind": "import",
+      "line": 6839,
+      "module": "pandas",
+      "name": "pd"
+    },
+    {
+      "kind": "import",
+      "line": 6840,
+      "module": "random",
+      "name": "random"
+    },
+    {
+      "kind": "import",
+      "line": 6841,
+      "module": "requests",
+      "name": "requests"
+    },
+    {
+      "kind": "import",
+      "line": 6842,
+      "module": "scipy.stats",
+      "name": "stats"
+    },
+    {
+      "kind": "import",
+      "line": 6843,
+      "module": "sqlite3",
+      "name": "sqlite3"
+    },
+    {
+      "kind": "import",
+      "line": 6844,
+      "module": "sys",
+      "name": "sys"
+    },
+    {
+      "kind": "import",
+      "line": 6845,
+      "module": "time",
+      "name": "time"
+    },
+    {
+      "kind": "import",
+      "line": 6846,
+      "module": "traceback",
+      "name": "traceback"
+    },
+    {
+      "kind": "import",
+      "line": 6847,
+      "module": "warnings",
+      "name": "warnings"
+    },
+    {
+      "alias": null,
+      "kind": "from",
+      "line": 7008,
+      "module": "simulation_11.orchestrator.v175",
+      "name": "Simule3_Lab_V175"
+    },
+    {
+      "alias": "Constants",
+      "kind": "from",
+      "line": 15993,
+      "module": "levhi_mahfuz",
+      "name": "LevhiMahfuzConstants"
+    },
+    {
+      "alias": "Formulas",
+      "kind": "from",
+      "line": 15993,
+      "module": "levhi_mahfuz",
+      "name": "LevhiMahfuzFormulas"
+    },
+    {
+      "kind": "import",
+      "line": 10,
+      "module": "requests",
+      "name": "requests"
+    },
+    {
+      "kind": "import",
+      "line": 48,
+      "module": "pandas",
+      "name": "pd"
+    },
+    {
+      "kind": "import",
+      "line": 49,
+      "module": "numpy",
+      "name": "np"
+    },
+    {
+      "kind": "import",
+      "line": 60,
+      "module": "scipy.stats",
+      "name": "stats"
+    },
+    {
+      "kind": "import",
+      "line": 6759,
+      "module": "sys",
+      "name": "sys"
+    },
+    {
+      "alias": "LMC",
+      "kind": "from",
+      "line": 15603,
+      "module": "levhi_mahfuz",
+      "name": "LevhiMahfuzConstants"
+    },
+    {
+      "alias": null,
+      "kind": "from",
+      "line": 21872,
+      "module": "simulation_11.cli",
+      "name": "main"
+    },
+    {
+      "kind": "import",
+      "line": 4991,
+      "module": "requests",
+      "name": "requests"
+    },
+    {
+      "kind": "import",
+      "line": 5048,
+      "module": "requests",
+      "name": "requests"
+    },
+    {
+      "kind": "import",
+      "line": 5583,
+      "module": "requests",
+      "name": "req"
+    },
+    {
+      "kind": "import",
+      "line": 5584,
+      "module": "json",
+      "name": "json"
+    }
+  ],
+  "line_count": 21876,
+  "source": "C:\\Users\\soldi\\IdeaProjects\\simulation-11-wt-pr3\\simulasyon_11.py"
+}

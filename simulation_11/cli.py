@@ -13,10 +13,11 @@ DEFAULT_ORCHESTRATOR = "all"
 
 
 def _import_orchestrators():
-    """Lazy-import orchestrators from monolith until PR 3 extraction."""
-    import simulasyon_11 as mono
+    """Lazy-import orchestrators from simulation_11 package (PR 3)."""
+    from simulation_11.orchestrator.v133 import Simule3_Lab_V133, Simulation_AutoPilot
+    from simulation_11.orchestrator.v175 import Simule3_Lab_V175
 
-    return mono.Simule3_Lab_V133, mono.Simule3_Lab_V175, mono.Simulation_AutoPilot
+    return Simule3_Lab_V133, Simule3_Lab_V175, Simulation_AutoPilot
 
 
 def _ensure_requests_mock() -> None:
