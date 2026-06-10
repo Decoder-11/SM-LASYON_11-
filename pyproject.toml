@@ -19,6 +19,7 @@ dependencies = [
 
 [project.scripts]
 simulation-11 = "simulation_11.cli:main"
+dashboard-11 = "dashboard_11.app:main"
 
 [dependency-groups]
 dev = [
@@ -29,7 +30,7 @@ dev = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["simulation_11"]
+packages = ["simulation_11", "dashboard_11"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
