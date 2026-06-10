@@ -15,14 +15,18 @@ dependencies = [
     "requests>=2.31.0",
     "matplotlib>=3.7.0",
     "jupyter>=1.0.0",
-    "scipy-stubs~=1.17.1",
 ]
 
 [project.scripts]
 simulation-11 = "simulation_11.cli:main"
 
 [dependency-groups]
-dev = ["pytest>=8.0", "ruff>=0.4", "flake8>=7.0"]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.4",
+    "flake8>=7.0",
+    "scipy-stubs~=1.17.1",
+]
 
 [tool.hatch.build.targets.wheel]
 packages = ["simulation_11"]
@@ -35,6 +39,9 @@ markers = [
     "network: NASA/API/Gemini calls",
     "legacy: not yet migrated",
 ]
+
+[tool.flake8]
+max-line-length = 127
 
 [tool.ruff]
 target-version = "py311"

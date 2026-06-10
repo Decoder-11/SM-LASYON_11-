@@ -2190,7 +2190,6 @@ dependencies = [
     { name = "pandas" },
     { name = "requests" },
     { name = "scipy" },
-    { name = "scipy-stubs" },
 ]
 
 [package.dev-dependencies]
@@ -2198,6 +2197,7 @@ dev = [
     { name = "flake8" },
     { name = "pytest" },
     { name = "ruff" },
+    { name = "scipy-stubs" },
 ]
 
 [package.metadata]
@@ -2209,7 +2209,6 @@ requires-dist = [
     { name = "pandas", specifier = ">=2.0.0" },
     { name = "requests", specifier = ">=2.31.0" },
     { name = "scipy", specifier = ">=1.10.0" },
-    { name = "scipy-stubs", specifier = "~=1.17.1" },
 ]
 
 [package.metadata.requires-dev]
@@ -2217,6 +2216,7 @@ dev = [
     { name = "flake8", specifier = ">=7.0" },
     { name = "pytest", specifier = ">=8.0" },
     { name = "ruff", specifier = ">=0.4" },
+    { name = "scipy-stubs", specifier = "~=1.17.1" },
 ]
 
 [[package]]

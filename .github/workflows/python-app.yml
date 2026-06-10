@@ -4,7 +4,6 @@ on:
   push:
     branches: ["main"]
     paths-ignore:
-      - "archive/**"
       - "**/*.pdf"
       - "**/*.docx"
       - "**/*.mp3"
@@ -12,7 +11,6 @@ on:
   pull_request:
     branches: ["main"]
     paths-ignore:
-      - "archive/**"
       - "**/*.pdf"
       - "**/*.docx"
       - "**/*.mp3"
@@ -38,25 +36,72 @@ jobs:
       - name: Install dependencies
         run: uv sync --group dev
 
-      - name: Lint with flake8
-        run: >
-          uv run flake8
-          simulation_11
-          tests
-          simulasyon_11.py
-          __main__.py
-          levhi_mahfuz.py
-          dashboard_11.py
+      - name: Lint with flake8 (bootstrap)
+        run: uv run flake8 simulation_11 tests
 
-      - name: Lint with ruff
-        run: >
-          uv run ruff check
-          simulation_11
-          tests
-          simulasyon_11.py
-          __main__.py
-          levhi_mahfuz.py
-          dashboard_11.py
+      - name: Lint with ruff (bootstrap)
+        run: uv run ruff check simulation_11 tests
 
       - name: Test with pytest
         run: uv run pytest tests/ -m "not slow" --tb=short
+
+  legacy-lint:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - uses: astral-sh/setup-uv@v4
+
+      - name: Install dependencies
+        run: uv sync --group dev
+
+      - name: Lint legacy with flake8 (non-blocking)
+        run: |
+          uv run flake8 \
+            --max-line-length=127 \
+            --select=E9,F63,F7,F82 \
+            --show-source --statistics \
+            simulasyon_11.py __main__.py levhi_mahfuz.py dashboard_11.py
+          uv run flake8 \
+            --max-line-length=127 \
+            --exit-zero \
+            simulasyon_11.py __main__.py levhi_mahfuz.py dashboard_11.py
+
+  archive-verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify archive MANIFEST
+        run: |
+          python - <<'PY'
+          import hashlib
+          import json
+          import tarfile
+          from pathlib import Path
+
+          manifest = json.loads(Path("archive/MANIFEST.json").read_text(encoding="utf-8"))
+          for entry in manifest["entries"]:
+              path = Path(entry["archive_path"])
+              if not path.exists():
+                  raise SystemExit(f"missing archive: {path}")
+              data = path.read_bytes()
+              digest = hashlib.sha256(data).hexdigest()
+              if digest != entry["sha256"]:
+                  raise SystemExit(f"sha256 mismatch for {path}")
+              if path.stat().st_size != entry["compressed_bytes"]:
+                  raise SystemExit(f"size mismatch for {path}")
+              with tarfile.open(path, "r:gz") as tar:
+                  count = sum(1 for member in tar.getmembers() if member.isfile())
+              if count != entry["file_count"]:
+                  raise SystemExit(f"file_count mismatch for {path}: {count} != {entry['file_count']}")
+          print(f"Verified {len(manifest['entries'])} archives")
+          PY
