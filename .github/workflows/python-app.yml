@@ -39,8 +39,10 @@ jobs:
       - name: Lint with flake8 (bootstrap)
         run: uv run flake8 simulation_11 tests
 
-      - name: Lint with ruff (bootstrap)
-        run: uv run ruff check simulation_11 tests
+      - name: Lint with ruff (bootstrap + PR 8 stubs)
+        run: |
+          uv run ruff check simulation_11 tests tools/retire_legacy_tools.py
+          uv run ruff check apply_patch.py fix_issues.py mega_merger.py tests/unit/test_pr8_legacy_retirement.py
 
       - name: Test with pytest (unit + integration, not slow)
         run: uv run pytest tests/ -m "not slow" --tb=short

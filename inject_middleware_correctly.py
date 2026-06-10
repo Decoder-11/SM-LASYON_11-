@@ -1,33 +1,7 @@
-import os
+"""Legacy tool retired (PR 8) — archived to archive/legacy_tools/inject_middleware_correctly.py."""
 
-py_path = r'C:\Users\soldi\IdeaProjects\simülation-11\dashboard_11.py'
-with open(py_path, 'r', encoding='utf-8') as f:
-    lines = f.readlines()
-
-middleware = '''
-class ExceptionCatchMiddleware:
-    def __init__(self, app):
-        self.app = app
-    def __call__(self, environ, start_response):
-        try:
-            return self.app(environ, start_response)
-        except Exception as e:
-            import traceback
-            err = traceback.format_exc()
-            with open("hata_logu.txt", "w", encoding="utf-8") as f:
-                f.write(err)
-            start_response('200 OK', [('Content-Type', 'text/html; charset=utf-8')])
-            return [f"<h1>MİDDLEWARE HATA YAKALADI</h1><pre>{err}</pre>".encode('utf-8')]
-
-app.wsgi_app = ExceptionCatchMiddleware(app.wsgi_app)
-'''
-
-for i, line in enumerate(lines):
-    if "app.run(" in line:
-        lines.insert(i, middleware + "\n")
-        break
-
-with open(py_path, 'w', encoding='utf-8') as f:
-    f.writelines(lines)
-
-print("Middleware correctly injected!")
+raise ImportError(
+    "inject_middleware_correctly.py was a one-off legacy maintenance script and has been retired. "
+    "Source preserved at archive/legacy_tools/inject_middleware_correctly.py. "
+    "Use `uv run simulation-11` for orchestration or edit `simulation_11/` directly."
+)

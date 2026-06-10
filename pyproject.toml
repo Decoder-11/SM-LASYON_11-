@@ -48,3 +48,6 @@ max-line-length = 127
 target-version = "py311"
 line-length = 127
 respect-gitignore = true
+
+[tool.ruff.lint.per-file-ignores]
+"archive/**" = ["E", "F"]

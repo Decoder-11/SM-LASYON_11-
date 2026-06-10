@@ -1,14 +1,7 @@
-// streams.mjs
-import { createReadStream, createWriteStream } from 'node:fs';
-import { pipeline } from 'node:stream/promises';
-import { createGzip } from 'node:zlib';
+"""Legacy tool retired (PR 8) — archived to archive/legacy_tools/metin-1.py."""
 
-// ensure you have a `package.json` file for this test!
-await pipeline(
-    createReadStream('package.json'),
-    createGzip(),
-    createWriteStream('package.json.gz')
-);
-
-
-// run with `node streams.mjs`
+raise ImportError(
+    "metin-1.py was a one-off legacy maintenance script and has been retired. "
+    "Source preserved at archive/legacy_tools/metin-1.py. "
+    "Use `uv run simulation-11` for orchestration or edit `simulation_11/` directly."
+)

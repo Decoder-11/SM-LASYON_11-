@@ -520,9 +520,6 @@ def validate_levhi_mahfuz():
     return tests_passed == tests_total
 
 
-if __name__ == "__main__":
-    validate_levhi_mahfuz()
-
 # ============================================================================
 # GROK VERIFIED CONSTANTS (X.COM Validation - Feb 18, 2026)
 # ============================================================================
@@ -1059,12 +1056,6 @@ def validate_otorom_ai():
     print("="*80 + "\n")
 
 
-if __name__ == "__main__":
-    validate_levhi_mahfuz()
-    grok_verification_report()
-    validate_otorom_ai()
-
-
 # ==============================================================================
 # KAR TOPU SENTEZ 1-7: BÜYÜK BİRLEŞİK SABİTLER (11 Mart 2026)
 # ==============================================================================
@@ -1154,3 +1145,14 @@ class KarTopuSentezConstants:
     LEVHI_GEOID_RATIO = 6666 / PI_11
     DNA_PI11_PRODUCT = 33 * PI_11
     HALLEY_PI11_PRODUCT = 75.75 * PI_11
+
+
+def _main() -> None:
+    """Single consolidated CLI entry (PR 8)."""
+    validate_levhi_mahfuz()
+    grok_verification_report()
+    validate_otorom_ai()
+
+
+if __name__ == "__main__":
+    _main()
